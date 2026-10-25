@@ -1,0 +1,286 @@
+[
+  {
+    "id": "wr-running-late-message",
+    "title": "Running late",
+    "prompt": "You are meeting a friend for lunch, but your bus is late. Write a short message to your friend. Say that you are late, explain why, and tell them when you will arrive.",
+    "level": "A1",
+    "topics": ["daily"],
+    "minWords": 40,
+    "genre": "message"
+  },
+  {
+    "id": "wr-new-team-intro",
+    "title": "Hello, new team!",
+    "prompt": "You have just joined an international team. Write a short message for the team chat. Introduce yourself, say what your job is, where you are based, and one thing you like doing outside work.",
+    "level": "A2",
+    "topics": ["business", "daily"],
+    "minWords": 50,
+    "genre": "message"
+  },
+  {
+    "id": "wr-colleague-data-request",
+    "title": "Asking a colleague for data",
+    "prompt": "Write an email to a colleague in another office. Ask them to send you the rent data for three buildings by Friday. Explain why you need it and thank them for their help.",
+    "level": "A2",
+    "topics": ["business", "real-estate"],
+    "minWords": 60,
+    "genre": "email"
+  },
+  {
+    "id": "wr-hotel-booking-change",
+    "title": "Changing a hotel booking",
+    "prompt": "You booked a hotel room for three nights, but your plans have changed. Write an email to the hotel. Give your booking details, ask to change the dates, and ask if breakfast is included.",
+    "level": "A2",
+    "topics": ["travel"],
+    "minWords": 60,
+    "genre": "email"
+  },
+  {
+    "id": "wr-restaurant-review",
+    "title": "Review a restaurant",
+    "prompt": "Write a short online review of a restaurant you visited recently. Describe the food, the service and the prices, and say if you would recommend it.",
+    "level": "A2",
+    "topics": ["travel", "daily"],
+    "minWords": 70,
+    "genre": "review"
+  },
+  {
+    "id": "wr-client-valuation-delivery",
+    "title": "Sending a valuation report",
+    "prompt": "Write an email to a client to send them the valuation report for their office building. Summarize the main conclusion (the estimated market value), mention one important assumption, and offer to schedule a call to discuss the report.",
+    "level": "B1",
+    "topics": ["business", "real-estate"],
+    "minWords": 100,
+    "genre": "email"
+  },
+  {
+    "id": "wr-tenant-rent-adjustment",
+    "title": "Annual rent adjustment",
+    "prompt": "You manage an apartment for a landlord. Write an email to the tenant explaining that the rent will be adjusted next month according to the inflation index in the contract. Give the new amount, the date it starts, and say who they can contact with questions.",
+    "level": "B1",
+    "topics": ["real-estate", "finance"],
+    "minWords": 100,
+    "genre": "email"
+  },
+  {
+    "id": "wr-meeting-summary",
+    "title": "Meeting summary",
+    "prompt": "Write a short summary of a team meeting for colleagues who could not attend. Include the main topics discussed, the decisions made, and who is responsible for each next step.",
+    "level": "B1",
+    "topics": ["business"],
+    "minWords": 100,
+    "genre": "summary"
+  },
+  {
+    "id": "wr-product-complaint",
+    "title": "Complaining about a product",
+    "prompt": "You bought a pair of headphones online, but they stopped working after one week. Write an email to the company's customer service. Explain the problem, say what you have already tried, and say what you would like them to do.",
+    "level": "B1",
+    "topics": ["daily", "tech"],
+    "minWords": 120,
+    "genre": "email"
+  },
+  {
+    "id": "wr-travel-mishap-story",
+    "title": "A trip that went wrong",
+    "prompt": "Write a story that begins with this sentence: 'When I arrived at the airport, I realized my passport was still at home.' Describe what happened next and how the story ended.",
+    "level": "B1",
+    "topics": ["travel"],
+    "minWords": 120,
+    "genre": "story"
+  },
+  {
+    "id": "wr-cambridge-b1-email",
+    "title": "Cambridge B1: email to a friend",
+    "prompt": "Cambridge B1 Preliminary, Writing Part 1. Your English friend Sam has written to you: 'I'm coming to Brazil next month for a week! Which city should I visit? What can I do there? And what's the weather like at this time of year?' Write your email to Sam, answering all of his questions.",
+    "level": "B1",
+    "topics": ["travel"],
+    "exam": "cambridge",
+    "minWords": 100,
+    "genre": "email"
+  },
+  {
+    "id": "wr-investor-follow-up",
+    "title": "Follow-up with a US investor",
+    "prompt": "You had a video call yesterday with an American investor interested in a logistics warehouse in Brazil. Write a follow-up email. Thank them for their time, summarize the key points discussed (price, cap rate, tenant), answer their concern about currency risk, and propose next steps.",
+    "level": "B2",
+    "topics": ["business", "real-estate", "finance"],
+    "minWords": 150,
+    "genre": "email"
+  },
+  {
+    "id": "wr-site-visit-report",
+    "title": "Site visit report",
+    "prompt": "Write a short report on a site visit to a commercial building that your client is thinking of buying. Describe the location, the condition of the building, the current occupancy, and any risks you noticed. End with a recommendation.",
+    "level": "B2",
+    "topics": ["real-estate", "business"],
+    "minWords": 180,
+    "genre": "report"
+  },
+  {
+    "id": "wr-ai-article-summary",
+    "title": "Summarize a tech trend",
+    "prompt": "Your manager has asked you to summarize, for the team, how artificial intelligence is being used in the real estate industry. Write a summary covering at least three uses, one benefit and one risk of each, and what it could mean for your company.",
+    "level": "B2",
+    "topics": ["tech", "real-estate"],
+    "minWords": 150,
+    "genre": "summary"
+  },
+  {
+    "id": "wr-mystery-episode-opening",
+    "title": "Opening scene of a series",
+    "prompt": "Write the opening scene of the first episode of a mystery series. Introduce the main character, the place and a strange event that will make viewers want to keep watching.",
+    "level": "B2",
+    "topics": ["culture"],
+    "minWords": 180,
+    "genre": "story"
+  },
+  {
+    "id": "wr-ielts-t1-bar-chart",
+    "title": "IELTS Task 1: tourist arrivals",
+    "prompt": "IELTS Academic Writing Task 1. The bar chart shows the number of international tourist arrivals (in millions) in four countries in 2015 and 2023. Spain: 68 (2015) and 85 (2023). Mexico: 32 and 42. Brazil: 6.3 and 5.9. Thailand: 30 and 28. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "level": "B2",
+    "topics": ["academic", "travel"],
+    "exam": "ielts",
+    "minWords": 150,
+    "genre": "report"
+  },
+  {
+    "id": "wr-ielts-t1-rent-line-graph",
+    "title": "IELTS Task 1: average rents",
+    "prompt": "IELTS Academic Writing Task 1. The line graph shows the average monthly rent for a two-bedroom apartment (in US dollars) in three cities between 2010 and 2025. City A rose steadily from $1,200 to $2,100. City B stayed around $900 until 2018, then jumped to $1,600 by 2025. City C fell from $1,100 to $850 in 2015 and recovered to $1,000 by 2025. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "level": "B2",
+    "topics": ["academic", "real-estate"],
+    "exam": "ielts",
+    "minWords": 150,
+    "genre": "report"
+  },
+  {
+    "id": "wr-ielts-t1-household-spending",
+    "title": "IELTS Task 1: household spending",
+    "prompt": "IELTS Academic Writing Task 1. The two pie charts compare how an average household in one country spent its income in 2000 and 2020. In 2000: housing 25%, food 30%, transport 15%, leisure 10%, other 20%. In 2020: housing 38%, food 18%, transport 14%, leisure 12%, other 18%. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "level": "B2",
+    "topics": ["academic", "finance"],
+    "exam": "ielts",
+    "minWords": 150,
+    "genre": "report"
+  },
+  {
+    "id": "wr-ielts-t2-remote-work",
+    "title": "IELTS Task 2: working from home",
+    "prompt": "IELTS Writing Task 2. More and more people are working from home instead of going to an office. Do the advantages of this trend outweigh the disadvantages? Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+    "level": "B2",
+    "topics": ["business", "academic"],
+    "exam": "ielts",
+    "minWords": 250,
+    "genre": "essay"
+  },
+  {
+    "id": "wr-ielts-t2-tourism",
+    "title": "IELTS Task 2: tourism and local life",
+    "prompt": "IELTS Writing Task 2. In many popular destinations, tourism brings money to the economy but makes life more difficult for local residents. What problems does tourism cause for local people, and what can be done to solve them?",
+    "level": "B2",
+    "topics": ["travel", "academic"],
+    "exam": "ielts",
+    "minWords": 250,
+    "genre": "essay"
+  },
+  {
+    "id": "wr-cambridge-b2-essay",
+    "title": "Cambridge B2: city life essay",
+    "prompt": "Cambridge B2 First, Writing Part 1. In your English class you have been talking about where people live. Your teacher has asked you to write an essay: 'Is it better to live in the city centre or in the suburbs?' Write about: 1. cost of living, 2. transport, 3. (your own idea).",
+    "level": "B2",
+    "topics": ["real-estate", "daily"],
+    "exam": "cambridge",
+    "minWords": 140,
+    "genre": "essay"
+  },
+  {
+    "id": "wr-cambridge-b2-series-review",
+    "title": "Cambridge B2: series review",
+    "prompt": "Cambridge B2 First, Writing Part 2. You see this announcement on an English-language website: 'Reviews wanted! Have you watched a TV series that you couldn't stop watching? Write a review telling us what the series is about, what makes it so addictive and whether there's anything you didn't like.' Write your review.",
+    "level": "B2",
+    "topics": ["culture"],
+    "exam": "cambridge",
+    "minWords": 140,
+    "genre": "review"
+  },
+  {
+    "id": "wr-toefl-discussion-online-classes",
+    "title": "TOEFL discussion: online classes",
+    "prompt": "TOEFL Academic Discussion. Your professor writes: 'Many universities now offer courses entirely online. Do you think online courses can be as effective as traditional classroom courses? Why or why not?' Student 1 (Kelly): 'Online courses are more flexible, so students can learn at their own pace.' Student 2 (Andrew): 'Without face-to-face contact, it's much harder to stay motivated.' Write a post that contributes your own opinion to the discussion.",
+    "level": "B2",
+    "topics": ["academic", "tech"],
+    "exam": "toefl",
+    "minWords": 100,
+    "genre": "message"
+  },
+  {
+    "id": "wr-toefl-discussion-cars-cities",
+    "title": "TOEFL discussion: cars in city centers",
+    "prompt": "TOEFL Academic Discussion. Your professor writes: 'Some cities are banning private cars from their centers. Is this a good policy? Explain your view.' Student 1 (Priya): 'It reduces pollution and makes streets safer for pedestrians.' Student 2 (Marcus): 'It hurts small businesses because fewer customers can reach them.' Write a post that contributes your own opinion to the discussion.",
+    "level": "B2",
+    "topics": ["academic", "real-estate"],
+    "exam": "toefl",
+    "minWords": 100,
+    "genre": "message"
+  },
+  {
+    "id": "wr-toefl-discussion-ai-jobs",
+    "title": "TOEFL discussion: AI and jobs",
+    "prompt": "TOEFL Academic Discussion. Your professor writes: 'Artificial intelligence can now perform many tasks once done by skilled professionals. Should governments do more to protect workers from being replaced by AI? Why or why not?' Student 1 (Lena): 'Yes, governments should fund retraining programs before jobs disappear.' Student 2 (Tom): 'No, new technologies have always created more jobs than they destroyed.' Write a post that contributes your own opinion to the discussion.",
+    "level": "C1",
+    "topics": ["academic", "tech"],
+    "exam": "toefl",
+    "minWords": 120,
+    "genre": "message"
+  },
+  {
+    "id": "wr-fee-negotiation-email",
+    "title": "Responding to a fee objection",
+    "prompt": "A potential client has replied to your proposal for a market study saying your fee is 30% higher than a competitor's. Write a reply that is polite but firm. Explain what makes your scope different, propose an alternative (for example, a reduced scope or phased delivery), and keep the door open for a call.",
+    "level": "C1",
+    "topics": ["business", "real-estate"],
+    "minWords": 180,
+    "genre": "email"
+  },
+  {
+    "id": "wr-market-report-investor",
+    "title": "Quarterly market report",
+    "prompt": "Write a concise quarterly market report for foreign investors on the office market in São Paulo (or another city you know well). Cover vacancy, asking rents, new supply, interest rates and your outlook for the next twelve months. Use clear headings and a neutral, professional tone.",
+    "level": "C1",
+    "topics": ["real-estate", "finance"],
+    "minWords": 220,
+    "genre": "report"
+  },
+  {
+    "id": "wr-ielts-t2-rent-control",
+    "title": "IELTS Task 2: controlling rents",
+    "prompt": "IELTS Writing Task 2. Some people believe that governments should limit how much landlords can increase rents each year. Others think the housing market should be free to set prices. Discuss both views and give your own opinion.",
+    "level": "C1",
+    "topics": ["real-estate", "academic"],
+    "exam": "ielts",
+    "minWords": 250,
+    "genre": "essay"
+  },
+  {
+    "id": "wr-ielts-t2-streaming-culture",
+    "title": "IELTS Task 2: global streaming",
+    "prompt": "IELTS Writing Task 2. Global streaming platforms mean that people around the world now watch the same films and series. Some say this threatens local cultures, while others believe it helps people understand each other. Discuss both views and give your own opinion.",
+    "level": "C1",
+    "topics": ["culture", "academic"],
+    "exam": "ielts",
+    "minWords": 250,
+    "genre": "essay"
+  },
+  {
+    "id": "wr-cambridge-c1-essay",
+    "title": "Cambridge C1: investing in cities",
+    "prompt": "Cambridge C1 Advanced, Writing Part 1. Your class has attended a panel discussion on how local governments should spend money to improve city life. You have made the notes below. Which ways of improving city life should be prioritized? Notes: public transport, affordable housing, green spaces. Some opinions expressed: 'Without affordable homes, key workers leave the city.' 'Parks benefit everyone, rich or poor.' 'Better transport opens up cheaper neighborhoods.' Write an essay discussing two of the options in your notes. Explain which one is more important, giving reasons to support your opinion.",
+    "level": "C1",
+    "topics": ["academic", "real-estate"],
+    "exam": "cambridge",
+    "minWords": 220,
+    "genre": "essay"
+  }
+]

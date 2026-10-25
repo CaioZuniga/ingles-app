@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+/* Tema escuro "caderno à noite": tinta azul-grafite, uma cor por habilidade. */
+@theme {
+  --color-bg: #0f1115;
+  --color-card: #171a21;
+  --color-card2: #1f232c;
+  --color-line: #2a2f3a;
+  --color-fg: #f1efe9;
+  --color-muted: #9aa0ab;
+  --color-dim: #646b78;
+  --color-accent: #ffc857;
+  --color-accent-ink: #2a1d00;
+  --color-ok: #5ee6a8;
+  --color-bad: #ff6b6b;
+
+  --color-voc: #ffc857;
+  --color-gra: #a78bfa;
+  --color-lis: #5ec8ff;
+  --color-wri: #5ee6a8;
+  --color-spk: #ff8a65;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  /* 16px evita o zoom automático do iPhone ao focar. */
+  font-size: 16px;
+}
+
+/* Componentes visuais reutilizáveis (Tailwind v4: @utility pode ser composto com @apply). */
+@utility eyebrow {
+  @apply text-[11px] font-semibold uppercase tracking-[0.14em] text-muted;
+}
+@utility h1 {
+  @apply font-display text-[28px] leading-tight font-semibold;
+}
+@utility h2 {
+  @apply font-display text-xl font-semibold;
+}
+@utility card {
+  @apply rounded-2xl border border-line bg-card;
+}
+@utility field {
+  @apply w-full rounded-xl border border-line bg-card2 px-3.5 py-3 outline-none focus:border-accent;
+}
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-3 font-semibold transition active:scale-[0.98];
+}
+@utility btn-primary {
+  @apply btn bg-accent text-accent-ink;
+}
+@utility btn-ghost {
+  @apply btn border border-line bg-card2 text-fg;
+}
+@utility chip {
+  @apply rounded-full border border-line bg-card2 px-3 py-1.5 text-sm;
+}
+@utility chip-on {
+  @apply chip border-accent bg-accent/15 text-accent;
+}
+
+.safe-top {
+  padding-top: max(env(safe-area-inset-top), 12px);
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.prose-lite p {
+  margin: 0 0 0.6em;
+}
+.prose-lite ul {
+  margin: 0 0 0.6em;
+  padding-left: 1.1em;
+  list-style: disc;
+}
+.prose-lite li {
+  margin: 0.2em 0;
+}
+.prose-lite strong {
+  color: var(--color-fg);
+  font-weight: 650;
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgb(255 138 101 / 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 18px rgb(255 138 101 / 0);
+  }
+}
+.recording {
+  animation: pulse-ring 1.2s infinite;
+}

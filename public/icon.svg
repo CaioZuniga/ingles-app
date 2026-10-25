@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#0f1115"/>
+  <path d="M120 150h196a76 76 0 0 1 76 76v38a76 76 0 0 1-76 76h-58l-78 62v-62h-60a76 76 0 0 1-76-76v-38a76 76 0 0 1 76-76z" fill="#ffc857" transform="translate(16 0)"/>
+  <text x="272" y="292" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="150" font-weight="700" fill="#0f1115">Fl</text>
+</svg>

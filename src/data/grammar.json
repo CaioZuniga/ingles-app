@@ -1,0 +1,3105 @@
+[
+  {
+    "id": "verb-to-be",
+    "title": "Verb to be (am / is / are)",
+    "level": "A1",
+    "explanation": "O **verb to be** significa **ser** e **estar** ao mesmo tempo:\n- **I am** · **you / we / they are** · **he / she / it is**.\n- Negativa: **I'm not**, **isn't**, **aren't**. Pergunta: inverta o verbo: **Is she** at the office?\n- Na fala, as contrações são o normal: I'm, you're, it's, they're.\n**Erros típicos de brasileiros:**\n- Idade usa **be**, não have: (errado: I have 30 years) → **I am 30** ou **I am 30 years old**.\n- Fome, sede, frio, medo e razão também usam be: **I'm hungry**, **I'm cold**, **you're right** (errado: I have hunger).\n- O sujeito é obrigatório: (errado: Is raining / Is expensive) → **It's raining**, **It's expensive**.",
+    "examples": [
+      "I'm 34 and I'm a real estate consultant. — Tenho 34 anos e sou consultor imobiliário.",
+      "The meeting is in room 5. — A reunião é na sala 5.",
+      "Are you ready for the call? — Você está pronto para a call?",
+      "It's very expensive in this neighborhood. — É muito caro neste bairro."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "My manager ___ in London this week.",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "answer": 1,
+        "explanation": "My manager equivale a he/she, então usamos is."
+      },
+      {
+        "kind": "choice",
+        "prompt": "How old are you? — I ___ 35.",
+        "options": [
+          "have",
+          "is",
+          "has",
+          "am"
+        ],
+        "answer": 3,
+        "explanation": "Idade em inglês usa o verbo to be: I am 35."
+      },
+      {
+        "kind": "choice",
+        "prompt": "___ the apartments near the subway station?",
+        "options": [
+          "Are",
+          "Is",
+          "Am"
+        ],
+        "answer": 0,
+        "explanation": "Apartments está no plural, então a pergunta começa com Are."
+      },
+      {
+        "kind": "gap",
+        "prompt": "We ___ not happy with the new contract.",
+        "answers": [
+          "are"
+        ],
+        "hint": "(be)",
+        "explanation": "Com we usamos are; na negativa: we are not."
+      },
+      {
+        "kind": "gap",
+        "prompt": "___ raining, so let's take a taxi to the airport.",
+        "answers": [
+          "it's",
+          "it is"
+        ],
+        "explanation": "Em inglês o sujeito é obrigatório: It's raining."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "Is",
+          "the",
+          "airport?",
+          "far",
+          "hotel",
+          "the",
+          "from"
+        ],
+        "answer": "Is the hotel far from the airport?",
+        "explanation": "Em perguntas com to be, o verbo vem antes do sujeito."
+      },
+      {
+        "kind": "fix",
+        "prompt": "I have 40 years and I work in finance.",
+        "answers": [
+          "I am 40 and I work in finance.",
+          "I'm 40 and I work in finance.",
+          "I am 40 years old and I work in finance.",
+          "I'm 40 years old and I work in finance."
+        ],
+        "explanation": "Idade usa be: I am 40 (years old), nunca I have 40 years."
+      },
+      {
+        "kind": "fix",
+        "prompt": "Is very cold in the office today.",
+        "answers": [
+          "It is very cold in the office today.",
+          "It's very cold in the office today."
+        ],
+        "explanation": "O sujeito não pode ser omitido: It is cold."
+      }
+    ]
+  },
+  {
+    "id": "present-simple",
+    "title": "Present simple",
+    "level": "A1",
+    "explanation": "Use o **present simple** para rotinas, hábitos e fatos: I work from home on Fridays.\n- Na 3ª pessoa (he / she / it) o verbo ganha **-s / -es**: she works, he goes, it costs.\n- Negativa e pergunta usam **do / does** + verbo na forma base: She **doesn't work** on Mondays. **Does** he **live** here?\n- Com does / doesn't o verbo perde o -s: (errado: Does she works?) → **Does she work?**\n**Erros típicos de brasileiros:**\n- Esquecer o -s: (errado: My boss work late) → **My boss works late**.\n- Perguntar só com entonação: (errado: You like sushi?) → **Do you like sushi?**\n- Advérbios de frequência vêm antes do verbo principal: **I usually take** the train.",
+    "examples": [
+      "She works for an investment bank. — Ela trabalha em um banco de investimento.",
+      "We don't have meetings on Mondays. — Não temos reuniões às segundas.",
+      "Does the rent include the condo fee? — O aluguel inclui o condomínio?",
+      "I usually check my emails at 8. — Normalmente vejo meus e-mails às 8."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "The rent ___ R$ 3,000 a month.",
+        "options": [
+          "cost",
+          "costs",
+          "costing"
+        ],
+        "answer": 1,
+        "explanation": "The rent equivale a it, então o verbo leva -s: costs."
+      },
+      {
+        "kind": "choice",
+        "prompt": "___ your company work with foreign investors?",
+        "options": [
+          "Do",
+          "Are",
+          "Is",
+          "Does"
+        ],
+        "answer": 3,
+        "explanation": "Your company equivale a it; a pergunta usa Does."
+      },
+      {
+        "kind": "choice",
+        "prompt": "My business partner ___ like long meetings.",
+        "options": [
+          "doesn't",
+          "don't",
+          "isn't"
+        ],
+        "answer": 0,
+        "explanation": "Terceira pessoa na negativa usa doesn't + verbo base."
+      },
+      {
+        "kind": "gap",
+        "prompt": "He ___ to the gym before work every day.",
+        "answers": [
+          "goes"
+        ],
+        "hint": "(go)",
+        "explanation": "Go na terceira pessoa vira goes."
+      },
+      {
+        "kind": "gap",
+        "prompt": "They ___ watch series during the week; they're too busy.",
+        "answers": [
+          "don't",
+          "do not"
+        ],
+        "explanation": "Negativa com they usa don't + verbo base."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "you",
+          "work",
+          "usually",
+          "Do",
+          "from",
+          "home?"
+        ],
+        "answer": "Do you usually work from home?",
+        "explanation": "Pergunta: Do + sujeito + advérbio de frequência + verbo."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "answers",
+          "emails",
+          "night.",
+          "She",
+          "at",
+          "never"
+        ],
+        "answer": "She never answers emails at night.",
+        "explanation": "O advérbio de frequência vem antes do verbo principal."
+      },
+      {
+        "kind": "fix",
+        "prompt": "Does she works in the marketing department?",
+        "answers": [
+          "Does she work in the marketing department?"
+        ],
+        "explanation": "Depois de does o verbo fica na forma base, sem -s."
+      }
+    ]
+  },
+  {
+    "id": "articles",
+    "title": "Articles: a, an, the and zero article",
+    "level": "A1",
+    "explanation": "- **a** antes de som de consoante, **an** antes de som de vogal: a contract, **an** apartment, **an** hour, **a** university (o que vale é o som).\n- **the** para algo específico ou já mencionado: I signed **the** contract (aquele que discutimos).\n- **Sem artigo** em generalizações com plural ou incontáveis: **Investors** like low risk.\n**Erros típicos de brasileiros:**\n- Omitir o artigo com profissões: (errado: I am engineer) → **I am an engineer**.\n- Usar the em generalizações, como no português: (errado: The money is important) → **Money is important**.\n- Sem artigo com refeições, idiomas e alguns lugares: have **lunch**, speak **English**, go **to work**, stay **at home**.",
+    "examples": [
+      "She's an architect at a big firm. — Ela é arquiteta em um grande escritório.",
+      "The apartment we visited was too small. — O apartamento que visitamos era pequeno demais.",
+      "People usually prefer flexible contracts. — As pessoas geralmente preferem contratos flexíveis.",
+      "I'll call you in an hour. — Te ligo em uma hora."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "He's ___ accountant at a consulting firm.",
+        "options": [
+          "a",
+          "an",
+          "the"
+        ],
+        "answer": 1,
+        "explanation": "Accountant começa com som de vogal, então usamos an."
+      },
+      {
+        "kind": "choice",
+        "prompt": "___ inflation is a big problem in many countries.",
+        "options": [
+          "The",
+          "An",
+          "(sem artigo)"
+        ],
+        "answer": 2,
+        "explanation": "Substantivo incontável em sentido geral não leva artigo: Inflation is..."
+      },
+      {
+        "kind": "choice",
+        "prompt": "You need ___ university degree for this position.",
+        "options": [
+          "a",
+          "an",
+          "the"
+        ],
+        "answer": 0,
+        "explanation": "University começa com som de consoante (/ju/), então é a university."
+      },
+      {
+        "kind": "gap",
+        "prompt": "I have a meeting in ___ hour.",
+        "answers": [
+          "an"
+        ],
+        "explanation": "Hour tem h mudo e começa com som de vogal: an hour."
+      },
+      {
+        "kind": "gap",
+        "prompt": "Can you send me ___ report you mentioned yesterday?",
+        "answers": [
+          "the"
+        ],
+        "explanation": "O relatório é específico (já mencionado), então usamos the."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "is",
+          "bank.",
+          "an",
+          "engineer",
+          "a",
+          "at",
+          "She"
+        ],
+        "answer": "She is an engineer at a bank.",
+        "explanation": "Profissão no singular exige artigo: an engineer."
+      },
+      {
+        "kind": "fix",
+        "prompt": "I am lawyer and I work with real estate.",
+        "answers": [
+          "I am a lawyer and I work with real estate.",
+          "I'm a lawyer and I work with real estate."
+        ],
+        "explanation": "Profissões no singular precisam de a/an: a lawyer."
+      },
+      {
+        "kind": "fix",
+        "prompt": "The time is money, so let's start the meeting.",
+        "answers": [
+          "Time is money, so let's start the meeting."
+        ],
+        "explanation": "Time em sentido geral não leva artigo."
+      }
+    ]
+  },
+  {
+    "id": "prepositions-of-time",
+    "title": "Prepositions of time: in, on, at",
+    "level": "A1",
+    "explanation": "Pense num triângulo, do mais geral ao mais específico:\n- **in** para meses, anos, estações e partes do dia: in May, in 2025, in the summer, in the morning.\n- **on** para dias e datas: on Monday, on 5 March, on my birthday, on the weekend (EUA).\n- **at** para horários e momentos exatos: at 9 o'clock, at noon, at night, at the weekend (Reino Unido).\n**Erros típicos de brasileiros:**\n- Traduzir \"em\" sempre como in: (errado: in Monday) → **on Monday**.\n- Usar preposição antes de next, last, this, every: (errado: on next Friday) → **next Friday**.\n- **in two days** = daqui a dois dias; para prazo máximo use **within** two days.",
+    "examples": [
+      "The board meeting is on Tuesday at 10. — A reunião do conselho é na terça às 10.",
+      "The building was finished in 2019. — O prédio foi concluído em 2019.",
+      "I'll send it next week. — Envio na semana que vem.",
+      "I never check emails at night. — Nunca vejo e-mails à noite."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "The lease starts ___ 1 March.",
+        "options": [
+          "in",
+          "at",
+          "on"
+        ],
+        "answer": 2,
+        "explanation": "Datas usam on."
+      },
+      {
+        "kind": "choice",
+        "prompt": "Our flight leaves ___ 6:45 a.m.",
+        "options": [
+          "in",
+          "on",
+          "at"
+        ],
+        "answer": 2,
+        "explanation": "Horários exatos usam at."
+      },
+      {
+        "kind": "choice",
+        "prompt": "Prices usually go up ___ December.",
+        "options": [
+          "in",
+          "on",
+          "at"
+        ],
+        "answer": 0,
+        "explanation": "Meses usam in."
+      },
+      {
+        "kind": "gap",
+        "prompt": "Can we talk ___ the afternoon?",
+        "answers": [
+          "in"
+        ],
+        "explanation": "Partes do dia (morning, afternoon, evening) usam in."
+      },
+      {
+        "kind": "gap",
+        "prompt": "I usually work late ___ Thursdays.",
+        "answers": [
+          "on"
+        ],
+        "explanation": "Dias da semana usam on."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "at",
+          "three.",
+          "The",
+          "on",
+          "meeting",
+          "is",
+          "Friday"
+        ],
+        "answer": "The meeting is on Friday at three.",
+        "explanation": "Dia com on, horário com at."
+      },
+      {
+        "kind": "fix",
+        "prompt": "I will visit the property on next Monday.",
+        "answers": [
+          "I will visit the property next Monday.",
+          "I'll visit the property next Monday."
+        ],
+        "explanation": "Não se usa preposição antes de next."
+      },
+      {
+        "kind": "fix",
+        "prompt": "She was born at 1990 in São Paulo.",
+        "answers": [
+          "She was born in 1990 in São Paulo."
+        ],
+        "explanation": "Anos usam in."
+      }
+    ]
+  },
+  {
+    "id": "word-order",
+    "title": "Word order: adjectives and adverbs",
+    "level": "A1",
+    "explanation": "Em inglês a ordem das palavras é bem mais rígida que no português.\n- **Adjetivo antes do substantivo e sem plural**: a **big** office, **expensive** apartments (errado: apartments expensives).\n- Ordem básica: **sujeito + verbo + objeto + modo + lugar + tempo**.\n- **Nada entre o verbo e o objeto**: (errado: I like very much coffee) → **I like coffee very much**.\n- Advérbios de frequência (always, usually, never) vêm **antes do verbo principal** e **depois do to be**: I **always** arrive early; She **is always** late.\n- Vários adjetivos: opinião + tamanho + idade + cor + origem + material: a **nice big old** house.\n**Erro típico:** (errado: I speak very well English) → **I speak English very well**.",
+    "examples": [
+      "It's a beautiful modern apartment. — É um apartamento moderno e bonito.",
+      "I read the contract carefully yesterday. — Li o contrato com atenção ontem.",
+      "He is always on time for meetings. — Ele sempre chega no horário das reuniões."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "Choose the correct sentence.",
+        "options": [
+          "I like this series very much.",
+          "I like very much this series.",
+          "I very much this series like."
+        ],
+        "answer": 0,
+        "explanation": "O advérbio não fica entre o verbo e o objeto."
+      },
+      {
+        "kind": "choice",
+        "prompt": "Choose the correct sentence.",
+        "options": [
+          "She is never late for meetings.",
+          "Never she is late for meetings.",
+          "She is late never for meetings."
+        ],
+        "answer": 0,
+        "explanation": "Com to be, o advérbio de frequência vem depois do verbo."
+      },
+      {
+        "kind": "choice",
+        "prompt": "They rented a ___ office downtown.",
+        "options": [
+          "new large",
+          "large new",
+          "larges news"
+        ],
+        "answer": 1,
+        "explanation": "Tamanho vem antes de idade: a large new office."
+      },
+      {
+        "kind": "gap",
+        "prompt": "I ___ check my bank account on Sundays.",
+        "answers": [
+          "always"
+        ],
+        "hint": "(sempre)",
+        "explanation": "Advérbio de frequência vem antes do verbo principal."
+      },
+      {
+        "kind": "gap",
+        "prompt": "These are very ___ apartments.",
+        "answers": [
+          "expensive"
+        ],
+        "hint": "(caro)",
+        "explanation": "Adjetivos em inglês não têm plural: expensive apartments."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "very",
+          "speaks",
+          "English",
+          "well.",
+          "He"
+        ],
+        "answer": "He speaks English very well.",
+        "explanation": "O objeto (English) vem antes do modo (very well)."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "visit",
+          "properties",
+          "always",
+          "We",
+          "the",
+          "morning.",
+          "in",
+          "the"
+        ],
+        "answer": "We always visit the properties in the morning.",
+        "explanation": "Advérbio de frequência antes do verbo; tempo no fim."
+      },
+      {
+        "kind": "fix",
+        "prompt": "She drives very carefully her car.",
+        "answers": [
+          "She drives her car very carefully."
+        ],
+        "explanation": "O advérbio de modo vai depois do objeto."
+      }
+    ]
+  },
+  {
+    "id": "present-simple-vs-continuous",
+    "title": "Present simple vs. present continuous",
+    "level": "A2",
+    "explanation": "- **Present simple**: rotinas, fatos e situações permanentes: I **work** in a bank.\n- **Present continuous** (am / is / are + -ing): ações acontecendo agora ou temporárias: I**'m working** from home this week.\n- Pistas: simple → usually, every day, never; continuous → now, right now, at the moment, this week, currently.\n- **Verbos de estado** (know, want, like, need, believe, own, cost, understand, mean) normalmente não vão para o -ing: (errado: I'm knowing) → **I know**.\n**Erros típicos de brasileiros:**\n- Usar -ing para rotina: (errado: I'm going to the gym every day) → **I go to the gym every day**.\n- (errado: I'm understanding / I'm needing) → **I understand / I need**.",
+    "examples": [
+      "I work in a bank, but this month I am working on a real estate project. — Trabalho num banco, mas este mês estou num projeto imobiliário.",
+      "Prices are rising fast this year. — Os preços estão subindo rápido este ano.",
+      "She owns two apartments in Lisbon. — Ela tem dois apartamentos em Lisboa.",
+      "What are you watching these days? — O que você está assistindo ultimamente?"
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "Can you call back later? I ___ a client right now.",
+        "options": [
+          "meet",
+          "meets",
+          "am meeting"
+        ],
+        "answer": 2,
+        "explanation": "Ação acontecendo agora: present continuous."
+      },
+      {
+        "kind": "choice",
+        "prompt": "She ___ three apartments in Lisbon.",
+        "options": [
+          "owns",
+          "is owning",
+          "own"
+        ],
+        "answer": 0,
+        "explanation": "Own é verbo de estado e não costuma ir para o -ing."
+      },
+      {
+        "kind": "choice",
+        "prompt": "Look at the chart: prices ___ fast this year.",
+        "options": [
+          "rise",
+          "rises",
+          "are rising"
+        ],
+        "answer": 2,
+        "explanation": "Tendência temporária em andamento: are rising."
+      },
+      {
+        "kind": "gap",
+        "prompt": "I ___ what you mean, but I don't agree.",
+        "answers": [
+          "understand"
+        ],
+        "hint": "(understand)",
+        "explanation": "Understand é verbo de estado: present simple."
+      },
+      {
+        "kind": "gap",
+        "prompt": "Look! The client ___ for us at the reception.",
+        "answers": [
+          "is waiting",
+          "'s waiting"
+        ],
+        "hint": "(wait)",
+        "explanation": "Algo acontecendo agora pede present continuous."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "We",
+          "for",
+          "new",
+          "office.",
+          "looking",
+          "are",
+          "currently",
+          "a"
+        ],
+        "answer": "We are currently looking for a new office.",
+        "explanation": "Currently indica situação temporária: present continuous."
+      },
+      {
+        "kind": "fix",
+        "prompt": "I am needing more time to finish the report.",
+        "answers": [
+          "I need more time to finish the report."
+        ],
+        "explanation": "Need é verbo de estado e fica no present simple."
+      },
+      {
+        "kind": "fix",
+        "prompt": "He is going to the office by bike every day.",
+        "answers": [
+          "He goes to the office by bike every day."
+        ],
+        "explanation": "Rotina (every day) pede present simple."
+      }
+    ]
+  },
+  {
+    "id": "countable-uncountable",
+    "title": "Countable & uncountable: some, any, much, many",
+    "level": "A2",
+    "explanation": "- **Contáveis** têm plural: a contract, two contracts. **Incontáveis** não: money, information, advice, furniture, news, feedback, equipment, luggage.\n- Incontáveis não levam a/an nem -s: (errado: an advice / informations) → **some advice**, **some information**, **a piece of advice**.\n- **some** em afirmativas e ofertas; **any** em negativas e perguntas: Do you have **any** questions?\n- **many** + contável no plural; **much** + incontável (mais em negativas e perguntas): How **many** units? How **much** money?\n- **a lot of** serve para os dois em frases afirmativas.\n- **a few** (contáveis) e **a little** (incontáveis) = alguns / um pouco.\n**Erro típico de brasileiros:** (errado: The news are good) → **The news is good**.",
+    "examples": [
+      "Could you give me some advice about the lease? — Pode me dar um conselho sobre o contrato de locação?",
+      "We don't have much time before the deadline. — Não temos muito tempo antes do prazo.",
+      "How many units are still available? — Quantas unidades ainda estão disponíveis?",
+      "Thanks for the information. — Obrigado pelas informações."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "How ___ money do we need for the down payment?",
+        "options": [
+          "much",
+          "many",
+          "a lot"
+        ],
+        "answer": 0,
+        "explanation": "Money é incontável: how much."
+      },
+      {
+        "kind": "choice",
+        "prompt": "Could you give me some ___ about the lease?",
+        "options": [
+          "advices",
+          "advice",
+          "an advice"
+        ],
+        "answer": 1,
+        "explanation": "Advice é incontável: sem plural e sem an."
+      },
+      {
+        "kind": "choice",
+        "prompt": "There aren't ___ apartments available in this building.",
+        "options": [
+          "some",
+          "much",
+          "any"
+        ],
+        "answer": 2,
+        "explanation": "Negativa com contável no plural usa any."
+      },
+      {
+        "kind": "gap",
+        "prompt": "How ___ bedrooms does the house have?",
+        "answers": [
+          "many"
+        ],
+        "explanation": "Bedrooms é contável no plural: how many."
+      },
+      {
+        "kind": "gap",
+        "prompt": "We have very ___ time before the deadline, so let's hurry.",
+        "answers": [
+          "little"
+        ],
+        "explanation": "Time (tempo) é incontável: very little."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "Do",
+          "about",
+          "questions",
+          "contract?",
+          "have",
+          "the",
+          "any",
+          "you"
+        ],
+        "answer": "Do you have any questions about the contract?",
+        "explanation": "Perguntas usam any."
+      },
+      {
+        "kind": "fix",
+        "prompt": "Thanks for all the informations you sent.",
+        "answers": [
+          "Thanks for all the information you sent."
+        ],
+        "explanation": "Information é incontável e não tem plural."
+      },
+      {
+        "kind": "fix",
+        "prompt": "The news are really good for investors.",
+        "answers": [
+          "The news is really good for investors."
+        ],
+        "explanation": "News é incontável e pede verbo no singular."
+      }
+    ]
+  },
+  {
+    "id": "prepositions-of-place",
+    "title": "Prepositions of place: in, on, at",
+    "level": "A2",
+    "explanation": "- **in** para espaços fechados e áreas: in the office, in the kitchen, in São Paulo, in Brazil, in a taxi.\n- **on** para superfícies, andares, ruas (EUA) e transporte coletivo: on the desk, on the 5th floor, on Paulista Avenue, on the plane, on the bus.\n- **at** para pontos específicos e endereços com número: at the airport, at the reception, at 120 Main Street, at home, at work.\n**Erros típicos de brasileiros:**\n- (errado: in the 3rd floor) → **on the 3rd floor**.\n- (errado: I'm in home) → **I'm at home**.\n- **arrive in** cidade/país, **arrive at** lugar específico; nunca arrive to.",
+    "examples": [
+      "Our office is on the 12th floor. — Nosso escritório fica no 12º andar.",
+      "I'll meet you at the airport. — Te encontro no aeroporto.",
+      "They live in Lisbon now. — Eles moram em Lisboa agora.",
+      "The keys are on the table in the living room. — As chaves estão na mesa da sala."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "Our office is ___ the 12th floor.",
+        "options": [
+          "on",
+          "in",
+          "at"
+        ],
+        "answer": 0,
+        "explanation": "Andares usam on."
+      },
+      {
+        "kind": "choice",
+        "prompt": "I'll meet you ___ the airport.",
+        "options": [
+          "in",
+          "on",
+          "at"
+        ],
+        "answer": 2,
+        "explanation": "Ponto de encontro específico usa at."
+      },
+      {
+        "kind": "choice",
+        "prompt": "They live ___ Lisbon now.",
+        "options": [
+          "in",
+          "on",
+          "at"
+        ],
+        "answer": 0,
+        "explanation": "Cidades usam in."
+      },
+      {
+        "kind": "gap",
+        "prompt": "She's ___ home today, so call her mobile.",
+        "answers": [
+          "at"
+        ],
+        "explanation": "Em casa = at home."
+      },
+      {
+        "kind": "gap",
+        "prompt": "We arrived ___ London late at night.",
+        "answers": [
+          "in"
+        ],
+        "explanation": "Arrive in com cidades e países."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "in",
+          "documents",
+          "office.",
+          "The",
+          "my",
+          "are",
+          "the",
+          "desk",
+          "on"
+        ],
+        "answer": "The documents are on the desk in my office.",
+        "explanation": "Superfície com on; espaço fechado com in."
+      },
+      {
+        "kind": "fix",
+        "prompt": "The apartment is in the third floor.",
+        "answers": [
+          "The apartment is on the third floor."
+        ],
+        "explanation": "Andares usam on."
+      },
+      {
+        "kind": "fix",
+        "prompt": "We arrived to the hotel at midnight.",
+        "answers": [
+          "We arrived at the hotel at midnight."
+        ],
+        "explanation": "Arrive at com lugares específicos, nunca arrive to."
+      }
+    ]
+  },
+  {
+    "id": "past-simple",
+    "title": "Past simple (regular & irregular)",
+    "level": "A2",
+    "explanation": "Use o **past simple** para ações terminadas em um momento definido do passado (yesterday, last week, in 2020, two days ago).\n- Regulares: + **-ed**: work → worked, sign → signed, stop → stopped, study → studied.\n- Irregulares precisam ser memorizados: go → **went**, buy → **bought**, pay → **paid**, send → **sent**, make → **made**.\n- Negativa e pergunta com **did** + verbo base: I **didn't sign**. **Did** you **pay**?\n**Erros típicos de brasileiros:**\n- Manter o passado depois de did: (errado: Did you went?) → **Did you go?**\n- Pronúncia do -ed: só vira sílaba extra depois de t/d (wanted, decided); worked soa \"workt\".\n- **ago** vem depois do período: two years **ago** = há dois anos.",
+    "examples": [
+      "We signed the contract last Friday. — Assinamos o contrato na sexta passada.",
+      "They bought a flat in Porto two years ago. — Eles compraram um apartamento no Porto há dois anos.",
+      "I didn't go to the meeting. — Não fui à reunião.",
+      "Did you pay the invoice? — Você pagou a fatura?"
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "We ___ the contract last Friday.",
+        "options": [
+          "sign",
+          "signed",
+          "did signed"
+        ],
+        "answer": 1,
+        "explanation": "Ação concluída em tempo definido do passado: signed."
+      },
+      {
+        "kind": "choice",
+        "prompt": "Did you ___ the invoice?",
+        "options": [
+          "pay",
+          "paid",
+          "payed"
+        ],
+        "answer": 0,
+        "explanation": "Depois de did o verbo fica na forma base."
+      },
+      {
+        "kind": "choice",
+        "prompt": "I ___ the report to the client yesterday.",
+        "options": [
+          "sended",
+          "send",
+          "sent"
+        ],
+        "answer": 2,
+        "explanation": "Send é irregular: sent."
+      },
+      {
+        "kind": "gap",
+        "prompt": "They ___ a flat in Porto two years ago.",
+        "answers": [
+          "bought"
+        ],
+        "hint": "(buy)",
+        "explanation": "Buy é irregular: bought."
+      },
+      {
+        "kind": "gap",
+        "prompt": "I ___ go to the meeting because I was sick.",
+        "answers": [
+          "didn't",
+          "did not"
+        ],
+        "explanation": "Negativa no passado: didn't + verbo base."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "vacation",
+          "last",
+          "year?",
+          "Where",
+          "you",
+          "did",
+          "go",
+          "on"
+        ],
+        "answer": "Where did you go on vacation last year?",
+        "explanation": "Pergunta no passado: Where + did + sujeito + verbo base."
+      },
+      {
+        "kind": "fix",
+        "prompt": "She didn't liked the apartment.",
+        "answers": [
+          "She didn't like the apartment.",
+          "She did not like the apartment."
+        ],
+        "explanation": "Depois de didn't o verbo fica na forma base."
+      },
+      {
+        "kind": "fix",
+        "prompt": "I have finished the project two days ago.",
+        "answers": [
+          "I finished the project two days ago."
+        ],
+        "explanation": "Com ago usamos past simple, não present perfect."
+      }
+    ]
+  },
+  {
+    "id": "past-continuous",
+    "title": "Past continuous",
+    "level": "A2",
+    "explanation": "**Past continuous** = **was / were + -ing**. Descreve uma ação em andamento num momento do passado.\n- At 10 a.m. yesterday I **was presenting** the budget.\n- Com o past simple: a ação longa (continuous) é interrompida pela curta (simple): I **was driving** when you **called**.\n- Em geral: **while** + ação longa (continuous); **when** + ação curta (simple).\n- Duas ações simultâneas: While I **was writing**, she **was reading** the contract.\n- Verbos de estado não vão para o -ing: (errado: I was knowing) → **I knew**.\n**Erro típico de brasileiros:** usar o continuous para toda ação passada só porque dizemos \"estava\". Ações completas e em sequência ficam no past simple: I **arrived**, **opened** my laptop and **started** the call.",
+    "examples": [
+      "I was driving when you called. — Eu estava dirigindo quando você ligou.",
+      "What were you doing at 9 last night? — O que você estava fazendo às 9 ontem à noite?",
+      "While they were visiting the property, it started to rain. — Enquanto visitavam o imóvel, começou a chover."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "I ___ dinner when the client called.",
+        "options": [
+          "was having",
+          "had",
+          "were having"
+        ],
+        "answer": 0,
+        "explanation": "Ação em andamento interrompida por outra: was having."
+      },
+      {
+        "kind": "choice",
+        "prompt": "While they ___ the property, it started to rain.",
+        "options": [
+          "visited",
+          "were visiting",
+          "was visiting"
+        ],
+        "answer": 1,
+        "explanation": "While + ação longa no past continuous; they pede were."
+      },
+      {
+        "kind": "choice",
+        "prompt": "What ___ at 9 p.m. last night? I called you twice.",
+        "options": [
+          "did you do",
+          "you were doing",
+          "were you doing"
+        ],
+        "answer": 2,
+        "explanation": "Pergunta sobre ação em andamento num momento específico."
+      },
+      {
+        "kind": "gap",
+        "prompt": "We ___ the new series when the power went out.",
+        "answers": [
+          "were watching"
+        ],
+        "hint": "(watch)",
+        "explanation": "Ação longa interrompida: were + -ing."
+      },
+      {
+        "kind": "gap",
+        "prompt": "The phone rang while I ___ a shower.",
+        "answers": [
+          "was taking"
+        ],
+        "hint": "(take)",
+        "explanation": "While + past continuous."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "working",
+          "when",
+          "called.",
+          "She",
+          "boss",
+          "from",
+          "home",
+          "the",
+          "was"
+        ],
+        "answer": "She was working from home when the boss called.",
+        "explanation": "Ação longa no continuous, interrupção no past simple."
+      },
+      {
+        "kind": "fix",
+        "prompt": "I was knowing the answer, but I didn't say anything.",
+        "answers": [
+          "I knew the answer, but I didn't say anything."
+        ],
+        "explanation": "Know é verbo de estado e não vai para o -ing."
+      },
+      {
+        "kind": "fix",
+        "prompt": "They was discussing the budget at 3 p.m.",
+        "answers": [
+          "They were discussing the budget at 3 p.m."
+        ],
+        "explanation": "They pede were."
+      }
+    ]
+  },
+  {
+    "id": "comparatives-superlatives",
+    "title": "Comparatives & superlatives",
+    "level": "A2",
+    "explanation": "- Adjetivos curtos: **-er / the -est**: cheap → cheaper → the cheapest; big → bigger → the biggest.\n- Terminados em -y: easy → **easier** → **the easiest**.\n- Adjetivos longos: **more / the most**: expensive → more expensive → the most expensive.\n- Irregulares: good → **better** → **the best**; bad → **worse** → **the worst**; far → **further**.\n- Comparação usa **than**: This flat is bigger **than** that one. Igualdade: **as ... as**.\n**Erros típicos de brasileiros:**\n- Duplicar: (errado: more cheaper) → **cheaper**.\n- Trocar than por that ou of: (errado: bigger that) → **bigger than**.\n- Superlativo + **in** para lugares: the best agent **in** the city (errado: of the city).",
+    "examples": [
+      "This neighborhood is cheaper than the city center. — Este bairro é mais barato que o centro.",
+      "It's the best deal we've had this year. — É o melhor negócio que tivemos este ano.",
+      "Rent here is as high as in London. — O aluguel aqui é tão alto quanto em Londres."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "This neighborhood is ___ than the city center.",
+        "options": [
+          "cheaper",
+          "more cheap",
+          "cheapest"
+        ],
+        "answer": 0,
+        "explanation": "Adjetivo curto: cheap → cheaper."
+      },
+      {
+        "kind": "choice",
+        "prompt": "It was ___ deal of the year.",
+        "options": [
+          "the best",
+          "the better",
+          "the most good"
+        ],
+        "answer": 0,
+        "explanation": "Superlativo de good: the best."
+      },
+      {
+        "kind": "choice",
+        "prompt": "The second option is ___ than the first one.",
+        "options": [
+          "expensiver",
+          "most expensive",
+          "more expensive"
+        ],
+        "answer": 2,
+        "explanation": "Adjetivo longo: more expensive."
+      },
+      {
+        "kind": "gap",
+        "prompt": "Traffic today is ___ than yesterday.",
+        "answers": [
+          "worse"
+        ],
+        "hint": "(bad)",
+        "explanation": "Comparativo de bad: worse."
+      },
+      {
+        "kind": "gap",
+        "prompt": "This is the ___ building in the city.",
+        "answers": [
+          "tallest"
+        ],
+        "hint": "(tall)",
+        "explanation": "Superlativo de tall: the tallest."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "London.",
+          "as",
+          "in",
+          "is",
+          "Rent",
+          "here",
+          "high",
+          "as"
+        ],
+        "answer": "Rent here is as high as in London.",
+        "explanation": "Igualdade: as + adjetivo + as."
+      },
+      {
+        "kind": "fix",
+        "prompt": "This apartment is more bigger than the other one.",
+        "answers": [
+          "This apartment is bigger than the other one."
+        ],
+        "explanation": "Não se usa more junto com -er."
+      },
+      {
+        "kind": "fix",
+        "prompt": "Her presentation was better that mine.",
+        "answers": [
+          "Her presentation was better than mine."
+        ],
+        "explanation": "Comparações usam than."
+      }
+    ]
+  },
+  {
+    "id": "future-forms",
+    "title": "Future: will, going to, present continuous",
+    "level": "A2",
+    "explanation": "- **will**: decisões na hora, promessas, ofertas e previsões de opinião: I**'ll** call you back. I think rates **will** fall.\n- **going to**: planos já decididos e previsões com evidência: We**'re going to** renovate the kitchen. Look at those clouds, it**'s going to** rain.\n- **Present continuous**: compromissos marcados na agenda: I**'m meeting** the investors on Friday.\n- **Present simple**: horários fixos (voos, trens, eventos): The flight **leaves** at 7.\n**Erros típicos de brasileiros:**\n- Usar will para tudo, inclusive compromissos marcados: (errado: I will meet the client at 3, it's in my calendar) → **I'm meeting the client at 3**.\n- Futuro depois de when / if / as soon as: (errado: when I will arrive) → **when I arrive**.\n- Esquecer o to: (errado: We are going sign) → **We are going to sign**.",
+    "examples": [
+      "I'll send you the file in a minute. — Já te mando o arquivo.",
+      "We're going to sell the house next year. — Vamos vender a casa ano que vem.",
+      "I'm meeting the CFO tomorrow at 3. — Vou me reunir com o CFO amanhã às 3.",
+      "The train leaves at 6:15. — O trem sai às 6h15."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "The phone is ringing. — Don't worry, ___.",
+        "options": [
+          "I'll get it",
+          "I'm going to get it",
+          "I get it"
+        ],
+        "answer": 0,
+        "explanation": "Decisão tomada na hora: will."
+      },
+      {
+        "kind": "choice",
+        "prompt": "We've already decided: we ___ sell the house next year.",
+        "options": [
+          "will",
+          "are going to",
+          "sell"
+        ],
+        "answer": 1,
+        "explanation": "Plano já decidido: going to."
+      },
+      {
+        "kind": "choice",
+        "prompt": "I ___ the CFO at 3 p.m. tomorrow; it's in my calendar.",
+        "options": [
+          "meet",
+          "meets",
+          "am meeting"
+        ],
+        "answer": 2,
+        "explanation": "Compromisso marcado: present continuous."
+      },
+      {
+        "kind": "gap",
+        "prompt": "The train ___ at 6:15 tomorrow morning.",
+        "answers": [
+          "leaves"
+        ],
+        "hint": "(leave)",
+        "explanation": "Horários fixos usam present simple."
+      },
+      {
+        "kind": "gap",
+        "prompt": "I'll send you the file when I ___ to the office.",
+        "answers": [
+          "get"
+        ],
+        "hint": "(get)",
+        "explanation": "Depois de when, o futuro vai no present simple."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "will",
+          "next",
+          "I",
+          "think",
+          "go",
+          "interest",
+          "rates",
+          "year.",
+          "down"
+        ],
+        "answer": "I think interest rates will go down next year.",
+        "explanation": "Previsão de opinião (I think) usa will."
+      },
+      {
+        "kind": "fix",
+        "prompt": "I'll call you when I will arrive at the hotel.",
+        "answers": [
+          "I'll call you when I arrive at the hotel.",
+          "I will call you when I arrive at the hotel."
+        ],
+        "explanation": "Depois de when não se usa will."
+      },
+      {
+        "kind": "fix",
+        "prompt": "We are going sign the contract on Monday.",
+        "answers": [
+          "We are going to sign the contract on Monday.",
+          "We're going to sign the contract on Monday."
+        ],
+        "explanation": "A estrutura é be going to + verbo."
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-vs-past",
+    "title": "Present perfect vs. past simple",
+    "level": "B1",
+    "explanation": "- **Past simple**: ação terminada em tempo definido: I **visited** the site **yesterday / last week / in 2022**.\n- **Present perfect** (have / has + particípio): experiência sem tempo definido, resultado no presente ou período ainda aberto: I**'ve visited** London three times. She**'s just sent** the file. Sales **have grown** this year.\n- Pistas do present perfect: **ever, never, already, yet, just, so far, recently, this week**.\n- Pistas do past simple: **yesterday, ago, last, in 2020, when...?**\n**Erros típicos de brasileiros:**\n- Present perfect com tempo definido: (errado: I have seen him yesterday) → **I saw him yesterday**.\n- Perguntas com When pedem past: (errado: When have you arrived?) → **When did you arrive?**\n- **have been to** (foi e voltou) × **have gone to** (foi e ainda está lá).",
+    "examples": [
+      "I've been to New York three times. — Já fui a Nova York três vezes.",
+      "We closed the deal last month. — Fechamos o negócio no mês passado.",
+      "Has the client replied yet? — O cliente já respondeu?",
+      "She's just sent the proposal. — Ela acabou de enviar a proposta."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "I ___ to New York three times.",
+        "options": [
+          "went",
+          "have gone",
+          "have been"
+        ],
+        "answer": 2,
+        "explanation": "Experiência sem tempo definido, foi e voltou: have been."
+      },
+      {
+        "kind": "choice",
+        "prompt": "We ___ the deal last month.",
+        "options": [
+          "closed",
+          "have closed",
+          "close"
+        ],
+        "answer": 0,
+        "explanation": "Last month é tempo definido: past simple."
+      },
+      {
+        "kind": "choice",
+        "prompt": "Has the client replied ___?",
+        "options": [
+          "yet",
+          "already",
+          "ago"
+        ],
+        "answer": 0,
+        "explanation": "Yet aparece no fim de perguntas e negativas."
+      },
+      {
+        "kind": "gap",
+        "prompt": "She has just ___ the proposal to the board.",
+        "answers": [
+          "sent"
+        ],
+        "hint": "(send)",
+        "explanation": "Present perfect usa o particípio: sent."
+      },
+      {
+        "kind": "gap",
+        "prompt": "___ you ever invested in real estate?",
+        "answers": [
+          "have"
+        ],
+        "explanation": "Pergunta de experiência: Have you ever...?"
+      },
+      {
+        "kind": "order",
+        "words": [
+          "investors.",
+          "with",
+          "never",
+          "foreign",
+          "I",
+          "worked",
+          "have"
+        ],
+        "answer": "I have never worked with foreign investors.",
+        "explanation": "Never com present perfect: have never + particípio."
+      },
+      {
+        "kind": "fix",
+        "prompt": "When have you started at the company?",
+        "answers": [
+          "When did you start at the company?"
+        ],
+        "explanation": "Perguntas com When pedem past simple."
+      },
+      {
+        "kind": "fix",
+        "prompt": "I have met the new CEO yesterday.",
+        "answers": [
+          "I met the new CEO yesterday."
+        ],
+        "explanation": "Yesterday exige past simple."
+      }
+    ]
+  },
+  {
+    "id": "for-since-ago",
+    "title": "For, since & ago (present perfect for duration)",
+    "level": "B1",
+    "explanation": "Em português dizemos \"Moro aqui **há** 5 anos\" no presente. Em inglês, para algo que começou no passado e continua, use o **present perfect**:\n- **for** + período: I've lived here **for** five years.\n- **since** + ponto de partida: I've lived here **since** 2020 / **since** I got married.\n- Para ações em andamento, o **present perfect continuous** é comum: I've **been working** on this report **for** two hours.\n- **ago** + past simple, para algo que aconteceu e acabou: I moved here five years **ago**.\n**Erros típicos de brasileiros:**\n- (errado: I live here for five years) → **I've lived here for five years**.\n- (errado: I work here since 2019) → **I've worked here since 2019**.\n- Pergunta: **How long have you worked here?** (errado: How long do you work here?)",
+    "examples": [
+      "I've worked in finance for ten years. — Trabalho com finanças há dez anos.",
+      "She has been our tenant since 2021. — Ela é nossa inquilina desde 2021.",
+      "We bought this apartment ten years ago. — Compramos este apartamento há dez anos.",
+      "How long have you lived in Rio? — Há quanto tempo você mora no Rio?"
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "I've known her ___ 2015.",
+        "options": [
+          "for",
+          "since",
+          "ago"
+        ],
+        "answer": 1,
+        "explanation": "2015 é ponto de partida: since."
+      },
+      {
+        "kind": "choice",
+        "prompt": "They have been negotiating ___ three weeks.",
+        "options": [
+          "since",
+          "ago",
+          "for"
+        ],
+        "answer": 2,
+        "explanation": "Período de tempo: for."
+      },
+      {
+        "kind": "choice",
+        "prompt": "We bought this apartment ten years ___.",
+        "options": [
+          "for",
+          "since",
+          "ago"
+        ],
+        "answer": 2,
+        "explanation": "Ago + past simple para algo concluído."
+      },
+      {
+        "kind": "gap",
+        "prompt": "I've worked in finance ___ I finished university.",
+        "answers": [
+          "since"
+        ],
+        "explanation": "Since também introduz uma oração com o ponto de partida."
+      },
+      {
+        "kind": "gap",
+        "prompt": "How long ___ you lived in Rio?",
+        "answers": [
+          "have"
+        ],
+        "explanation": "How long + present perfect."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "for",
+          "She",
+          "the",
+          "waiting",
+          "since",
+          "noon.",
+          "been",
+          "client",
+          "has"
+        ],
+        "answer": "She has been waiting for the client since noon.",
+        "explanation": "Present perfect continuous com since + ponto de partida."
+      },
+      {
+        "kind": "fix",
+        "prompt": "I live in this city for ten years.",
+        "answers": [
+          "I've lived in this city for ten years.",
+          "I have lived in this city for ten years.",
+          "I've been living in this city for ten years.",
+          "I have been living in this city for ten years."
+        ],
+        "explanation": "Situação que começou no passado e continua: present perfect."
+      },
+      {
+        "kind": "fix",
+        "prompt": "He has worked here since three years.",
+        "answers": [
+          "He has worked here for three years.",
+          "He's worked here for three years."
+        ],
+        "explanation": "Período de tempo usa for."
+      }
+    ]
+  },
+  {
+    "id": "modals",
+    "title": "Modals: can, could, should, must, have to",
+    "level": "B1",
+    "explanation": "- **can**: habilidade, permissão, possibilidade: I **can** read contracts in English.\n- **could**: passado de can ou pedido mais educado: **Could** you send me the file?\n- **should**: conselho, recomendação: You **should** check the documents.\n- **must**: obrigação forte (regra ou opinião de quem fala) ou dedução: You **must** wear a badge. She **must** be tired.\n- **have to**: obrigação externa; tem passado e futuro: I **had to** work late. We**'ll have to** wait.\n- **mustn't** = proibido; **don't have to** = não é necessário.\n- Depois de modal: verbo base, sem to e sem -s: She **can speak** (errado: can to speak / cans).\n**Erro típico de brasileiros:** confundir: You **don't have to** come (é opcional) ≠ You **mustn't** come (é proibido).",
+    "examples": [
+      "Could you send me the slides, please? — Você poderia me enviar os slides?",
+      "You don't have to attend; it's optional. — Você não precisa ir; é opcional.",
+      "I had to work until 11 last night. — Tive que trabalhar até as 11 ontem.",
+      "You should talk to a lawyer before signing. — Você deveria falar com um advogado antes de assinar."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "It's optional. You ___ attend the meeting if you're busy.",
+        "options": [
+          "don't have to",
+          "mustn't",
+          "can't"
+        ],
+        "answer": 0,
+        "explanation": "Don't have to = não é necessário."
+      },
+      {
+        "kind": "choice",
+        "prompt": "You ___ smoke inside the building. It's against the rules.",
+        "options": [
+          "mustn't",
+          "don't have to",
+          "shouldn't to"
+        ],
+        "answer": 0,
+        "explanation": "Mustn't indica proibição."
+      },
+      {
+        "kind": "choice",
+        "prompt": "___ you send me the slides, please?",
+        "options": [
+          "Must",
+          "Should",
+          "Could"
+        ],
+        "answer": 2,
+        "explanation": "Could é a forma educada de fazer um pedido."
+      },
+      {
+        "kind": "gap",
+        "prompt": "Yesterday I ___ to work until 11 p.m. to finish the report.",
+        "answers": [
+          "had"
+        ],
+        "explanation": "Passado de have to: had to."
+      },
+      {
+        "kind": "gap",
+        "prompt": "You ___ talk to a lawyer before signing. That's my advice.",
+        "answers": [
+          "should"
+        ],
+        "explanation": "Conselho: should."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "fluently.",
+          "can",
+          "languages",
+          "three",
+          "She",
+          "speak"
+        ],
+        "answer": "She can speak three languages fluently.",
+        "explanation": "Depois de can o verbo vem na forma base, sem to."
+      },
+      {
+        "kind": "fix",
+        "prompt": "He must to finish the presentation by Friday.",
+        "answers": [
+          "He must finish the presentation by Friday."
+        ],
+        "explanation": "Depois de must não se usa to."
+      },
+      {
+        "kind": "fix",
+        "prompt": "She cans join the call at 4 p.m.",
+        "answers": [
+          "She can join the call at 4 p.m."
+        ],
+        "explanation": "Modais não recebem -s na terceira pessoa."
+      }
+    ]
+  },
+  {
+    "id": "first-second-conditionals",
+    "title": "First & second conditionals",
+    "level": "B1",
+    "explanation": "- **First conditional** (possibilidade real): **If + present, will + verbo**: If the bank **approves** the loan, we**'ll buy** the house.\n- **Second conditional** (hipótese improvável ou imaginária no presente/futuro): **If + past, would + verbo**: If I **had** more money, I **would invest** in Portugal.\n- No second conditional, **were** serve para todas as pessoas: If I **were** you, I'd accept the offer.\n- A ordem pode inverter, sem vírgula: We'll buy it **if** the price drops.\n- **unless** = if not: We won't sign **unless** they reduce the price.\n**Erros típicos de brasileiros:**\n- Will na oração com if: (errado: If it will rain) → **If it rains**.\n- Would na oração com if: (errado: If I would have time) → **If I had time**.",
+    "examples": [
+      "If the bank approves the loan, we'll buy the house. — Se o banco aprovar o empréstimo, compraremos a casa.",
+      "If I had more money, I would invest in Portugal. — Se eu tivesse mais dinheiro, investiria em Portugal.",
+      "If I were you, I'd accept the offer. — Se eu fosse você, aceitaria a oferta.",
+      "We won't sign unless they reduce the price. — Não vamos assinar a menos que reduzam o preço."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "If the client ___ the offer, we'll start next week.",
+        "options": [
+          "accepts",
+          "will accept",
+          "accepted"
+        ],
+        "answer": 0,
+        "explanation": "First conditional: if + present simple."
+      },
+      {
+        "kind": "choice",
+        "prompt": "If I ___ a lot of money, I would buy a house by the beach.",
+        "options": [
+          "have",
+          "had",
+          "would have"
+        ],
+        "answer": 1,
+        "explanation": "Second conditional: if + past simple."
+      },
+      {
+        "kind": "choice",
+        "prompt": "If I were you, I ___ that job offer.",
+        "options": [
+          "will take",
+          "took",
+          "would take"
+        ],
+        "answer": 2,
+        "explanation": "Second conditional: would + verbo base."
+      },
+      {
+        "kind": "gap",
+        "prompt": "If we leave now, we ___ catch the flight.",
+        "answers": [
+          "will",
+          "'ll",
+          "can"
+        ],
+        "explanation": "First conditional: will (ou can) + verbo base."
+      },
+      {
+        "kind": "gap",
+        "prompt": "We won't sign the contract ___ they change clause 5.",
+        "answers": [
+          "unless"
+        ],
+        "hint": "(a menos que)",
+        "explanation": "Unless = a menos que (if not)."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "If",
+          "were",
+          "you,",
+          "I",
+          "to",
+          "I",
+          "talk",
+          "manager.",
+          "the",
+          "would"
+        ],
+        "answer": "If I were you, I would talk to the manager.",
+        "explanation": "Conselho com second conditional: If I were you, I would..."
+      },
+      {
+        "kind": "fix",
+        "prompt": "If it will rain tomorrow, we will cancel the site visit.",
+        "answers": [
+          "If it rains tomorrow, we will cancel the site visit.",
+          "If it rains tomorrow, we'll cancel the site visit."
+        ],
+        "explanation": "Na oração com if usamos present, não will."
+      },
+      {
+        "kind": "fix",
+        "prompt": "If I would have more time, I would learn Spanish.",
+        "answers": [
+          "If I had more time, I would learn Spanish.",
+          "If I had more time, I'd learn Spanish."
+        ],
+        "explanation": "Second conditional: if + past simple, não would."
+      }
+    ]
+  },
+  {
+    "id": "gerund-vs-infinitive",
+    "title": "Gerund vs. infinitive",
+    "level": "B1",
+    "explanation": "- **-ing** depois de: enjoy, avoid, finish, mind, consider, suggest, keep, deny, look forward to.\n- **to + verbo** depois de: want, need, decide, plan, agree, expect, hope, promise, refuse, afford, would like.\n- **Depois de preposição, sempre -ing**: interested **in buying**, good **at negotiating**, **before signing**, thank you **for coming**.\n- Alguns mudam de sentido: **stop smoking** (parar de fumar) × **stop to smoke** (parar para fumar); **remember to call** (lembrar de ligar) × **remember calling** (lembrar de ter ligado).\n**Erros típicos de brasileiros:**\n- (errado: I look forward to meet you) → **I look forward to meeting you**.\n- (errado: I suggest to wait) → **I suggest waiting**.\n- (errado: I'm thinking in move) → **I'm thinking about moving**.",
+    "examples": [
+      "We decided to accept the offer. — Decidimos aceitar a oferta.",
+      "She avoided talking about the price. — Ela evitou falar sobre o preço.",
+      "I'm interested in investing in the new development. — Tenho interesse em investir no novo empreendimento.",
+      "I look forward to meeting you. — Aguardo ansiosamente nosso encontro."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "We decided ___ the offer.",
+        "options": [
+          "to accept",
+          "accepting",
+          "accept"
+        ],
+        "answer": 0,
+        "explanation": "Decide + to + verbo."
+      },
+      {
+        "kind": "choice",
+        "prompt": "Would you mind ___ the door?",
+        "options": [
+          "to close",
+          "closing",
+          "close"
+        ],
+        "answer": 1,
+        "explanation": "Mind + -ing."
+      },
+      {
+        "kind": "choice",
+        "prompt": "I'm interested ___ in the new development.",
+        "options": [
+          "to invest",
+          "on investing",
+          "in investing"
+        ],
+        "answer": 2,
+        "explanation": "Interested in + -ing."
+      },
+      {
+        "kind": "gap",
+        "prompt": "I look forward to ___ from you.",
+        "answers": [
+          "hearing"
+        ],
+        "hint": "(hear)",
+        "explanation": "Look forward to + -ing (o to aqui é preposição)."
+      },
+      {
+        "kind": "gap",
+        "prompt": "They can't afford ___ a bigger office right now.",
+        "answers": [
+          "to rent"
+        ],
+        "hint": "(rent)",
+        "explanation": "Afford + to + verbo."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "She",
+          "talking",
+          "during",
+          "avoided",
+          "meeting.",
+          "about",
+          "price",
+          "the",
+          "the"
+        ],
+        "answer": "She avoided talking about the price during the meeting.",
+        "explanation": "Avoid + -ing."
+      },
+      {
+        "kind": "fix",
+        "prompt": "I suggest to wait until the market improves.",
+        "answers": [
+          "I suggest waiting until the market improves.",
+          "I suggest that we wait until the market improves.",
+          "I suggest we wait until the market improves."
+        ],
+        "explanation": "Suggest não aceita to + verbo; use -ing ou that + oração."
+      },
+      {
+        "kind": "fix",
+        "prompt": "Thank you for come to the meeting.",
+        "answers": [
+          "Thank you for coming to the meeting."
+        ],
+        "explanation": "Depois de preposição usamos -ing."
+      }
+    ]
+  },
+  {
+    "id": "relative-clauses",
+    "title": "Relative clauses: who, which, that, whose, where",
+    "level": "B1",
+    "explanation": "- **who** para pessoas, **which** para coisas, **that** para ambos (em orações definidoras).\n- **whose** = cujo: The tenant **whose** contract expired...\n- **where** para lugares, **when** para tempo.\n- **Defining** (essencial, sem vírgulas): The apartment **that** we saw yesterday is sold.\n- **Non-defining** (informação extra, com vírgulas e **nunca com that**): My boss, **who** lives in Miami, is coming.\n- Quando o pronome é objeto da oração, pode ser omitido: The report (that) you sent was great.\n**Erros típicos de brasileiros:**\n- Usar what como \"que\": (errado: the house what I bought) → **the house that I bought**.\n- Repetir o pronome: (errado: the client who I called him) → **the client who I called**.",
+    "examples": [
+      "The investor who called this morning wants a meeting. — O investidor que ligou hoje de manhã quer uma reunião.",
+      "This is the building where I used to work. — Este é o prédio onde eu trabalhava.",
+      "Our CFO, who has worked here for 20 years, is retiring. — Nosso CFO, que trabalha aqui há 20 anos, vai se aposentar.",
+      "The report you sent was very clear. — O relatório que você enviou estava muito claro."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "The investor ___ called this morning wants a meeting.",
+        "options": [
+          "which",
+          "whose",
+          "who"
+        ],
+        "answer": 2,
+        "explanation": "Pessoa como sujeito: who."
+      },
+      {
+        "kind": "choice",
+        "prompt": "This is the building ___ I used to work.",
+        "options": [
+          "where",
+          "which",
+          "who"
+        ],
+        "answer": 0,
+        "explanation": "Lugar: where."
+      },
+      {
+        "kind": "choice",
+        "prompt": "The agent ___ client cancelled the visit was upset.",
+        "options": [
+          "who",
+          "which",
+          "whose"
+        ],
+        "answer": 2,
+        "explanation": "Posse: whose (cujo)."
+      },
+      {
+        "kind": "gap",
+        "prompt": "The report ___ you sent yesterday was very clear.",
+        "answers": [
+          "that",
+          "which"
+        ],
+        "explanation": "Para coisas: that ou which."
+      },
+      {
+        "kind": "gap",
+        "prompt": "Our CFO, ___ has worked here for 20 years, is retiring.",
+        "answers": [
+          "who"
+        ],
+        "explanation": "Oração explicativa (com vírgulas) sobre pessoa: who."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "apartment",
+          "great",
+          "we",
+          "The",
+          "view.",
+          "a",
+          "has",
+          "that",
+          "visited"
+        ],
+        "answer": "The apartment that we visited has a great view.",
+        "explanation": "Oração definidora com that, sem vírgulas."
+      },
+      {
+        "kind": "fix",
+        "prompt": "The contract what we signed is valid for two years.",
+        "answers": [
+          "The contract that we signed is valid for two years.",
+          "The contract which we signed is valid for two years.",
+          "The contract we signed is valid for two years."
+        ],
+        "explanation": "What não é pronome relativo; use that ou which."
+      },
+      {
+        "kind": "fix",
+        "prompt": "Lisbon, that is my favorite city, is getting expensive.",
+        "answers": [
+          "Lisbon, which is my favorite city, is getting expensive."
+        ],
+        "explanation": "Em orações com vírgulas não se usa that."
+      }
+    ]
+  },
+  {
+    "id": "make-do-say-tell",
+    "title": "Make vs. do · Say vs. tell",
+    "level": "B1",
+    "explanation": "**Make × Do**\n- **make**: criar, produzir, resultado: make a decision, make money, make a mistake, make a call, make an offer, make progress.\n- **do**: tarefas, atividades, trabalho em geral: do business, do research, do a good job, do the dishes, do someone a favor.\n**Say × Tell**\n- **say** algo, sem pessoa direta: She **said** (that) the price was fair. Com pessoa, use **to**: say **to** me.\n- **tell** alguém algo (pessoa obrigatória): She **told me** the price was fair.\n- Expressões fixas: **tell** the truth, **tell** a lie, **tell** a story; **say** hello, **say** goodbye, **say** yes.\n**Erros típicos de brasileiros:**\n- (errado: do a decision / do a mistake) → **make a decision / make a mistake**.\n- (errado: He said me) → **He told me** ou **He said to me**.",
+    "examples": [
+      "We need to make a decision by Friday. — Precisamos tomar uma decisão até sexta.",
+      "Our company does business with clients in Europe. — Nossa empresa faz negócios com clientes na Europa.",
+      "She told me the deal was off. — Ela me disse que o negócio tinha sido cancelado.",
+      "He said he would call back. — Ele disse que ligaria de volta."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "We need to ___ a decision by Friday.",
+        "options": [
+          "make",
+          "do",
+          "have"
+        ],
+        "answer": 0,
+        "explanation": "Make a decision (tomar uma decisão)."
+      },
+      {
+        "kind": "choice",
+        "prompt": "Can you ___ me a favor and review this email?",
+        "options": [
+          "make",
+          "do",
+          "give"
+        ],
+        "answer": 1,
+        "explanation": "Do someone a favor."
+      },
+      {
+        "kind": "choice",
+        "prompt": "She ___ me that the deal was off.",
+        "options": [
+          "said",
+          "spoke",
+          "told"
+        ],
+        "answer": 2,
+        "explanation": "Tell + pessoa."
+      },
+      {
+        "kind": "gap",
+        "prompt": "I think you ___ a mistake in the spreadsheet.",
+        "answers": [
+          "made",
+          "'ve made",
+          "have made"
+        ],
+        "hint": "(make / do)",
+        "explanation": "Make a mistake (cometer um erro)."
+      },
+      {
+        "kind": "gap",
+        "prompt": "She ___ goodbye and left the meeting early.",
+        "answers": [
+          "said"
+        ],
+        "hint": "(say / tell)",
+        "explanation": "Say goodbye é expressão fixa."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "does",
+          "clients",
+          "company",
+          "in",
+          "with",
+          "business",
+          "Europe.",
+          "Our"
+        ],
+        "answer": "Our company does business with clients in Europe.",
+        "explanation": "Do business é expressão fixa."
+      },
+      {
+        "kind": "fix",
+        "prompt": "He said me the meeting was cancelled.",
+        "answers": [
+          "He told me the meeting was cancelled.",
+          "He said to me the meeting was cancelled.",
+          "He told me that the meeting was cancelled.",
+          "He said to me that the meeting was cancelled."
+        ],
+        "explanation": "Say não aceita pessoa diretamente; use told me ou said to me."
+      },
+      {
+        "kind": "fix",
+        "prompt": "We did a lot of money with that investment.",
+        "answers": [
+          "We made a lot of money with that investment.",
+          "We made a lot of money on that investment."
+        ],
+        "explanation": "Make money = ganhar dinheiro."
+      }
+    ]
+  },
+  {
+    "id": "question-tags",
+    "title": "Question tags",
+    "level": "B1",
+    "explanation": "Os **question tags** são o nosso \"né?\" / \"não é?\". Em inglês, o tag acompanha o verbo da frase:\n- Frase afirmativa → tag negativo: You work in sales, **don't you?**\n- Frase negativa → tag afirmativo: She isn't coming, **is she?**\n- Repita o auxiliar ou modal (is, are, do, does, did, have, can, will) com pronome: The meeting was long, **wasn't it?**\n- Casos especiais: I'm late, **aren't I?** · Let's start, **shall we?**\n- Entonação descendo = pedindo confirmação; subindo = pergunta real.\n**Erros típicos de brasileiros:**\n- Usar um tag fixo, como isn't it, para tudo: (errado: You are the new manager, isn't it?) → **aren't you?**\n- Esquecer do / does / did: (errado: You signed it, isn't it?) → **didn't you?**",
+    "examples": [
+      "You work in sales, don't you? — Você trabalha com vendas, né?",
+      "The flight was delayed, wasn't it? — O voo atrasou, não foi?",
+      "She doesn't work on Fridays, does she? — Ela não trabalha às sextas, né?",
+      "Let's review the numbers, shall we? — Vamos revisar os números?"
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "You've seen the new proposal, ___?",
+        "options": [
+          "haven't you",
+          "didn't you",
+          "isn't it"
+        ],
+        "answer": 0,
+        "explanation": "Present perfect: o tag repete have."
+      },
+      {
+        "kind": "choice",
+        "prompt": "She doesn't work on Fridays, ___?",
+        "options": [
+          "does she",
+          "doesn't she",
+          "is she"
+        ],
+        "answer": 0,
+        "explanation": "Frase negativa → tag afirmativo."
+      },
+      {
+        "kind": "choice",
+        "prompt": "Let's review the numbers, ___?",
+        "options": [
+          "don't we",
+          "won't we",
+          "shall we"
+        ],
+        "answer": 2,
+        "explanation": "Let's usa shall we."
+      },
+      {
+        "kind": "gap",
+        "prompt": "The flight was delayed, ___ it?",
+        "answers": [
+          "wasn't"
+        ],
+        "explanation": "Afirmativa com was → tag wasn't."
+      },
+      {
+        "kind": "gap",
+        "prompt": "They can't change the deadline, ___ they?",
+        "answers": [
+          "can"
+        ],
+        "explanation": "Frase negativa com can't → tag can."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "send",
+          "you?",
+          "You",
+          "today,",
+          "won't",
+          "the",
+          "invoice",
+          "will"
+        ],
+        "answer": "You will send the invoice today, won't you?",
+        "explanation": "Will → tag won't."
+      },
+      {
+        "kind": "fix",
+        "prompt": "You live in Curitiba, isn't it?",
+        "answers": [
+          "You live in Curitiba, don't you?"
+        ],
+        "explanation": "Present simple usa do/does no tag."
+      },
+      {
+        "kind": "fix",
+        "prompt": "She is the new CFO, isn't it?",
+        "answers": [
+          "She is the new CFO, isn't she?",
+          "She's the new CFO, isn't she?"
+        ],
+        "explanation": "O tag usa o pronome do sujeito: she."
+      }
+    ]
+  },
+  {
+    "id": "passive-voice",
+    "title": "Passive voice",
+    "level": "B2",
+    "explanation": "**Passive voice** = **be** (no tempo certo) + **particípio**. Use quando a ação importa mais do que quem a fez; é muito comum em relatórios e contratos.\n- Present: The rent **is paid** monthly. · Past: The building **was built** in 1990.\n- Present perfect: The contract **has been signed**. · Modais: The keys **must be returned**.\n- Continuous: The office **is being renovated**.\n- Quem fez a ação entra com **by**: The report was written **by** our team.\n**Erros típicos de brasileiros:**\n- Esquecer o be: (errado: The house built in 1950) → **The house was built in 1950**.\n- Traduzir o \"se\" ao pé da letra: \"Aluga-se\" → **For rent**; \"Fala-se inglês\" → **English is spoken**.\n- \"Nasci\" é sempre passiva: (errado: I born / I was borned) → **I was born**.",
+    "examples": [
+      "The property was sold last year. — O imóvel foi vendido no ano passado.",
+      "The contract has already been signed. — O contrato já foi assinado.",
+      "The office is being renovated. — O escritório está sendo reformado.",
+      "All invoices must be paid by the 10th. — Todas as faturas devem ser pagas até o dia 10."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "The property ___ last year for $2 million.",
+        "options": [
+          "sold",
+          "was sold",
+          "has sold"
+        ],
+        "answer": 1,
+        "explanation": "Passiva no passado: was + particípio."
+      },
+      {
+        "kind": "choice",
+        "prompt": "The office ___ at the moment, so we're working from home.",
+        "options": [
+          "is renovating",
+          "renovated",
+          "is being renovated"
+        ],
+        "answer": 2,
+        "explanation": "Passiva contínua: is being + particípio."
+      },
+      {
+        "kind": "choice",
+        "prompt": "All invoices must ___ by the 10th.",
+        "options": [
+          "be paid",
+          "pay",
+          "been paid"
+        ],
+        "answer": 0,
+        "explanation": "Modal + be + particípio."
+      },
+      {
+        "kind": "gap",
+        "prompt": "The contract has already ___ signed by both parties.",
+        "answers": [
+          "been"
+        ],
+        "explanation": "Present perfect passivo: has been + particípio."
+      },
+      {
+        "kind": "gap",
+        "prompt": "English is ___ in most international meetings.",
+        "answers": [
+          "spoken"
+        ],
+        "hint": "(speak)",
+        "explanation": "Passiva: is + particípio de speak."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "cancelled",
+          "director.",
+          "was",
+          "the",
+          "meeting",
+          "by",
+          "The"
+        ],
+        "answer": "The meeting was cancelled by the director.",
+        "explanation": "Passiva com agente: by + quem fez a ação."
+      },
+      {
+        "kind": "fix",
+        "prompt": "This building built in the 1970s.",
+        "answers": [
+          "This building was built in the 1970s."
+        ],
+        "explanation": "A passiva precisa do verbo be."
+      },
+      {
+        "kind": "fix",
+        "prompt": "I was borned in Belo Horizonte.",
+        "answers": [
+          "I was born in Belo Horizonte."
+        ],
+        "explanation": "O particípio correto é born."
+      }
+    ]
+  },
+  {
+    "id": "reported-speech",
+    "title": "Reported speech",
+    "level": "B2",
+    "explanation": "Ao relatar o que alguém disse com verbo introdutório no passado (said, told, asked), normalmente \"voltamos\" um tempo:\n- present → past: \"I **am** busy\" → She said she **was** busy.\n- past / present perfect → past perfect: \"We **signed** it\" → He said they **had signed** it.\n- **will → would**, **can → could**, **must → had to**.\n- Ajuste referências: today → that day; tomorrow → the next day; here → there.\n- Perguntas viram ordem de afirmação, com **if / whether** ou a question word: \"Where **is** the office?\" → She asked where the office **was**.\n- Ordens e pedidos: **told / asked + pessoa + (not) to**: He told me **to wait**.\n**Erros típicos de brasileiros:**\n- Manter a inversão: (errado: She asked where was the office).\n- (errado: He said me) → **He told me**.",
+    "examples": [
+      "She said she was busy. — Ela disse que estava ocupada.",
+      "He said he would call me the next day. — Ele disse que me ligaria no dia seguinte.",
+      "The tenant asked if we accepted pets. — O inquilino perguntou se aceitávamos animais.",
+      "The lawyer told me not to sign anything yet. — O advogado me disse para não assinar nada ainda."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "\"I will call you tomorrow.\" → He said he ___ me the next day.",
+        "options": [
+          "will call",
+          "calls",
+          "would call"
+        ],
+        "answer": 2,
+        "explanation": "Will vira would no discurso indireto."
+      },
+      {
+        "kind": "choice",
+        "prompt": "\"Do you accept pets?\" → The tenant asked ___ pets.",
+        "options": [
+          "if we accepted",
+          "do we accept",
+          "if did we accept"
+        ],
+        "answer": 0,
+        "explanation": "Pergunta sim/não: if + ordem de afirmação."
+      },
+      {
+        "kind": "choice",
+        "prompt": "\"Don't sign anything yet.\" → The lawyer told me ___ anything yet.",
+        "options": [
+          "not sign",
+          "to not signing",
+          "not to sign"
+        ],
+        "answer": 2,
+        "explanation": "Ordem negativa: told + pessoa + not to."
+      },
+      {
+        "kind": "gap",
+        "prompt": "\"I'm tired.\" → She said she ___ tired.",
+        "answers": [
+          "was"
+        ],
+        "explanation": "Present vira past: am → was."
+      },
+      {
+        "kind": "gap",
+        "prompt": "\"We can lower the price.\" → They said they ___ lower the price.",
+        "answers": [
+          "could"
+        ],
+        "explanation": "Can vira could."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "She",
+          "where",
+          "the",
+          "was.",
+          "asked",
+          "me",
+          "bank"
+        ],
+        "answer": "She asked me where the bank was.",
+        "explanation": "Pergunta indireta: sem inversão."
+      },
+      {
+        "kind": "fix",
+        "prompt": "He asked me what time was it.",
+        "answers": [
+          "He asked me what time it was."
+        ],
+        "explanation": "Pergunta indireta tem ordem de afirmação."
+      },
+      {
+        "kind": "fix",
+        "prompt": "My manager said me to finish the report.",
+        "answers": [
+          "My manager told me to finish the report.",
+          "My manager asked me to finish the report."
+        ],
+        "explanation": "Para ordens, use told/asked + pessoa + to."
+      }
+    ]
+  },
+  {
+    "id": "third-conditional",
+    "title": "Third conditional",
+    "level": "B2",
+    "explanation": "O **third conditional** fala de um passado hipotético, algo que **não** aconteceu, e de suas consequências imaginárias (arrependimentos, críticas, \"e se...\").\n- Estrutura: **If + past perfect, would have + particípio**.\n- If we **had bought** that apartment in 2015, we **would have made** a lot of money. (Não compramos.)\n- **could have / might have** para possibilidade: If you had called, I **could have helped**.\n- Na fala: would've; e cuidado: I'd pode ser I would ou I had.\n**Erros típicos de brasileiros:**\n- Would na oração com if: (errado: If I would have known) → **If I had known**.\n- Past simple no lugar do past perfect: (errado: If I knew yesterday) → **If I had known yesterday**.\n- Esquecer o have: (errado: I would told you) → **I would have told you**.",
+    "examples": [
+      "If we had bought that apartment in 2015, we would have made a lot of money. — Se tivéssemos comprado aquele apartamento em 2015, teríamos ganhado muito dinheiro.",
+      "If you had told me earlier, I could have helped. — Se você tivesse me contado antes, eu poderia ter ajudado.",
+      "We would have arrived on time if the flight hadn't been delayed. — Teríamos chegado na hora se o voo não tivesse atrasado."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "If I ___ about the strike, I would have taken a different flight.",
+        "options": [
+          "had known",
+          "knew",
+          "would know"
+        ],
+        "answer": 0,
+        "explanation": "Third conditional: if + past perfect."
+      },
+      {
+        "kind": "choice",
+        "prompt": "If they had lowered the price, we ___ the house.",
+        "options": [
+          "would buy",
+          "had bought",
+          "would have bought"
+        ],
+        "answer": 2,
+        "explanation": "Resultado no passado: would have + particípio."
+      },
+      {
+        "kind": "choice",
+        "prompt": "She ___ the job if she had prepared better for the interview.",
+        "options": [
+          "might have got",
+          "will get",
+          "had got"
+        ],
+        "answer": 0,
+        "explanation": "Might have + particípio indica possibilidade no passado."
+      },
+      {
+        "kind": "gap",
+        "prompt": "If you had told me earlier, I ___ have helped you.",
+        "answers": [
+          "would",
+          "could",
+          "might"
+        ],
+        "explanation": "Resultado: would/could/might have + particípio."
+      },
+      {
+        "kind": "gap",
+        "prompt": "If the bank ___ approved the loan, we would have closed the deal.",
+        "answers": [
+          "had"
+        ],
+        "explanation": "Third conditional: if + had + particípio."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "have",
+          "time",
+          "would",
+          "if",
+          "arrived",
+          "flight",
+          "the",
+          "been",
+          "We",
+          "hadn't",
+          "on",
+          "delayed."
+        ],
+        "answer": "We would have arrived on time if the flight hadn't been delayed.",
+        "explanation": "A oração com if pode vir no fim, sem vírgula."
+      },
+      {
+        "kind": "fix",
+        "prompt": "If I would have known, I would have told you.",
+        "answers": [
+          "If I had known, I would have told you.",
+          "If I'd known, I would have told you.",
+          "If I had known, I'd have told you."
+        ],
+        "explanation": "Na oração com if usamos past perfect, não would have."
+      },
+      {
+        "kind": "fix",
+        "prompt": "If we had invested earlier, we would made more money.",
+        "answers": [
+          "If we had invested earlier, we would have made more money."
+        ],
+        "explanation": "O resultado precisa de would have + particípio."
+      }
+    ]
+  },
+  {
+    "id": "used-to",
+    "title": "Used to · be used to · get used to",
+    "level": "B2",
+    "explanation": "Três estruturas parecidas, com sentidos diferentes:\n- **used to + verbo**: hábito ou estado do passado que não existe mais: I **used to work** in a bank. Negativa e pergunta: **didn't use to**, **Did you use to...?**\n- **be used to + -ing / substantivo**: estar acostumado: I**'m used to working** with tight deadlines.\n- **get used to + -ing / substantivo**: acostumar-se (processo): I'm **getting used to driving** on the left.\n- Para hábitos no presente, use **usually**: I **usually** take the subway.\n**Erros típicos de brasileiros:**\n- (errado: I use to wake up early) → **I usually wake up early**.\n- (errado: I'm used to work late) → **I'm used to working late**.\n- (errado: I didn't used to) → **I didn't use to**.",
+    "examples": [
+      "I used to live in Recife. — Eu morava em Recife.",
+      "She's used to working under pressure. — Ela está acostumada a trabalhar sob pressão.",
+      "I'm getting used to the cold weather. — Estou me acostumando com o frio.",
+      "We didn't use to have remote meetings. — A gente não costumava ter reuniões remotas."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "I ___ live in Recife, but I moved to São Paulo in 2018.",
+        "options": [
+          "used to",
+          "am used to",
+          "use to"
+        ],
+        "answer": 0,
+        "explanation": "Estado passado que acabou: used to."
+      },
+      {
+        "kind": "choice",
+        "prompt": "After ten years in finance, she's used to ___ under pressure.",
+        "options": [
+          "work",
+          "working",
+          "worked"
+        ],
+        "answer": 1,
+        "explanation": "Be used to + -ing."
+      },
+      {
+        "kind": "choice",
+        "prompt": "It took me months to ___ the cold weather in Toronto.",
+        "options": [
+          "used to",
+          "use to",
+          "get used to"
+        ],
+        "answer": 2,
+        "explanation": "Get used to = acostumar-se."
+      },
+      {
+        "kind": "gap",
+        "prompt": "Did you ___ to travel a lot for work?",
+        "answers": [
+          "use"
+        ],
+        "explanation": "Em perguntas com did: use to, sem -d."
+      },
+      {
+        "kind": "gap",
+        "prompt": "I'm still getting used to ___ in English every day.",
+        "answers": [
+          "speaking"
+        ],
+        "hint": "(speak)",
+        "explanation": "Get used to + -ing."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "didn't",
+          "We",
+          "have",
+          "to",
+          "remote",
+          "use",
+          "meetings."
+        ],
+        "answer": "We didn't use to have remote meetings.",
+        "explanation": "Negativa: didn't use to + verbo base."
+      },
+      {
+        "kind": "fix",
+        "prompt": "I use to check the stock market every morning.",
+        "answers": [
+          "I usually check the stock market every morning."
+        ],
+        "explanation": "Hábito no presente: usually."
+      },
+      {
+        "kind": "fix",
+        "prompt": "He isn't used to drive in big cities.",
+        "answers": [
+          "He isn't used to driving in big cities.",
+          "He is not used to driving in big cities."
+        ],
+        "explanation": "Be used to + -ing."
+      }
+    ]
+  },
+  {
+    "id": "phrasal-verbs",
+    "title": "Phrasal verbs: the basics",
+    "level": "B2",
+    "explanation": "**Phrasal verbs** = verbo + partícula (up, out, off, into...). O sentido muitas vezes não é literal, e eles dominam o inglês falado no trabalho.\n- **set up** (organizar, marcar), **call off** (cancelar), **put off** (adiar), **figure out** (descobrir, entender), **follow up** (dar seguimento), **look into** (investigar), **turn down** (recusar), **run out of** (ficar sem), **get back to** (retornar a alguém).\n- **Separáveis**: o objeto vai no meio ou no fim: call off the meeting / call the meeting off.\n- Se o objeto for **pronome**, ele **tem** de ir no meio: call **it** off (errado: call off it).\n- **Inseparáveis**: look into it, get back to you.\n**Erro típico de brasileiros:** fugir dos phrasal verbs e soar formal demais; numa conversa, **put off** soa mais natural que postpone, e **call off** mais que cancel.",
+    "examples": [
+      "They called off the meeting. — Eles cancelaram a reunião.",
+      "I'll look into it and get back to you. — Vou verificar e te retorno.",
+      "We've run out of time. — Ficamos sem tempo.",
+      "She turned the offer down. — Ela recusou a oferta."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "They ___ the meeting because the CEO was sick.",
+        "options": [
+          "called off",
+          "called out",
+          "called up"
+        ],
+        "answer": 0,
+        "explanation": "Call off = cancelar."
+      },
+      {
+        "kind": "choice",
+        "prompt": "We've ___ printer paper. Can you order more?",
+        "options": [
+          "run out",
+          "run off",
+          "run out of"
+        ],
+        "answer": 2,
+        "explanation": "Run out of + substantivo = ficar sem."
+      },
+      {
+        "kind": "choice",
+        "prompt": "I'll look ___ the problem and get back to you.",
+        "options": [
+          "after",
+          "for",
+          "into"
+        ],
+        "answer": 2,
+        "explanation": "Look into = investigar."
+      },
+      {
+        "kind": "gap",
+        "prompt": "She turned ___ the job offer because the salary was too low.",
+        "answers": [
+          "down"
+        ],
+        "explanation": "Turn down = recusar."
+      },
+      {
+        "kind": "gap",
+        "prompt": "I'll get back ___ you by the end of the day.",
+        "answers": [
+          "to"
+        ],
+        "explanation": "Get back to someone = retornar a alguém."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "meeting",
+          "off",
+          "next",
+          "the",
+          "until",
+          "we",
+          "Can",
+          "put",
+          "week?"
+        ],
+        "answer": "Can we put the meeting off until next week?",
+        "explanation": "Put off é separável: o objeto pode ir no meio."
+      },
+      {
+        "kind": "fix",
+        "prompt": "The client didn't like the proposal, so he turned down it.",
+        "answers": [
+          "The client didn't like the proposal, so he turned it down."
+        ],
+        "explanation": "Com pronome, o objeto vai no meio do phrasal verb."
+      },
+      {
+        "kind": "fix",
+        "prompt": "We need to figure up how to reduce costs.",
+        "answers": [
+          "We need to figure out how to reduce costs."
+        ],
+        "explanation": "Figure out = descobrir, entender."
+      }
+    ]
+  },
+  {
+    "id": "false-friends",
+    "title": "False friends",
+    "level": "B2",
+    "explanation": "**False friends** parecem palavras do português, mas significam outra coisa:\n- **actually** = na verdade (atualmente = **currently / nowadays**).\n- **pretend** = fingir (pretender = **intend / plan**).\n- **eventually** = no fim, finalmente (eventualmente = **occasionally / possibly**).\n- **push** = empurrar (puxar = **pull**).\n- **library** = biblioteca (livraria = **bookstore**).\n- **parents** = pais (parentes = **relatives**).\n- **assist** = ajudar (assistir = **watch**); **attend** = comparecer (atender = **answer** o telefone).\n- **realize** = perceber (realizar = **carry out / achieve**).\n- **costume** = fantasia (costume = **habit**); **fabric** = tecido (fábrica = **factory**).\n- **sensible** = sensato (sensível = **sensitive**).",
+    "examples": [
+      "Actually, the deal isn't closed yet. — Na verdade, o negócio ainda não está fechado.",
+      "We intend to buy an apartment next year. — Pretendemos comprar um apartamento ano que vem.",
+      "Eventually, the bank approved the loan. — No fim, o banco aprovou o empréstimo.",
+      "I didn't realize the contract had expired. — Não percebi que o contrato tinha vencido."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "I ___ to buy an apartment next year.",
+        "options": [
+          "intend",
+          "pretend",
+          "attend"
+        ],
+        "answer": 0,
+        "explanation": "Pretender = intend; pretend significa fingir."
+      },
+      {
+        "kind": "choice",
+        "prompt": "You think the deal is closed? ___, it isn't; they haven't signed yet.",
+        "options": [
+          "Eventually",
+          "Currently",
+          "Actually"
+        ],
+        "answer": 2,
+        "explanation": "Actually = na verdade."
+      },
+      {
+        "kind": "choice",
+        "prompt": "Did you ___ the conference in Miami last week?",
+        "options": [
+          "assist",
+          "attend",
+          "watch"
+        ],
+        "answer": 1,
+        "explanation": "Comparecer a um evento = attend."
+      },
+      {
+        "kind": "gap",
+        "prompt": "Many people in Brazil are ___ working from home.",
+        "answers": [
+          "currently",
+          "now"
+        ],
+        "hint": "(atualmente)",
+        "explanation": "Atualmente = currently (actually significa na verdade)."
+      },
+      {
+        "kind": "gap",
+        "prompt": "We waited for hours, but ___ the flight took off.",
+        "answers": [
+          "eventually",
+          "finally"
+        ],
+        "hint": "(no fim)",
+        "explanation": "Eventually = no fim, finalmente."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "the",
+          "had",
+          "expired.",
+          "didn't",
+          "contract",
+          "realize",
+          "I"
+        ],
+        "answer": "I didn't realize the contract had expired.",
+        "explanation": "Realize = perceber."
+      },
+      {
+        "kind": "fix",
+        "prompt": "I went to the library to buy a new book.",
+        "answers": [
+          "I went to the bookstore to buy a new book.",
+          "I went to the bookshop to buy a new book."
+        ],
+        "explanation": "Livraria = bookstore; library é biblioteca."
+      },
+      {
+        "kind": "fix",
+        "prompt": "All my parents came to the wedding: uncles, aunts and cousins.",
+        "answers": [
+          "All my relatives came to the wedding: uncles, aunts and cousins."
+        ],
+        "explanation": "Parentes = relatives; parents são pai e mãe."
+      }
+    ]
+  },
+  {
+    "id": "linking-words",
+    "title": "Linking words: although, despite, however, whereas",
+    "level": "B2",
+    "explanation": "Conectores de contraste e concessão; cada um tem sua estrutura:\n- **although / even though / though** + oração (sujeito + verbo): **Although** the rent is high, the location is great.\n- **despite / in spite of** + substantivo ou **-ing**: **Despite** the high rent... / **Despite being** expensive...\n- **despite the fact that** + oração.\n- **however** liga duas frases: vem depois de ponto (ou ponto e vírgula) e é seguido de vírgula: The rent is high. **However**, the location is great.\n- **whereas / while** contrastam dois fatos: Rio is humid, **whereas** Brasília is dry.\n**Erros típicos de brasileiros:**\n- (errado: despite of) → **despite** ou **in spite of**.\n- (errado: Despite it is expensive) → **Although it is expensive** / **Despite being expensive**.\n- Usar however como \"mas\" no meio da frase sem pontuação.",
+    "examples": [
+      "Although the rent is high, the location is great. — Embora o aluguel seja alto, a localização é ótima.",
+      "Despite the crisis, the company grew 10%. — Apesar da crise, a empresa cresceu 10%.",
+      "Sales went up in Q3. However, profits fell. — As vendas subiram no 3º tri. Porém, o lucro caiu.",
+      "Rio is humid, whereas Brasília is dry. — O Rio é úmido, enquanto Brasília é seca."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "___ the high price, they decided to buy the house.",
+        "options": [
+          "Although",
+          "However",
+          "Despite"
+        ],
+        "answer": 2,
+        "explanation": "Despite + substantivo."
+      },
+      {
+        "kind": "choice",
+        "prompt": "___ the market is volatile, many investors are buying.",
+        "options": [
+          "Despite",
+          "In spite of",
+          "Although"
+        ],
+        "answer": 2,
+        "explanation": "Although + oração."
+      },
+      {
+        "kind": "choice",
+        "prompt": "Sales went up in Q3. ___, profits fell.",
+        "options": [
+          "However",
+          "Whereas",
+          "Despite"
+        ],
+        "answer": 0,
+        "explanation": "However liga duas frases independentes."
+      },
+      {
+        "kind": "gap",
+        "prompt": "In spite ___ the delay, the project was delivered on budget.",
+        "answers": [
+          "of"
+        ],
+        "explanation": "In spite of + substantivo."
+      },
+      {
+        "kind": "gap",
+        "prompt": "My brother saves most of his salary, ___ I spend almost everything.",
+        "answers": [
+          "whereas",
+          "while",
+          "but"
+        ],
+        "explanation": "Contraste entre dois fatos: whereas / while."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "apartment",
+          "Despite",
+          "sold",
+          "quickly.",
+          "expensive,",
+          "the",
+          "being"
+        ],
+        "answer": "Despite being expensive, the apartment sold quickly.",
+        "explanation": "Despite + -ing."
+      },
+      {
+        "kind": "fix",
+        "prompt": "Despite of the rain, we visited all the properties.",
+        "answers": [
+          "Despite the rain, we visited all the properties.",
+          "In spite of the rain, we visited all the properties."
+        ],
+        "explanation": "Despite não leva of."
+      },
+      {
+        "kind": "fix",
+        "prompt": "Although the crisis, the company grew 10%.",
+        "answers": [
+          "Despite the crisis, the company grew 10%.",
+          "In spite of the crisis, the company grew 10%."
+        ],
+        "explanation": "Although exige oração; com substantivo use despite."
+      }
+    ]
+  },
+  {
+    "id": "mixed-conditionals",
+    "title": "Mixed conditionals",
+    "level": "C1",
+    "explanation": "Os **mixed conditionals** combinam tempos diferentes nas duas partes da frase:\n- **Passado → presente**: **If + past perfect, would + verbo**: If I **had accepted** that offer, I **would be** in New York now. (Condição passada irreal, resultado no presente.)\n- **Presente → passado**: **If + past simple, would have + particípio**: If I **were** more organized, I **wouldn't have missed** the deadline. (Característica atual que explica algo do passado.)\n- Marcadores de tempo (now, today, yesterday, last year) mostram qual parte é presente e qual é passado.\n**Erros típicos de brasileiros:**\n- Usar o third conditional no automático: (errado: If I had studied law, I would have been a lawyer now) → **I would be a lawyer now**.\n- Colocar would na oração com if: (errado: If I would be richer) → **If I were richer**.",
+    "examples": [
+      "If I had accepted that offer, I would be in New York now. — Se eu tivesse aceitado aquela oferta, estaria em Nova York agora.",
+      "If I were more organized, I wouldn't have missed the deadline. — Se eu fosse mais organizado, não teria perdido o prazo.",
+      "If we hadn't sold the apartment, we would be richer today. — Se não tivéssemos vendido o apartamento, estaríamos mais ricos hoje."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "If I had taken that job in London, I ___ in the UK now.",
+        "options": [
+          "would live",
+          "would have lived",
+          "lived"
+        ],
+        "answer": 0,
+        "explanation": "Condição passada com resultado presente (now): would + verbo."
+      },
+      {
+        "kind": "choice",
+        "prompt": "She is very shy. If she ___ so shy, she would have spoken at yesterday's meeting.",
+        "options": [
+          "isn't",
+          "weren't",
+          "won't be"
+        ],
+        "answer": 1,
+        "explanation": "Característica permanente com resultado passado: if + past simple."
+      },
+      {
+        "kind": "choice",
+        "prompt": "If we hadn't sold our apartment in 2020, we ___ a lot richer today.",
+        "options": [
+          "would have been",
+          "were",
+          "would be"
+        ],
+        "answer": 2,
+        "explanation": "Resultado no presente (today): would + verbo."
+      },
+      {
+        "kind": "gap",
+        "prompt": "If I ___ invested in that startup, I would be a millionaire now.",
+        "answers": [
+          "had"
+        ],
+        "explanation": "Condição passada irreal: if + past perfect."
+      },
+      {
+        "kind": "gap",
+        "prompt": "If he spoke English, he ___ have got the promotion last year.",
+        "answers": [
+          "would",
+          "might",
+          "could"
+        ],
+        "explanation": "Resultado passado: would/might/could have + particípio."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "at",
+          "I",
+          "would",
+          "be",
+          "studied",
+          "working",
+          "finance,",
+          "If",
+          "had",
+          "now.",
+          "a",
+          "I",
+          "bank"
+        ],
+        "answer": "If I had studied finance, I would be working at a bank now.",
+        "explanation": "Passado irreal com resultado no presente."
+      },
+      {
+        "kind": "fix",
+        "prompt": "If I had saved more money, I would have been on vacation now.",
+        "answers": [
+          "If I had saved more money, I would be on vacation now.",
+          "If I'd saved more money, I would be on vacation now.",
+          "If I had saved more money, I'd be on vacation now."
+        ],
+        "explanation": "Com now, o resultado usa would + verbo."
+      },
+      {
+        "kind": "fix",
+        "prompt": "If I would be better at numbers, I wouldn't have made that mistake.",
+        "answers": [
+          "If I were better at numbers, I wouldn't have made that mistake.",
+          "If I was better at numbers, I wouldn't have made that mistake."
+        ],
+        "explanation": "Na oração com if não se usa would."
+      }
+    ]
+  },
+  {
+    "id": "wish-if-only",
+    "title": "Wish & if only",
+    "level": "C1",
+    "explanation": "**wish / if only** expressam desejo ou arrependimento; **if only** é mais enfático.\n- Presente (queria que fosse diferente): **wish + past simple**: I **wish** I **spoke** better German. I wish I **were** taller.\n- Passado (arrependimento): **wish + past perfect**: I **wish** I **had bought** that apartment.\n- Irritação ou desejo de mudança em outra pessoa: **wish + would**: I **wish** my neighbor **would** stop making noise.\n- Habilidade: **wish + could**: I wish I **could** work remotely.\n- Para desejar algo possível no futuro, use **hope**: I **hope** you get the job (errado: I wish you get).\n**Erros típicos de brasileiros:**\n- (errado: I wish I have more time) → **I wish I had more time**.\n- (errado: I wish I would be rich) → **I wish I were rich**; would não se usa com o próprio sujeito.",
+    "examples": [
+      "I wish I had more time to travel. — Queria ter mais tempo para viajar.",
+      "If only we had bought that property before prices went up! — Se ao menos tivéssemos comprado aquele imóvel antes de os preços subirem!",
+      "I wish my colleague would stop interrupting me. — Queria que meu colega parasse de me interromper.",
+      "I hope you have a great trip. — Espero que você faça uma ótima viagem."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "I wish I ___ more time to travel.",
+        "options": [
+          "have",
+          "will have",
+          "had"
+        ],
+        "answer": 2,
+        "explanation": "Desejo sobre o presente: wish + past simple."
+      },
+      {
+        "kind": "choice",
+        "prompt": "If only we ___ that property before prices went up!",
+        "options": [
+          "had bought",
+          "bought",
+          "would buy"
+        ],
+        "answer": 0,
+        "explanation": "Arrependimento sobre o passado: past perfect."
+      },
+      {
+        "kind": "choice",
+        "prompt": "I ___ you have a great time in Japan.",
+        "options": [
+          "wish",
+          "would",
+          "hope"
+        ],
+        "answer": 2,
+        "explanation": "Desejo sobre algo possível no futuro: hope."
+      },
+      {
+        "kind": "gap",
+        "prompt": "I wish my colleague ___ stop interrupting me in meetings.",
+        "answers": [
+          "would"
+        ],
+        "explanation": "Irritação com o comportamento de outra pessoa: wish + would."
+      },
+      {
+        "kind": "gap",
+        "prompt": "I wish I ___ speak German; the client is from Berlin.",
+        "answers": [
+          "could"
+        ],
+        "explanation": "Habilidade: wish + could."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "your",
+          "I",
+          "to",
+          "wish",
+          "listened",
+          "advice.",
+          "had",
+          "I"
+        ],
+        "answer": "I wish I had listened to your advice.",
+        "explanation": "Arrependimento: wish + past perfect."
+      },
+      {
+        "kind": "fix",
+        "prompt": "I wish I didn't accept that job last year.",
+        "answers": [
+          "I wish I hadn't accepted that job last year.",
+          "I wish I had not accepted that job last year."
+        ],
+        "explanation": "Arrependimento sobre o passado: past perfect."
+      },
+      {
+        "kind": "fix",
+        "prompt": "I wish I would be more confident in negotiations.",
+        "answers": [
+          "I wish I were more confident in negotiations.",
+          "I wish I was more confident in negotiations."
+        ],
+        "explanation": "Com o próprio sujeito, use were/past simple, não would."
+      }
+    ]
+  },
+  {
+    "id": "inversion",
+    "title": "Inversion for emphasis",
+    "level": "C1",
+    "explanation": "Na **inversão**, o auxiliar vem antes do sujeito, como numa pergunta. Dá ênfase e é típica do inglês formal, de apresentações e de textos escritos.\n- Advérbios negativos ou restritivos no início: **Never have I seen** such a good deal. **Rarely do** investors ignore this.\n- **Not only did** they cut costs, **but** they also improved quality.\n- **No sooner had** we arrived **than** the meeting started.\n- **Only after / Only when / Not until**: a inversão fica na oração principal: Only after signing **did we notice** the error.\n- Condicionais formais sem if: **Had I known** (= If I had known), **Should you need** help (= If you need help).\n- **Under no circumstances / At no time** + inversão.\n**Erros típicos de brasileiros:**\n- Esquecer o auxiliar: (errado: Never I have seen) → **Never have I seen**.\n- (errado: Not only they cut) → **Not only did they cut**.",
+    "examples": [
+      "Never have we had such a profitable quarter. — Nunca tivemos um trimestre tão lucrativo.",
+      "Should you need any further information, please contact me. — Caso precise de mais informações, entre em contato.",
+      "Had I known about the risks, I would never have signed. — Se eu soubesse dos riscos, nunca teria assinado.",
+      "Only after the audit did we discover the problem. — Só depois da auditoria descobrimos o problema."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "Never ___ such a profitable quarter.",
+        "options": [
+          "have we had",
+          "we have had",
+          "had we have"
+        ],
+        "answer": 0,
+        "explanation": "Never no início: auxiliar antes do sujeito."
+      },
+      {
+        "kind": "choice",
+        "prompt": "___ you need any further information, please contact me.",
+        "options": [
+          "Should",
+          "Would",
+          "Did"
+        ],
+        "answer": 0,
+        "explanation": "Should you need = If you need (formal)."
+      },
+      {
+        "kind": "choice",
+        "prompt": "No sooner had the CEO arrived ___ the journalists started asking questions.",
+        "options": [
+          "when",
+          "that",
+          "than"
+        ],
+        "answer": 2,
+        "explanation": "A estrutura é no sooner ... than."
+      },
+      {
+        "kind": "gap",
+        "prompt": "Not only ___ they reduce the price, but they also offered free parking.",
+        "answers": [
+          "did"
+        ],
+        "explanation": "Not only + did + sujeito + verbo base."
+      },
+      {
+        "kind": "gap",
+        "prompt": "___ I known about the risks, I would never have signed.",
+        "answers": [
+          "had"
+        ],
+        "explanation": "Had I known = If I had known."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "no",
+          "you",
+          "Under",
+          "data.",
+          "the",
+          "share",
+          "client's",
+          "should",
+          "circumstances"
+        ],
+        "answer": "Under no circumstances should you share the client's data.",
+        "explanation": "Under no circumstances + should + sujeito."
+      },
+      {
+        "kind": "fix",
+        "prompt": "Rarely we see such low interest rates.",
+        "answers": [
+          "Rarely do we see such low interest rates."
+        ],
+        "explanation": "Com rarely no início, inverta usando do."
+      },
+      {
+        "kind": "fix",
+        "prompt": "Only after the audit we discovered the problem.",
+        "answers": [
+          "Only after the audit did we discover the problem."
+        ],
+        "explanation": "Only after + inversão na oração principal."
+      }
+    ]
+  },
+  {
+    "id": "causative-have-get",
+    "title": "Causative: have / get something done",
+    "level": "C1",
+    "explanation": "A **forma causativa** indica que outra pessoa fez algo para você (a pedido ou pago), onde o português usa \"mandei fazer\" ou simplesmente \"fiz\".\n- **have + objeto + particípio**: We **had the apartment painted**. (Alguém pintou para nós.)\n- **get + objeto + particípio** (mais informal): I need to **get my car fixed**.\n- **have + pessoa + verbo base**: I'll **have my assistant send** you the file.\n- **get + pessoa + to + verbo** (convencer): I **got the landlord to lower** the rent.\n- Também para algo ruim que aconteceu com você: She **had her phone stolen** at the airport.\n**Erros típicos de brasileiros:**\n- Dizer que você mesmo fez: (errado: I cut my hair yesterday, se foi o cabeleireiro) → **I had my hair cut**.\n- Usar verbo base no lugar do particípio: (errado: I had the contract review) → **I had the contract reviewed**.",
+    "examples": [
+      "We're having the kitchen renovated next month. — Vamos reformar a cozinha mês que vem.",
+      "I'll have my assistant send you the agenda. — Vou pedir para minha assistente te mandar a pauta.",
+      "She got the bank to reduce the fees. — Ela conseguiu que o banco reduzisse as tarifas.",
+      "He had his wallet stolen on the subway. — Roubaram a carteira dele no metrô."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "We're having the kitchen ___ next month.",
+        "options": [
+          "renovate",
+          "renovated",
+          "renovating"
+        ],
+        "answer": 1,
+        "explanation": "Have + objeto + particípio."
+      },
+      {
+        "kind": "choice",
+        "prompt": "I'll have my assistant ___ you the agenda.",
+        "options": [
+          "send",
+          "sent",
+          "to send"
+        ],
+        "answer": 0,
+        "explanation": "Have + pessoa + verbo base."
+      },
+      {
+        "kind": "choice",
+        "prompt": "She finally got the bank ___ the fees.",
+        "options": [
+          "reduce",
+          "reduced",
+          "to reduce"
+        ],
+        "answer": 2,
+        "explanation": "Get + pessoa + to + verbo."
+      },
+      {
+        "kind": "gap",
+        "prompt": "I need to get my passport ___ before the trip.",
+        "answers": [
+          "renewed"
+        ],
+        "hint": "(renew)",
+        "explanation": "Get + objeto + particípio."
+      },
+      {
+        "kind": "gap",
+        "prompt": "He had his wallet ___ on the subway.",
+        "answers": [
+          "stolen"
+        ],
+        "hint": "(steal)",
+        "explanation": "Have + objeto + particípio para algo ruim que aconteceu."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "had",
+          "valued",
+          "by",
+          "the",
+          "appraiser.",
+          "We",
+          "property",
+          "an",
+          "independent"
+        ],
+        "answer": "We had the property valued by an independent appraiser.",
+        "explanation": "Have + objeto + particípio + by."
+      },
+      {
+        "kind": "fix",
+        "prompt": "I had the contract review by a lawyer.",
+        "answers": [
+          "I had the contract reviewed by a lawyer."
+        ],
+        "explanation": "O verbo deve estar no particípio: reviewed."
+      },
+      {
+        "kind": "fix",
+        "prompt": "I'll get the technician fix the air conditioning.",
+        "answers": [
+          "I'll get the technician to fix the air conditioning.",
+          "I will get the technician to fix the air conditioning.",
+          "I'll have the technician fix the air conditioning."
+        ],
+        "explanation": "Get + pessoa + to + verbo."
+      }
+    ]
+  },
+  {
+    "id": "formal-email",
+    "title": "Formal email language",
+    "level": "C1",
+    "explanation": "E-mails formais em inglês são diretos e educados. Estrutura e fórmulas úteis:\n- Saudação: **Dear Mr Smith,** / **Dear Ms Lee,** (sem nome: **Dear Sir or Madam,**). Use o sobrenome, não o primeiro nome.\n- Motivo: **I am writing to** enquire about... / **I am writing to follow up on**...\n- Referência: **With reference to** / **Regarding** your email of 3 May...\n- Pedidos: **I would be grateful if you could**... / **Could you please**...\n- Anexos: **Please find attached** the report.\n- Fechamento: **I look forward to hearing from you.** / **Please do not hesitate to contact me.**\n- Despedida: **Kind regards,** / **Best regards,** (britânico mais formal: **Yours faithfully** sem nome, **Yours sincerely** com nome).\n**Erros típicos de brasileiros:**\n- Traduzir \"Segue em anexo\": (errado: Follows attached) → **Please find attached**.\n- (errado: Dear Mister John) → **Dear Mr Smith** ou **Dear John**.\n- Contrações (I'm, don't) soam informais em e-mails muito formais.",
+    "examples": [
+      "I am writing to follow up on our meeting last Tuesday. — Escrevo para dar seguimento à nossa reunião de terça passada.",
+      "Please find attached the updated proposal. — Segue em anexo a proposta atualizada.",
+      "I would be grateful if you could send me the signed copy. — Agradeceria se pudesse me enviar a cópia assinada.",
+      "Please do not hesitate to contact me. — Fico à disposição."
+    ],
+    "exercises": [
+      {
+        "kind": "choice",
+        "prompt": "___ the updated proposal for your review.",
+        "options": [
+          "Follows attached",
+          "Attached follows",
+          "Please find attached"
+        ],
+        "answer": 2,
+        "explanation": "Segue em anexo = Please find attached."
+      },
+      {
+        "kind": "choice",
+        "prompt": "I am writing ___ the vacancy advertised on your website.",
+        "options": [
+          "regarding",
+          "about of",
+          "for regard"
+        ],
+        "answer": 0,
+        "explanation": "Regarding = a respeito de."
+      },
+      {
+        "kind": "choice",
+        "prompt": "I would be grateful if you ___ send me the signed copy by Friday.",
+        "options": [
+          "can",
+          "will",
+          "could"
+        ],
+        "answer": 2,
+        "explanation": "Fórmula fixa: I would be grateful if you could..."
+      },
+      {
+        "kind": "gap",
+        "prompt": "Please do not ___ to contact me if you have any questions.",
+        "answers": [
+          "hesitate"
+        ],
+        "explanation": "Fórmula fixa: Please do not hesitate to contact me."
+      },
+      {
+        "kind": "gap",
+        "prompt": "I am writing to follow ___ on our meeting last Tuesday.",
+        "answers": [
+          "up"
+        ],
+        "explanation": "Follow up on = dar seguimento a."
+      },
+      {
+        "kind": "order",
+        "words": [
+          "I",
+          "from",
+          "hearing",
+          "soon.",
+          "to",
+          "you",
+          "look",
+          "forward"
+        ],
+        "answer": "I look forward to hearing from you soon.",
+        "explanation": "Look forward to + -ing."
+      },
+      {
+        "kind": "fix",
+        "prompt": "Dear Mister Johnson, thank you for your quick reply.",
+        "answers": [
+          "Dear Mr Johnson, thank you for your quick reply.",
+          "Dear Mr. Johnson, thank you for your quick reply."
+        ],
+        "explanation": "Use a abreviação Mr (ou Mr.) antes do sobrenome."
+      },
+      {
+        "kind": "fix",
+        "prompt": "With reference to your email, I would like confirm the meeting.",
+        "answers": [
+          "With reference to your email, I would like to confirm the meeting.",
+          "With reference to your email, I'd like to confirm the meeting."
+        ],
+        "explanation": "Would like + to + verbo."
+      }
+    ]
+  }
+]

@@ -1,0 +1,458 @@
+[
+  {
+    "id": "a2-hotel-voicemail",
+    "title": "A voicemail from the hotel",
+    "level": "A2",
+    "topics": ["travel"],
+    "kind": "monologue",
+    "transcript": "Hi, this is Sarah from the Harbor View Hotel. This message is for Mr. Costa. I'm calling about your booking for next Friday. Unfortunately, the room you booked has a problem with the air conditioning, so we've moved you to a bigger room on the fifth floor. It has a view of the sea, and there's no extra cost. Breakfast is still included, and it's served from seven to ten in the restaurant on the ground floor. Also, please remember that check-in is at three p.m. If you arrive early, you can leave your bags at reception. If you have any questions, call us back at 555-0142. Thank you, and have a nice day!",
+    "questions": [
+      { "question": "Why is Sarah calling?", "options": ["To cancel the booking", "To tell him about a room change", "To ask for a payment", "To offer a city tour"], "answer": 1 },
+      { "question": "Where is the new room?", "options": ["On the ground floor", "Next to the restaurant", "On the fifth floor", "Near reception"], "answer": 2 },
+      { "question": "What time does breakfast finish?", "options": ["At ten", "At seven", "At three", "At five"], "answer": 0 },
+      { "question": "What can Mr. Costa do if he arrives early?", "options": ["Go straight to his room", "Have a free lunch", "Change hotels", "Leave his bags at reception"], "answer": 3 }
+    ],
+    "dictation": [
+      "I'm calling about your booking for next Friday.",
+      "It has a view of the sea, and there's no extra cost.",
+      "If you arrive early, you can leave your bags at reception."
+    ]
+  },
+  {
+    "id": "a2-coffee-order",
+    "title": "Ordering coffee to go",
+    "level": "A2",
+    "topics": ["daily"],
+    "kind": "dialogue",
+    "transcript": "A: Good morning! What can I get you?\nB: Hi. Can I have a large cappuccino, please?\nA: Sure. Regular milk or oat milk?\nB: Oat milk, please. And do you have anything without sugar?\nA: Yes, we have a banana muffin with no added sugar. It's really popular.\nB: Great, I'll take one.\nA: Is that for here or to go?\nB: To go, please. I'm late for work.\nA: OK. That's six dollars and fifty cents.\nB: Can I pay by card?\nA: Of course. Just tap it on the machine. Your coffee will be ready in two minutes.\nB: Thanks a lot!",
+    "questions": [
+      { "question": "What kind of milk does B want?", "options": ["Regular milk", "Oat milk", "No milk", "Soy milk"], "answer": 1 },
+      { "question": "Why does B want the coffee to go?", "options": ["The café is full", "B doesn't like the café", "B is late for work", "B is meeting a friend"], "answer": 2 },
+      { "question": "How much does B pay?", "options": ["$6.50", "$5.60", "$16.50", "$6.15"], "answer": 0 },
+      { "question": "What is special about the muffin?", "options": ["It's free today", "It's very big", "It's made with chocolate", "It has no added sugar"], "answer": 3 }
+    ],
+    "dictation": [
+      "Can I have a large cappuccino, please?",
+      "Yes, we have a banana muffin with no added sugar.",
+      "Your coffee will be ready in two minutes."
+    ]
+  },
+  {
+    "id": "a2-apartment-viewing",
+    "title": "Viewing an apartment",
+    "level": "A2",
+    "topics": ["real-estate", "daily"],
+    "kind": "dialogue",
+    "transcript": "A: Hello, you must be Ana. I'm Tom, the agent. Come in!\nB: Thanks. Wow, the living room is really bright.\nA: Yes, it gets the sun all afternoon. There are two bedrooms and one bathroom.\nB: How much is the rent?\nA: It's twelve hundred dollars a month. Water is included, but you pay for electricity and internet.\nB: OK. Is there parking?\nA: There's no garage, but there's free parking on the street.\nB: And can I have a cat?\nA: Small pets are OK, but you need to pay an extra deposit of two hundred dollars.\nB: That's fine. When is it available?\nA: From the first of next month.\nB: Great. Can I see the kitchen now?",
+    "questions": [
+      { "question": "What is included in the rent?", "options": ["Electricity", "Internet", "Water", "Parking"], "answer": 2 },
+      { "question": "Where can Ana park her car?", "options": ["In the garage", "On the street", "At the agent's office", "She can't park"], "answer": 1 },
+      { "question": "What does Ana need to do if she has a cat?", "options": ["Pay an extra deposit", "Ask the neighbors", "Keep it outside", "Pay a higher rent"], "answer": 0 },
+      { "question": "What will they probably do next?", "options": ["Sign the contract", "Leave the apartment", "Call the owner", "Look at the kitchen"], "answer": 3 }
+    ],
+    "dictation": [
+      "Yes, it gets the sun all afternoon.",
+      "Water is included, but you pay for electricity and internet.",
+      "There's no garage, but there's free parking on the street."
+    ]
+  },
+  {
+    "id": "a2-flight-delay-announcement",
+    "title": "Flight delay announcement",
+    "level": "A2",
+    "topics": ["travel"],
+    "kind": "monologue",
+    "transcript": "Good afternoon, ladies and gentlemen. This is an announcement for passengers on flight AB 274 to Chicago. Because of bad weather in Chicago, this flight is delayed by about two hours. The new departure time is five forty-five p.m. Please note that the flight will now leave from gate 32, not gate 18. Passengers with connecting flights in Chicago should speak to our staff at the transfer desk, next to the duty-free shop. We're offering a meal voucher to all passengers on this flight. You can get your voucher at the gate with your boarding pass. We're very sorry for the delay, and thank you for your patience.",
+    "questions": [
+      { "question": "Why is the flight delayed?", "options": ["A technical problem", "Bad weather", "A late crew", "Too many passengers"], "answer": 1 },
+      { "question": "Which gate will the flight leave from?", "options": ["Gate 18", "Gate 27", "Gate 45", "Gate 32"], "answer": 3 },
+      { "question": "Who should go to the transfer desk?", "options": ["People with connecting flights", "People with big bags", "Families with children", "People who want food"], "answer": 0 },
+      { "question": "What do passengers need to get a meal voucher?", "options": ["Their passport", "A credit card", "Their boarding pass", "A ticket receipt"], "answer": 2 }
+    ],
+    "dictation": [
+      "The new departure time is five forty-five p.m.",
+      "Please note that the flight will now leave from gate 32, not gate 18.",
+      "You can get your voucher at the gate with your boarding pass."
+    ]
+  },
+  {
+    "id": "b1-first-day-office",
+    "title": "First day at the office",
+    "level": "B1",
+    "topics": ["business"],
+    "kind": "dialogue",
+    "transcript": "A: Hi, you must be Lucas. Welcome to the team! I'm Priya, the office manager.\nB: Nice to meet you, Priya. Thanks for having me.\nA: Let me show you around. This is the open-plan area, where most of the analysts sit. Your desk is the one by the window.\nB: Perfect. What about meeting rooms? Do I need to book them?\nA: Yes, you book them through the calendar app. The big room fills up fast, so try to book a few days in advance.\nB: Got it. And what time do people usually start?\nA: Most people get in around nine, but it's flexible. Just let your manager know if you're working from home.\nB: That sounds great. Is there a kitchen?\nA: Down the hall on the left. There's free coffee, but please wash your own mug. That's our golden rule!\nB: Ha, I'll remember that. Thanks for the tour.",
+    "questions": [
+      { "question": "Who is Priya?", "options": ["Lucas's manager", "A new analyst", "The office manager", "A client"], "answer": 2 },
+      { "question": "How should Lucas book a meeting room?", "options": ["By asking Priya", "Through the calendar app", "By emailing his manager", "At reception"], "answer": 1 },
+      { "question": "What does Priya suggest about the big meeting room?", "options": ["It's only for managers", "It's usually empty", "It's being repaired", "It should be booked early"], "answer": 3 },
+      { "question": "What is the office's \"golden rule\" about?", "options": ["Washing your own mug", "Arriving at nine", "Booking rooms", "Working from home"], "answer": 0 }
+    ],
+    "dictation": [
+      "Your desk is the one by the window.",
+      "Most people get in around nine, but it's flexible.",
+      "There's free coffee, but please wash your own mug."
+    ]
+  },
+  {
+    "id": "b1-budgeting-podcast",
+    "title": "The 50-30-20 budgeting rule",
+    "level": "B1",
+    "topics": ["finance", "daily"],
+    "kind": "monologue",
+    "transcript": "Welcome back to Money in Minutes. Today I want to talk about a simple budgeting method called the fifty-thirty-twenty rule. Here's how it works. You take your monthly income after tax and split it into three parts. Fifty percent goes to needs, like rent, groceries and transport. Thirty percent goes to wants, things like eating out, streaming services or that new pair of shoes. And the last twenty percent goes to savings or paying off debt. Now, I know what you're thinking: in a big city, rent alone can be more than half your salary. That's true, and the rule isn't perfect. But it gives you a starting point. If your needs take sixty percent, try cutting your wants to twenty. The important thing is to save something every month, even if it's a small amount. Small habits really do add up over time.",
+    "questions": [
+      { "question": "What is the main purpose of the episode?", "options": ["To explain a simple way to organize money", "To sell a finance app", "To discuss rent prices in big cities", "To interview a bank manager"], "answer": 0 },
+      { "question": "According to the rule, what percentage goes to savings or debt?", "options": ["Fifty percent", "Thirty percent", "Sixty percent", "Twenty percent"], "answer": 3 },
+      { "question": "Which of these is an example of a \"want\"?", "options": ["Rent", "Groceries", "A streaming service", "Transport"], "answer": 2 },
+      { "question": "What does the speaker suggest if needs take sixty percent?", "options": ["Stop saving completely", "Spend less on wants", "Find a second job", "Move to a smaller city"], "answer": 1 }
+    ],
+    "dictation": [
+      "You take your monthly income after tax and split it into three parts.",
+      "That's true, and the rule isn't perfect.",
+      "Small habits really do add up over time."
+    ]
+  },
+  {
+    "id": "b1-tenant-repair-call",
+    "title": "A tenant reports a problem",
+    "level": "B1",
+    "topics": ["real-estate", "daily"],
+    "kind": "dialogue",
+    "transcript": "A: Good morning, Lakeside Property Management. This is Daniel speaking.\nB: Hi, Daniel. This is Maria Lopes from apartment 4B on Oak Street. I'm calling because the water heater stopped working last night.\nA: Oh, I'm sorry to hear that. So you have no hot water at all?\nB: None. I had to take a cold shower this morning, and I've got two kids.\nA: That's definitely urgent. Let me check the plumber's schedule. OK, he can come this afternoon between two and four. Will someone be home?\nB: I'll be at work, but my neighbor has a spare key. Can he let the plumber in?\nA: Sure, just send me his name and phone number by email. And don't worry, the repair is covered by the owner.\nB: That's a relief. Thank you so much.\nA: You're welcome. I'll call you once it's fixed.",
+    "questions": [
+      { "question": "What is the problem?", "options": ["The heating is broken", "There's a leak in the kitchen", "The water heater isn't working", "The front door is locked"], "answer": 2 },
+      { "question": "When will the plumber come?", "options": ["This afternoon", "Tonight", "Tomorrow morning", "Next week"], "answer": 0 },
+      { "question": "How will the plumber get into the apartment?", "options": ["Daniel will open the door", "The neighbor will let him in", "Maria will leave work early", "The kids will be home"], "answer": 1 },
+      { "question": "Who will pay for the repair?", "options": ["Maria", "The neighbor", "The plumber", "The owner"], "answer": 3 }
+    ],
+    "dictation": [
+      "I'm calling because the water heater stopped working last night.",
+      "Let me check the plumber's schedule.",
+      "And don't worry, the repair is covered by the owner."
+    ]
+  },
+  {
+    "id": "b1-series-recommendation",
+    "title": "Have you seen this series?",
+    "level": "B1",
+    "topics": ["culture"],
+    "kind": "dialogue",
+    "transcript": "A: Have you started watching anything new lately?\nB: Yeah, I'm halfway through a series called The Quiet Coast. Have you heard of it?\nA: I've seen the trailer. It's a crime drama, right?\nB: Kind of. It starts like a normal detective story, but it's more about the town and the people who live there. The acting is amazing.\nA: Is it slow? I gave up on the last show you recommended because nothing happened for three episodes.\nB: Ha, fair enough. This one is slow at the beginning too, but stick with it. Episode four changes everything.\nA: OK, you've convinced me. Is it on the same streaming service?\nB: Yes, and there are two seasons already, so you can binge it this weekend.\nA: Just don't tell me any spoilers!\nB: My lips are sealed.",
+    "questions": [
+      { "question": "What is B's opinion of the series?", "options": ["B thinks it's boring", "B really likes it", "B hasn't seen it yet", "B prefers the trailer"], "answer": 1 },
+      { "question": "Why did A stop watching the last show B recommended?", "options": ["It was too violent", "It was too expensive", "It was too slow", "It was cancelled"], "answer": 2 },
+      { "question": "What does B mean by \"stick with it\"?", "options": ["Keep watching even if it's slow", "Watch it with friends", "Stop after episode four", "Read the book first"], "answer": 0 },
+      { "question": "What does \"My lips are sealed\" mean?", "options": ["B is going to sleep", "B is angry", "B forgot the story", "B won't reveal what happens"], "answer": 3 }
+    ],
+    "dictation": [
+      "Have you started watching anything new lately?",
+      "This one is slow at the beginning too, but stick with it.",
+      "Yes, and there are two seasons already, so you can binge it this weekend."
+    ]
+  },
+  {
+    "id": "b1-delivery-app-news",
+    "title": "Tech news: splitting the bill",
+    "level": "B1",
+    "topics": ["tech", "daily"],
+    "kind": "monologue",
+    "transcript": "And now for some tech news. A popular food delivery app has announced a new feature that lets users split the bill with friends directly in the app. Until now, one person had to pay for the whole order and then ask the others for money. With the update, each person can pay their part with their own card. The company says the feature will be available in the United States and Canada starting next Monday, and in Europe later this year. Some users are also happy about another change: the app will now show the full price, including delivery fees, before you place your order. Consumer groups had complained for months that the fees were hidden until the last screen. The company hasn't said whether prices will go up.",
+    "questions": [
+      { "question": "What is the main news?", "options": ["A delivery app has a new way to pay", "A delivery app is closing", "Food prices are going up", "A new app for restaurant owners"], "answer": 0 },
+      { "question": "Where will the feature be available first?", "options": ["In Europe", "In the US and Canada", "Everywhere at once", "Only in big cities"], "answer": 1 },
+      { "question": "Why were consumer groups unhappy?", "options": ["The food arrived cold", "The app was too slow", "Fees were shown too late", "Drivers were paid too little"], "answer": 2 },
+      { "question": "What do we NOT know yet?", "options": ["When the feature starts", "Which countries get it", "How to split the bill", "Whether prices will rise"], "answer": 3 }
+    ],
+    "dictation": [
+      "And now for some tech news.",
+      "With the update, each person can pay their part with their own card.",
+      "The company hasn't said whether prices will go up."
+    ]
+  },
+  {
+    "id": "b1-at-the-pharmacy",
+    "title": "At the pharmacy abroad",
+    "level": "B1",
+    "topics": ["daily", "travel"],
+    "kind": "dialogue",
+    "transcript": "A: Hi there. How can I help you?\nB: Hi. I'm visiting from Brazil, and I've had a sore throat and a bit of a fever since yesterday. Can you recommend something?\nA: Sure. Do you have any other symptoms, like a cough or a headache?\nB: Just a headache, and I feel really tired.\nA: OK. I'd suggest these lozenges for your throat and this pain reliever for the fever. Take two tablets every six hours, but no more than eight a day.\nB: Can I take them with food?\nA: Yes, it's actually better to take them with food. Are you allergic to any medication?\nB: No, I'm not.\nA: Good. If you don't feel better in three days, you should see a doctor. There's a walk-in clinic two blocks from here.\nB: Thank you. That's really helpful.",
+    "questions": [
+      { "question": "How long has B felt sick?", "options": ["Since yesterday", "For a week", "Since this morning", "For three days"], "answer": 0 },
+      { "question": "How often should B take the tablets?", "options": ["Every three hours", "Every six hours", "Twice a day", "Once a day"], "answer": 1 },
+      { "question": "What should B do if there's no improvement in three days?", "options": ["Buy stronger tablets", "Come back to the pharmacy", "Fly home", "See a doctor"], "answer": 3 },
+      { "question": "What can we infer about B?", "options": ["B lives near the pharmacy", "B is a doctor", "B is a visitor in the country", "B has many allergies"], "answer": 2 }
+    ],
+    "dictation": [
+      "I'd suggest these lozenges for your throat and this pain reliever for the fever.",
+      "Take two tablets every six hours, but no more than eight a day.",
+      "There's a walk-in clinic two blocks from here."
+    ]
+  },
+  {
+    "id": "b1-orientation-advisor",
+    "title": "Orientation week advice",
+    "level": "B1",
+    "topics": ["academic"],
+    "kind": "monologue",
+    "transcript": "Hello everyone, and welcome to orientation week. I'm Dr. Hall, and I'll be your academic advisor this year. I just want to give you a few practical tips before you start classes. First, the library. It's open twenty-four hours during exam periods, and you can book study rooms online. Second, don't be afraid to use office hours. Every professor has at least two hours a week when you can drop in and ask questions. A lot of students think office hours are only for people with problems, but that's not true. It's one of the best ways to understand the material and build a relationship with your professors. Finally, if you're thinking about changing your major, please talk to me before the end of the first semester. After that, it gets a lot more complicated. OK, any questions so far?",
+    "questions": [
+      { "question": "Who is the speaker?", "options": ["A librarian", "A new student", "An academic advisor", "The university president"], "answer": 2 },
+      { "question": "What is true about the library?", "options": ["It closes early during exams", "It's open all night during exam periods", "Only professors can book rooms", "It's being renovated"], "answer": 1 },
+      { "question": "What mistaken belief about office hours does the speaker mention?", "options": ["That they're only for students with problems", "That they cost extra", "That they're online only", "That they're only for first-year students"], "answer": 0 },
+      { "question": "Why should students talk to Dr. Hall early about changing majors?", "options": ["She's leaving the university", "Classes will be full", "Professors don't allow it", "It's harder to change later"], "answer": 3 }
+    ],
+    "dictation": [
+      "I just want to give you a few practical tips before you start classes.",
+      "Second, don't be afraid to use office hours.",
+      "After that, it gets a lot more complicated."
+    ]
+  },
+  {
+    "id": "b2-investor-call-warehouse",
+    "title": "Call with a US investor",
+    "level": "B2",
+    "topics": ["real-estate", "finance", "business"],
+    "kind": "dialogue",
+    "transcript": "A: Thanks for making time, Mark. I know it's early for you in New York.\nB: No problem. I've had a look at the deck. The logistics warehouse near São Paulo looks interesting, but I have a few questions.\nA: Sure, go ahead.\nB: The cap rate you're showing is around nine percent. That seems high compared to similar assets in the US. What's the catch?\nA: Fair question. Part of it is country risk and currency exposure. But the asset itself is solid: it's fully leased to a single tenant on a ten-year contract, with annual adjustments linked to inflation.\nB: A single tenant makes me a little nervous. What happens if they leave?\nA: That's the main risk, I agree. But the location is close to two major highways, so re-leasing it wouldn't be hard. We estimate a vacancy period of six months in a worst-case scenario.\nB: OK. Could you send me the tenant's financials and a sensitivity analysis on the exchange rate?\nA: Absolutely. I'll have them in your inbox by Thursday.",
+    "questions": [
+      { "question": "What is the main purpose of the call?", "options": ["To discuss an investment opportunity", "To sign a lease", "To hire a new analyst", "To complain about a tenant"], "answer": 0 },
+      { "question": "According to A, why is the cap rate relatively high?", "options": ["The building is old", "Country risk and currency exposure", "The tenant pays late", "The location is remote"], "answer": 1 },
+      { "question": "What worries Mark the most?", "options": ["The highways", "The inflation adjustments", "The size of the building", "Depending on only one tenant"], "answer": 3 },
+      { "question": "What will A send by Thursday?", "options": ["A signed contract", "Photos of the warehouse", "Tenant financials and an exchange-rate analysis", "A new pitch deck"], "answer": 2 }
+    ],
+    "dictation": [
+      "I know it's early for you in New York.",
+      "That seems high compared to similar assets in the US.",
+      "We estimate a vacancy period of six months in a worst-case scenario."
+    ]
+  },
+  {
+    "id": "b2-remote-work-podcast",
+    "title": "Is remote work here to stay?",
+    "level": "B2",
+    "topics": ["business", "tech"],
+    "kind": "monologue",
+    "transcript": "So, the big question everyone keeps asking me is: is remote work here to stay? And my honest answer is, it depends on what you mean by remote. Fully remote companies are actually a minority. What we're seeing in most places is a hybrid model, where people come into the office two or three days a week. Interestingly, the research suggests that productivity isn't really the issue. Most people get just as much done at home. The real challenge is something harder to measure: the informal learning that happens when junior employees sit next to experienced colleagues. You overhear how someone handles a difficult client call, you ask a quick question, and you pick things up without even noticing. That's very hard to replicate on video calls. So if I were running a company, I wouldn't ask whether people should come back. I'd ask which days, and for what kind of work, being together actually adds value.",
+    "questions": [
+      { "question": "What is the speaker's main point?", "options": ["Remote work reduces productivity", "Everyone should return to the office", "The key question is when being together adds value", "Hybrid work is a temporary trend"], "answer": 2 },
+      { "question": "According to the speaker, what does research suggest?", "options": ["Productivity at home is about the same", "People work less at home", "Video calls improve learning", "Most companies are fully remote"], "answer": 0 },
+      { "question": "Who loses the most from less informal learning?", "options": ["Managers", "Junior employees", "Clients", "IT teams"], "answer": 1 },
+      { "question": "Why does the speaker mention overhearing a client call?", "options": ["To complain about noisy offices", "To say calls should be private", "To criticize senior employees", "To illustrate learning without trying"], "answer": 3 }
+    ],
+    "dictation": [
+      "Fully remote companies are actually a minority.",
+      "Most people get just as much done at home.",
+      "That's very hard to replicate on video calls."
+    ]
+  },
+  {
+    "id": "b2-lecture-urban-heat",
+    "title": "Lecture: the urban heat island",
+    "level": "B2",
+    "topics": ["academic"],
+    "kind": "monologue",
+    "transcript": "Today we're going to look at a phenomenon called the urban heat island effect. Simply put, cities tend to be warmer than the surrounding countryside, sometimes by as much as five to seven degrees Celsius at night. Why does this happen? Well, there are three main factors. First, materials like asphalt and concrete absorb heat during the day and release it slowly after sunset. Second, cities have fewer trees and less vegetation, which normally cool the air through a process called evapotranspiration. And third, human activity itself, cars, air conditioners and factories, generates a lot of heat. Now, this isn't just a matter of comfort. Higher temperatures increase energy demand, worsen air quality and, during heat waves, can be dangerous for elderly people. Some cities are responding with green roofs, more parks and lighter-colored pavements that reflect sunlight. We'll look at a case study from Singapore in a moment.",
+    "questions": [
+      { "question": "What is the lecture mainly about?", "options": ["Why cities are warmer than rural areas", "How air conditioners work", "The history of Singapore", "Building with asphalt"], "answer": 0 },
+      { "question": "When is the temperature difference largest?", "options": ["In the morning", "At night", "At midday", "Only in winter"], "answer": 1 },
+      { "question": "Why does the professor mention elderly people?", "options": ["They use more energy", "They prefer the countryside", "They live in green buildings", "They are at risk during heat waves"], "answer": 3 },
+      { "question": "What will the professor probably do next?", "options": ["End the class", "Give a quiz", "Present an example from Singapore", "Discuss car engines"], "answer": 2 }
+    ],
+    "dictation": [
+      "Today we're going to look at a phenomenon called the urban heat island effect.",
+      "Now, this isn't just a matter of comfort.",
+      "We'll look at a case study from Singapore in a moment."
+    ]
+  },
+  {
+    "id": "b2-interest-rates-news",
+    "title": "News: rates on hold",
+    "level": "B2",
+    "topics": ["finance", "real-estate"],
+    "kind": "monologue",
+    "transcript": "In economic news, the central bank decided this afternoon to keep its benchmark interest rate unchanged at four and a quarter percent, despite pressure from some business groups to cut it. In a statement, the bank said inflation was falling but remained above its two percent target, and that it wanted to see more evidence before lowering rates. Analysts had largely expected the decision, so markets reacted calmly, with stocks closing slightly higher. However, the news is a disappointment for the housing market. Mortgage applications have dropped by nearly fifteen percent compared to last year, and real estate agents say many first-time buyers are waiting on the sidelines. One economist we spoke to said a cut was now likely in the spring, but warned that it would only happen if wage growth continued to slow. The bank's next meeting is scheduled for early March.",
+    "questions": [
+      { "question": "What did the central bank decide?", "options": ["To raise rates", "To cut rates", "To keep rates the same", "To change its inflation target"], "answer": 2 },
+      { "question": "Why did markets react calmly?", "options": ["The decision was expected", "Inflation is rising", "Stocks are cheap", "The meeting was cancelled"], "answer": 0 },
+      { "question": "What does \"waiting on the sidelines\" suggest about first-time buyers?", "options": ["They are buying quickly", "They are delaying their purchases", "They are selling their homes", "They are moving abroad"], "answer": 1 },
+      { "question": "According to the economist, a spring cut depends on what?", "options": ["Mortgage applications", "Stock prices", "Business groups", "Slower wage growth"], "answer": 3 }
+    ],
+    "dictation": [
+      "However, the news is a disappointment for the housing market.",
+      "Mortgage applications have dropped by nearly fifteen percent compared to last year",
+      "The bank's next meeting is scheduled for early March."
+    ]
+  },
+  {
+    "id": "b2-lost-luggage",
+    "title": "Lost luggage at the airport",
+    "level": "B2",
+    "topics": ["travel"],
+    "kind": "dialogue",
+    "transcript": "A: Good evening. How can I help you?\nB: Hi. I've just arrived on the flight from Lisbon, and my suitcase didn't come out on the carousel. I waited for almost an hour.\nA: I'm sorry about that. Can I see your boarding pass and baggage tag?\nB: Here you go.\nA: Thank you. OK, according to our system, your bag was never loaded in Lisbon. It looks like it's still there, but it should be on tomorrow morning's flight.\nB: Tomorrow? I've got a business meeting at nine, and all my clothes are in that bag.\nA: I completely understand. You're entitled to buy essential items, and we'll reimburse you up to one hundred and fifty euros. Just keep the receipts.\nB: Fine. And will I have to come back to the airport to collect it?\nA: No, we'll deliver it directly to your hotel. Could you fill out this form with the address and a phone number?\nB: Sure. I just hope it actually arrives this time.",
+    "questions": [
+      { "question": "Where is B's suitcase now?", "options": ["On the carousel", "At B's hotel", "Probably still in Lisbon", "On a flight to Paris"], "answer": 2 },
+      { "question": "Why is B especially worried?", "options": ["B has a meeting early the next day", "B is flying home tomorrow", "The bag contains money", "B lost the boarding pass"], "answer": 0 },
+      { "question": "What does the airline offer?", "options": ["A free flight", "Money back for essential items", "A night at the airport hotel", "A new suitcase"], "answer": 1 },
+      { "question": "How does B feel at the end?", "options": ["Delighted", "Confused", "Angry at the agent", "Still a bit doubtful"], "answer": 3 }
+    ],
+    "dictation": [
+      "I waited for almost an hour.",
+      "Can I see your boarding pass and baggage tag?",
+      "No, we'll deliver it directly to your hotel."
+    ]
+  },
+  {
+    "id": "b2-automated-valuation",
+    "title": "Will AI replace valuers?",
+    "level": "B2",
+    "topics": ["tech", "real-estate"],
+    "kind": "dialogue",
+    "transcript": "A: Have you tried the new automated valuation tool the team's been testing?\nB: I have. It's impressive for standard apartments. You put in the address, size and number of bedrooms, and it gives you a value range in seconds.\nA: So do you think it'll replace what we do?\nB: Not really. It works well when there are lots of similar transactions nearby. But for something unusual, like an old industrial building that's being converted, the estimate was way off.\nA: That makes sense. The model can only learn from data that exists.\nB: Exactly. And clients don't just pay for a number. They pay for someone to explain the assumptions and take responsibility for the opinion.\nA: True. Although I'd say it could save us a lot of time on the routine stuff.\nB: Definitely. I'd use it as a first check, and then focus our time on the complex cases.\nA: Let's suggest that at Monday's meeting.",
+    "questions": [
+      { "question": "What is B's overall view of the tool?", "options": ["It's useless", "It will replace valuers soon", "It's useful but limited", "It's too expensive"], "answer": 2 },
+      { "question": "Why was the estimate wrong for the industrial building?", "options": ["There wasn't enough comparable data", "The address was wrong", "The tool was offline", "The building was too new"], "answer": 0 },
+      { "question": "According to B, what do clients really pay for?", "options": ["Speed", "Explanation and responsibility", "Low prices", "Software access"], "answer": 1 },
+      { "question": "What will A and B probably do on Monday?", "options": ["Cancel the tool", "Visit the industrial building", "Hire more analysts", "Propose a way to use the tool"], "answer": 3 }
+    ],
+    "dictation": [
+      "The model can only learn from data that exists.",
+      "And clients don't just pay for a number.",
+      "Let's suggest that at Monday's meeting."
+    ]
+  },
+  {
+    "id": "b2-film-review-podcast",
+    "title": "Podcast: a film review",
+    "level": "B2",
+    "topics": ["culture"],
+    "kind": "monologue",
+    "transcript": "Right, so this week's pick is a film that a lot of people have been arguing about: Paper Lanterns. I'll keep this spoiler-free, I promise. On the surface, it's a quiet family drama about three sisters who come back to their childhood home after their mother dies. Not much happens, plot-wise. But what really got me was the dialogue. It's so natural that at times it feels like you're eavesdropping on a real family. People interrupt each other, they leave sentences unfinished, they make jokes at the worst possible moment. That said, I can see why some viewers found it frustrating. The pacing is slow, and the ending is deliberately ambiguous. If you need everything wrapped up neatly, this probably isn't for you. But if you're the kind of person who likes thinking about a film for days afterwards, I'd say it's well worth your time. Four stars from me.",
+    "questions": [
+      { "question": "What does the speaker like most about the film?", "options": ["The special effects", "The natural dialogue", "The fast plot", "The happy ending"], "answer": 1 },
+      { "question": "What does \"eavesdropping\" most likely mean?", "options": ["Secretly listening to others", "Arguing loudly", "Watching a film twice", "Leaving early"], "answer": 0 },
+      { "question": "Why might some viewers dislike the film?", "options": ["It's too violent", "It's too long", "It's slow and the ending is open", "The acting is weak"], "answer": 2 },
+      { "question": "Who does the speaker recommend the film to?", "options": ["Fans of action films", "People who want neat endings", "Families with young children", "People who enjoy reflecting on films"], "answer": 3 }
+    ],
+    "dictation": [
+      "I'll keep this spoiler-free, I promise.",
+      "But what really got me was the dialogue.",
+      "The pacing is slow, and the ending is deliberately ambiguous."
+    ]
+  },
+  {
+    "id": "b2-deadline-meeting",
+    "title": "A tight deadline",
+    "level": "B2",
+    "topics": ["business", "real-estate"],
+    "kind": "dialogue",
+    "transcript": "A: OK, let's get started. The main issue today is the market study for the hotel project. The client wants it by the fifteenth.\nB: That's going to be tight. We're still waiting for the occupancy data from the two competitors.\nA: How long will that take?\nB: They said end of this week, but they've already missed one deadline.\nA: Right. So what are our options?\nB: Well, we could go ahead with estimates based on public data and update the numbers when the real figures come in.\nA: I'm a bit uneasy about that. If the numbers change a lot, the conclusions might change too.\nB: True, but we could flag it clearly in the report as a preliminary version.\nA: OK, that's reasonable. I'll call the client today and explain we'll deliver a draft on the fifteenth and the final version a week later.\nB: Sounds good. I'll chase the competitors again this afternoon.",
+    "questions": [
+      { "question": "What is causing the delay?", "options": ["The client changed the scope", "Missing occupancy data", "A team member is sick", "The hotel was sold"], "answer": 1 },
+      { "question": "Why is A uneasy about using estimates?", "options": ["The client won't pay", "Public data can't be used", "The conclusions might change", "It takes too much time"], "answer": 2 },
+      { "question": "What do they finally agree to?", "options": ["Deliver a draft first and a final version later", "Cancel the project", "Ask for a one-month extension", "Use only public data"], "answer": 0 },
+      { "question": "What will B do this afternoon?", "options": ["Call the client", "Write the final report", "Visit the hotel", "Contact the competitors again"], "answer": 3 }
+    ],
+    "dictation": [
+      "The client wants it by the fifteenth.",
+      "They said end of this week, but they've already missed one deadline.",
+      "I'll chase the competitors again this afternoon."
+    ]
+  },
+  {
+    "id": "c1-lecture-rent-control",
+    "title": "Lecture: the rent control debate",
+    "level": "C1",
+    "topics": ["academic", "real-estate", "finance"],
+    "kind": "monologue",
+    "transcript": "Let's turn now to one of the most contentious policies in urban economics: rent control. The intuition behind it is straightforward. If rents are rising faster than incomes, capping them should protect existing tenants from displacement. And in the short run, the evidence suggests it does exactly that. Tenants in controlled units tend to stay put longer and are less likely to be forced out of their neighborhoods. The problem is what happens over a longer horizon. A well-known study of San Francisco found that landlords subject to new controls were significantly more likely to convert their buildings into condominiums or redevelop them, which reduced the supply of rental housing by around fifteen percent. In other words, the policy protected the people who already had apartments, but arguably pushed up rents for everyone else. Now, I'm not suggesting this settles the debate. Proponents point out that newer versions, so-called rent stabilization, allow moderate annual increases and exempt new construction, precisely to avoid discouraging investment. So the real question isn't whether rent control is good or bad in the abstract. It's how a specific design balances the interests of current tenants against those of future ones. Keep that framing in mind for this week's reading.",
+    "questions": [
+      { "question": "What is the main point of the lecture?", "options": ["Rent control should be abolished everywhere", "Rent control always lowers rents", "Its effects depend on its design and the time horizon", "San Francisco has the highest rents in the US"], "answer": 2 },
+      { "question": "What did the San Francisco study find?", "options": ["Rental supply fell as landlords converted buildings", "Tenants moved out faster", "New construction increased", "Rents fell for everyone"], "answer": 0 },
+      { "question": "Why does the professor mention rent stabilization?", "options": ["To show it is identical to traditional rent control", "To show that newer designs try to reduce the negative effects", "To recommend it for San Francisco", "To criticize its supporters"], "answer": 1 },
+      { "question": "What is the professor's attitude toward the debate?", "options": ["Strongly in favor of rent control", "Strongly opposed to rent control", "Uninterested in the policy", "Cautious and balanced"], "answer": 3 }
+    ],
+    "dictation": [
+      "The intuition behind it is straightforward.",
+      "Tenants in controlled units tend to stay put longer",
+      "Keep that framing in mind for this week's reading."
+    ]
+  },
+  {
+    "id": "c1-podcast-attention",
+    "title": "Podcast: are we really goldfish?",
+    "level": "C1",
+    "topics": ["tech", "culture"],
+    "kind": "monologue",
+    "transcript": "I want to push back a little on the way we usually talk about screen time. The standard narrative goes something like this: our phones are designed to be addictive, our attention spans are shrinking, and we're all doomed to become goldfish. And look, there's some truth in that. Many apps are explicitly engineered to maximize engagement, often with features like infinite scroll and autoplay that remove any natural stopping point. But the claim that our attention spans have collapsed is shakier than it sounds. That famous statistic comparing us to goldfish? Nobody has ever been able to trace it back to an actual study. What the research does suggest is that we've become much more selective. We'll happily binge a ten-hour documentary series, yet abandon an article after two paragraphs if it doesn't grab us. So perhaps the problem isn't that we can't pay attention, but that we're constantly being asked to decide what deserves it. And that kind of decision fatigue is exhausting in its own right.",
+    "questions": [
+      { "question": "What is the speaker's main purpose?", "options": ["To promote a new app", "To challenge a common view about attention", "To prove that phones are harmless", "To review a documentary"], "answer": 1 },
+      { "question": "What does the speaker say about the goldfish statistic?", "options": ["Its source can't be found", "It comes from a famous study", "It was recently updated", "It applies only to children"], "answer": 0 },
+      { "question": "Why does the speaker mention binge-watching a documentary?", "options": ["To show people are lazy", "To recommend a series", "To show attention is selective rather than lost", "To criticize streaming platforms"], "answer": 2 },
+      { "question": "Which statement would the speaker most likely agree with?", "options": ["Screen time has no effects at all", "Our attention spans have collapsed", "Apps are never designed to be addictive", "Constantly choosing what to focus on is tiring"], "answer": 3 }
+    ],
+    "dictation": [
+      "And look, there's some truth in that.",
+      "But the claim that our attention spans have collapsed is shakier than it sounds.",
+      "What the research does suggest is that we've become much more selective."
+    ]
+  },
+  {
+    "id": "c1-retail-lease-negotiation",
+    "title": "Negotiating a retail lease",
+    "level": "C1",
+    "topics": ["real-estate", "business"],
+    "kind": "dialogue",
+    "transcript": "A: Thanks for coming in. I'll be upfront: we like the space, but the asking rent is above what our model can support.\nB: I appreciate the honesty. For context, that unit sits on the busiest corner of the mall. Foot traffic there is about thirty percent higher than the average.\nA: We've seen the figures, and that's exactly why we're interested. But we're also taking on significant fit-out costs. Our proposal would be a twelve-month rent-free period on a ten-year lease.\nB: Twelve months is well beyond what we'd normally offer. Six is more typical for a lease of that length.\nA: What if we met somewhere in the middle, nine months, but committed to a longer term, say twelve years, with no break clause in the first five?\nB: That's an interesting structure. The longer commitment certainly has value for the owner. I'd want to add a turnover component, though, a percentage of sales above a certain threshold.\nA: We could live with that, provided the threshold is realistic and based on our audited figures.\nB: Fair enough. Let me take this back to the owner and come back to you by Friday with revised heads of terms.\nA: Perfect. I think we're closer than it looked an hour ago.",
+    "questions": [
+      { "question": "What is A's main concern at the beginning?", "options": ["The location is poor", "The rent is too high for their business model", "The lease is too short", "The mall has low foot traffic"], "answer": 1 },
+      { "question": "How does B justify the rent?", "options": ["The unit gets a lot of foot traffic", "The mall is brand new", "The fit-out is included", "Other tenants pay more"], "answer": 0 },
+      { "question": "What does A offer in exchange for nine rent-free months?", "options": ["A higher monthly rent", "A larger deposit", "A longer lease without an early break", "A shorter lease"], "answer": 2 },
+      { "question": "What can be inferred about the negotiation at the end?", "options": ["It has failed", "The owner has already agreed", "A will look for another unit", "Both sides have made progress"], "answer": 3 }
+    ],
+    "dictation": [
+      "Twelve months is well beyond what we'd normally offer.",
+      "The longer commitment certainly has value for the owner.",
+      "I think we're closer than it looked an hour ago."
+    ]
+  },
+  {
+    "id": "c1-lecture-memory",
+    "title": "Lecture: how memory rewrites itself",
+    "level": "C1",
+    "topics": ["academic"],
+    "kind": "monologue",
+    "transcript": "For a long time, memory was thought of as a kind of storage system. You experience something, it gets recorded, and later you retrieve it, more or less intact. The research of the last few decades has pretty much dismantled that picture. What we now understand is that every time you recall a memory, you're actually reconstructing it, and in the process it becomes temporarily unstable. This is known as reconsolidation. In practical terms, it means that memories can be altered each time they're retrieved, by new information, by the way a question is phrased, even by your current mood. Elizabeth Loftus's classic experiments illustrate this nicely. Participants who watched a video of a car accident gave higher speed estimates when asked how fast the cars were going when they smashed into each other, compared with those asked about cars that hit each other. Some even remembered broken glass that wasn't there. The implications for eyewitness testimony are obvious, and frankly rather troubling. For your assignment, I'd like you to consider what this means for how police interviews should be conducted.",
+    "questions": [
+      { "question": "Which view of memory does the professor say has been rejected?", "options": ["Memory as a reconstruction", "Memory as a fixed storage system", "Memory as linked to mood", "Memory as unstable"], "answer": 1 },
+      { "question": "In the Loftus experiments, what affected participants' answers?", "options": ["The length of the video", "The time of day", "The wording of the question", "The number of cars"], "answer": 2 },
+      { "question": "Why does the professor mention broken glass?", "options": ["To show people remembered something that didn't happen", "To describe the accident in detail", "To explain how fast the cars were going", "To criticize the experiment"], "answer": 0 },
+      { "question": "What is the professor's attitude toward the implications for eyewitness testimony?", "options": ["Indifferent", "Amused", "Optimistic", "Concerned"], "answer": 3 }
+    ],
+    "dictation": [
+      "You experience something, it gets recorded, and later you retrieve it",
+      "Some even remembered broken glass that wasn't there.",
+      "The implications for eyewitness testimony are obvious, and frankly rather troubling."
+    ]
+  },
+  {
+    "id": "c1-esg-panel",
+    "title": "Panel: is ESG delivering?",
+    "level": "C1",
+    "topics": ["finance", "real-estate", "business"],
+    "kind": "dialogue",
+    "transcript": "A: Let me start with the obvious question. Is ESG investing actually delivering, or has it become mostly a marketing exercise?\nB: Honestly, a bit of both. There's been a lot of greenwashing, funds labeled sustainable that hold pretty much the same portfolio as a conventional index. That's done real damage to credibility.\nA: So where do you see genuine value?\nB: In the less glamorous parts. Take real estate. Energy efficiency isn't just an ethical issue anymore; it's a valuation issue. Buildings that don't meet upcoming efficiency standards are increasingly hard to lease and finance. Some lenders are already pricing that in.\nA: The so-called brown discount.\nB: Exactly. And that's where the data becomes really compelling, because you're no longer asking investors to sacrifice returns for principles. You're showing them a tangible financial risk.\nA: Doesn't that mean the E in ESG is doing all the work, while the S and the G get left behind?\nB: To some extent, yes. Social metrics are notoriously hard to standardize. But governance has always mattered to returns, whether we called it ESG or not.",
+    "questions": [
+      { "question": "What is B's overall view of ESG investing?", "options": ["It is purely marketing", "It has flaws but also real value", "It always beats other strategies", "It should be banned"], "answer": 1 },
+      { "question": "What does the \"brown discount\" refer to?", "options": ["Lower values for inefficient buildings", "Lower fees for green funds", "A tax break for lenders", "A discount on new construction"], "answer": 0 },
+      { "question": "Why does B find energy-efficiency data compelling?", "options": ["It's easy to fake", "It's required by law everywhere", "It shows a concrete financial risk", "It proves social metrics work"], "answer": 2 },
+      { "question": "What does B imply about governance?", "options": ["It's a new concept", "It's impossible to measure", "It matters less than social factors", "It has always affected returns"], "answer": 3 }
+    ],
+    "dictation": [
+      "That's done real damage to credibility.",
+      "Some lenders are already pricing that in.",
+      "Social metrics are notoriously hard to standardize."
+    ]
+  }
+]

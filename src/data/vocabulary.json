@@ -1,0 +1,5861 @@
+[
+  {
+    "id": "bus-meeting",
+    "term": "meeting",
+    "pos": "noun",
+    "pt": "reunião",
+    "definition": "A planned time when people get together to talk.",
+    "example": "Our weekly meeting starts at nine on Monday.",
+    "level": "A1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-office",
+    "term": "office",
+    "pos": "noun",
+    "pt": "escritório",
+    "definition": "A room or building where people work at desks.",
+    "example": "I usually get to the office before eight.",
+    "level": "A1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-boss",
+    "term": "boss",
+    "pos": "noun",
+    "pt": "chefe",
+    "definition": "The person who is in charge of you at work.",
+    "example": "My boss asked me to finish the report today.",
+    "level": "A1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-job",
+    "term": "job",
+    "pos": "noun",
+    "pt": "emprego, trabalho",
+    "definition": "Work that you do regularly to earn money.",
+    "example": "She got a new job at a consulting firm.",
+    "level": "A1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-customer",
+    "term": "customer",
+    "pos": "noun",
+    "pt": "cliente",
+    "definition": "A person who buys goods or services.",
+    "example": "Every customer gets a reply within one business day.",
+    "level": "A1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-team",
+    "term": "team",
+    "pos": "noun",
+    "pt": "equipe",
+    "definition": "A group of people who work together.",
+    "example": "Our team closed three deals this month.",
+    "level": "A1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-colleague",
+    "term": "colleague",
+    "pos": "noun",
+    "pt": "colega de trabalho",
+    "definition": "A person you work with.",
+    "example": "A colleague from the São Paulo office will join the call.",
+    "level": "A2",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-schedule",
+    "term": "schedule",
+    "pos": "noun",
+    "pt": "agenda, cronograma",
+    "definition": "A plan of times when things will happen.",
+    "example": "My schedule is full until Thursday afternoon.",
+    "level": "A2",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-deadline",
+    "term": "deadline",
+    "pos": "noun",
+    "pt": "prazo final",
+    "definition": "The latest time by which something must be done.",
+    "example": "The deadline for the proposal is Friday at noon.",
+    "level": "A2",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-salary",
+    "term": "salary",
+    "pos": "noun",
+    "pt": "salário",
+    "definition": "Fixed money you earn from your job, usually monthly.",
+    "example": "He negotiated a higher salary before accepting the offer.",
+    "level": "A2",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-manager",
+    "term": "manager",
+    "pos": "noun",
+    "pt": "gerente",
+    "definition": "A person who controls a team or department.",
+    "example": "The project manager approved the new timeline.",
+    "level": "A2",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-hire",
+    "term": "hire",
+    "pos": "verb",
+    "pt": "contratar",
+    "definition": "To give someone a job.",
+    "example": "We plan to hire two analysts next quarter.",
+    "level": "A2",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-company",
+    "term": "company",
+    "pos": "noun",
+    "pt": "empresa",
+    "definition": "An organization that sells goods or services.",
+    "example": "The company has offices in five countries.",
+    "level": "A2",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-appointment",
+    "term": "appointment",
+    "pos": "noun",
+    "pt": "compromisso, horário marcado",
+    "definition": "An arranged time to meet someone.",
+    "example": "I have an appointment with a client at three.",
+    "level": "A2",
+    "topics": [
+      "business",
+      "daily"
+    ]
+  },
+  {
+    "id": "bus-agenda",
+    "term": "agenda",
+    "pos": "noun",
+    "pt": "pauta",
+    "definition": "A list of topics to discuss in a meeting.",
+    "example": "Let's stick to the agenda so we finish on time.",
+    "level": "A2",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-attach",
+    "term": "attach",
+    "pos": "verb",
+    "pt": "anexar",
+    "definition": "To add a file to an email.",
+    "example": "I attached the signed contract to this email.",
+    "level": "A2",
+    "topics": [
+      "business",
+      "tech"
+    ]
+  },
+  {
+    "id": "bus-reply",
+    "term": "reply",
+    "pos": "verb",
+    "pt": "responder",
+    "definition": "To answer a message or question.",
+    "example": "Please reply to the client before the end of the day.",
+    "level": "A2",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-call-off",
+    "term": "call off",
+    "pos": "phrasal verb",
+    "pt": "cancelar",
+    "definition": "To cancel a planned event.",
+    "example": "They had to call off the meeting because of the storm.",
+    "level": "A2",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-follow-up",
+    "term": "follow up",
+    "pos": "phrasal verb",
+    "pt": "dar seguimento, retomar contato",
+    "definition": "To contact someone again about something discussed before.",
+    "example": "I'll follow up with the investor next week.",
+    "level": "B1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-set-up",
+    "term": "set up",
+    "pos": "phrasal verb",
+    "pt": "organizar, marcar",
+    "definition": "To arrange or organize something.",
+    "example": "Can you set up a call with the tenant's lawyer?",
+    "level": "B1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-proposal",
+    "term": "proposal",
+    "pos": "noun",
+    "pt": "proposta",
+    "definition": "A formal plan or offer presented for consideration.",
+    "example": "We sent the client a proposal for the feasibility study.",
+    "level": "B1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-negotiate",
+    "term": "negotiate",
+    "pos": "verb",
+    "pt": "negociar",
+    "definition": "To discuss something in order to reach an agreement.",
+    "example": "We need to negotiate better payment terms.",
+    "level": "B1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-stakeholder",
+    "term": "stakeholder",
+    "pos": "noun",
+    "pt": "parte interessada",
+    "definition": "A person or group involved in or affected by a project.",
+    "example": "All stakeholders must approve the budget before we start.",
+    "level": "B1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-feedback",
+    "term": "feedback",
+    "pos": "noun",
+    "pt": "retorno, avaliação",
+    "definition": "Comments on how well someone did something.",
+    "example": "The client gave us positive feedback on the presentation.",
+    "level": "B1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-on-behalf-of",
+    "term": "on behalf of",
+    "pos": "phrase",
+    "pt": "em nome de",
+    "definition": "As the representative of someone.",
+    "example": "I'm writing on behalf of the investment committee.",
+    "level": "B1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-outsource",
+    "term": "outsource",
+    "pos": "verb",
+    "pt": "terceirizar",
+    "definition": "To pay another company to do part of your work.",
+    "example": "Many owners outsource their property management to specialists.",
+    "level": "B1",
+    "topics": [
+      "business",
+      "real-estate"
+    ]
+  },
+  {
+    "id": "bus-headquarters",
+    "term": "headquarters",
+    "pos": "noun",
+    "pt": "sede",
+    "definition": "The main office of a company.",
+    "example": "Their headquarters will move to a new building in 2027.",
+    "level": "B1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-workload",
+    "term": "workload",
+    "pos": "noun",
+    "pt": "carga de trabalho",
+    "definition": "The amount of work a person has to do.",
+    "example": "My workload doubles at the end of every quarter.",
+    "level": "B1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-run-late",
+    "term": "run late",
+    "pos": "phrase",
+    "pt": "estar atrasado",
+    "definition": "To be behind schedule.",
+    "example": "Sorry, I'm running late, so please start without me.",
+    "level": "B1",
+    "topics": [
+      "business",
+      "daily"
+    ]
+  },
+  {
+    "id": "bus-get-back-to",
+    "term": "get back to",
+    "pos": "phrasal verb",
+    "pt": "dar um retorno",
+    "definition": "To contact someone later with an answer.",
+    "example": "I'll get back to you once I check the numbers.",
+    "level": "B1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-point-out",
+    "term": "point out",
+    "pos": "phrasal verb",
+    "pt": "apontar, destacar",
+    "definition": "To tell someone about a fact they should notice.",
+    "example": "She pointed out an error in the spreadsheet.",
+    "level": "B1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-wrap-up",
+    "term": "wrap up",
+    "pos": "phrasal verb",
+    "pt": "encerrar, finalizar",
+    "definition": "To finish a meeting or task.",
+    "example": "Let's wrap up and send the minutes by email.",
+    "level": "B1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-on-the-same-page",
+    "term": "on the same page",
+    "pos": "idiom",
+    "pt": "alinhados",
+    "definition": "Agreeing or understanding something in the same way.",
+    "example": "Before the call, let's make sure we're on the same page.",
+    "level": "B1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-touch-base",
+    "term": "touch base",
+    "pos": "idiom",
+    "pt": "fazer um contato rápido",
+    "definition": "To briefly contact someone to update each other.",
+    "example": "Let's touch base on Monday about the lease terms.",
+    "level": "B1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-in-charge-of",
+    "term": "in charge of",
+    "pos": "phrase",
+    "pt": "responsável por",
+    "definition": "Having control of or responsibility for something.",
+    "example": "Who is in charge of the due diligence report?",
+    "level": "B1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-revenue",
+    "term": "revenue",
+    "pos": "noun",
+    "pt": "receita",
+    "definition": "Money a company earns from sales before costs.",
+    "example": "Revenue grew 12% compared with last year.",
+    "level": "B1",
+    "topics": [
+      "business",
+      "finance"
+    ]
+  },
+  {
+    "id": "bus-benchmark",
+    "term": "benchmark",
+    "pos": "noun",
+    "pt": "referência, parâmetro",
+    "definition": "A standard used to compare performance.",
+    "example": "We use the national average as a benchmark.",
+    "level": "B2",
+    "topics": [
+      "business",
+      "finance"
+    ]
+  },
+  {
+    "id": "bus-streamline",
+    "term": "streamline",
+    "pos": "verb",
+    "pt": "simplificar, otimizar",
+    "definition": "To make a process simpler and more efficient.",
+    "example": "The new software will streamline our approval process.",
+    "level": "B2",
+    "topics": [
+      "business",
+      "tech"
+    ]
+  },
+  {
+    "id": "bus-bottleneck",
+    "term": "bottleneck",
+    "pos": "noun",
+    "pt": "gargalo",
+    "definition": "Something that slows down a process.",
+    "example": "Legal review has become the main bottleneck in our deals.",
+    "level": "B2",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-pitch",
+    "term": "pitch",
+    "pos": "noun",
+    "pt": "apresentação de venda",
+    "definition": "A short talk trying to persuade someone to buy or invest.",
+    "example": "Our pitch to the pension fund went really well.",
+    "level": "B2",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-key-takeaway",
+    "term": "key takeaway",
+    "pos": "phrase",
+    "pt": "principal conclusão",
+    "definition": "The most important point to remember.",
+    "example": "The key takeaway is that demand still exceeds supply.",
+    "level": "B2",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-action-item",
+    "term": "action item",
+    "pos": "noun",
+    "pt": "tarefa definida em reunião",
+    "definition": "A specific task agreed in a meeting.",
+    "example": "I'll send everyone the list of action items.",
+    "level": "B2",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-ballpark-figure",
+    "term": "ballpark figure",
+    "pos": "idiom",
+    "pt": "número aproximado",
+    "definition": "A rough estimate.",
+    "example": "Can you give me a ballpark figure for the renovation?",
+    "level": "B2",
+    "topics": [
+      "business",
+      "finance"
+    ]
+  },
+  {
+    "id": "bus-think-outside-the-box",
+    "term": "think outside the box",
+    "pos": "idiom",
+    "pt": "pensar fora da caixa",
+    "definition": "To think creatively, in a new way.",
+    "example": "We need to think outside the box to lease this space.",
+    "level": "B2",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-get-the-ball-rolling",
+    "term": "get the ball rolling",
+    "pos": "idiom",
+    "pt": "dar o pontapé inicial",
+    "definition": "To start an activity or process.",
+    "example": "Let's get the ball rolling with a kickoff call.",
+    "level": "B2",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-back-to-square-one",
+    "term": "back to square one",
+    "pos": "idiom",
+    "pt": "voltar à estaca zero",
+    "definition": "Back at the beginning after a plan fails.",
+    "example": "The buyer withdrew, so we're back to square one.",
+    "level": "B2",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-compliance",
+    "term": "compliance",
+    "pos": "noun",
+    "pt": "conformidade, compliance",
+    "definition": "Following rules, laws and regulations.",
+    "example": "Our compliance team must review every new client.",
+    "level": "B2",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-bring-up",
+    "term": "bring up",
+    "pos": "phrasal verb",
+    "pt": "mencionar, levantar (assunto)",
+    "definition": "To start talking about a subject.",
+    "example": "I'd like to bring up the issue of maintenance costs.",
+    "level": "B2",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-iron-out",
+    "term": "iron out",
+    "pos": "phrasal verb",
+    "pt": "acertar (detalhes)",
+    "definition": "To solve small problems or differences.",
+    "example": "We still need to iron out a few details in the contract.",
+    "level": "B2",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-cut-corners",
+    "term": "cut corners",
+    "pos": "idiom",
+    "pt": "fazer nas coxas, economizar no essencial",
+    "definition": "To do something cheaply or badly to save time or money.",
+    "example": "The contractor cut corners on the waterproofing.",
+    "level": "B2",
+    "topics": [
+      "business",
+      "real-estate"
+    ]
+  },
+  {
+    "id": "bus-counteroffer",
+    "term": "counteroffer",
+    "pos": "noun",
+    "pt": "contraproposta",
+    "definition": "An offer made in reply to another offer.",
+    "example": "The seller rejected our bid and made a counteroffer.",
+    "level": "B2",
+    "topics": [
+      "business",
+      "real-estate"
+    ]
+  },
+  {
+    "id": "bus-synergy",
+    "term": "synergy",
+    "pos": "noun",
+    "pt": "sinergia",
+    "definition": "Extra value created when two groups work together.",
+    "example": "The merger should create synergies in back-office costs.",
+    "level": "C1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-bandwidth",
+    "term": "bandwidth",
+    "pos": "noun",
+    "pt": "disponibilidade (de tempo)",
+    "definition": "Informal: the time and energy available to take on work.",
+    "example": "I don't have the bandwidth to take on another project.",
+    "level": "C1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-mitigate",
+    "term": "mitigate",
+    "pos": "verb",
+    "pt": "mitigar, atenuar",
+    "definition": "To make something bad less severe.",
+    "example": "A longer lease helps mitigate vacancy risk.",
+    "level": "C1",
+    "topics": [
+      "business",
+      "academic"
+    ]
+  },
+  {
+    "id": "bus-the-bottom-line",
+    "term": "the bottom line",
+    "pos": "idiom",
+    "pt": "o essencial, o resultado final",
+    "definition": "The most important fact; also a company's final profit.",
+    "example": "The bottom line is that the deal doesn't pay off.",
+    "level": "C1",
+    "topics": [
+      "business",
+      "finance"
+    ]
+  },
+  {
+    "id": "bus-play-hardball",
+    "term": "play hardball",
+    "pos": "idiom",
+    "pt": "negociar duro",
+    "definition": "To be tough and uncompromising in a negotiation.",
+    "example": "The tenant's lawyers are playing hardball on the renewal.",
+    "level": "C1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "bus-red-tape",
+    "term": "red tape",
+    "pos": "idiom",
+    "pt": "burocracia",
+    "definition": "Excessive official rules and paperwork.",
+    "example": "Red tape delayed the building permit by six months.",
+    "level": "C1",
+    "topics": [
+      "business",
+      "real-estate"
+    ]
+  },
+  {
+    "id": "bus-learning-curve",
+    "term": "learning curve",
+    "pos": "noun",
+    "pt": "curva de aprendizado",
+    "definition": "The time and effort needed to learn something new.",
+    "example": "The new platform has a steep learning curve.",
+    "level": "C1",
+    "topics": [
+      "business",
+      "tech"
+    ]
+  },
+  {
+    "id": "bus-step-down",
+    "term": "step down",
+    "pos": "phrasal verb",
+    "pt": "renunciar, deixar o cargo",
+    "definition": "To leave an important job or position.",
+    "example": "The CEO will step down at the end of the year.",
+    "level": "C1",
+    "topics": [
+      "business"
+    ]
+  },
+  {
+    "id": "re-house",
+    "term": "house",
+    "pos": "noun",
+    "pt": "casa",
+    "definition": "A building where people live, usually one family.",
+    "example": "They bought a house with a big garden.",
+    "level": "A1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-apartment",
+    "term": "apartment",
+    "pos": "noun",
+    "pt": "apartamento",
+    "definition": "A set of rooms for living in, inside a larger building.",
+    "example": "Our apartment is on the tenth floor.",
+    "level": "A1",
+    "topics": [
+      "real-estate",
+      "daily"
+    ]
+  },
+  {
+    "id": "re-rent",
+    "term": "rent",
+    "pos": "noun",
+    "pt": "aluguel",
+    "definition": "Money you pay regularly to use a property.",
+    "example": "The rent is due on the fifth of each month.",
+    "level": "A1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-building",
+    "term": "building",
+    "pos": "noun",
+    "pt": "prédio, edifício",
+    "definition": "A structure with walls and a roof, like a house or office.",
+    "example": "The building has twenty floors and two elevators.",
+    "level": "A1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-room",
+    "term": "room",
+    "pos": "noun",
+    "pt": "cômodo, quarto",
+    "definition": "A separate area inside a building.",
+    "example": "The apartment has three rooms and a balcony.",
+    "level": "A1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-landlord",
+    "term": "landlord",
+    "pos": "noun",
+    "pt": "locador, proprietário",
+    "definition": "A person or company that rents property to others.",
+    "example": "The landlord agreed to fix the roof before we move in.",
+    "level": "A2",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-tenant",
+    "term": "tenant",
+    "pos": "noun",
+    "pt": "inquilino, locatário",
+    "definition": "A person or company that pays rent to use a property.",
+    "example": "The tenant wants to renew for another five years.",
+    "level": "A2",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-furnished",
+    "term": "furnished",
+    "pos": "adj",
+    "pt": "mobiliado",
+    "definition": "Already having furniture inside.",
+    "example": "We're looking for a furnished apartment near the subway.",
+    "level": "A2",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-neighborhood",
+    "term": "neighborhood",
+    "pos": "noun",
+    "pt": "bairro, vizinhança",
+    "definition": "An area of a town where people live.",
+    "example": "It's a quiet neighborhood with good schools.",
+    "level": "A2",
+    "topics": [
+      "real-estate",
+      "daily"
+    ]
+  },
+  {
+    "id": "re-real-estate-agent",
+    "term": "real estate agent",
+    "pos": "noun",
+    "pt": "corretor de imóveis",
+    "definition": "A person whose job is to sell or rent property.",
+    "example": "Our real estate agent found three options in Pinheiros.",
+    "level": "A2",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-move-in",
+    "term": "move in",
+    "pos": "phrasal verb",
+    "pt": "mudar-se (para)",
+    "definition": "To start living or working in a new place.",
+    "example": "The new tenants will move in on the first of March.",
+    "level": "A2",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-parking-space",
+    "term": "parking space",
+    "pos": "noun",
+    "pt": "vaga de garagem",
+    "definition": "A place where you can leave a car.",
+    "example": "Each unit comes with two parking spaces.",
+    "level": "A2",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-utility-bills",
+    "term": "utility bills",
+    "pos": "noun",
+    "pt": "contas de consumo (luz, água, gás)",
+    "definition": "Bills for services like electricity, water and gas.",
+    "example": "Utility bills are not included in the rent.",
+    "level": "A2",
+    "topics": [
+      "real-estate",
+      "daily"
+    ]
+  },
+  {
+    "id": "re-for-sale",
+    "term": "for sale",
+    "pos": "phrase",
+    "pt": "à venda",
+    "definition": "Available to be bought.",
+    "example": "The office next door has been for sale for a year.",
+    "level": "A2",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-downtown",
+    "term": "downtown",
+    "pos": "noun",
+    "pt": "centro da cidade",
+    "definition": "The main business area of a city.",
+    "example": "Office vacancy downtown is still high.",
+    "level": "A2",
+    "topics": [
+      "real-estate",
+      "travel"
+    ]
+  },
+  {
+    "id": "re-floor",
+    "term": "floor",
+    "pos": "noun",
+    "pt": "andar",
+    "definition": "A level of a building.",
+    "example": "The client wants an entire floor for its headquarters.",
+    "level": "A2",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-lease-agreement",
+    "term": "lease agreement",
+    "pos": "noun",
+    "pt": "contrato de locação",
+    "definition": "A legal contract to rent a property for a set period.",
+    "example": "Please read the lease agreement carefully before signing.",
+    "level": "B1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-mortgage",
+    "term": "mortgage",
+    "pos": "noun",
+    "pt": "financiamento imobiliário, hipoteca",
+    "definition": "A loan used to buy property, secured by that property.",
+    "example": "They took out a thirty-year mortgage to buy the house.",
+    "level": "B1",
+    "topics": [
+      "real-estate",
+      "finance"
+    ]
+  },
+  {
+    "id": "re-down-payment",
+    "term": "down payment",
+    "pos": "noun",
+    "pt": "entrada",
+    "definition": "The first part of the price paid upfront when buying.",
+    "example": "Most banks require a 20% down payment.",
+    "level": "B1",
+    "topics": [
+      "real-estate",
+      "finance"
+    ]
+  },
+  {
+    "id": "re-property-management",
+    "term": "property management",
+    "pos": "noun",
+    "pt": "administração de imóveis",
+    "definition": "The daily operation and maintenance of real estate for an owner.",
+    "example": "Property management fees are usually a percentage of the rent.",
+    "level": "B1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-square-footage",
+    "term": "square footage",
+    "pos": "noun",
+    "pt": "metragem (em pés quadrados)",
+    "definition": "The area of a space measured in square feet.",
+    "example": "What's the total square footage of the warehouse?",
+    "level": "B1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-appraisal",
+    "term": "appraisal",
+    "pos": "noun",
+    "pt": "avaliação (laudo)",
+    "definition": "A professional estimate of a property's value.",
+    "example": "The bank ordered an appraisal before approving the loan.",
+    "level": "B1",
+    "topics": [
+      "real-estate",
+      "finance"
+    ]
+  },
+  {
+    "id": "re-listing",
+    "term": "listing",
+    "pos": "noun",
+    "pt": "anúncio (de imóvel)",
+    "definition": "A property advertised for sale or rent.",
+    "example": "The listing says the unit has a sea view.",
+    "level": "B1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-closing-costs",
+    "term": "closing costs",
+    "pos": "noun",
+    "pt": "custos de fechamento (escritura, impostos)",
+    "definition": "Fees paid when a property sale is completed.",
+    "example": "Remember to include closing costs in your budget.",
+    "level": "B1",
+    "topics": [
+      "real-estate",
+      "finance"
+    ]
+  },
+  {
+    "id": "re-renovation",
+    "term": "renovation",
+    "pos": "noun",
+    "pt": "reforma",
+    "definition": "Work to repair and improve a building.",
+    "example": "The renovation will take about four months.",
+    "level": "B1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-commercial-property",
+    "term": "commercial property",
+    "pos": "noun",
+    "pt": "imóvel comercial",
+    "definition": "Real estate used for business, like offices or shops.",
+    "example": "Commercial property usually has longer leases than housing.",
+    "level": "B1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-occupancy-rate",
+    "term": "occupancy rate",
+    "pos": "noun",
+    "pt": "taxa de ocupação",
+    "definition": "The percentage of space that is currently rented.",
+    "example": "The mall's occupancy rate is above 95%.",
+    "level": "B1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-open-house",
+    "term": "open house",
+    "pos": "noun",
+    "pt": "visitação aberta",
+    "definition": "A time when a property for sale is open to visitors.",
+    "example": "The open house is on Saturday from ten to two.",
+    "level": "B1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-fixer-upper",
+    "term": "fixer-upper",
+    "pos": "noun",
+    "pt": "imóvel para reformar",
+    "definition": "A property that needs a lot of repairs.",
+    "example": "They bought a fixer-upper and renovated it themselves.",
+    "level": "B1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-homeowner",
+    "term": "homeowner",
+    "pos": "noun",
+    "pt": "proprietário (de casa)",
+    "definition": "A person who owns the home they live in.",
+    "example": "Homeowners pay property tax every year.",
+    "level": "B1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-broker",
+    "term": "broker",
+    "pos": "noun",
+    "pt": "corretor, intermediário",
+    "definition": "A person who arranges deals between buyers and sellers.",
+    "example": "The broker earns a commission when the deal closes.",
+    "level": "B1",
+    "topics": [
+      "real-estate",
+      "finance"
+    ]
+  },
+  {
+    "id": "re-warehouse",
+    "term": "warehouse",
+    "pos": "noun",
+    "pt": "galpão, armazém",
+    "definition": "A large building used to store goods.",
+    "example": "Demand for warehouses near São Paulo keeps growing.",
+    "level": "B1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-security-deposit",
+    "term": "security deposit",
+    "pos": "noun",
+    "pt": "caução",
+    "definition": "Money paid to a landlord to cover possible damage.",
+    "example": "The security deposit is equal to three months' rent.",
+    "level": "B1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-floor-plan",
+    "term": "floor plan",
+    "pos": "noun",
+    "pt": "planta (baixa)",
+    "definition": "A drawing showing the layout of rooms from above.",
+    "example": "Could you send me the floor plan of the third floor?",
+    "level": "B1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-cap-rate",
+    "term": "cap rate",
+    "pos": "noun",
+    "pt": "cap rate, taxa de capitalização",
+    "definition": "Net operating income divided by property value.",
+    "example": "Logistics assets are trading at a cap rate of about 8%.",
+    "level": "B2",
+    "topics": [
+      "real-estate",
+      "finance"
+    ]
+  },
+  {
+    "id": "re-zoning",
+    "term": "zoning",
+    "pos": "noun",
+    "pt": "zoneamento",
+    "definition": "Rules about how land in each area can be used.",
+    "example": "Zoning only allows residential use on this lot.",
+    "level": "B2",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-vacancy-rate",
+    "term": "vacancy rate",
+    "pos": "noun",
+    "pt": "taxa de vacância",
+    "definition": "The percentage of space that is empty and not rented.",
+    "example": "The vacancy rate for prime offices fell to 15%.",
+    "level": "B2",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-due-diligence",
+    "term": "due diligence",
+    "pos": "noun",
+    "pt": "due diligence, auditoria prévia",
+    "definition": "A careful investigation of a property or company before a deal.",
+    "example": "Legal due diligence revealed two pending lawsuits.",
+    "level": "B2",
+    "topics": [
+      "real-estate",
+      "business"
+    ]
+  },
+  {
+    "id": "re-escrow",
+    "term": "escrow",
+    "pos": "noun",
+    "pt": "conta-garantia (escrow)",
+    "definition": "Money held by a third party until a deal is completed.",
+    "example": "The deposit will stay in escrow until the closing.",
+    "level": "B2",
+    "topics": [
+      "real-estate",
+      "finance"
+    ]
+  },
+  {
+    "id": "re-gross-leasable-area",
+    "term": "gross leasable area",
+    "pos": "noun",
+    "pt": "área bruta locável (ABL)",
+    "definition": "The total floor area available for tenants to rent.",
+    "example": "The shopping center has 40,000 square meters of gross leasable area.",
+    "level": "B2",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-title-deed",
+    "term": "title deed",
+    "pos": "noun",
+    "pt": "escritura, matrícula",
+    "definition": "A legal document proving who owns a property.",
+    "example": "The title deed must be registered at the notary.",
+    "level": "B2",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-net-lease",
+    "term": "net lease",
+    "pos": "noun",
+    "pt": "locação líquida",
+    "definition": "A lease where the tenant pays some property expenses.",
+    "example": "Under a net lease, the tenant pays taxes and insurance.",
+    "level": "B2",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-rent-roll",
+    "term": "rent roll",
+    "pos": "noun",
+    "pt": "relação de locatários e aluguéis",
+    "definition": "A list of tenants, rents and lease dates for a property.",
+    "example": "The buyer asked for an updated rent roll.",
+    "level": "B2",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-tenant-improvements",
+    "term": "tenant improvements",
+    "pos": "noun",
+    "pt": "benfeitorias do locatário",
+    "definition": "Changes made to a space to suit a specific tenant.",
+    "example": "The landlord will pay for tenant improvements up to a fixed amount.",
+    "level": "B2",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-anchor-tenant",
+    "term": "anchor tenant",
+    "pos": "noun",
+    "pt": "loja âncora",
+    "definition": "A large, well-known tenant that attracts other tenants and visitors.",
+    "example": "The supermarket is the anchor tenant of the mall.",
+    "level": "B2",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-asking-price",
+    "term": "asking price",
+    "pos": "noun",
+    "pt": "preço pedido",
+    "definition": "The price a seller first asks for a property.",
+    "example": "We offered 10% below the asking price.",
+    "level": "B2",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-comparable-sales",
+    "term": "comparable sales",
+    "pos": "noun",
+    "pt": "comparativos de venda (comps)",
+    "definition": "Recent sales of similar properties used to estimate value.",
+    "example": "The appraiser used five comparable sales in the area.",
+    "level": "B2",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-mixed-use",
+    "term": "mixed-use",
+    "pos": "adj",
+    "pt": "de uso misto",
+    "definition": "Combining homes, offices and shops in one project.",
+    "example": "The developer is planning a mixed-use tower near the station.",
+    "level": "B2",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-curb-appeal",
+    "term": "curb appeal",
+    "pos": "noun",
+    "pt": "atratividade da fachada",
+    "definition": "How attractive a property looks from the street.",
+    "example": "New paint and a tidy garden improve curb appeal.",
+    "level": "B2",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-foreclosure",
+    "term": "foreclosure",
+    "pos": "noun",
+    "pt": "execução da hipoteca, retomada",
+    "definition": "When a lender takes a property because the loan isn't paid.",
+    "example": "The bank started foreclosure after six missed payments.",
+    "level": "B2",
+    "topics": [
+      "real-estate",
+      "finance"
+    ]
+  },
+  {
+    "id": "re-rent-free-period",
+    "term": "rent-free period",
+    "pos": "noun",
+    "pt": "carência de aluguel",
+    "definition": "Time at the start of a lease when no rent is paid.",
+    "example": "We offered a three-month rent-free period to close the deal.",
+    "level": "B2",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-built-to-suit",
+    "term": "built-to-suit",
+    "pos": "adj",
+    "pt": "built-to-suit, sob medida",
+    "definition": "Built by a developer to a tenant's specific needs, then leased.",
+    "example": "The company signed a fifteen-year built-to-suit lease for its new factory.",
+    "level": "C1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-sale-leaseback",
+    "term": "sale-leaseback",
+    "pos": "noun",
+    "pt": "sale-leaseback, venda com locação de volta",
+    "definition": "Selling a property and immediately renting it back from the buyer.",
+    "example": "The retailer raised cash through a sale-leaseback of its stores.",
+    "level": "C1",
+    "topics": [
+      "real-estate",
+      "finance"
+    ]
+  },
+  {
+    "id": "re-easement",
+    "term": "easement",
+    "pos": "noun",
+    "pt": "servidão",
+    "definition": "A legal right to use part of someone else's land.",
+    "example": "There is an easement for the power line across the lot.",
+    "level": "C1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-encumbrance",
+    "term": "encumbrance",
+    "pos": "noun",
+    "pt": "ônus, gravame",
+    "definition": "A claim or limit on a property, like a lien.",
+    "example": "The title search found no encumbrance on the property.",
+    "level": "C1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-absorption-rate",
+    "term": "absorption rate",
+    "pos": "noun",
+    "pt": "taxa de absorção",
+    "definition": "How fast available space is rented or sold in a market.",
+    "example": "The absorption rate slowed in the second half of the year.",
+    "level": "C1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-highest-and-best-use",
+    "term": "highest and best use",
+    "pos": "phrase",
+    "pt": "melhor e mais eficiente uso",
+    "definition": "The legal, possible use that gives a property its highest value.",
+    "example": "The appraiser concluded that the highest and best use is residential.",
+    "level": "C1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-ground-lease",
+    "term": "ground lease",
+    "pos": "noun",
+    "pt": "arrendamento do terreno (direito de superfície)",
+    "definition": "A long lease of land on which the tenant builds.",
+    "example": "The hotel sits on a 99-year ground lease.",
+    "level": "C1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-break-clause",
+    "term": "break clause",
+    "pos": "noun",
+    "pt": "cláusula de rescisão antecipada",
+    "definition": "A lease term letting a party end the lease early.",
+    "example": "The tenant has a break clause in year five.",
+    "level": "C1",
+    "topics": [
+      "real-estate"
+    ]
+  },
+  {
+    "id": "re-triple-net-lease",
+    "term": "triple net lease",
+    "pos": "noun",
+    "pt": "locação triple net (NNN)",
+    "definition": "A lease where the tenant pays taxes, insurance and maintenance.",
+    "example": "Investors like triple net leases because expenses are passed to the tenant.",
+    "level": "C1",
+    "topics": [
+      "real-estate",
+      "finance"
+    ]
+  },
+  {
+    "id": "re-covenant",
+    "term": "covenant",
+    "pos": "noun",
+    "pt": "cláusula restritiva, obrigação contratual",
+    "definition": "A promise in a contract to do or not do something.",
+    "example": "The loan covenant requires a minimum occupancy of 85%.",
+    "level": "C1",
+    "topics": [
+      "real-estate",
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-money",
+    "term": "money",
+    "pos": "noun",
+    "pt": "dinheiro",
+    "definition": "Coins and notes used to buy things.",
+    "example": "I don't carry much money when I travel.",
+    "level": "A1",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-price",
+    "term": "price",
+    "pos": "noun",
+    "pt": "preço",
+    "definition": "The amount of money you pay for something.",
+    "example": "The price includes two parking spaces.",
+    "level": "A1",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-bank",
+    "term": "bank",
+    "pos": "noun",
+    "pt": "banco",
+    "definition": "A business that keeps and lends money.",
+    "example": "I need to go to the bank to sign some papers.",
+    "level": "A1",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-pay",
+    "term": "pay",
+    "pos": "verb",
+    "pt": "pagar",
+    "definition": "To give money for something.",
+    "example": "Can I pay by card?",
+    "level": "A1",
+    "topics": [
+      "finance",
+      "daily"
+    ]
+  },
+  {
+    "id": "fin-cash",
+    "term": "cash",
+    "pos": "noun",
+    "pt": "dinheiro vivo",
+    "definition": "Money in coins or notes.",
+    "example": "The market only accepts cash.",
+    "level": "A1",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-cost",
+    "term": "cost",
+    "pos": "noun",
+    "pt": "custo",
+    "definition": "The amount of money needed to buy or do something.",
+    "example": "The total cost of the project is two million reais.",
+    "level": "A1",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-save",
+    "term": "save",
+    "pos": "verb",
+    "pt": "economizar, poupar",
+    "definition": "To keep money to use later.",
+    "example": "We save a part of our salary every month.",
+    "level": "A2",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-spend",
+    "term": "spend",
+    "pos": "verb",
+    "pt": "gastar",
+    "definition": "To use money to buy things.",
+    "example": "We spend too much on takeout.",
+    "level": "A2",
+    "topics": [
+      "finance",
+      "daily"
+    ]
+  },
+  {
+    "id": "fin-loan",
+    "term": "loan",
+    "pos": "noun",
+    "pt": "empréstimo",
+    "definition": "Money borrowed that must be paid back.",
+    "example": "The bank approved the loan in two weeks.",
+    "level": "A2",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-tax",
+    "term": "tax",
+    "pos": "noun",
+    "pt": "imposto",
+    "definition": "Money paid to the government.",
+    "example": "Property tax goes up every January.",
+    "level": "A2",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-budget",
+    "term": "budget",
+    "pos": "noun",
+    "pt": "orçamento",
+    "definition": "A plan for how much money you can spend.",
+    "example": "The renovation is already over budget.",
+    "level": "A2",
+    "topics": [
+      "finance",
+      "business"
+    ]
+  },
+  {
+    "id": "fin-profit",
+    "term": "profit",
+    "pos": "noun",
+    "pt": "lucro",
+    "definition": "Money you make after paying all costs.",
+    "example": "The company made a profit for the first time.",
+    "level": "A2",
+    "topics": [
+      "finance",
+      "business"
+    ]
+  },
+  {
+    "id": "fin-interest-rate",
+    "term": "interest rate",
+    "pos": "noun",
+    "pt": "taxa de juros",
+    "definition": "The percentage charged for borrowing money.",
+    "example": "Higher interest rates make mortgages more expensive.",
+    "level": "A2",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-owe",
+    "term": "owe",
+    "pos": "verb",
+    "pt": "dever (dinheiro)",
+    "definition": "To have to pay money back to someone.",
+    "example": "I still owe the bank fifty thousand reais.",
+    "level": "A2",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-earn",
+    "term": "earn",
+    "pos": "verb",
+    "pt": "ganhar (dinheiro)",
+    "definition": "To get money for work or from an investment.",
+    "example": "She earns more as a consultant than before.",
+    "level": "A2",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-income",
+    "term": "income",
+    "pos": "noun",
+    "pt": "renda",
+    "definition": "Money received from work or investments.",
+    "example": "Rental income covers most of their expenses.",
+    "level": "A2",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-debt",
+    "term": "debt",
+    "pos": "noun",
+    "pt": "dívida",
+    "definition": "Money that you owe.",
+    "example": "The company is trying to reduce its debt.",
+    "level": "A2",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-afford",
+    "term": "afford",
+    "pos": "verb",
+    "pt": "ter condições de pagar",
+    "definition": "To have enough money to pay for something.",
+    "example": "We can't afford a house in that area.",
+    "level": "A2",
+    "topics": [
+      "finance",
+      "daily"
+    ]
+  },
+  {
+    "id": "fin-invest",
+    "term": "invest",
+    "pos": "verb",
+    "pt": "investir",
+    "definition": "To put money into something to make a profit.",
+    "example": "He wants to invest in logistics warehouses.",
+    "level": "B1",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-cash-flow",
+    "term": "cash flow",
+    "pos": "noun",
+    "pt": "fluxo de caixa",
+    "definition": "Money moving in and out of a business or asset.",
+    "example": "The property generates stable cash flow from long leases.",
+    "level": "B1",
+    "topics": [
+      "finance",
+      "real-estate"
+    ]
+  },
+  {
+    "id": "fin-equity",
+    "term": "equity",
+    "pos": "noun",
+    "pt": "capital próprio, patrimônio líquido",
+    "definition": "The owner's share of an asset's value after debt.",
+    "example": "The investor will contribute 40% equity and borrow the rest.",
+    "level": "B1",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-asset",
+    "term": "asset",
+    "pos": "noun",
+    "pt": "ativo",
+    "definition": "Something valuable that a person or company owns.",
+    "example": "The fund owns twelve assets across Brazil.",
+    "level": "B1",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-liability",
+    "term": "liability",
+    "pos": "noun",
+    "pt": "passivo, obrigação",
+    "definition": "Money or a legal obligation that a company owes.",
+    "example": "Pending lawsuits are a potential liability for the buyer.",
+    "level": "B1",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-shareholder",
+    "term": "shareholder",
+    "pos": "noun",
+    "pt": "acionista",
+    "definition": "A person or company that owns shares in a company.",
+    "example": "Shareholders will vote on the merger next month.",
+    "level": "B1",
+    "topics": [
+      "finance",
+      "business"
+    ]
+  },
+  {
+    "id": "fin-dividend",
+    "term": "dividend",
+    "pos": "noun",
+    "pt": "dividendo",
+    "definition": "Part of a company's profit paid to its owners.",
+    "example": "The REIT pays a monthly dividend to investors.",
+    "level": "B1",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-invoice",
+    "term": "invoice",
+    "pos": "noun",
+    "pt": "fatura, nota fiscal",
+    "definition": "A document asking for payment for goods or services.",
+    "example": "Please send the invoice to our finance department.",
+    "level": "B1",
+    "topics": [
+      "finance",
+      "business"
+    ]
+  },
+  {
+    "id": "fin-inflation",
+    "term": "inflation",
+    "pos": "noun",
+    "pt": "inflação",
+    "definition": "A general rise in prices over time.",
+    "example": "Rents are adjusted annually for inflation.",
+    "level": "B1",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-return-on-investment",
+    "term": "return on investment",
+    "pos": "noun",
+    "pt": "retorno sobre o investimento",
+    "definition": "The profit from an investment compared to its cost.",
+    "example": "The return on investment was higher than expected.",
+    "level": "B1",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-stock-market",
+    "term": "stock market",
+    "pos": "noun",
+    "pt": "bolsa de valores",
+    "definition": "The system where shares in companies are bought and sold.",
+    "example": "The stock market fell sharply after the announcement.",
+    "level": "B1",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-expense",
+    "term": "expense",
+    "pos": "noun",
+    "pt": "despesa",
+    "definition": "Money spent on something.",
+    "example": "Maintenance is the largest expense for this building.",
+    "level": "B1",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-break-even",
+    "term": "break even",
+    "pos": "phrasal verb",
+    "pt": "empatar (sem lucro nem prejuízo)",
+    "definition": "To earn exactly enough to cover costs.",
+    "example": "The project should break even in its third year.",
+    "level": "B1",
+    "topics": [
+      "finance",
+      "business"
+    ]
+  },
+  {
+    "id": "fin-pay-off",
+    "term": "pay off",
+    "pos": "phrasal verb",
+    "pt": "quitar; valer a pena",
+    "definition": "To finish paying a debt; or to bring good results.",
+    "example": "They hope to pay off the mortgage in ten years.",
+    "level": "B1",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-fee",
+    "term": "fee",
+    "pos": "noun",
+    "pt": "taxa, honorário",
+    "definition": "Money paid for a professional service.",
+    "example": "The management fee is 1% of assets per year.",
+    "level": "B1",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-balance-sheet",
+    "term": "balance sheet",
+    "pos": "noun",
+    "pt": "balanço patrimonial",
+    "definition": "A statement of a company's assets, liabilities and equity.",
+    "example": "The balance sheet shows very little debt.",
+    "level": "B1",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-cut-back-on",
+    "term": "cut back on",
+    "pos": "phrasal verb",
+    "pt": "reduzir (gastos)",
+    "definition": "To spend or use less of something.",
+    "example": "We need to cut back on travel expenses this year.",
+    "level": "B1",
+    "topics": [
+      "finance",
+      "daily"
+    ]
+  },
+  {
+    "id": "fin-portfolio",
+    "term": "portfolio",
+    "pos": "noun",
+    "pt": "carteira, portfólio",
+    "definition": "A group of investments or assets owned by someone.",
+    "example": "The fund's portfolio includes offices and warehouses.",
+    "level": "B1",
+    "topics": [
+      "finance",
+      "real-estate"
+    ]
+  },
+  {
+    "id": "fin-yield",
+    "term": "yield",
+    "pos": "noun",
+    "pt": "rendimento, yield",
+    "definition": "The income from an investment as a percentage of its value.",
+    "example": "The building offers a rental yield of 9% a year.",
+    "level": "B2",
+    "topics": [
+      "finance",
+      "real-estate"
+    ]
+  },
+  {
+    "id": "fin-leverage",
+    "term": "leverage",
+    "pos": "noun",
+    "pt": "alavancagem",
+    "definition": "Using borrowed money to increase potential returns.",
+    "example": "Too much leverage makes the fund risky when rates rise.",
+    "level": "B2",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-payback-period",
+    "term": "payback period",
+    "pos": "noun",
+    "pt": "prazo de retorno (payback)",
+    "definition": "The time needed to recover the money invested.",
+    "example": "The solar panels have a payback period of five years.",
+    "level": "B2",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-net-present-value",
+    "term": "net present value",
+    "pos": "noun",
+    "pt": "valor presente líquido (VPL)",
+    "definition": "Today's value of future cash flows minus the initial investment.",
+    "example": "The net present value is positive, so the project creates value.",
+    "level": "B2",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-depreciation",
+    "term": "depreciation",
+    "pos": "noun",
+    "pt": "depreciação",
+    "definition": "The fall in value of an asset over time.",
+    "example": "Depreciation reduces the company's taxable income.",
+    "level": "B2",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-amortization",
+    "term": "amortization",
+    "pos": "noun",
+    "pt": "amortização",
+    "definition": "Paying back a loan gradually in regular payments.",
+    "example": "The loan has a two-year grace period before amortization starts.",
+    "level": "B2",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-write-off",
+    "term": "write off",
+    "pos": "phrasal verb",
+    "pt": "dar baixa (como perda)",
+    "definition": "To record a debt or asset as having no value.",
+    "example": "The bank had to write off the unpaid loan.",
+    "level": "B2",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-valuation",
+    "term": "valuation",
+    "pos": "noun",
+    "pt": "avaliação (valor)",
+    "definition": "An estimate of how much a company or asset is worth.",
+    "example": "The valuation assumes rents will grow with inflation.",
+    "level": "B2",
+    "topics": [
+      "finance",
+      "real-estate"
+    ]
+  },
+  {
+    "id": "fin-collateral",
+    "term": "collateral",
+    "pos": "noun",
+    "pt": "garantia (colateral)",
+    "definition": "An asset pledged to a lender to secure a loan.",
+    "example": "The warehouse serves as collateral for the loan.",
+    "level": "B2",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-liquidity",
+    "term": "liquidity",
+    "pos": "noun",
+    "pt": "liquidez",
+    "definition": "How easily an asset can be turned into cash.",
+    "example": "Real estate offers lower liquidity than stocks.",
+    "level": "B2",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-diversify",
+    "term": "diversify",
+    "pos": "verb",
+    "pt": "diversificar",
+    "definition": "To spread investments across different types to reduce risk.",
+    "example": "Investors diversify by buying assets in several regions.",
+    "level": "B2",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-bull-market",
+    "term": "bull market",
+    "pos": "noun",
+    "pt": "mercado em alta",
+    "definition": "A period when prices are rising.",
+    "example": "Many first-time investors entered during the bull market.",
+    "level": "B2",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-hedge",
+    "term": "hedge",
+    "pos": "verb",
+    "pt": "proteger-se (hedge)",
+    "definition": "To reduce financial risk with an offsetting investment.",
+    "example": "The company hedges its dollar debt against currency swings.",
+    "level": "B2",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-gross-margin",
+    "term": "gross margin",
+    "pos": "noun",
+    "pt": "margem bruta",
+    "definition": "Revenue minus direct costs, as a percentage of revenue.",
+    "example": "Our gross margin improved after we renegotiated with suppliers.",
+    "level": "B2",
+    "topics": [
+      "finance",
+      "business"
+    ]
+  },
+  {
+    "id": "fin-in-the-red",
+    "term": "in the red",
+    "pos": "idiom",
+    "pt": "no vermelho",
+    "definition": "Losing money or owing money.",
+    "example": "The hotel was in the red for most of 2020.",
+    "level": "B2",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-discount-rate",
+    "term": "discount rate",
+    "pos": "noun",
+    "pt": "taxa de desconto",
+    "definition": "The rate used to convert future cash flows to today's value.",
+    "example": "A higher discount rate lowers the property's value.",
+    "level": "B2",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-refinance",
+    "term": "refinance",
+    "pos": "verb",
+    "pt": "refinanciar",
+    "definition": "To replace a loan with a new one, usually on better terms.",
+    "example": "They refinanced the building when rates dropped.",
+    "level": "B2",
+    "topics": [
+      "finance",
+      "real-estate"
+    ]
+  },
+  {
+    "id": "fin-internal-rate-of-return",
+    "term": "internal rate of return",
+    "pos": "noun",
+    "pt": "taxa interna de retorno (TIR)",
+    "definition": "The discount rate at which an investment's net present value is zero.",
+    "example": "The developer targets an internal rate of return of 20%.",
+    "level": "C1",
+    "topics": [
+      "finance",
+      "real-estate"
+    ]
+  },
+  {
+    "id": "fin-ebitda",
+    "term": "EBITDA",
+    "pos": "noun",
+    "pt": "EBITDA (Lajida)",
+    "definition": "Earnings before interest, taxes, depreciation and amortization.",
+    "example": "The company's EBITDA grew 15% last year.",
+    "level": "C1",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-hurdle-rate",
+    "term": "hurdle rate",
+    "pos": "noun",
+    "pt": "taxa mínima de atratividade",
+    "definition": "The minimum return an investor requires to accept a project.",
+    "example": "The project doesn't meet our hurdle rate of 14%.",
+    "level": "C1",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-distribution-waterfall",
+    "term": "distribution waterfall",
+    "pos": "noun",
+    "pt": "cascata de distribuição",
+    "definition": "The order in which profits are paid out to investors.",
+    "example": "The distribution waterfall gives the sponsor a larger share after 12%.",
+    "level": "C1",
+    "topics": [
+      "finance",
+      "real-estate"
+    ]
+  },
+  {
+    "id": "fin-mezzanine-financing",
+    "term": "mezzanine financing",
+    "pos": "noun",
+    "pt": "financiamento mezanino",
+    "definition": "Debt ranked between senior loans and equity, with higher interest.",
+    "example": "Mezzanine financing filled the gap in the capital stack.",
+    "level": "C1",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "fin-debt-service-coverage-ratio",
+    "term": "debt service coverage ratio",
+    "pos": "noun",
+    "pt": "índice de cobertura do serviço da dívida (ICSD)",
+    "definition": "Net operating income divided by annual loan payments.",
+    "example": "Lenders want a debt service coverage ratio of at least 1.25.",
+    "level": "C1",
+    "topics": [
+      "finance",
+      "real-estate"
+    ]
+  },
+  {
+    "id": "fin-loan-to-value-ratio",
+    "term": "loan-to-value ratio",
+    "pos": "noun",
+    "pt": "relação empréstimo/valor (LTV)",
+    "definition": "The loan amount as a percentage of the property's value.",
+    "example": "The bank caps the loan-to-value ratio at 60%.",
+    "level": "C1",
+    "topics": [
+      "finance",
+      "real-estate"
+    ]
+  },
+  {
+    "id": "fin-sunk-cost",
+    "term": "sunk cost",
+    "pos": "noun",
+    "pt": "custo afundado",
+    "definition": "Money already spent that cannot be recovered.",
+    "example": "Don't let sunk costs influence the decision to sell.",
+    "level": "C1",
+    "topics": [
+      "finance",
+      "business"
+    ]
+  },
+  {
+    "id": "fin-opportunity-cost",
+    "term": "opportunity cost",
+    "pos": "noun",
+    "pt": "custo de oportunidade",
+    "definition": "The value of the best option you give up.",
+    "example": "Holding vacant land has a high opportunity cost.",
+    "level": "C1",
+    "topics": [
+      "finance",
+      "academic"
+    ]
+  },
+  {
+    "id": "fin-bear-market",
+    "term": "bear market",
+    "pos": "noun",
+    "pt": "mercado em baixa",
+    "definition": "A long period when prices are falling.",
+    "example": "Real estate funds lost value during the bear market.",
+    "level": "C1",
+    "topics": [
+      "finance"
+    ]
+  },
+  {
+    "id": "trv-airport",
+    "term": "airport",
+    "pos": "noun",
+    "pt": "aeroporto",
+    "definition": "A place where planes take off and land.",
+    "example": "I'll take a taxi to the airport at six.",
+    "level": "A1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-ticket",
+    "term": "ticket",
+    "pos": "noun",
+    "pt": "passagem, ingresso",
+    "definition": "A paper or digital pass that lets you travel or enter.",
+    "example": "I bought my ticket online last week.",
+    "level": "A1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-hotel",
+    "term": "hotel",
+    "pos": "noun",
+    "pt": "hotel",
+    "definition": "A building where you pay to stay the night.",
+    "example": "Our hotel is close to the convention center.",
+    "level": "A1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-passport",
+    "term": "passport",
+    "pos": "noun",
+    "pt": "passaporte",
+    "definition": "An official document you need to travel abroad.",
+    "example": "Don't forget your passport when you leave home.",
+    "level": "A1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-train",
+    "term": "train",
+    "pos": "noun",
+    "pt": "trem",
+    "definition": "A vehicle on rails that carries people or goods.",
+    "example": "The train to Boston leaves every hour.",
+    "level": "A1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-map",
+    "term": "map",
+    "pos": "noun",
+    "pt": "mapa",
+    "definition": "A drawing of an area showing roads and places.",
+    "example": "Can you show me on the map where we are?",
+    "level": "A1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-suitcase",
+    "term": "suitcase",
+    "pos": "noun",
+    "pt": "mala",
+    "definition": "A large case for carrying clothes when traveling.",
+    "example": "My suitcase is too heavy to carry upstairs.",
+    "level": "A1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-beach",
+    "term": "beach",
+    "pos": "noun",
+    "pt": "praia",
+    "definition": "An area of sand or stones next to the sea.",
+    "example": "We spent the whole afternoon at the beach.",
+    "level": "A1",
+    "topics": [
+      "travel",
+      "daily"
+    ]
+  },
+  {
+    "id": "trv-boarding-pass",
+    "term": "boarding pass",
+    "pos": "noun",
+    "pt": "cartão de embarque",
+    "definition": "A document that lets you get on a plane.",
+    "example": "Please have your boarding pass ready at the gate.",
+    "level": "A2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-check-in",
+    "term": "check in",
+    "pos": "phrasal verb",
+    "pt": "fazer check-in",
+    "definition": "To register at a hotel or airport when you arrive.",
+    "example": "We can check in at the hotel after 2 p.m.",
+    "level": "A2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-check-out",
+    "term": "check out",
+    "pos": "phrasal verb",
+    "pt": "fazer check-out",
+    "definition": "To pay and leave a hotel.",
+    "example": "What time do we need to check out?",
+    "level": "A2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-luggage",
+    "term": "luggage",
+    "pos": "noun",
+    "pt": "bagagem",
+    "definition": "The bags and suitcases you take when traveling.",
+    "example": "My luggage didn't arrive with the flight.",
+    "level": "A2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-reservation",
+    "term": "reservation",
+    "pos": "noun",
+    "pt": "reserva",
+    "definition": "An arrangement to keep a room, table or seat for you.",
+    "example": "I have a reservation for two under the name Silva.",
+    "level": "A2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-delay",
+    "term": "delay",
+    "pos": "noun",
+    "pt": "atraso",
+    "definition": "A period of waiting longer than planned.",
+    "example": "There's a two-hour delay because of the weather.",
+    "level": "A2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-gate",
+    "term": "gate",
+    "pos": "noun",
+    "pt": "portão de embarque",
+    "definition": "The place in an airport where you get on the plane.",
+    "example": "Our flight now leaves from gate 23.",
+    "level": "A2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-round-trip",
+    "term": "round trip",
+    "pos": "noun",
+    "pt": "ida e volta",
+    "definition": "A journey to a place and back again.",
+    "example": "A round trip to New York costs about four thousand reais.",
+    "level": "A2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-sightseeing",
+    "term": "sightseeing",
+    "pos": "noun",
+    "pt": "passeio turístico",
+    "definition": "Visiting famous places as a tourist.",
+    "example": "We'll do some sightseeing after the conference.",
+    "level": "A2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-souvenir",
+    "term": "souvenir",
+    "pos": "noun",
+    "pt": "lembrancinha",
+    "definition": "Something you buy to remember a place you visited.",
+    "example": "I bought a small souvenir for my daughter.",
+    "level": "A2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-departure",
+    "term": "departure",
+    "pos": "noun",
+    "pt": "partida",
+    "definition": "The act of leaving, especially on a journey.",
+    "example": "Check the departure board for your gate.",
+    "level": "A2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-arrival",
+    "term": "arrival",
+    "pos": "noun",
+    "pt": "chegada",
+    "definition": "The act of arriving somewhere.",
+    "example": "Our arrival in Lisbon is at 7 a.m. local time.",
+    "level": "A2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-window-seat",
+    "term": "window seat",
+    "pos": "noun",
+    "pt": "assento na janela",
+    "definition": "A seat next to the window on a plane or train.",
+    "example": "Could I have a window seat, please?",
+    "level": "A2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-carry-on",
+    "term": "carry-on",
+    "pos": "noun",
+    "pt": "bagagem de mão",
+    "definition": "A small bag you can take into the plane cabin.",
+    "example": "You can bring one carry-on and one personal item.",
+    "level": "A2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-customs",
+    "term": "customs",
+    "pos": "noun",
+    "pt": "alfândega",
+    "definition": "The place where officials check goods you bring into a country.",
+    "example": "It took forty minutes to get through customs.",
+    "level": "A2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-layover",
+    "term": "layover",
+    "pos": "noun",
+    "pt": "escala, conexão",
+    "definition": "A short stop between flights on a journey.",
+    "example": "We have a three-hour layover in Miami.",
+    "level": "B1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-itinerary",
+    "term": "itinerary",
+    "pos": "noun",
+    "pt": "roteiro, itinerário",
+    "definition": "A detailed plan of a trip.",
+    "example": "I'll email you the itinerary for the site visits.",
+    "level": "B1",
+    "topics": [
+      "travel",
+      "business"
+    ]
+  },
+  {
+    "id": "trv-jet-lag",
+    "term": "jet lag",
+    "pos": "noun",
+    "pt": "jet lag, cansaço do fuso",
+    "definition": "Tiredness after flying across time zones.",
+    "example": "I still have jet lag after the flight from Tokyo.",
+    "level": "B1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-travel-insurance",
+    "term": "travel insurance",
+    "pos": "noun",
+    "pt": "seguro-viagem",
+    "definition": "Insurance that covers problems during a trip.",
+    "example": "Travel insurance is required for entry into Europe.",
+    "level": "B1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-currency-exchange",
+    "term": "currency exchange",
+    "pos": "noun",
+    "pt": "câmbio, casa de câmbio",
+    "definition": "Changing money from one currency to another.",
+    "example": "The currency exchange at the airport has terrible rates.",
+    "level": "B1",
+    "topics": [
+      "travel",
+      "finance"
+    ]
+  },
+  {
+    "id": "trv-get-around",
+    "term": "get around",
+    "pos": "phrasal verb",
+    "pt": "locomover-se",
+    "definition": "To travel from place to place in an area.",
+    "example": "It's easy to get around London by Tube.",
+    "level": "B1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-set-off",
+    "term": "set off",
+    "pos": "phrasal verb",
+    "pt": "partir, pegar a estrada",
+    "definition": "To start a journey.",
+    "example": "We set off early to avoid the traffic.",
+    "level": "B1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-overbooked",
+    "term": "overbooked",
+    "pos": "adj",
+    "pt": "com overbooking, lotado",
+    "definition": "Having more bookings than available seats or rooms.",
+    "example": "The flight was overbooked, so they offered us vouchers.",
+    "level": "B1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-room-service",
+    "term": "room service",
+    "pos": "noun",
+    "pt": "serviço de quarto",
+    "definition": "A hotel service that brings food to your room.",
+    "example": "I was too tired, so I ordered room service.",
+    "level": "B1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-landmark",
+    "term": "landmark",
+    "pos": "noun",
+    "pt": "ponto de referência, marco",
+    "definition": "A famous building or place that is easy to recognize.",
+    "example": "The bridge is the city's most famous landmark.",
+    "level": "B1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-tip",
+    "term": "tip",
+    "pos": "noun",
+    "pt": "gorjeta",
+    "definition": "Extra money given to thank someone for a service.",
+    "example": "In the US, a 20% tip is normal at restaurants.",
+    "level": "B1",
+    "topics": [
+      "travel",
+      "daily"
+    ]
+  },
+  {
+    "id": "trv-pick-up",
+    "term": "pick up",
+    "pos": "phrasal verb",
+    "pt": "buscar, retirar",
+    "definition": "To collect someone or something.",
+    "example": "I'll pick up the rental car at the airport.",
+    "level": "B1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-drop-off",
+    "term": "drop off",
+    "pos": "phrasal verb",
+    "pt": "deixar (alguém/algo)",
+    "definition": "To take someone or something to a place and leave them.",
+    "example": "Can you drop me off at the hotel?",
+    "level": "B1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-fill-out",
+    "term": "fill out",
+    "pos": "phrasal verb",
+    "pt": "preencher (formulário)",
+    "definition": "To complete a form with information.",
+    "example": "Please fill out the landing card before arrival.",
+    "level": "B1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-run-out-of",
+    "term": "run out of",
+    "pos": "phrasal verb",
+    "pt": "ficar sem",
+    "definition": "To use all of something so none is left.",
+    "example": "Our phones are about to run out of battery.",
+    "level": "B1",
+    "topics": [
+      "travel",
+      "daily"
+    ]
+  },
+  {
+    "id": "trv-connecting-flight",
+    "term": "connecting flight",
+    "pos": "noun",
+    "pt": "voo de conexão",
+    "definition": "A second flight you take to reach your destination.",
+    "example": "I missed my connecting flight in Chicago.",
+    "level": "B1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-book-in-advance",
+    "term": "book in advance",
+    "pos": "phrase",
+    "pt": "reservar com antecedência",
+    "definition": "To reserve something long before you need it.",
+    "example": "It's cheaper to book in advance during the holidays.",
+    "level": "B1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-all-inclusive",
+    "term": "all-inclusive",
+    "pos": "adj",
+    "pt": "tudo incluído",
+    "definition": "With meals, drinks and activities included in the price.",
+    "example": "We stayed at an all-inclusive resort in Cancún.",
+    "level": "B1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-travel-light",
+    "term": "travel light",
+    "pos": "idiom",
+    "pt": "viajar com pouca bagagem",
+    "definition": "To travel with very little luggage.",
+    "example": "I always travel light on business trips.",
+    "level": "B1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-off-the-beaten-track",
+    "term": "off the beaten track",
+    "pos": "idiom",
+    "pt": "fora do roteiro turístico",
+    "definition": "In a quiet place that few tourists visit.",
+    "example": "We found a lovely village off the beaten track.",
+    "level": "B2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-tourist-trap",
+    "term": "tourist trap",
+    "pos": "noun",
+    "pt": "armadilha para turistas",
+    "definition": "An expensive place that mainly attracts tourists.",
+    "example": "That restaurant is a tourist trap, so let's eat elsewhere.",
+    "level": "B2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-upgrade",
+    "term": "upgrade",
+    "pos": "noun",
+    "pt": "upgrade, melhoria de categoria",
+    "definition": "A change to a better seat, room or service.",
+    "example": "The hotel gave us a free upgrade to a suite.",
+    "level": "B2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-red-eye-flight",
+    "term": "red-eye flight",
+    "pos": "noun",
+    "pt": "voo noturno (madrugada)",
+    "definition": "An overnight flight that arrives early in the morning.",
+    "example": "I took the red-eye flight and went straight to the meeting.",
+    "level": "B2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-hit-the-road",
+    "term": "hit the road",
+    "pos": "idiom",
+    "pt": "pegar a estrada, ir embora",
+    "definition": "To start a journey or leave.",
+    "example": "It's getting late, so we should hit the road.",
+    "level": "B2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-bucket-list",
+    "term": "bucket list",
+    "pos": "noun",
+    "pt": "lista de desejos (antes de morrer)",
+    "definition": "Things you want to do before you die.",
+    "example": "Seeing the northern lights is on my bucket list.",
+    "level": "B2",
+    "topics": [
+      "travel",
+      "culture"
+    ]
+  },
+  {
+    "id": "trv-culture-shock",
+    "term": "culture shock",
+    "pos": "noun",
+    "pt": "choque cultural",
+    "definition": "Confusion felt when living in a very different culture.",
+    "example": "I had a bit of culture shock in my first month in Japan.",
+    "level": "B2",
+    "topics": [
+      "travel",
+      "culture"
+    ]
+  },
+  {
+    "id": "trv-accommodation",
+    "term": "accommodation",
+    "pos": "noun",
+    "pt": "hospedagem, acomodação",
+    "definition": "A place to stay or live.",
+    "example": "The company will pay for your accommodation in London.",
+    "level": "B2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-standby",
+    "term": "standby",
+    "pos": "noun",
+    "pt": "lista de espera (voo)",
+    "definition": "Waiting for a seat that may become free.",
+    "example": "We're on standby for the next flight to Rio.",
+    "level": "B2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-duty-free",
+    "term": "duty-free",
+    "pos": "adj",
+    "pt": "isento de impostos (free shop)",
+    "definition": "Sold without import taxes, usually at airports.",
+    "example": "I bought some duty-free perfume on the way back.",
+    "level": "B2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-cancellation-fee",
+    "term": "cancellation fee",
+    "pos": "noun",
+    "pt": "taxa de cancelamento",
+    "definition": "Money you pay if you cancel a booking.",
+    "example": "There's no cancellation fee if you cancel 48 hours before.",
+    "level": "B2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-peak-season",
+    "term": "peak season",
+    "pos": "noun",
+    "pt": "alta temporada",
+    "definition": "The busiest and most expensive time of year to travel.",
+    "example": "Hotel prices double during peak season.",
+    "level": "B2",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-wanderlust",
+    "term": "wanderlust",
+    "pos": "noun",
+    "pt": "vontade de viajar",
+    "definition": "A strong desire to travel and explore the world.",
+    "example": "Her wanderlust took her to forty countries.",
+    "level": "C1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-globetrotter",
+    "term": "globetrotter",
+    "pos": "noun",
+    "pt": "viajante do mundo",
+    "definition": "A person who travels a lot to many countries.",
+    "example": "My uncle is a real globetrotter who is always somewhere new.",
+    "level": "C1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-stranded",
+    "term": "stranded",
+    "pos": "adj",
+    "pt": "preso, sem conseguir sair",
+    "definition": "Unable to leave a place, for example because of a cancellation.",
+    "example": "Hundreds of passengers were stranded at the airport overnight.",
+    "level": "C1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "trv-get-a-feel-for",
+    "term": "get a feel for",
+    "pos": "phrase",
+    "pt": "pegar o jeito, sentir o clima",
+    "definition": "To start to understand a place or activity.",
+    "example": "Walk around the neighborhood to get a feel for the area.",
+    "level": "C1",
+    "topics": [
+      "travel",
+      "real-estate"
+    ]
+  },
+  {
+    "id": "trv-the-middle-of-nowhere",
+    "term": "the middle of nowhere",
+    "pos": "idiom",
+    "pt": "no meio do nada",
+    "definition": "A remote place far from towns.",
+    "example": "The resort is beautiful, but it's in the middle of nowhere.",
+    "level": "B1",
+    "topics": [
+      "travel"
+    ]
+  },
+  {
+    "id": "day-breakfast",
+    "term": "breakfast",
+    "pos": "noun",
+    "pt": "café da manhã",
+    "definition": "The first meal of the day.",
+    "example": "I usually have breakfast at home before work.",
+    "level": "A1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-tired",
+    "term": "tired",
+    "pos": "adj",
+    "pt": "cansado",
+    "definition": "Needing rest or sleep.",
+    "example": "I'm too tired to go out tonight.",
+    "level": "A1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-weekend",
+    "term": "weekend",
+    "pos": "noun",
+    "pt": "fim de semana",
+    "definition": "Saturday and Sunday.",
+    "example": "What are you doing this weekend?",
+    "level": "A1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-expensive",
+    "term": "expensive",
+    "pos": "adj",
+    "pt": "caro",
+    "definition": "Costing a lot of money.",
+    "example": "Restaurants in this area are really expensive.",
+    "level": "A1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-kitchen",
+    "term": "kitchen",
+    "pos": "noun",
+    "pt": "cozinha",
+    "definition": "The room where you cook food.",
+    "example": "The kitchen was completely renovated last year.",
+    "level": "A1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-doctor",
+    "term": "doctor",
+    "pos": "noun",
+    "pt": "médico",
+    "definition": "A person whose job is to treat sick people.",
+    "example": "You should see a doctor about that cough.",
+    "level": "A1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-shopping",
+    "term": "shopping",
+    "pos": "noun",
+    "pt": "compras",
+    "definition": "Buying things in shops.",
+    "example": "I do my shopping online now.",
+    "level": "A1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-hungry",
+    "term": "hungry",
+    "pos": "adj",
+    "pt": "com fome",
+    "definition": "Wanting or needing food.",
+    "example": "Let's eat something, I'm really hungry.",
+    "level": "A1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-wake-up",
+    "term": "wake up",
+    "pos": "phrasal verb",
+    "pt": "acordar",
+    "definition": "To stop sleeping.",
+    "example": "I wake up at six on weekdays.",
+    "level": "A1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-commute",
+    "term": "commute",
+    "pos": "noun",
+    "pt": "trajeto casa-trabalho",
+    "definition": "The regular trip between home and work.",
+    "example": "My commute takes forty minutes by subway.",
+    "level": "A2",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-headache",
+    "term": "headache",
+    "pos": "noun",
+    "pt": "dor de cabeça",
+    "definition": "A pain in your head.",
+    "example": "I have a terrible headache after that meeting.",
+    "level": "A2",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-do-the-laundry",
+    "term": "do the laundry",
+    "pos": "phrase",
+    "pt": "lavar roupa",
+    "definition": "To wash clothes.",
+    "example": "I usually do the laundry on Sunday mornings.",
+    "level": "A2",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-take-out-the-trash",
+    "term": "take out the trash",
+    "pos": "phrase",
+    "pt": "levar o lixo para fora",
+    "definition": "To bring rubbish out of the house to be collected.",
+    "example": "Can you take out the trash before you leave?",
+    "level": "A2",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-pharmacy",
+    "term": "pharmacy",
+    "pos": "noun",
+    "pt": "farmácia",
+    "definition": "A shop that sells medicine.",
+    "example": "Is there a pharmacy open near the hotel?",
+    "level": "A2",
+    "topics": [
+      "daily",
+      "travel"
+    ]
+  },
+  {
+    "id": "day-receipt",
+    "term": "receipt",
+    "pos": "noun",
+    "pt": "recibo, comprovante",
+    "definition": "A paper showing what you paid.",
+    "example": "Keep the receipt in case you need to return it.",
+    "level": "A2",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-discount",
+    "term": "discount",
+    "pos": "noun",
+    "pt": "desconto",
+    "definition": "A reduction in the usual price.",
+    "example": "They gave me a 10% discount for paying in cash.",
+    "level": "A2",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-neighbor",
+    "term": "neighbor",
+    "pos": "noun",
+    "pt": "vizinho",
+    "definition": "A person who lives near you.",
+    "example": "Our neighbor has a very noisy dog.",
+    "level": "A2",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-chores",
+    "term": "chores",
+    "pos": "noun",
+    "pt": "tarefas domésticas",
+    "definition": "Regular jobs at home, like cleaning.",
+    "example": "We split the household chores equally.",
+    "level": "A2",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-look-for",
+    "term": "look for",
+    "pos": "phrasal verb",
+    "pt": "procurar",
+    "definition": "To try to find something.",
+    "example": "I'm looking for a gift for my wife.",
+    "level": "A2",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-turn-off",
+    "term": "turn off",
+    "pos": "phrasal verb",
+    "pt": "desligar",
+    "definition": "To stop a machine or light working.",
+    "example": "Please turn off the lights when you leave.",
+    "level": "A2",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-try-on",
+    "term": "try on",
+    "pos": "phrasal verb",
+    "pt": "experimentar (roupa)",
+    "definition": "To put on clothes to see if they fit.",
+    "example": "Can I try on this jacket in a larger size?",
+    "level": "A2",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-catch-a-cold",
+    "term": "catch a cold",
+    "pos": "phrase",
+    "pt": "pegar um resfriado",
+    "definition": "To become sick with a cold.",
+    "example": "Take a jacket or you'll catch a cold.",
+    "level": "A2",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-groceries",
+    "term": "groceries",
+    "pos": "noun",
+    "pt": "compras de mercado",
+    "definition": "Food and other things bought at a supermarket.",
+    "example": "I'll get the groceries on my way home.",
+    "level": "A2",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-rush-hour",
+    "term": "rush hour",
+    "pos": "noun",
+    "pt": "horário de pico",
+    "definition": "The busy time when people travel to and from work.",
+    "example": "Avoid the highway during rush hour.",
+    "level": "A2",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-get-along-with",
+    "term": "get along with",
+    "pos": "phrasal verb",
+    "pt": "dar-se bem com",
+    "definition": "To have a friendly relationship with someone.",
+    "example": "I get along with everyone on my team.",
+    "level": "B1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-grab-a-bite",
+    "term": "grab a bite",
+    "pos": "idiom",
+    "pt": "comer alguma coisa rápida",
+    "definition": "To eat something quickly.",
+    "example": "Let's grab a bite before the movie.",
+    "level": "B1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-prescription",
+    "term": "prescription",
+    "pos": "noun",
+    "pt": "receita médica",
+    "definition": "A doctor's written order for medicine.",
+    "example": "You need a prescription to buy this medicine.",
+    "level": "B1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-refund",
+    "term": "refund",
+    "pos": "noun",
+    "pt": "reembolso",
+    "definition": "Money returned to you, for example for a faulty product.",
+    "example": "The store gave me a full refund.",
+    "level": "B1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-small-talk",
+    "term": "small talk",
+    "pos": "noun",
+    "pt": "conversa casual, papo leve",
+    "definition": "Polite conversation about unimportant things.",
+    "example": "Americans often start meetings with a bit of small talk.",
+    "level": "B1",
+    "topics": [
+      "daily",
+      "business"
+    ]
+  },
+  {
+    "id": "day-run-errands",
+    "term": "run errands",
+    "pos": "phrase",
+    "pt": "resolver pendências na rua",
+    "definition": "To go out to do small tasks like shopping or banking.",
+    "example": "I spent the morning running errands downtown.",
+    "level": "B1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-catch-up",
+    "term": "catch up",
+    "pos": "phrasal verb",
+    "pt": "colocar a conversa em dia",
+    "definition": "To talk with someone you haven't seen for a while.",
+    "example": "Let's meet for coffee and catch up.",
+    "level": "B1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-show-up",
+    "term": "show up",
+    "pos": "phrasal verb",
+    "pt": "aparecer, comparecer",
+    "definition": "To arrive somewhere, especially when expected.",
+    "example": "Only half of the guests showed up.",
+    "level": "B1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-figure-out",
+    "term": "figure out",
+    "pos": "phrasal verb",
+    "pt": "descobrir, entender",
+    "definition": "To understand or solve something after thinking.",
+    "example": "I can't figure out how this coffee machine works.",
+    "level": "B1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-put-off",
+    "term": "put off",
+    "pos": "phrasal verb",
+    "pt": "adiar",
+    "definition": "To delay doing something.",
+    "example": "Stop putting off your dentist appointment.",
+    "level": "B1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-take-it-easy",
+    "term": "take it easy",
+    "pos": "idiom",
+    "pt": "ir com calma, descansar",
+    "definition": "To relax and not work too hard.",
+    "example": "The doctor told me to take it easy this week.",
+    "level": "B1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-sleep-in",
+    "term": "sleep in",
+    "pos": "phrasal verb",
+    "pt": "dormir até tarde",
+    "definition": "To sleep later than usual in the morning.",
+    "example": "I love to sleep in on Sundays.",
+    "level": "B1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-look-forward-to",
+    "term": "look forward to",
+    "pos": "phrasal verb",
+    "pt": "aguardar ansiosamente",
+    "definition": "To feel happy about something that will happen.",
+    "example": "I look forward to meeting you in person.",
+    "level": "B1",
+    "topics": [
+      "daily",
+      "business"
+    ]
+  },
+  {
+    "id": "day-give-up",
+    "term": "give up",
+    "pos": "phrasal verb",
+    "pt": "desistir, largar",
+    "definition": "To stop trying or stop a habit.",
+    "example": "He decided to give up smoking last year.",
+    "level": "B1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-deal-with",
+    "term": "deal with",
+    "pos": "phrasal verb",
+    "pt": "lidar com",
+    "definition": "To take action to solve a problem.",
+    "example": "I'll deal with the plumber tomorrow.",
+    "level": "B1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-come-up-with",
+    "term": "come up with",
+    "pos": "phrasal verb",
+    "pt": "ter (uma ideia), bolar",
+    "definition": "To think of an idea or plan.",
+    "example": "She always manages to come up with creative solutions.",
+    "level": "B1",
+    "topics": [
+      "daily",
+      "business"
+    ]
+  },
+  {
+    "id": "day-by-the-way",
+    "term": "by the way",
+    "pos": "phrase",
+    "pt": "aliás, a propósito",
+    "definition": "Used to add a new topic to a conversation.",
+    "example": "By the way, did you get my message?",
+    "level": "B1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-work-out",
+    "term": "work out",
+    "pos": "phrasal verb",
+    "pt": "malhar; dar certo",
+    "definition": "To exercise; or to end successfully.",
+    "example": "I work out three times a week before work.",
+    "level": "B1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-make-ends-meet",
+    "term": "make ends meet",
+    "pos": "idiom",
+    "pt": "fechar as contas do mês",
+    "definition": "To have just enough money for basic needs.",
+    "example": "Many families struggle to make ends meet.",
+    "level": "B2",
+    "topics": [
+      "daily",
+      "finance"
+    ]
+  },
+  {
+    "id": "day-under-the-weather",
+    "term": "under the weather",
+    "pos": "idiom",
+    "pt": "indisposto, meio doente",
+    "definition": "Feeling slightly ill.",
+    "example": "I'm a bit under the weather today, so I'll work from home.",
+    "level": "B2",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-call-it-a-day",
+    "term": "call it a day",
+    "pos": "idiom",
+    "pt": "encerrar o dia (de trabalho)",
+    "definition": "To stop working for the day.",
+    "example": "It's seven o'clock, so let's call it a day.",
+    "level": "B2",
+    "topics": [
+      "daily",
+      "business"
+    ]
+  },
+  {
+    "id": "day-a-piece-of-cake",
+    "term": "a piece of cake",
+    "pos": "idiom",
+    "pt": "moleza",
+    "definition": "Something very easy.",
+    "example": "The exam was a piece of cake.",
+    "level": "B2",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-once-in-a-blue-moon",
+    "term": "once in a blue moon",
+    "pos": "idiom",
+    "pt": "muito raramente",
+    "definition": "Very rarely.",
+    "example": "We only eat out once in a blue moon.",
+    "level": "B2",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-hit-the-sack",
+    "term": "hit the sack",
+    "pos": "idiom",
+    "pt": "ir dormir",
+    "definition": "To go to bed.",
+    "example": "I'm exhausted, so I'm going to hit the sack.",
+    "level": "B2",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-cost-an-arm-and-a-leg",
+    "term": "cost an arm and a leg",
+    "pos": "idiom",
+    "pt": "custar os olhos da cara",
+    "definition": "To be very expensive.",
+    "example": "Parking downtown costs an arm and a leg.",
+    "level": "B2",
+    "topics": [
+      "daily",
+      "finance"
+    ]
+  },
+  {
+    "id": "day-burnout",
+    "term": "burnout",
+    "pos": "noun",
+    "pt": "esgotamento (burnout)",
+    "definition": "Extreme tiredness caused by too much work or stress.",
+    "example": "After two years of long hours, she suffered burnout.",
+    "level": "B2",
+    "topics": [
+      "daily",
+      "business"
+    ]
+  },
+  {
+    "id": "day-get-on-someones-nerves",
+    "term": "get on someone's nerves",
+    "pos": "idiom",
+    "pt": "irritar alguém",
+    "definition": "To annoy someone.",
+    "example": "His constant interruptions get on my nerves.",
+    "level": "B2",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-sort-out",
+    "term": "sort out",
+    "pos": "phrasal verb",
+    "pt": "resolver, organizar",
+    "definition": "To solve a problem or organize something.",
+    "example": "I need to sort out my taxes this weekend.",
+    "level": "B2",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-put-up-with",
+    "term": "put up with",
+    "pos": "phrasal verb",
+    "pt": "aguentar, tolerar",
+    "definition": "To accept something unpleasant without complaining.",
+    "example": "I can't put up with this noise anymore.",
+    "level": "B2",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-no-wonder",
+    "term": "no wonder",
+    "pos": "phrase",
+    "pt": "não é de admirar",
+    "definition": "Used to say something is not surprising.",
+    "example": "No wonder you're tired, you worked until midnight.",
+    "level": "B2",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-procrastinate",
+    "term": "procrastinate",
+    "pos": "verb",
+    "pt": "procrastinar",
+    "definition": "To delay doing something you should do.",
+    "example": "I tend to procrastinate when a task feels boring.",
+    "level": "C1",
+    "topics": [
+      "daily",
+      "academic"
+    ]
+  },
+  {
+    "id": "day-bite-off-more-than-you-can-chew",
+    "term": "bite off more than you can chew",
+    "pos": "idiom",
+    "pt": "abraçar mais do que consegue",
+    "definition": "To try to do more than you are able to.",
+    "example": "Don't bite off more than you can chew with three projects.",
+    "level": "C1",
+    "topics": [
+      "daily",
+      "business"
+    ]
+  },
+  {
+    "id": "day-the-last-straw",
+    "term": "the last straw",
+    "pos": "idiom",
+    "pt": "a gota d'água",
+    "definition": "The final problem that makes you lose patience.",
+    "example": "The broken elevator was the last straw for the tenants.",
+    "level": "C1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-cut-someone-some-slack",
+    "term": "cut someone some slack",
+    "pos": "idiom",
+    "pt": "pegar leve com alguém",
+    "definition": "To be less critical of someone.",
+    "example": "Cut him some slack, it's his first week.",
+    "level": "C1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-at-a-loose-end",
+    "term": "at a loose end",
+    "pos": "idiom",
+    "pt": "sem ter o que fazer",
+    "definition": "Having nothing to do.",
+    "example": "If you're at a loose end tonight, come over for dinner.",
+    "level": "C1",
+    "topics": [
+      "daily"
+    ]
+  },
+  {
+    "id": "day-go-the-extra-mile",
+    "term": "go the extra mile",
+    "pos": "idiom",
+    "pt": "fazer além do esperado",
+    "definition": "To make more effort than is expected.",
+    "example": "Our team always goes the extra mile for clients.",
+    "level": "C1",
+    "topics": [
+      "daily",
+      "business"
+    ]
+  },
+  {
+    "id": "tec-computer",
+    "term": "computer",
+    "pos": "noun",
+    "pt": "computador",
+    "definition": "An electronic machine for storing and processing information.",
+    "example": "My computer is too slow for video calls.",
+    "level": "A1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-password",
+    "term": "password",
+    "pos": "noun",
+    "pt": "senha",
+    "definition": "A secret word you use to access an account.",
+    "example": "Never share your password with anyone.",
+    "level": "A1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-phone",
+    "term": "phone",
+    "pos": "noun",
+    "pt": "telefone, celular",
+    "definition": "A device you use to call people.",
+    "example": "Please turn your phone to silent during the meeting.",
+    "level": "A1",
+    "topics": [
+      "tech",
+      "daily"
+    ]
+  },
+  {
+    "id": "tec-internet",
+    "term": "internet",
+    "pos": "noun",
+    "pt": "internet",
+    "definition": "The global network that connects computers.",
+    "example": "The internet at the hotel is very slow.",
+    "level": "A1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-website",
+    "term": "website",
+    "pos": "noun",
+    "pt": "site",
+    "definition": "A set of pages on the internet.",
+    "example": "You can see all our properties on our website.",
+    "level": "A1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-download",
+    "term": "download",
+    "pos": "verb",
+    "pt": "baixar",
+    "definition": "To copy a file from the internet to your device.",
+    "example": "You can download the report from the link below.",
+    "level": "A2",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-upload",
+    "term": "upload",
+    "pos": "verb",
+    "pt": "enviar, fazer upload",
+    "definition": "To send a file from your device to the internet.",
+    "example": "Please upload the photos to the shared folder.",
+    "level": "A2",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-app",
+    "term": "app",
+    "pos": "noun",
+    "pt": "aplicativo",
+    "definition": "A program you use on a phone or computer.",
+    "example": "I pay my rent with a banking app.",
+    "level": "A2",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-log-in",
+    "term": "log in",
+    "pos": "phrasal verb",
+    "pt": "entrar, fazer login",
+    "definition": "To enter your details to access an account.",
+    "example": "I can't log in to my email.",
+    "level": "A2",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-screen",
+    "term": "screen",
+    "pos": "noun",
+    "pt": "tela",
+    "definition": "The flat surface of a device where you see images.",
+    "example": "Can everyone see my screen?",
+    "level": "A2",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-update",
+    "term": "update",
+    "pos": "noun",
+    "pt": "atualização",
+    "definition": "A newer version of software with improvements.",
+    "example": "Install the latest update to fix the problem.",
+    "level": "A2",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-charger",
+    "term": "charger",
+    "pos": "noun",
+    "pt": "carregador",
+    "definition": "A device that puts power into a battery.",
+    "example": "I left my laptop charger at the office.",
+    "level": "A2",
+    "topics": [
+      "tech",
+      "travel"
+    ]
+  },
+  {
+    "id": "tec-laptop",
+    "term": "laptop",
+    "pos": "noun",
+    "pt": "notebook",
+    "definition": "A small computer you can carry.",
+    "example": "I always bring my laptop on business trips.",
+    "level": "A2",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-search-engine",
+    "term": "search engine",
+    "pos": "noun",
+    "pt": "buscador, mecanismo de busca",
+    "definition": "A website that helps you find information online.",
+    "example": "Most clients find us through a search engine.",
+    "level": "A2",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-battery",
+    "term": "battery",
+    "pos": "noun",
+    "pt": "bateria",
+    "definition": "Something that stores power for a device.",
+    "example": "My phone battery dies by the afternoon.",
+    "level": "A2",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-keyboard",
+    "term": "keyboard",
+    "pos": "noun",
+    "pt": "teclado",
+    "definition": "The set of keys you use to type.",
+    "example": "This keyboard doesn't have the letter ç.",
+    "level": "A2",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-software",
+    "term": "software",
+    "pos": "noun",
+    "pt": "software, programa",
+    "definition": "Programs that run on a computer.",
+    "example": "We use specific software to manage our leases.",
+    "level": "B1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-user-friendly",
+    "term": "user-friendly",
+    "pos": "adj",
+    "pt": "fácil de usar",
+    "definition": "Easy for people to use or understand.",
+    "example": "The new portal is very user-friendly.",
+    "level": "B1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-back-up",
+    "term": "back up",
+    "pos": "phrasal verb",
+    "pt": "fazer backup",
+    "definition": "To make a copy of files in case they are lost.",
+    "example": "Remember to back up your files every week.",
+    "level": "B1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-data",
+    "term": "data",
+    "pos": "noun",
+    "pt": "dados",
+    "definition": "Facts and numbers collected for analysis.",
+    "example": "We need more data on rental prices in this area.",
+    "level": "B1",
+    "topics": [
+      "tech",
+      "academic"
+    ]
+  },
+  {
+    "id": "tec-cloud-storage",
+    "term": "cloud storage",
+    "pos": "noun",
+    "pt": "armazenamento em nuvem",
+    "definition": "Saving files on remote servers on the internet.",
+    "example": "All our contracts are kept in cloud storage.",
+    "level": "B1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-sign-up",
+    "term": "sign up",
+    "pos": "phrasal verb",
+    "pt": "inscrever-se, cadastrar-se",
+    "definition": "To register for a service or activity.",
+    "example": "You can sign up for the newsletter on our site.",
+    "level": "B1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-crash",
+    "term": "crash",
+    "pos": "verb",
+    "pt": "travar, dar pau",
+    "definition": "To suddenly stop working (computer or program).",
+    "example": "My laptop crashed in the middle of the presentation.",
+    "level": "B1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-bug",
+    "term": "bug",
+    "pos": "noun",
+    "pt": "bug, erro",
+    "definition": "A mistake in a program that causes problems.",
+    "example": "There's a bug in the app that deletes your notes.",
+    "level": "B1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-browser",
+    "term": "browser",
+    "pos": "noun",
+    "pt": "navegador",
+    "definition": "A program used to view websites.",
+    "example": "Try opening the link in a different browser.",
+    "level": "B1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-device",
+    "term": "device",
+    "pos": "noun",
+    "pt": "dispositivo, aparelho",
+    "definition": "A piece of electronic equipment.",
+    "example": "You can access the platform from any device.",
+    "level": "B1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-social-media",
+    "term": "social media",
+    "pos": "noun",
+    "pt": "redes sociais",
+    "definition": "Websites and apps for sharing content with others.",
+    "example": "We advertise our listings on social media.",
+    "level": "B1",
+    "topics": [
+      "tech",
+      "culture"
+    ]
+  },
+  {
+    "id": "tec-shut-down",
+    "term": "shut down",
+    "pos": "phrasal verb",
+    "pt": "desligar (sistema); fechar",
+    "definition": "To turn off a computer; or to close a business.",
+    "example": "Shut down your computer before you leave.",
+    "level": "B1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-plug-in",
+    "term": "plug in",
+    "pos": "phrasal verb",
+    "pt": "ligar na tomada",
+    "definition": "To connect a device to the electricity supply.",
+    "example": "Plug in the projector before the clients arrive.",
+    "level": "B1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-privacy",
+    "term": "privacy",
+    "pos": "noun",
+    "pt": "privacidade",
+    "definition": "The right to keep personal information private.",
+    "example": "The app respects user privacy and doesn't sell data.",
+    "level": "B1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-spreadsheet",
+    "term": "spreadsheet",
+    "pos": "noun",
+    "pt": "planilha",
+    "definition": "A computer file with data in rows and columns.",
+    "example": "I'll send you the spreadsheet with the cash flow.",
+    "level": "B1",
+    "topics": [
+      "tech",
+      "finance"
+    ]
+  },
+  {
+    "id": "tec-notification",
+    "term": "notification",
+    "pos": "noun",
+    "pt": "notificação",
+    "definition": "A message on your device telling you about something new.",
+    "example": "I turned off notifications during work hours.",
+    "level": "B1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-install",
+    "term": "install",
+    "pos": "verb",
+    "pt": "instalar",
+    "definition": "To put new software on a computer or phone.",
+    "example": "You need to install the app to sign the contract.",
+    "level": "B1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-feature",
+    "term": "feature",
+    "pos": "noun",
+    "pt": "recurso, funcionalidade",
+    "definition": "A part or function of a product.",
+    "example": "The best feature is the automatic rent reminder.",
+    "level": "B1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-troubleshoot",
+    "term": "troubleshoot",
+    "pos": "verb",
+    "pt": "diagnosticar e resolver problemas",
+    "definition": "To find and fix problems in a system.",
+    "example": "IT is troubleshooting the network issue.",
+    "level": "B2",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-cybersecurity",
+    "term": "cybersecurity",
+    "pos": "noun",
+    "pt": "segurança cibernética",
+    "definition": "Protecting computers and networks from attacks.",
+    "example": "Banks invest heavily in cybersecurity.",
+    "level": "B2",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-two-factor-authentication",
+    "term": "two-factor authentication",
+    "pos": "noun",
+    "pt": "autenticação de dois fatores",
+    "definition": "A login method that needs two kinds of proof.",
+    "example": "Turn on two-factor authentication for your email.",
+    "level": "B2",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-artificial-intelligence",
+    "term": "artificial intelligence",
+    "pos": "noun",
+    "pt": "inteligência artificial",
+    "definition": "Computer systems that can do tasks needing human intelligence.",
+    "example": "Artificial intelligence is changing how we value properties.",
+    "level": "B2",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-algorithm",
+    "term": "algorithm",
+    "pos": "noun",
+    "pt": "algoritmo",
+    "definition": "A set of steps a computer follows to solve a problem.",
+    "example": "The algorithm suggests prices based on similar listings.",
+    "level": "B2",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-machine-learning",
+    "term": "machine learning",
+    "pos": "noun",
+    "pt": "aprendizado de máquina",
+    "definition": "Computers learning patterns from data without explicit programming.",
+    "example": "We use machine learning to predict tenant churn.",
+    "level": "B2",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-dashboard",
+    "term": "dashboard",
+    "pos": "noun",
+    "pt": "painel (dashboard)",
+    "definition": "A screen showing key information and charts.",
+    "example": "The dashboard shows occupancy for every building.",
+    "level": "B2",
+    "topics": [
+      "tech",
+      "business"
+    ]
+  },
+  {
+    "id": "tec-glitch",
+    "term": "glitch",
+    "pos": "noun",
+    "pt": "falha (pequena)",
+    "definition": "A small, temporary problem with a machine or system.",
+    "example": "A glitch in the system delayed the payments.",
+    "level": "B2",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-workaround",
+    "term": "workaround",
+    "pos": "noun",
+    "pt": "solução alternativa, gambiarra",
+    "definition": "A temporary way to avoid a problem.",
+    "example": "Until IT fixes it, here's a workaround.",
+    "level": "B2",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-user-interface",
+    "term": "user interface",
+    "pos": "noun",
+    "pt": "interface do usuário",
+    "definition": "The part of a program that people see and use.",
+    "example": "The user interface needs to be simpler.",
+    "level": "B2",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-data-breach",
+    "term": "data breach",
+    "pos": "noun",
+    "pt": "vazamento de dados",
+    "definition": "When private data is stolen or exposed.",
+    "example": "The data breach exposed thousands of customer emails.",
+    "level": "B2",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-open-source",
+    "term": "open source",
+    "pos": "adj",
+    "pt": "código aberto",
+    "definition": "With code that anyone can see, use and change.",
+    "example": "We built the tool on open source software.",
+    "level": "B2",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-automate",
+    "term": "automate",
+    "pos": "verb",
+    "pt": "automatizar",
+    "definition": "To make a process work by machine, without people.",
+    "example": "We automated the monthly rent invoices.",
+    "level": "B2",
+    "topics": [
+      "tech",
+      "business"
+    ]
+  },
+  {
+    "id": "tec-scalable",
+    "term": "scalable",
+    "pos": "adj",
+    "pt": "escalável",
+    "definition": "Able to grow easily as demand increases.",
+    "example": "The platform is scalable to thousands of units.",
+    "level": "B2",
+    "topics": [
+      "tech",
+      "business"
+    ]
+  },
+  {
+    "id": "tec-cutting-edge",
+    "term": "cutting-edge",
+    "pos": "adj",
+    "pt": "de ponta",
+    "definition": "The newest and most advanced.",
+    "example": "The building uses cutting-edge energy systems.",
+    "level": "B2",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-large-language-model",
+    "term": "large language model",
+    "pos": "noun",
+    "pt": "modelo de linguagem de grande porte (LLM)",
+    "definition": "An AI system trained on huge amounts of text to generate language.",
+    "example": "We use a large language model to summarize lease contracts.",
+    "level": "C1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-prompt-engineering",
+    "term": "prompt engineering",
+    "pos": "noun",
+    "pt": "engenharia de prompt",
+    "definition": "Writing instructions that get useful results from an AI model.",
+    "example": "Good prompt engineering saves us hours of editing.",
+    "level": "C1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-legacy-system",
+    "term": "legacy system",
+    "pos": "noun",
+    "pt": "sistema legado",
+    "definition": "An old computer system still in use.",
+    "example": "Our legacy system can't export data to Excel.",
+    "level": "C1",
+    "topics": [
+      "tech",
+      "business"
+    ]
+  },
+  {
+    "id": "tec-deploy",
+    "term": "deploy",
+    "pos": "verb",
+    "pt": "implantar, colocar em produção",
+    "definition": "To make software or resources ready for use.",
+    "example": "We'll deploy the new version on Friday night.",
+    "level": "C1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-obsolete",
+    "term": "obsolete",
+    "pos": "adj",
+    "pt": "obsoleto",
+    "definition": "No longer used because something better exists.",
+    "example": "Fax machines are almost obsolete.",
+    "level": "C1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-interoperability",
+    "term": "interoperability",
+    "pos": "noun",
+    "pt": "interoperabilidade",
+    "definition": "The ability of different systems to work together.",
+    "example": "Interoperability between the two platforms is still poor.",
+    "level": "C1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-early-adopter",
+    "term": "early adopter",
+    "pos": "noun",
+    "pt": "adotante inicial",
+    "definition": "A person who uses new technology before most people.",
+    "example": "Our firm was an early adopter of digital signatures.",
+    "level": "C1",
+    "topics": [
+      "tech",
+      "business"
+    ]
+  },
+  {
+    "id": "tec-proptech",
+    "term": "proptech",
+    "pos": "noun",
+    "pt": "proptech",
+    "definition": "Technology companies serving the real estate industry.",
+    "example": "A proptech startup is digitizing the leasing process.",
+    "level": "C1",
+    "topics": [
+      "tech",
+      "real-estate"
+    ]
+  },
+  {
+    "id": "tec-encryption",
+    "term": "encryption",
+    "pos": "noun",
+    "pt": "criptografia",
+    "definition": "Converting data into a code to protect it.",
+    "example": "All documents are protected by end-to-end encryption.",
+    "level": "C1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "tec-latency",
+    "term": "latency",
+    "pos": "noun",
+    "pt": "latência",
+    "definition": "The delay before data is transferred.",
+    "example": "High latency makes video calls frustrating.",
+    "level": "C1",
+    "topics": [
+      "tech"
+    ]
+  },
+  {
+    "id": "cul-movie",
+    "term": "movie",
+    "pos": "noun",
+    "pt": "filme",
+    "definition": "A story shown as moving pictures.",
+    "example": "Do you want to watch a movie tonight?",
+    "level": "A1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-song",
+    "term": "song",
+    "pos": "noun",
+    "pt": "música, canção",
+    "definition": "A short piece of music with words.",
+    "example": "This song reminds me of my college years.",
+    "level": "A1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-actor",
+    "term": "actor",
+    "pos": "noun",
+    "pt": "ator",
+    "definition": "A person who performs in films, plays or series.",
+    "example": "Who is the actor who plays the lawyer?",
+    "level": "A1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-tv-show",
+    "term": "TV show",
+    "pos": "noun",
+    "pt": "programa de TV, série",
+    "definition": "A program broadcast on television or streaming.",
+    "example": "What TV show are you watching right now?",
+    "level": "A1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-funny",
+    "term": "funny",
+    "pos": "adj",
+    "pt": "engraçado",
+    "definition": "Making you laugh.",
+    "example": "That scene was so funny I watched it twice.",
+    "level": "A1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-episode",
+    "term": "episode",
+    "pos": "noun",
+    "pt": "episódio",
+    "definition": "One part of a TV series.",
+    "example": "The last episode was the best of the season.",
+    "level": "A2",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-season",
+    "term": "season",
+    "pos": "noun",
+    "pt": "temporada",
+    "definition": "A set of episodes of a series released together.",
+    "example": "The new season comes out in October.",
+    "level": "A2",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-character",
+    "term": "character",
+    "pos": "noun",
+    "pt": "personagem",
+    "definition": "A person in a story, film or series.",
+    "example": "My favorite character dies in season two.",
+    "level": "A2",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-subtitles",
+    "term": "subtitles",
+    "pos": "noun",
+    "pt": "legendas",
+    "definition": "Words on screen that translate or show what is said.",
+    "example": "I watch series with English subtitles to learn faster.",
+    "level": "A2",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-singer",
+    "term": "singer",
+    "pos": "noun",
+    "pt": "cantor(a)",
+    "definition": "A person who sings, especially professionally.",
+    "example": "She's my favorite singer from the nineties.",
+    "level": "A2",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-comedy",
+    "term": "comedy",
+    "pos": "noun",
+    "pt": "comédia",
+    "definition": "A film or show that makes people laugh.",
+    "example": "I prefer a light comedy after a long day.",
+    "level": "A2",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-horror-movie",
+    "term": "horror movie",
+    "pos": "noun",
+    "pt": "filme de terror",
+    "definition": "A film designed to scare people.",
+    "example": "I can't sleep after watching a horror movie.",
+    "level": "A2",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-concert",
+    "term": "concert",
+    "pos": "noun",
+    "pt": "show, concerto",
+    "definition": "A live music performance.",
+    "example": "We got tickets for the concert in December.",
+    "level": "A2",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-ending",
+    "term": "ending",
+    "pos": "noun",
+    "pt": "final",
+    "definition": "The last part of a story.",
+    "example": "The ending of the series was really disappointing.",
+    "level": "A2",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-scary",
+    "term": "scary",
+    "pos": "adj",
+    "pt": "assustador",
+    "definition": "Making you feel afraid.",
+    "example": "The second half of the film is really scary.",
+    "level": "A2",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-hang-out",
+    "term": "hang out",
+    "pos": "phrasal verb",
+    "pt": "passar tempo junto, sair",
+    "definition": "To spend time relaxing with friends.",
+    "example": "We usually hang out at a bar near the office.",
+    "level": "A2",
+    "topics": [
+      "culture",
+      "daily"
+    ]
+  },
+  {
+    "id": "cul-whats-up",
+    "term": "what's up",
+    "pos": "phrase",
+    "pt": "e aí, tudo certo?",
+    "definition": "Informal greeting meaning hello or what's happening.",
+    "example": "Hey, what's up? I haven't seen you in ages.",
+    "level": "A2",
+    "topics": [
+      "culture",
+      "daily"
+    ]
+  },
+  {
+    "id": "cul-binge-watch",
+    "term": "binge-watch",
+    "pos": "verb",
+    "pt": "maratonar",
+    "definition": "To watch many episodes of a series in one go.",
+    "example": "We binge-watched the whole season over the weekend.",
+    "level": "B1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-spoiler",
+    "term": "spoiler",
+    "pos": "noun",
+    "pt": "spoiler",
+    "definition": "Information that reveals what happens in a story.",
+    "example": "No spoilers, please, I haven't finished it yet.",
+    "level": "B1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-plot-twist",
+    "term": "plot twist",
+    "pos": "noun",
+    "pt": "reviravolta",
+    "definition": "A sudden, unexpected change in a story.",
+    "example": "Nobody saw that plot twist coming.",
+    "level": "B1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-sequel",
+    "term": "sequel",
+    "pos": "noun",
+    "pt": "continuação",
+    "definition": "A film or book that continues an earlier story.",
+    "example": "The sequel is even better than the original.",
+    "level": "B1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-cliffhanger",
+    "term": "cliffhanger",
+    "pos": "noun",
+    "pt": "final em suspense, gancho",
+    "definition": "An ending that leaves you wanting to know what happens next.",
+    "example": "The season ends on a huge cliffhanger.",
+    "level": "B1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-soundtrack",
+    "term": "soundtrack",
+    "pos": "noun",
+    "pt": "trilha sonora",
+    "definition": "The music used in a film or series.",
+    "example": "I listen to the soundtrack while I work.",
+    "level": "B1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-streaming-service",
+    "term": "streaming service",
+    "pos": "noun",
+    "pt": "serviço de streaming",
+    "definition": "A platform that lets you watch or listen online.",
+    "example": "We pay for three different streaming services.",
+    "level": "B1",
+    "topics": [
+      "culture",
+      "tech"
+    ]
+  },
+  {
+    "id": "cul-trailer",
+    "term": "trailer",
+    "pos": "noun",
+    "pt": "trailer",
+    "definition": "A short video advertising a film or series.",
+    "example": "The trailer looks amazing.",
+    "level": "B1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-sitcom",
+    "term": "sitcom",
+    "pos": "noun",
+    "pt": "sitcom, série de comédia",
+    "definition": "A funny series about the same characters in daily situations.",
+    "example": "Watching an old sitcom is a fun way to learn English.",
+    "level": "B1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-podcast",
+    "term": "podcast",
+    "pos": "noun",
+    "pt": "podcast",
+    "definition": "A recorded audio program you can download or stream.",
+    "example": "I listen to a business podcast on my commute.",
+    "level": "B1",
+    "topics": [
+      "culture",
+      "tech"
+    ]
+  },
+  {
+    "id": "cul-hilarious",
+    "term": "hilarious",
+    "pos": "adj",
+    "pt": "hilário",
+    "definition": "Extremely funny.",
+    "example": "The wedding scene is absolutely hilarious.",
+    "level": "B1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-chill",
+    "term": "chill",
+    "pos": "adj",
+    "pt": "tranquilo, de boa",
+    "definition": "Informal: relaxed and calm.",
+    "example": "The party was pretty chill, just a few friends.",
+    "level": "B1",
+    "topics": [
+      "culture",
+      "daily"
+    ]
+  },
+  {
+    "id": "cul-no-way",
+    "term": "no way",
+    "pos": "phrase",
+    "pt": "de jeito nenhum; não acredito!",
+    "definition": "Used to say no strongly or to show surprise.",
+    "example": "No way! You met the director?",
+    "level": "B1",
+    "topics": [
+      "culture",
+      "daily"
+    ]
+  },
+  {
+    "id": "cul-be-into",
+    "term": "be into",
+    "pos": "phrasal verb",
+    "pt": "curtir, gostar de",
+    "definition": "To be very interested in something.",
+    "example": "I've never really been into horror movies.",
+    "level": "B1",
+    "topics": [
+      "culture",
+      "daily"
+    ]
+  },
+  {
+    "id": "cul-no-big-deal",
+    "term": "no big deal",
+    "pos": "phrase",
+    "pt": "nada demais",
+    "definition": "Not important; not a problem.",
+    "example": "Don't worry about being late, it's no big deal.",
+    "level": "B1",
+    "topics": [
+      "culture",
+      "daily"
+    ]
+  },
+  {
+    "id": "cul-storyline",
+    "term": "storyline",
+    "pos": "noun",
+    "pt": "enredo, trama",
+    "definition": "The main events of a story.",
+    "example": "The storyline gets more complex every season.",
+    "level": "B1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-break-a-leg",
+    "term": "break a leg",
+    "pos": "idiom",
+    "pt": "boa sorte (antes de apresentação)",
+    "definition": "Used to wish someone good luck before a performance.",
+    "example": "Break a leg at your presentation tomorrow!",
+    "level": "B2",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-plot-hole",
+    "term": "plot hole",
+    "pos": "noun",
+    "pt": "furo de roteiro",
+    "definition": "A gap or mistake in a story's logic.",
+    "example": "The final episode is full of plot holes.",
+    "level": "B2",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-spin-off",
+    "term": "spin-off",
+    "pos": "noun",
+    "pt": "spin-off, série derivada",
+    "definition": "A new series based on characters from an existing one.",
+    "example": "The spin-off follows the lawyer's early career.",
+    "level": "B2",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-prequel",
+    "term": "prequel",
+    "pos": "noun",
+    "pt": "prequela, prequel",
+    "definition": "A story set before the events of an existing story.",
+    "example": "The prequel explains how the dragons came back.",
+    "level": "B2",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-reboot",
+    "term": "reboot",
+    "pos": "noun",
+    "pt": "reboot, nova versão",
+    "definition": "A new version of an old film or series.",
+    "example": "Hollywood keeps making reboots of eighties classics.",
+    "level": "B2",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-must-see",
+    "term": "must-see",
+    "pos": "noun",
+    "pt": "imperdível",
+    "definition": "Something so good that people should see it.",
+    "example": "The new documentary is a must-see.",
+    "level": "B2",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-hype",
+    "term": "hype",
+    "pos": "noun",
+    "pt": "propaganda exagerada, hype",
+    "definition": "Excessive excitement or publicity about something.",
+    "example": "The movie didn't live up to the hype.",
+    "level": "B2",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-go-viral",
+    "term": "go viral",
+    "pos": "phrase",
+    "pt": "viralizar",
+    "definition": "To spread very quickly online.",
+    "example": "Videos about crazy rental prices often go viral.",
+    "level": "B2",
+    "topics": [
+      "culture",
+      "tech"
+    ]
+  },
+  {
+    "id": "cul-overrated",
+    "term": "overrated",
+    "pos": "adj",
+    "pt": "superestimado",
+    "definition": "Thought to be better than it really is.",
+    "example": "In my opinion, that show is totally overrated.",
+    "level": "B2",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-guilty-pleasure",
+    "term": "guilty pleasure",
+    "pos": "noun",
+    "pt": "prazer culposo",
+    "definition": "Something you enjoy but feel slightly embarrassed about.",
+    "example": "Reality shows are my guilty pleasure.",
+    "level": "B2",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-couch-potato",
+    "term": "couch potato",
+    "pos": "idiom",
+    "pt": "sedentário que vive no sofá",
+    "definition": "A lazy person who watches a lot of TV.",
+    "example": "I turn into a couch potato every winter.",
+    "level": "B2",
+    "topics": [
+      "culture",
+      "daily"
+    ]
+  },
+  {
+    "id": "cul-stand-up-comedy",
+    "term": "stand-up comedy",
+    "pos": "noun",
+    "pt": "stand-up",
+    "definition": "Comedy performed by one person talking to an audience.",
+    "example": "We went to a stand-up comedy show on Friday.",
+    "level": "B2",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-fomo",
+    "term": "FOMO",
+    "pos": "noun",
+    "pt": "FOMO, medo de ficar de fora",
+    "definition": "Fear of missing out on something others are enjoying.",
+    "example": "I joined the trip mostly because of FOMO.",
+    "level": "B2",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-fan-base",
+    "term": "fan base",
+    "pos": "noun",
+    "pt": "base de fãs",
+    "definition": "The group of people who are fans of something.",
+    "example": "The series has a huge fan base in Brazil.",
+    "level": "B2",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-low-key",
+    "term": "low-key",
+    "pos": "adj",
+    "pt": "discreto; meio que (gíria)",
+    "definition": "Informal: quiet and modest; also slightly or secretly.",
+    "example": "I'm low-key excited about the new season.",
+    "level": "C1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-ghost",
+    "term": "ghost",
+    "pos": "verb",
+    "pt": "dar ghosting, sumir",
+    "definition": "To suddenly stop replying to someone without explanation.",
+    "example": "He ghosted me after our second date.",
+    "level": "C1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-spill-the-tea",
+    "term": "spill the tea",
+    "pos": "idiom",
+    "pt": "contar a fofoca",
+    "definition": "Slang: to share gossip.",
+    "example": "Come on, spill the tea, what happened at the party?",
+    "level": "C1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-throw-shade",
+    "term": "throw shade",
+    "pos": "idiom",
+    "pt": "alfinetar, dar indireta",
+    "definition": "Slang: to criticize someone in a subtle way.",
+    "example": "She was throwing shade at her ex in that interview.",
+    "level": "C1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-deadpan",
+    "term": "deadpan",
+    "pos": "adj",
+    "pt": "humor seco, cara de paisagem",
+    "definition": "Funny while showing no emotion.",
+    "example": "His deadpan delivery makes every joke better.",
+    "level": "C1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-tongue-in-cheek",
+    "term": "tongue-in-cheek",
+    "pos": "adj",
+    "pt": "irônico, em tom de brincadeira",
+    "definition": "Said as a joke, not meant seriously.",
+    "example": "The review was written in a tongue-in-cheek style.",
+    "level": "C1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-cringe",
+    "term": "cringe",
+    "pos": "adj",
+    "pt": "vergonha alheia",
+    "definition": "Slang: very embarrassing to watch.",
+    "example": "That dance scene was so cringe.",
+    "level": "C1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-hot-take",
+    "term": "hot take",
+    "pos": "noun",
+    "pt": "opinião polêmica",
+    "definition": "A provocative opinion, often given quickly.",
+    "example": "Here's my hot take: the first season was the worst.",
+    "level": "C1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-jump-the-shark",
+    "term": "jump the shark",
+    "pos": "idiom",
+    "pt": "perder a qualidade (série)",
+    "definition": "When a series starts declining with absurd ideas.",
+    "example": "The show jumped the shark in season five.",
+    "level": "C1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "cul-red-herring",
+    "term": "red herring",
+    "pos": "idiom",
+    "pt": "pista falsa",
+    "definition": "A clue that distracts from the truth.",
+    "example": "The missing letter turned out to be a red herring.",
+    "level": "C1",
+    "topics": [
+      "culture",
+      "academic"
+    ]
+  },
+  {
+    "id": "cul-easter-egg",
+    "term": "Easter egg",
+    "pos": "noun",
+    "pt": "easter egg, referência escondida",
+    "definition": "A hidden joke or reference in a film or game.",
+    "example": "Fans found dozens of Easter eggs in the trailer.",
+    "level": "C1",
+    "topics": [
+      "culture"
+    ]
+  },
+  {
+    "id": "aca-learn",
+    "term": "learn",
+    "pos": "verb",
+    "pt": "aprender",
+    "definition": "To get knowledge or a new skill.",
+    "example": "I want to learn English for my career.",
+    "level": "A1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-example",
+    "term": "example",
+    "pos": "noun",
+    "pt": "exemplo",
+    "definition": "Something that shows what others of its type are like.",
+    "example": "Can you give me an example?",
+    "level": "A1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-idea",
+    "term": "idea",
+    "pos": "noun",
+    "pt": "ideia",
+    "definition": "A thought or plan.",
+    "example": "That's a great idea for the essay.",
+    "level": "A1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-answer",
+    "term": "answer",
+    "pos": "noun",
+    "pt": "resposta",
+    "definition": "What you say or write in reply to a question.",
+    "example": "Write your answer in the box below.",
+    "level": "A1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-compare",
+    "term": "compare",
+    "pos": "verb",
+    "pt": "comparar",
+    "definition": "To look at how things are similar or different.",
+    "example": "Compare the two charts and describe the main differences.",
+    "level": "A2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-explain",
+    "term": "explain",
+    "pos": "verb",
+    "pt": "explicar",
+    "definition": "To make something clear and easy to understand.",
+    "example": "Can you explain how the index is calculated?",
+    "level": "A2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-describe",
+    "term": "describe",
+    "pos": "verb",
+    "pt": "descrever",
+    "definition": "To say what something is like.",
+    "example": "Describe a place you would like to visit.",
+    "level": "A2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-opinion",
+    "term": "opinion",
+    "pos": "noun",
+    "pt": "opinião",
+    "definition": "What you think about something.",
+    "example": "In my opinion, remote work increases productivity.",
+    "level": "A2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-research",
+    "term": "research",
+    "pos": "noun",
+    "pt": "pesquisa",
+    "definition": "Careful study to discover new facts.",
+    "example": "Recent research shows that green buildings rent faster.",
+    "level": "A2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-result",
+    "term": "result",
+    "pos": "noun",
+    "pt": "resultado",
+    "definition": "Something that happens because of something else.",
+    "example": "The results of the survey were surprising.",
+    "level": "A2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-reason",
+    "term": "reason",
+    "pos": "noun",
+    "pt": "motivo, razão",
+    "definition": "Why something happens.",
+    "example": "The main reason for the delay was the permit.",
+    "level": "A2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-agree",
+    "term": "agree",
+    "pos": "verb",
+    "pt": "concordar",
+    "definition": "To have the same opinion as someone.",
+    "example": "I partly agree with this statement.",
+    "level": "A2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-analyse",
+    "term": "analyse",
+    "pos": "verb",
+    "pt": "analisar",
+    "definition": "To study something in detail to understand it.",
+    "example": "The essay asks you to analyse the causes of urban growth.",
+    "level": "B1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-significant",
+    "term": "significant",
+    "pos": "adj",
+    "pt": "significativo",
+    "definition": "Large or important enough to notice.",
+    "example": "There was a significant increase in rents last year.",
+    "level": "B1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-consequently",
+    "term": "consequently",
+    "pos": "adv",
+    "pt": "consequentemente",
+    "definition": "As a result.",
+    "example": "Interest rates rose; consequently, demand for mortgages fell.",
+    "level": "B1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-however",
+    "term": "however",
+    "pos": "adv",
+    "pt": "no entanto",
+    "definition": "Used to introduce a contrasting idea.",
+    "example": "Prices fell; however, sales remained low.",
+    "level": "B1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-therefore",
+    "term": "therefore",
+    "pos": "adv",
+    "pt": "portanto",
+    "definition": "For that reason.",
+    "example": "The site is near the port; therefore, it suits logistics.",
+    "level": "B1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-evidence",
+    "term": "evidence",
+    "pos": "noun",
+    "pt": "evidência, prova",
+    "definition": "Facts that show something is true.",
+    "example": "There is little evidence that the policy worked.",
+    "level": "B1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-approach",
+    "term": "approach",
+    "pos": "noun",
+    "pt": "abordagem",
+    "definition": "A way of dealing with something.",
+    "example": "We need a different approach to this problem.",
+    "level": "B1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-assume",
+    "term": "assume",
+    "pos": "verb",
+    "pt": "supor, presumir",
+    "definition": "To think something is true without proof.",
+    "example": "The model assumes rents grow at 3% a year.",
+    "level": "B1",
+    "topics": [
+      "academic",
+      "finance"
+    ]
+  },
+  {
+    "id": "aca-conclude",
+    "term": "conclude",
+    "pos": "verb",
+    "pt": "concluir",
+    "definition": "To decide something after studying the facts.",
+    "example": "The study concludes that housing supply is too low.",
+    "level": "B1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-factor",
+    "term": "factor",
+    "pos": "noun",
+    "pt": "fator",
+    "definition": "One of the things that causes a result.",
+    "example": "Location is the most important factor in property value.",
+    "level": "B1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-method",
+    "term": "method",
+    "pos": "noun",
+    "pt": "método",
+    "definition": "A planned way of doing something.",
+    "example": "Which method did you use to estimate the value?",
+    "level": "B1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-survey",
+    "term": "survey",
+    "pos": "noun",
+    "pt": "pesquisa (questionário)",
+    "definition": "A set of questions asked to many people.",
+    "example": "A survey of 500 tenants showed high satisfaction.",
+    "level": "B1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-require",
+    "term": "require",
+    "pos": "verb",
+    "pt": "exigir",
+    "definition": "To need something or make it necessary.",
+    "example": "The course requires a minimum IELTS score of 6.5.",
+    "level": "B1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-benefit",
+    "term": "benefit",
+    "pos": "noun",
+    "pt": "benefício",
+    "definition": "An advantage or good effect.",
+    "example": "One benefit of remote work is the shorter commute.",
+    "level": "B1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-trend",
+    "term": "trend",
+    "pos": "noun",
+    "pt": "tendência",
+    "definition": "A general direction of change.",
+    "example": "The graph shows an upward trend in prices.",
+    "level": "B1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-on-the-other-hand",
+    "term": "on the other hand",
+    "pos": "phrase",
+    "pt": "por outro lado",
+    "definition": "Used to give an opposite point.",
+    "example": "Cities offer jobs; on the other hand, they are expensive.",
+    "level": "B1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-furthermore",
+    "term": "furthermore",
+    "pos": "adv",
+    "pt": "além disso",
+    "definition": "In addition; used to add information.",
+    "example": "The plan is affordable. Furthermore, it is easy to implement.",
+    "level": "B1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-in-contrast",
+    "term": "in contrast",
+    "pos": "phrase",
+    "pt": "em contrapartida",
+    "definition": "Used to show a clear difference.",
+    "example": "In contrast, rural areas saw prices fall.",
+    "level": "B1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-hypothesis",
+    "term": "hypothesis",
+    "pos": "noun",
+    "pt": "hipótese",
+    "definition": "An idea that can be tested by research.",
+    "example": "The data supports our initial hypothesis.",
+    "level": "B2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-interpret",
+    "term": "interpret",
+    "pos": "verb",
+    "pt": "interpretar",
+    "definition": "To explain the meaning of something.",
+    "example": "How do you interpret these results?",
+    "level": "B2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-sustainable",
+    "term": "sustainable",
+    "pos": "adj",
+    "pt": "sustentável",
+    "definition": "Able to continue without harming the environment or resources.",
+    "example": "Investors now prefer sustainable buildings.",
+    "level": "B2",
+    "topics": [
+      "academic",
+      "real-estate"
+    ]
+  },
+  {
+    "id": "aca-framework",
+    "term": "framework",
+    "pos": "noun",
+    "pt": "estrutura, marco",
+    "definition": "A set of ideas or rules used to make decisions.",
+    "example": "The report offers a framework for evaluating risk.",
+    "level": "B2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-criteria",
+    "term": "criteria",
+    "pos": "noun",
+    "pt": "critérios",
+    "definition": "Standards used to judge or decide something.",
+    "example": "The fund has strict criteria for new acquisitions.",
+    "level": "B2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-nevertheless",
+    "term": "nevertheless",
+    "pos": "adv",
+    "pt": "mesmo assim, contudo",
+    "definition": "Despite what has just been said.",
+    "example": "The risks are high; nevertheless, the returns are attractive.",
+    "level": "B2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-whereas",
+    "term": "whereas",
+    "pos": "phrase",
+    "pt": "enquanto (contraste)",
+    "definition": "Used to compare two different facts.",
+    "example": "Offices are struggling, whereas warehouses are in demand.",
+    "level": "B2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-derive",
+    "term": "derive",
+    "pos": "verb",
+    "pt": "derivar, obter",
+    "definition": "To get something from a source.",
+    "example": "Most of its income is derived from rents.",
+    "level": "B2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-substantial",
+    "term": "substantial",
+    "pos": "adj",
+    "pt": "substancial",
+    "definition": "Large in amount or importance.",
+    "example": "The project requires substantial investment.",
+    "level": "B2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-implement",
+    "term": "implement",
+    "pos": "verb",
+    "pt": "implementar",
+    "definition": "To put a plan or decision into action.",
+    "example": "The city will implement the new zoning rules next year.",
+    "level": "B2",
+    "topics": [
+      "academic",
+      "business"
+    ]
+  },
+  {
+    "id": "aca-emphasize",
+    "term": "emphasize",
+    "pos": "verb",
+    "pt": "enfatizar",
+    "definition": "To give special importance to something.",
+    "example": "I want to emphasize the risks of high leverage.",
+    "level": "B2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-assess",
+    "term": "assess",
+    "pos": "verb",
+    "pt": "avaliar",
+    "definition": "To judge the value or quality of something.",
+    "example": "We need to assess the condition of the roof.",
+    "level": "B2",
+    "topics": [
+      "academic",
+      "real-estate"
+    ]
+  },
+  {
+    "id": "aca-correlation",
+    "term": "correlation",
+    "pos": "noun",
+    "pt": "correlação",
+    "definition": "A connection between two things that change together.",
+    "example": "There is a strong correlation between income and home ownership.",
+    "level": "B2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-objective",
+    "term": "objective",
+    "pos": "noun",
+    "pt": "objetivo",
+    "definition": "Something you plan to achieve.",
+    "example": "The main objective of this essay is to compare two policies.",
+    "level": "B2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-crucial",
+    "term": "crucial",
+    "pos": "adj",
+    "pt": "crucial",
+    "definition": "Extremely important.",
+    "example": "Location is crucial for retail success.",
+    "level": "B2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-overall",
+    "term": "overall",
+    "pos": "adv",
+    "pt": "de modo geral",
+    "definition": "Considering everything.",
+    "example": "Overall, the market performed well in 2025.",
+    "level": "B2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-in-terms-of",
+    "term": "in terms of",
+    "pos": "phrase",
+    "pt": "em termos de",
+    "definition": "Regarding a particular aspect.",
+    "example": "In terms of price, the second option is better.",
+    "level": "B2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-a-wide-range-of",
+    "term": "a wide range of",
+    "pos": "phrase",
+    "pt": "uma ampla gama de",
+    "definition": "Many different kinds of something.",
+    "example": "The city offers a wide range of housing options.",
+    "level": "B2",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-albeit",
+    "term": "albeit",
+    "pos": "adv",
+    "pt": "embora, ainda que",
+    "definition": "Although; used before a short phrase.",
+    "example": "Prices rose, albeit slowly.",
+    "level": "C1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-notwithstanding",
+    "term": "notwithstanding",
+    "pos": "phrase",
+    "pt": "não obstante, apesar de",
+    "definition": "Despite something.",
+    "example": "Notwithstanding the crisis, the fund met its targets.",
+    "level": "C1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-empirical",
+    "term": "empirical",
+    "pos": "adj",
+    "pt": "empírico",
+    "definition": "Based on observation and experiment, not theory.",
+    "example": "There is little empirical evidence for this claim.",
+    "level": "C1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-inherent",
+    "term": "inherent",
+    "pos": "adj",
+    "pt": "inerente",
+    "definition": "Existing as a natural, permanent part of something.",
+    "example": "Every investment has inherent risks.",
+    "level": "C1",
+    "topics": [
+      "academic",
+      "finance"
+    ]
+  },
+  {
+    "id": "aca-ambiguous",
+    "term": "ambiguous",
+    "pos": "adj",
+    "pt": "ambíguo",
+    "definition": "Having more than one possible meaning.",
+    "example": "The clause is ambiguous, so let's ask the lawyer.",
+    "level": "C1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-comprehensive",
+    "term": "comprehensive",
+    "pos": "adj",
+    "pt": "abrangente, completo",
+    "definition": "Including all or almost all details.",
+    "example": "We delivered a comprehensive market study.",
+    "level": "C1",
+    "topics": [
+      "academic",
+      "business"
+    ]
+  },
+  {
+    "id": "aca-scrutinize",
+    "term": "scrutinize",
+    "pos": "verb",
+    "pt": "examinar minuciosamente",
+    "definition": "To examine something very carefully.",
+    "example": "Investors will scrutinize every line of the budget.",
+    "level": "C1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-underpin",
+    "term": "underpin",
+    "pos": "verb",
+    "pt": "sustentar, embasar",
+    "definition": "To support or form the basis of something.",
+    "example": "Strong demand underpins our rent assumptions.",
+    "level": "C1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-plausible",
+    "term": "plausible",
+    "pos": "adj",
+    "pt": "plausível",
+    "definition": "Seeming reasonable or likely to be true.",
+    "example": "That is a plausible explanation for the drop in sales.",
+    "level": "C1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-discrepancy",
+    "term": "discrepancy",
+    "pos": "noun",
+    "pt": "discrepância",
+    "definition": "A difference between things that should be the same.",
+    "example": "We found a discrepancy between the rent roll and the leases.",
+    "level": "C1",
+    "topics": [
+      "academic",
+      "real-estate"
+    ]
+  },
+  {
+    "id": "aca-robust",
+    "term": "robust",
+    "pos": "adj",
+    "pt": "robusto, sólido",
+    "definition": "Strong and unlikely to fail.",
+    "example": "The analysis is robust to changes in interest rates.",
+    "level": "C1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-put-forward",
+    "term": "put forward",
+    "pos": "phrasal verb",
+    "pt": "apresentar (ideia, proposta)",
+    "definition": "To suggest an idea or plan for discussion.",
+    "example": "The author puts forward three arguments.",
+    "level": "C1",
+    "topics": [
+      "academic"
+    ]
+  },
+  {
+    "id": "aca-paradigm",
+    "term": "paradigm",
+    "pos": "noun",
+    "pt": "paradigma",
+    "definition": "A typical model or way of thinking.",
+    "example": "Remote work represents a paradigm shift for office demand.",
+    "level": "C1",
+    "topics": [
+      "academic"
+    ]
+  }
+]
