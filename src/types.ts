@@ -37,7 +37,7 @@ export interface Profile {
   accent: 'en-US' | 'en-GB'
   createdAt: string
   /** Resultado do teste de nivelamento: ponto de partida do nível estimado de cada habilidade. */
-  placement?: { date: string; ratings: SkillRatings }
+  placement?: { date: string; ratings: SkillRatings; items?: PlacementItem[] }
 }
 
 export interface Settings {
@@ -46,6 +46,18 @@ export interface Settings {
   model: string
   voiceURI: string
   speechRate: number
+}
+
+/** Uma pergunta respondida no teste de nivelamento (para rever acertos e erros depois). */
+export interface PlacementItem {
+  skill: 'vocabulary' | 'grammar' | 'listening'
+  level: Level
+  /** O que foi perguntado: a palavra, a frase com lacuna ou a frase ouvida. */
+  question: string
+  /** Resposta dada ('' = "Não sei"/"Não entendi"). */
+  given: string
+  correct: string
+  score: number // 0..1 (listening pode ser parcial)
 }
 
 // ---------- Conteúdo base ----------

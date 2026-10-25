@@ -112,8 +112,8 @@ export function SettingsScreen() {
           <button className="btn-ghost flex-1 text-sm" onClick={() => setEditProfile(true)}>
             Editar perfil
           </button>
-          <Link to="/nivelamento" className="btn-ghost flex-1 text-sm">
-            {profile.placement ? 'Refazer nivelamento' : 'Teste de nivelamento'}
+          <Link to={profile.placement ? '/nivelamento/resultado' : '/nivelamento'} className="btn-ghost flex-1 text-sm">
+            {profile.placement ? 'Ver nivelamento' : 'Teste de nivelamento'}
           </Link>
         </div>
       </section>

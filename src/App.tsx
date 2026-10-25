@@ -15,7 +15,7 @@ import { ProgressScreen } from './screens/Progress'
 import { SettingsScreen } from './screens/Settings'
 import { SessionBar, SessionEnd } from './screens/Session'
 import { MistakeReview } from './screens/Mistakes'
-import { Placement } from './screens/Placement'
+import { Placement, PlacementResultScreen } from './screens/Placement'
 import { Icon, type IconName } from './components/icons'
 
 const TABS: { to: string; label: string; icon: IconName; end?: boolean }[] = [
@@ -82,6 +82,7 @@ export default function App() {
         <Route path="/ajustes" element={<SettingsScreen />} />
         <Route path="/erros/revisar" element={<MistakeReview />} />
         <Route path="/nivelamento" element={<Placement />} />
+        <Route path="/nivelamento/resultado" element={<PlacementResultScreen />} />
         <Route path="/sessao/fim" element={<SessionEnd />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
