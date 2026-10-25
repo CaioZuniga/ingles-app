@@ -10,6 +10,9 @@ import '@fontsource/inter/latin-700.css'
 import './index.css'
 import App from './App.tsx'
 import { loadVoices, stop } from './speech/tts'
+import { initTheme } from './state/theme'
+
+initTheme()
 
 void loadVoices()
 // Sair do app (trocar de aba, minimizar, fechar) também encerra qualquer leitura em voz alta.

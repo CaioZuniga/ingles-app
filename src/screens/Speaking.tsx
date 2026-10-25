@@ -1,3 +1,4 @@
+import { Icon } from '../components/icons'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { useLiveQuery } from 'dexie-react-hooks'
@@ -30,7 +31,9 @@ export function SpeakingHub() {
   return (
     <Screen title="Speaking" back="/praticar">
       <Link to="/praticar/speaking/shadowing" className="card mb-3 flex items-center gap-3 p-4">
-        <span className="text-2xl">🔁</span>
+        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl" style={{ background: 'color-mix(in oklab, var(--color-spk) 15%, transparent)', color: 'var(--color-spk)' }}>
+          <Icon name="repeat" />
+        </span>
         <div>
           <div className="font-semibold">Ouvir e repetir (shadowing)</div>
           <div className="text-xs text-muted">Pronúncia frase a frase, com conferência palavra por palavra. Funciona sem IA.</div>
@@ -39,7 +42,9 @@ export function SpeakingHub() {
 
       <div className="eyebrow mb-2 mt-6">Conversas com a IA</div>
       <Link to="/praticar/speaking/conversa/nova" className="card mb-2 flex items-center gap-3 border-spk/40 p-4">
-        <span className="text-2xl">✨</span>
+        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl" style={{ background: 'color-mix(in oklab, var(--color-spk) 15%, transparent)', color: 'var(--color-spk)' }}>
+          <Icon name="sparkle" />
+        </span>
         <div>
           <div className="font-semibold">Situação sob medida</div>
           <div className="text-xs text-muted">Descreva uma situação real que você vai viver e ensaie.</div>

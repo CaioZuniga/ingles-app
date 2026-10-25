@@ -1,31 +1,69 @@
 @import "tailwindcss";
 
-/* Tema escuro "caderno à noite": tinta azul-grafite, uma cor por habilidade. */
+/*
+ * Visual "editorial": títulos em serifa (Fraunces), cards com profundidade e uma cor por habilidade.
+ * Os tokens abaixo são o tema escuro (grafite + âmbar); [data-theme="light"] troca para papel creme + tinta azul-marinho.
+ * O atributo é definido em src/state/theme.ts (Automático segue o sistema).
+ */
 @theme {
-  --color-bg: #0f1115;
-  --color-card: #171a21;
-  --color-card2: #1f232c;
-  --color-line: #2a2f3a;
-  --color-fg: #f1efe9;
-  --color-muted: #9aa0ab;
-  --color-dim: #646b78;
-  --color-accent: #ffc857;
-  --color-accent-ink: #2a1d00;
-  --color-ok: #5ee6a8;
+  --color-bg: #0e1014;
+  --color-card: #16191f;
+  --color-card2: #1e222a;
+  --color-line: #2a2f39;
+  --color-fg: #f2efe8;
+  --color-muted: #a0a6b1;
+  --color-dim: #6b7280;
+  --color-accent: #f5b942;
+  --color-accent-ink: #241800;
+  --color-ok: #4fd69c;
   --color-bad: #ff6b6b;
+  /* Texto sobre as cores de habilidade (badges, botões redondos). */
+  --color-on-skill: #0e1014;
 
-  --color-voc: #ffc857;
+  --color-voc: #f5b942;
   --color-gra: #a78bfa;
-  --color-lis: #5ec8ff;
-  --color-wri: #5ee6a8;
+  --color-lis: #56c2f5;
+  --color-wri: #4fd69c;
   --color-spk: #ff8a65;
 
   --font-display: "Fraunces", Georgia, serif;
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --shadow-card: 0 1px 0 rgb(255 255 255 / 0.03) inset, 0 8px 24px -12px rgb(0 0 0 / 0.6);
+  --shadow-lift: 0 12px 32px -12px rgb(0 0 0 / 0.7);
 }
 
 :root {
   color-scheme: dark;
+  --hero: radial-gradient(120% 90% at 0% 0%, rgb(245 185 66 / 0.16), transparent 60%),
+    radial-gradient(90% 80% at 100% 10%, rgb(167 139 250 / 0.14), transparent 60%);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --color-bg: #f6f1e7;
+  --color-card: #fffcf6;
+  --color-card2: #f0e9dc;
+  --color-line: #e3dacb;
+  --color-fg: #1a2433;
+  --color-muted: #586273;
+  --color-dim: #8a909b;
+  --color-accent: #a3620b;
+  --color-accent-ink: #ffffff;
+  --color-ok: #0f8a5f;
+  --color-bad: #d23b3b;
+  --color-on-skill: #ffffff;
+
+  --color-voc: #c27c0e;
+  --color-gra: #7046e0;
+  --color-lis: #0b7fc0;
+  --color-wri: #0f8a5f;
+  --color-spk: #df5a2e;
+
+  --shadow-card: 0 1px 2px rgb(26 36 51 / 0.05), 0 8px 24px -16px rgb(26 36 51 / 0.18);
+  --shadow-lift: 0 14px 34px -14px rgb(26 36 51 / 0.28);
+  --hero: radial-gradient(120% 90% at 0% 0%, rgb(194 124 14 / 0.13), transparent 60%),
+    radial-gradient(90% 80% at 100% 10%, rgb(112 70 224 / 0.10), transparent 60%);
 }
 
 html,
@@ -78,6 +116,7 @@ select {
 }
 @utility card {
   @apply rounded-2xl border border-line bg-card;
+  box-shadow: var(--shadow-card);
 }
 @utility field {
   @apply w-full rounded-xl border border-line bg-card2 px-3.5 py-3 outline-none focus:border-accent;
@@ -87,6 +126,7 @@ select {
 }
 @utility btn-primary {
   @apply btn bg-accent text-accent-ink;
+  box-shadow: var(--shadow-lift);
 }
 @utility btn-ghost {
   @apply btn border border-line bg-card2 text-fg;
@@ -132,4 +172,14 @@ select {
 }
 .recording {
   animation: pulse-ring 1.2s infinite;
+}
+
+.hero {
+  background: var(--hero);
+}
+
+/* Troca de tema suave (sem animar no primeiro carregamento). */
+html.theme-ready body,
+html.theme-ready .card {
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
 }

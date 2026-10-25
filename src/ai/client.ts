@@ -1,6 +1,6 @@
 import Anthropic from '@anthropic-ai/sdk'
 import type { BetaMessageParam } from '@anthropic-ai/sdk/resources/beta/messages/messages'
-import { getSettings } from '../db/db'
+import { db, getSettings } from '../db/db'
 
 // Chamadas à Claude API direto do navegador, com a chave do próprio usuário (guardada só no aparelho).
 // Uso pessoal: não há servidor intermediário.
@@ -10,6 +10,22 @@ export const MODELS = [
   { id: 'claude-sonnet-5-5', label: 'Claude Sonnet 5.5', note: 'Mais barato, ótimo para o dia a dia' },
   { id: 'claude-haiku-5-5', label: 'Claude Haiku 5.5', note: 'O mais barato e rápido' },
 ]
+
+/** Preço em US$ por milhão de tokens (entrada, saída, leitura de cache). Escrita de cache = 1,25× a entrada. */
+const PRICES: { prefix: string; input: number; output: number; cacheRead: number }[] = [
+  { prefix: 'claude-opus-5-5', input: 4, output: 20, cacheRead: 0.2 },
+  { prefix: 'claude-sonnet-5-5', input: 2, output: 10, cacheRead: 0.2 },
+  { prefix: 'claude-haiku-5-5', input: 0.1, output: 0.5, cacheRead: 0.01 },
+  // Modelos de fallback (recusas indevidas são refeitas no servidor em outro modelo).
+  { prefix: 'claude-opus', input: 5, output: 25, cacheRead: 0.5 },
+  { prefix: 'claude-sonnet', input: 3, output: 15, cacheRead: 0.3 },
+  { prefix: 'claude-fable', input: 10, output: 50, cacheRead: 0.25 },
+]
+
+export function estimateCost(model: string, u: { input: number; output: number; cacheRead: number; cacheWrite: number }): number {
+  const p = PRICES.find((x) => model.startsWith(x.prefix)) ?? PRICES[0]
+  return (u.input * p.input + u.output * p.output + u.cacheRead * p.cacheRead + u.cacheWrite * p.input * 1.25) / 1e6
+}
 
 export class AiError extends Error {}
 
@@ -35,9 +51,11 @@ interface CallOpts {
   maxTokens?: number
   /** JSON Schema da resposta (structured outputs). Sem ele, devolve texto. */
   schema?: Record<string, unknown>
+  /** Nome da tarefa para o registro de custo ("Correção de writing" etc.). */
+  task?: string
 }
 
-async function call({ system, messages, effort = 'medium', maxTokens = 16000, schema }: CallOpts): Promise<string> {
+async function call({ system, messages, effort = 'medium', maxTokens = 16000, schema, task = 'IA' }: CallOpts): Promise<string> {
   const { api, model } = await client()
   // Fallback do servidor em recusas indevidas (Opus/Sonnet); o Haiku não tem.
   const fallback = model.startsWith('claude-haiku') ? {} : { betas: ['server-side-fallback-2026-07-01'], fallbacks: 'default' as const }
@@ -50,6 +68,13 @@ async function call({ system, messages, effort = 'medium', maxTokens = 16000, sc
       output_config: { effort, ...(schema ? { format: { type: 'json_schema', schema } } : {}) },
       ...fallback,
     })
+    const u = {
+      input: res.usage.input_tokens,
+      output: res.usage.output_tokens,
+      cacheRead: res.usage.cache_read_input_tokens ?? 0,
+      cacheWrite: res.usage.cache_creation_input_tokens ?? 0,
+    }
+    void db.usage.add({ date: new Date().toISOString(), task, model: res.model, ...u, cost: estimateCost(res.model, u) })
     if (res.stop_reason === 'refusal') throw new AiError('A IA recusou este pedido. Tente reformular.')
     if (res.stop_reason === 'max_tokens') throw new AiError('A resposta ficou longa demais. Tente de novo.')
     return res.content
@@ -83,5 +108,5 @@ export async function askText(opts: Omit<CallOpts, 'schema'>): Promise<string> {
 
 /** Testa a chave com um pedido mínimo. */
 export async function testKey(): Promise<string> {
-  return askText({ system: 'Reply with one short friendly English sentence.', messages: [{ role: 'user', content: 'Say hi.' }], effort: 'low', maxTokens: 2000 })
+  return askText({ system: 'Reply with one short friendly English sentence.', messages: [{ role: 'user', content: 'Say hi.' }], effort: 'low', maxTokens: 2000, task: 'Teste da chave' })
 }

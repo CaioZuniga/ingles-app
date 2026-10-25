@@ -5,6 +5,7 @@ import { getSettings } from '../db/db'
 import { speak, stop } from '../speech/tts'
 import { listen, sttSupported, type Listener } from '../speech/stt'
 import { useProfile } from '../state/learner'
+import { Icon } from './icons'
 
 export function Screen({ title, back, eyebrow, children, right }: { title?: string; back?: string | true; eyebrow?: string; children: ReactNode; right?: ReactNode }) {
   const nav = useNavigate()
@@ -16,9 +17,9 @@ export function Screen({ title, back, eyebrow, children, right }: { title?: stri
             <button
               aria-label="Voltar"
               onClick={() => (back === true ? nav(-1) : nav(back))}
-              className="-ml-1 mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-full border border-line bg-card text-lg"
+              className="-ml-1 mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-full border border-line bg-card text-muted"
             >
-              ‹
+              <Icon name="back" size={18} />
             </button>
           )}
           <div className="min-w-0 flex-1">
@@ -79,8 +80,8 @@ export function SpeakButton({ text, slow, size = 'md', label }: { text: string; 
   }
   const dim = size === 'sm' ? 'h-8 min-w-8 text-sm' : 'h-10 min-w-10'
   return (
-    <button onClick={play} aria-label={label ?? (slow ? 'Ouvir devagar' : 'Ouvir')} className={`${dim} inline-flex shrink-0 items-center justify-center gap-1 rounded-full border border-line bg-card2 px-2 ${on ? 'text-accent' : ''}`}>
-      {slow ? '🐢' : '🔊'}
+    <button onClick={play} aria-label={label ?? (slow ? 'Ouvir devagar' : 'Ouvir')} className={`${dim} inline-flex shrink-0 items-center justify-center gap-1 rounded-full border border-line bg-card2 px-2 ${on ? 'text-accent' : 'text-muted'}`}>
+      <Icon name={slow ? 'slow' : 'speaker'} size={size === 'sm' ? 15 : 18} />
       {label && <span className="pr-1 text-sm">{label}</span>}
     </button>
   )
@@ -124,9 +125,9 @@ export function MicButton({ onResult, continuous, onInterim, disabled }: { onRes
         onClick={toggle}
         disabled={disabled}
         aria-label={rec ? 'Parar de gravar' : 'Falar'}
-        className={`grid h-16 w-16 place-items-center rounded-full text-2xl ${rec ? 'recording bg-spk text-bg' : 'border border-line bg-card2'}`}
+        className={`grid h-16 w-16 place-items-center rounded-full ${rec ? 'recording bg-spk text-on-skill' : 'border border-line bg-card text-spk'}`}
       >
-        {rec ? '■' : '🎙️'}
+        <Icon name={rec ? 'stop' : 'mic'} size={26} />
       </button>
       <div className="text-xs text-muted">{rec ? (continuous ? 'Gravando… toque para terminar' : 'Ouvindo…') : 'Toque para falar'}</div>
       {err && <div className="max-w-xs text-center text-xs text-bad">{err}</div>}

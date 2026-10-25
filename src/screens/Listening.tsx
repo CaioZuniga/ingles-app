@@ -1,3 +1,4 @@
+import { Icon } from '../components/icons'
 import { useEffect, useRef, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { useLiveQuery } from 'dexie-react-hooks'
@@ -22,7 +23,9 @@ export function ListeningList() {
   return (
     <Screen title="Listening" back="/praticar">
       <Link to="/praticar/listening/nova" className="card mb-5 flex items-center gap-3 border-lis/40 p-4">
-        <span className="text-2xl">✨</span>
+        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl" style={{ background: 'color-mix(in oklab, var(--color-lis) 15%, transparent)', color: 'var(--color-lis)' }}>
+          <Icon name="sparkle" />
+        </span>
         <div>
           <div className="font-semibold">Novo áudio sob medida (IA)</div>
           <div className="text-xs text-muted">Escolha tema e nível; a IA escreve, o celular lê em voz alta.</div>
@@ -51,7 +54,9 @@ export function ListeningList() {
 function Item({ item, to, done }: { item: ListeningItem; to: string; done: boolean }) {
   return (
     <Link to={to} className="card flex items-center gap-3 px-4 py-3">
-      <span className="text-lg">{item.kind === 'dialogue' ? '🗣️' : '🎧'}</span>
+      <span className="text-lis">
+        <Icon name={item.kind === 'dialogue' ? 'chat' : 'headphones'} size={18} />
+      </span>
       <div className="min-w-0 flex-1">
         <div className="truncate">{item.title}</div>
         <div className="text-xs text-muted">{item.topics.map((t) => TOPIC_LABEL[t]).join(' · ')}</div>
@@ -208,7 +213,7 @@ function Player({ item }: { item: ListeningItem }) {
     <div className="space-y-4">
       <div className="card p-4">
         <div className="flex items-center gap-3">
-          <button onClick={play} className="grid h-14 w-14 place-items-center rounded-full bg-lis text-xl text-bg" aria-label={playing ? 'Parar' : 'Ouvir'}>
+          <button onClick={play} className="grid h-14 w-14 place-items-center rounded-full bg-lis text-xl text-on-skill" aria-label={playing ? 'Parar' : 'Ouvir'}>
             {playing ? '■' : '▶'}
           </button>
           <div className="flex-1">

@@ -36,6 +36,8 @@ export interface Profile {
   explainIn: 'pt' | 'en'
   accent: 'en-US' | 'en-GB'
   createdAt: string
+  /** Resultado do teste de nivelamento: ponto de partida do nível estimado de cada habilidade. */
+  placement?: { date: string; ratings: SkillRatings }
 }
 
 export interface Settings {
@@ -209,6 +211,22 @@ export interface Mistake {
   right: string
   note: string
   reviewed: boolean
+  /** Caixa de Leitner (0–4): sobe a cada acerto na revisão; ao passar da 4 o erro é dado como aprendido. */
+  box?: number
+  due?: string // yyyy-mm-dd
+}
+
+/** Registro de uso da Claude API (tokens e custo estimado em US$). */
+export interface AiUsage {
+  id?: number
+  date: string
+  task: string
+  model: string
+  input: number
+  output: number
+  cacheRead: number
+  cacheWrite: number
+  cost: number
 }
 
 /** Conteúdo gerado pela IA guardado para reuso offline. */

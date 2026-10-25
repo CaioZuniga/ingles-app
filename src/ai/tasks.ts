@@ -125,6 +125,7 @@ export async function generateGrammarLesson(ctx: LearnerContext, focus: string):
       },
     ],
     schema: obj({ title: str(), tag: str(), explanation: str(), examples: arr(str()), exercises: arr(exerciseSchema) }),
+    task: 'Aula de gramática',
   })
   return { ...raw, exercises: raw.exercises.map(toExercise).filter((e): e is Exercise => e !== null) }
 }
@@ -148,6 +149,7 @@ export async function generateListening(ctx: LearnerContext, topic: Topic | stri
       questions: arr(obj({ question: str(), options: arr(str()), answer: int() })),
       dictation: arr(str()),
     }),
+    task: 'Áudio de listening',
   })
   return { ...r, id: `ai-${Date.now()}`, level, topics: [], kind }
 }
@@ -168,6 +170,7 @@ export async function generateVocab(ctx: LearnerContext, theme: string, known: s
     schema: obj({
       items: arr(obj({ term: str(), pos: str(), pt: str(), definition: str(), example: str(), level: enm(['A1', 'A2', 'B1', 'B2', 'C1', 'C2']) })),
     }),
+    task: 'Sugestão de palavras',
   })
   const stamp = Date.now()
   return r.items.map((it, i) => ({ ...it, id: `ai-${stamp}-${i}`, topics: [] }))
@@ -227,6 +230,7 @@ export async function correctWriting(ctx: LearnerContext, task: string, text: st
       newWords: arr(newWordSchema),
       examBand: str(),
     }),
+    task: 'Correção de writing',
   })
 }
 
@@ -268,6 +272,7 @@ export async function evaluateSpeaking(ctx: LearnerContext, prompt: string, tran
       newWords: arr(newWordSchema),
       pronunciationWatch: arr(str()),
     }),
+    task: 'Avaliação de speaking',
   })
 }
 
@@ -302,6 +307,7 @@ export async function roleplayTurn(ctx: LearnerContext, rp: Pick<Roleplay, 'aiRo
       correction: obj({ has: bool(), original: str(), better: str(), note: str(), tag: str() }),
       finished: bool(),
     }),
+    task: 'Fala na conversa',
   })
 }
 
@@ -326,6 +332,7 @@ export async function roleplayReport(ctx: LearnerContext, title: string, lines: 
       },
     ],
     schema: obj({ score: num(), summary: str(), wentWell: arr(str()), improve: arr(str()), newWords: arr(newWordSchema) }),
+    task: 'Avaliação da conversa',
   })
 }
 
@@ -343,6 +350,7 @@ export async function customRoleplay(ctx: LearnerContext, situation: string): Pr
     ],
     effort: 'low',
     schema: obj({ title: str(), setup: str(), aiRole: str(), goal: str(), opener: str() }),
+    task: 'Criar conversa',
   })
 }
 
@@ -354,5 +362,6 @@ export async function askTutor(ctx: LearnerContext, history: ChatLine[]): Promis
       `Be concise and practical: short explanation + 2–4 examples. Use plain text with **bold** and "- " lists only.`,
     messages: history.map((l) => ({ role: l.who === 'ai' ? 'assistant' : 'user', content: l.text })),
     effort: 'low',
+    task: 'Tutor',
   })
 }

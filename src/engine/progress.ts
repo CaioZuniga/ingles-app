@@ -21,12 +21,14 @@ export function performance(level: Level, score: number): number {
 }
 
 export function computeRatings(profile: Profile, attempts: Attempt[]): SkillRatings {
+  // Com teste de nivelamento, cada habilidade parte do resultado dele (e só conta o que veio depois).
   const start = levelBase(profile.level) + 50
-  const r = Object.fromEntries(SKILLS.map((s) => [s, start])) as SkillRatings
-  const n = Object.fromEntries(SKILLS.map((s) => [s, 0])) as Record<Skill, number>
+  const since = profile.placement?.date ?? ''
+  const r = Object.fromEntries(SKILLS.map((s) => [s, profile.placement?.ratings[s] ?? start])) as SkillRatings
+  const n = Object.fromEntries(SKILLS.map((s) => [s, profile.placement ? 10 : 0])) as Record<Skill, number>
   const sorted = [...attempts].sort((a, b) => a.date.localeCompare(b.date))
   for (const a of sorted) {
-    if (!a.level) continue
+    if (!a.level || a.activity.startsWith('placement') || a.date < since) continue
     // Cartões de vocabulário são muitos e curtos: pesam menos cada um.
     const alpha = (n[a.skill] < 10 ? 0.25 : 0.12) * (a.activity === 'card' ? 0.15 : 1)
     r[a.skill] = Math.max(0, Math.min(600, r[a.skill] + alpha * (performance(a.level, a.score) - r[a.skill])))
@@ -94,11 +96,14 @@ const GOAL_WEIGHTS: Record<Goal, Partial<Record<Skill, number>>> = {
   content: { listening: 1.6, vocabulary: 1.3 },
 }
 
-const SKILL_ITEM: Record<Exclude<Skill, 'vocabulary'>, { title: string; to: string; minutes: number }> = {
-  grammar: { title: 'Gramática do dia', to: '/praticar/gramatica/sugerida', minutes: 8 },
-  listening: { title: 'Listening', to: '/praticar/listening', minutes: 8 },
-  writing: { title: 'Writing com correção', to: '/praticar/writing', minutes: 12 },
-  speaking: { title: 'Speaking', to: '/praticar/speaking', minutes: 8 },
+export const SKILL_MINUTES: Record<Exclude<Skill, 'vocabulary'>, number> = { grammar: 8, listening: 8, writing: 12, speaking: 8 }
+
+/** Atividade concreta escolhida para uma habilidade (ver engine/picker.ts). */
+export interface Pick {
+  title: string
+  to: string
+  /** Prefixo de Attempt.activity que conta como "feito hoje". */
+  activity: string
 }
 
 export function dailyPlan(opts: {
@@ -107,11 +112,13 @@ export function dailyPlan(opts: {
   attempts: Attempt[]
   dueCards: number
   totalCards: number
+  dueMistakes: number
+  /** Escolhe a atividade de cada habilidade; null = não dá para fazer agora (ex.: sem chave da IA). */
+  pick: (s: Exclude<Skill, 'vocabulary'>) => Pick | null
 }): PlanItem[] {
-  const { profile, ratings, attempts, dueCards, totalCards } = opts
+  const { profile, ratings, attempts, dueCards, totalCards, dueMistakes, pick } = opts
   const t = today()
   const todays = attempts.filter((a) => today(new Date(a.date)) === t)
-  const doneSkill = (s: Skill) => todays.some((a) => a.skill === s && a.activity !== 'card')
   const items: PlanItem[] = []
 
   const reviewedToday = todays.filter((a) => a.activity === 'card').length
@@ -124,13 +131,23 @@ export function dailyPlan(opts: {
     done: dueCards === 0 && reviewedToday > 0,
   })
 
+  if (dueMistakes >= 3 || todays.some((a) => a.activity === 'mistakes'))
+    items.push({
+      skill: 'grammar',
+      title: dueMistakes ? `Revisar ${dueMistakes} erro${dueMistakes > 1 ? 's' : ''}` : 'Revisar erros',
+      why: 'Seus próprios erros voltam até você acertar de primeira.',
+      minutes: Math.min(6, Math.max(3, Math.ceil(dueMistakes / 3))),
+      to: '/erros/revisar',
+      done: dueMistakes === 0,
+    })
+
   // Habilidades restantes: as mais fracas (em relação à média), as menos praticadas recentemente e as das suas demandas vêm primeiro.
   const avg = SKILLS.reduce((s, k) => s + ratings[k], 0) / SKILLS.length
   const lastPractice = (s: Skill) => {
-    const last = attempts.filter((a) => a.skill === s).map((a) => a.date).sort().pop()
+    const last = attempts.filter((a) => a.skill === s && a.activity !== 'card' && a.activity !== 'mistakes').map((a) => a.date).sort().pop()
     return last ? (Date.now() - Date.parse(last)) / 86400000 : 30
   }
-  const scored = (Object.keys(SKILL_ITEM) as (keyof typeof SKILL_ITEM)[])
+  const scored = (Object.keys(SKILL_MINUTES) as (keyof typeof SKILL_MINUTES)[])
     .map((s) => {
       const goalW = profile.goals.reduce((w, g) => w * (GOAL_WEIGHTS[g][s] ?? 1), 1)
       const gap = (avg - ratings[s]) / 50 // abaixo da média: mais prioridade
@@ -139,20 +156,22 @@ export function dailyPlan(opts: {
     })
     .sort((a, b) => b.score - a.score)
 
-  let budget = profile.dailyMinutes - items[0].minutes
+  let budget = profile.dailyMinutes - items.reduce((m, it) => m + it.minutes, 0)
   for (const { s } of scored) {
-    const it = SKILL_ITEM[s]
-    if (budget < it.minutes * 0.6 && items.length >= 2) break
+    const minutes = SKILL_MINUTES[s]
+    if (budget < minutes * 0.6 && items.length >= 2) break
+    const p = pick(s)
+    if (!p) continue
     const weak = ratings[s] < avg - 25
     items.push({
       skill: s,
-      title: it.title,
+      title: p.title,
       why: weak ? 'É sua habilidade mais fraca agora.' : lastPractice(s) >= 3 ? 'Faz alguns dias que você não pratica.' : 'Ligada às suas demandas.',
-      minutes: it.minutes,
-      to: it.to,
-      done: doneSkill(s),
+      minutes,
+      to: p.to,
+      done: todays.some((a) => a.skill === s && a.activity !== 'card' && a.activity !== 'mistakes' && !a.activity.startsWith('placement')),
     })
-    budget -= it.minutes
+    budget -= minutes
   }
   return items
 }

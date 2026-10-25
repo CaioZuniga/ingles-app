@@ -1,3 +1,4 @@
+import { Icon } from '../components/icons'
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useParams, useSearchParams } from 'react-router-dom'
 import { useLiveQuery } from 'dexie-react-hooks'
@@ -27,7 +28,9 @@ export function GrammarList() {
   return (
     <Screen title="Grammar" back="/praticar">
       <Link to="/praticar/gramatica/sugerida" className="card mb-5 flex items-center gap-3 border-gra/40 p-4">
-        <span className="text-2xl">✨</span>
+        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl" style={{ background: 'color-mix(in oklab, var(--color-gra) 15%, transparent)', color: 'var(--color-gra)' }}>
+          <Icon name="sparkle" />
+        </span>
         <div>
           <div className="font-semibold">Aula sob medida (IA)</div>
           <div className="text-xs text-muted">Escolhe o ponto que você mais erra, com exemplos do seu contexto.</div>

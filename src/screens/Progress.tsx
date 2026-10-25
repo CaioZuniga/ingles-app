@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { db } from '../db/db'
 import { useLearnerStats } from '../state/learner'
 import { minutesToday, ratingToLevel, streak } from '../engine/progress'
@@ -85,8 +86,13 @@ export function ProgressScreen() {
 
       <div className="mb-2 flex items-baseline justify-between">
         <h2 className="h2">Caderno de erros</h2>
-        <span className="text-xs text-muted">{pending.length} para revisar</span>
+        <span className="text-xs text-muted">{pending.length} em aberto</span>
       </div>
+      {pending.length > 0 && (
+        <Link to="/erros/revisar" className="btn-primary mb-3 w-full">
+          Revisar erros agora
+        </Link>
+      )}
       {pending.length === 0 ? (
         <div className="card p-4 text-sm text-muted">Os erros dos exercícios e das correções da IA aparecem aqui para você revisar.</div>
       ) : (

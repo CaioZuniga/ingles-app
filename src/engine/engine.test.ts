@@ -3,6 +3,12 @@ import { addDays, newCard, review } from './srs'
 import { isCorrect, sameText, shuffleChoices } from './check'
 import { diffWords } from './diff'
 import { computeRatings, dailyPlan, ratingToLevel, streak } from './progress'
+import { makePicker } from './picker'
+import { reminderIcs } from './reminder'
+import { gradeMistake } from '../screens/Mistakes'
+import { scoreTest } from '../screens/Placement'
+import { estimateCost } from '../ai/client'
+import type { Mistake } from '../types'
 import type { Attempt, Exercise, Profile } from '../types'
 import grammar from '../data/grammar.json'
 import vocabulary from '../data/vocabulary.json'
@@ -69,7 +75,8 @@ describe('progresso', () => {
     expect(streak([at(d(0), 1), at(d(1), 1), at(d(2), 1), at(d(4), 1)])).toBe(3)
   })
   it('monta o plano dentro do tempo diário, com revisão primeiro', () => {
-    const plan = dailyPlan({ profile, ratings: computeRatings(profile, []), attempts: [], dueCards: 12, totalCards: 40 })
+    const ratings = computeRatings(profile, [])
+    const plan = dailyPlan({ profile, ratings, attempts: [], dueCards: 12, totalCards: 40, dueMistakes: 0, pick: makePicker({ profile, ratings, attempts: [], weaknesses: [], hasKey: true }) })
     expect(plan[0].skill).toBe('vocabulary')
     expect(plan.length).toBeGreaterThanOrEqual(2)
     expect(plan.slice(1).some((p) => p.skill === 'speaking')).toBe(true)
@@ -89,5 +96,55 @@ describe('banco de conteúdo', () => {
     const ids = (vocabulary as { id: string }[]).map((v) => v.id)
     expect(new Set(ids).size).toBe(ids.length)
     expect((listening as unknown[]).length).toBeGreaterThan(10)
+  })
+})
+
+describe('plano concreto', () => {
+  it('aponta para exercícios específicos e inclui revisão de erros quando há vários', () => {
+    const ratings = computeRatings(profile, [])
+    const plan = dailyPlan({ profile, ratings, attempts: [], dueCards: 0, totalCards: 40, dueMistakes: 5, pick: makePicker({ profile, ratings, attempts: [], weaknesses: [], hasKey: false }) })
+    expect(plan[1].to).toBe('/erros/revisar')
+    // Sem chave da IA não entra writing; speaking vira shadowing.
+    expect(plan.some((p) => p.skill === 'writing')).toBe(false)
+    for (const p of plan.slice(2)) expect(p.to).toMatch(/\/praticar\/(gramatica|listening|speaking)\/[a-z0-9-]+/)
+  })
+})
+
+describe('caderno de erros', () => {
+  const m: Mistake = { date: '', skill: 'grammar', tag: 'x', wrong: 'a', right: 'b', note: '', reviewed: false, box: 0, due: '2026-10-01' }
+  it('sobe de caixa ao acertar e zera ao errar', () => {
+    const a = gradeMistake(m, true, '2026-10-01')
+    expect([a.box, a.due]).toEqual([1, '2026-10-02'])
+    const b = gradeMistake({ ...a, box: 3 }, true, '2026-10-01')
+    expect([b.box, b.due]).toEqual([4, '2026-10-15'])
+    const c = gradeMistake(b, true, '2026-10-01')
+    expect(c.reviewed).toBe(true)
+    expect(gradeMistake(c, false, '2026-10-01').box).toBe(0)
+  })
+})
+
+describe('nivelamento', () => {
+  it('soma os acertos por nível', () => {
+    const r = scoreTest([
+      { skill: 'grammar', level: 'A1', score: 1 },
+      { skill: 'grammar', level: 'A2', score: 1 },
+      { skill: 'grammar', level: 'B1', score: 0.5 },
+      { skill: 'grammar', level: 'B2', score: 0 },
+    ])
+    expect(ratingToLevel(r.grammar).label).toBe('B1+')
+  })
+})
+
+describe('lembrete e custo', () => {
+  it('gera evento diário com alarme', () => {
+    const ics = reminderIcs('20:00', 20, new Date(2026, 9, 25, 21, 0))
+    expect(ics).toContain('DTSTART:20261026T200000')
+    expect(ics).toContain('DTEND:20261026T202000')
+    expect(ics).toContain('RRULE:FREQ=DAILY')
+    expect(ics).toContain('BEGIN:VALARM')
+  })
+  it('estima o custo pelo modelo', () => {
+    expect(estimateCost('claude-opus-5-5', { input: 1e6, output: 1e6, cacheRead: 0, cacheWrite: 0 })).toBeCloseTo(24)
+    expect(estimateCost('claude-haiku-5-5', { input: 2000, output: 1000, cacheRead: 0, cacheWrite: 0 })).toBeCloseTo(0.0007)
   })
 })

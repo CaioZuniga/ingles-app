@@ -13,13 +13,17 @@ import { Words, WordReview, WordBrowse } from './screens/Words'
 import { Tutor } from './screens/Tutor'
 import { ProgressScreen } from './screens/Progress'
 import { SettingsScreen } from './screens/Settings'
+import { SessionBar, SessionEnd } from './screens/Session'
+import { MistakeReview } from './screens/Mistakes'
+import { Placement } from './screens/Placement'
+import { Icon, type IconName } from './components/icons'
 
-const TABS = [
-  { to: '/', label: 'Hoje', icon: '☀︎', end: true },
-  { to: '/praticar', label: 'Praticar', icon: '◆' },
-  { to: '/palavras', label: 'Palavras', icon: '❖' },
-  { to: '/progresso', label: 'Progresso', icon: '▲' },
-  { to: '/ajustes', label: 'Ajustes', icon: '⚙︎' },
+const TABS: { to: string; label: string; icon: IconName; end?: boolean }[] = [
+  { to: '/', label: 'Hoje', icon: 'home', end: true },
+  { to: '/praticar', label: 'Praticar', icon: 'practice' },
+  { to: '/palavras', label: 'Palavras', icon: 'cards' },
+  { to: '/progresso', label: 'Progresso', icon: 'chart' },
+  { to: '/ajustes', label: 'Ajustes', icon: 'gear' },
 ]
 
 /** Cada tela nova abre no topo (o navegador mantém a rolagem da anterior) e sem áudio da tela anterior. */
@@ -37,8 +41,8 @@ function TabBar() {
     <nav className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-bg/90 backdrop-blur safe-bottom">
       <div className="mx-auto flex max-w-xl">
         {TABS.map((t) => (
-          <NavLink key={t.to} to={t.to} end={t.end} className={({ isActive }) => `flex flex-1 flex-col items-center gap-0.5 py-2.5 text-[11px] ${isActive ? 'text-accent' : 'text-dim'}`}>
-            <span className="text-lg leading-none">{t.icon}</span>
+          <NavLink key={t.to} to={t.to} end={t.end} className={({ isActive }) => `flex flex-1 flex-col items-center gap-1 pt-2.5 pb-2 text-[11px] font-medium ${isActive ? 'text-accent' : 'text-dim'}`}>
+            <Icon name={t.icon} size={21} />
             {t.label}
           </NavLink>
         ))}
@@ -54,6 +58,7 @@ export default function App() {
   return (
     <HashRouter>
       <ScrollTop />
+      <SessionBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/praticar" element={<Practice />} />
@@ -75,6 +80,9 @@ export default function App() {
         <Route path="/tutor" element={<Tutor />} />
         <Route path="/progresso" element={<ProgressScreen />} />
         <Route path="/ajustes" element={<SettingsScreen />} />
+        <Route path="/erros/revisar" element={<MistakeReview />} />
+        <Route path="/nivelamento" element={<Placement />} />
+        <Route path="/sessao/fim" element={<SessionEnd />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <TabBar />

@@ -1,5 +1,6 @@
 import Dexie, { type EntityTable } from 'dexie'
-import type { Attempt, Card, Mistake, Profile, SavedLesson, Settings } from '../types'
+import type { AiUsage, Attempt, Card, Mistake, Profile, SavedLesson, Settings } from '../types'
+import { today } from '../engine/srs'
 
 // Banco local (IndexedDB). Tudo fica só neste aparelho; o backup exporta para JSON.
 export const db = new Dexie('ingles-app') as Dexie & {
@@ -9,6 +10,7 @@ export const db = new Dexie('ingles-app') as Dexie & {
   attempts: EntityTable<Attempt, 'id'>
   mistakes: EntityTable<Mistake, 'id'>
   lessons: EntityTable<SavedLesson, 'id'>
+  usage: EntityTable<AiUsage, 'id'>
 }
 
 db.version(1).stores({
@@ -19,6 +21,19 @@ db.version(1).stores({
   mistakes: '++id, date, skill, tag, reviewed',
   lessons: '++id, date, skill',
 })
+
+// v2: erros entram em repetição espaçada (due) e o uso da IA passa a ser registrado.
+db.version(2)
+  .stores({ mistakes: '++id, date, skill, tag, reviewed, due', usage: '++id, date' })
+  .upgrade((tx) =>
+    tx
+      .table('mistakes')
+      .toCollection()
+      .modify((m: Mistake) => {
+        m.box = m.reviewed ? 5 : 0
+        m.due = today()
+      }),
+  )
 
 export const DEFAULT_MODEL = 'claude-opus-5-5'
 
@@ -46,7 +61,7 @@ export async function logAttempt(a: Omit<Attempt, 'id' | 'date'>) {
 export async function logMistakes(items: Omit<Mistake, 'id' | 'date' | 'reviewed'>[]) {
   if (!items.length) return
   const date = new Date().toISOString()
-  await db.mistakes.bulkAdd(items.map((m) => ({ ...m, date, reviewed: false })))
+  await db.mistakes.bulkAdd(items.map((m) => ({ ...m, date, reviewed: false, box: 0, due: today() })))
 }
 
 export interface Backup {

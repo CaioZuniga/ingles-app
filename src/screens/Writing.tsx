@@ -1,3 +1,4 @@
+import { Icon } from '../components/icons'
 import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { useLiveQuery } from 'dexie-react-hooks'
@@ -26,7 +27,9 @@ export function WritingList() {
   return (
     <Screen title="Writing" back="/praticar">
       <Link to="/praticar/writing/livre" className="card mb-5 flex items-center gap-3 border-wri/40 p-4">
-        <span className="text-2xl">✍️</span>
+        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl" style={{ background: 'color-mix(in oklab, var(--color-wri) 15%, transparent)', color: 'var(--color-wri)' }}>
+          <Icon name="pen" />
+        </span>
         <div>
           <div className="font-semibold">Texto livre / do seu trabalho</div>
           <div className="text-xs text-muted">Cole um e-mail real que você vai mandar e receba a correção.</div>

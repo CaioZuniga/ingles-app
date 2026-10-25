@@ -1,6 +1,8 @@
 import { useLiveQuery } from 'dexie-react-hooks'
-import { db } from '../db/db'
-import { computeRatings, estimatedText, weaknesses } from '../engine/progress'
+import { db, getSettings } from '../db/db'
+import { computeRatings, dailyPlan, estimatedText, weaknesses } from '../engine/progress'
+import { makePicker } from '../engine/picker'
+import { today } from '../engine/srs'
 import type { LearnerContext } from '../ai/tasks'
 import type { Profile } from '../types'
 
@@ -19,8 +21,23 @@ export function useProfile(): Profile | undefined | null {
 
 export function useLearnerStats() {
   return useLiveQuery(async () => {
-    const [profile, attempts, mistakes, cards] = await Promise.all([db.profile.get('me'), db.attempts.toArray(), db.mistakes.toArray(), db.cards.toArray()])
+    const [profile, attempts, mistakes, cards, settings] = await Promise.all([db.profile.get('me'), db.attempts.toArray(), db.mistakes.toArray(), db.cards.toArray(), getSettings()])
     if (!profile) return null
-    return { profile, attempts, mistakes, cards, ratings: computeRatings(profile, attempts), weaknesses: weaknesses(attempts, mistakes) }
+    const ratings = computeRatings(profile, attempts)
+    const weak = weaknesses(attempts, mistakes)
+    const t = today()
+    const dueCards = cards.filter((c) => c.due <= t).length
+    const dueMistakes = mistakes.filter((m) => !m.reviewed && (m.due ?? t) <= t).length
+    const hasKey = Boolean(settings.apiKey)
+    const plan = dailyPlan({
+      profile,
+      ratings,
+      attempts,
+      dueCards,
+      totalCards: cards.length,
+      dueMistakes,
+      pick: makePicker({ profile, ratings, attempts, weaknesses: weak, hasKey }),
+    })
+    return { profile, attempts, mistakes, cards, ratings, weaknesses: weak, dueCards, dueMistakes, hasKey, plan }
   })
 }
