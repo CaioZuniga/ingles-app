@@ -66,6 +66,7 @@ export function Placement() {
   const [i, setI] = useState(0)
   const [typed, setTyped] = useState('')
   const [plays, setPlays] = useState(0)
+  const [playing, setPlaying] = useState(false)
   const results = useRef<{ skill: Skill; level: Level; score: number }[]>([])
   const started = useRef(Date.now())
   const [ratings, setRatings] = useState<SkillRatings | null>(null)
@@ -171,13 +172,15 @@ export function Placement() {
             <div className="mb-3 text-sm text-muted">Ouça e escreva a frase (pode ouvir até 3 vezes).</div>
             <button
               className="btn-ghost mb-3 w-full"
-              disabled={plays >= 3}
-              onClick={() => {
+              disabled={plays >= 3 || playing}
+              onClick={async () => {
                 setPlays(plays + 1)
-                void speak(q.text, prefs)
+                setPlaying(true)
+                await speak(q.text, prefs)
+                setPlaying(false)
               }}
             >
-              <Icon name="play" size={16} /> Ouvir {plays ? `(${plays}/3)` : ''}
+              <Icon name={playing ? 'speaker' : 'play'} size={16} /> {playing ? 'Tocando…' : `Ouvir ${plays ? `(${plays}/3)` : ''}`}
             </button>
             <input className="field" value={typed} onChange={(e) => setTyped(e.target.value)} placeholder="O que você ouviu" autoCapitalize="off" autoCorrect="off" spellCheck={false} lang="en" />
             <div className="mt-3 flex gap-2">

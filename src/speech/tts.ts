@@ -19,14 +19,18 @@ export function englishVoices(): SpeechSynthesisVoice[] {
   return voicesCache.filter((v) => v.lang.toLowerCase().startsWith('en'))
 }
 
-/** Vozes de melhor qualidade primeiro (as "Enhanced/Premium/Natural/Google" soam bem melhores). */
+/**
+ * Ordem das vozes: sotaque certo, depois vozes do próprio aparelho (respondem na hora) e, entre elas, as de melhor qualidade.
+ * Vozes online (ex.: "Google US English" e "… Online (Natural)" no Chrome/Edge do computador) soam bem, mas cada
+ * reprodução passa pela internet e pode atrasar; ficam disponíveis para escolher em Ajustes.
+ */
 function rank(v: SpeechSynthesisVoice, accent: string): number {
   let s = 0
   if (v.lang.replace('_', '-') === accent) s += 10
-  if (/premium|enhanced|natural|neural/i.test(v.name)) s += 6
-  if (/google/i.test(v.name)) s += 4
-  if (/samantha|daniel|karen|moira|serena|ava|zoe|evan|nathan/i.test(v.name)) s += 3
-  if (v.localService) s += 1
+  if (v.localService) s += 8
+  if (/premium|enhanced|natural|neural/i.test(v.name)) s += 4
+  if (/google/i.test(v.name)) s += 2
+  if (/samantha|daniel|karen|moira|serena|ava|zoe|evan|nathan|aria|jenny|guy/i.test(v.name)) s += 3
   return s
 }
 
@@ -53,19 +57,72 @@ export function stop() {
   if (ttsSupported()) speechSynthesis.cancel()
 }
 
+// Referência viva da fala atual: sem ela o Chrome às vezes descarta a fala da memória e ela não toca nem termina.
+let current: SpeechSynthesisUtterance | null = null
+
+/**
+ * Fala um texto. Robusta às falhas conhecidas da Web Speech API:
+ * - tocar de novo interrompe o anterior (senão o navegador enfileira e o novo atrasa);
+ * - o Chrome às vezes descarta uma fala pedida logo após cancelar: espera um instante;
+ * - voz online que falha (rede) ou fala que não começa em 2,5 s: tenta mais uma vez com uma voz do aparelho.
+ */
 export function speak(text: string, opts: SpeakOpts = {}): Promise<void> {
   if (!ttsSupported()) return Promise.resolve()
+  const busy = speechSynthesis.speaking || speechSynthesis.pending
+  if (busy) speechSynthesis.cancel()
+  if (speechSynthesis.paused) speechSynthesis.resume()
+  const mine = generation
+  const voices = pickVoices(opts.accent ?? 'en-US', opts.voiceURI)
+  const first = opts.alt ? (voices.find((x, i) => i > 0 && x.name !== voices[0]?.name) ?? voices[0]) : voices[0]
+  const backup = voices.find((v) => v.localService && v !== first) ?? first
+
   return new Promise((resolve) => {
-    const u = new SpeechSynthesisUtterance(text)
-    const voices = pickVoices(opts.accent ?? 'en-US', opts.voiceURI)
-    const v = opts.alt ? (voices.find((x, i) => i > 0 && x.name !== voices[0]?.name) ?? voices[0]) : voices[0]
-    if (v) u.voice = v
-    u.lang = v?.lang ?? opts.accent ?? 'en-US'
-    u.rate = opts.rate ?? 0.95
-    if (opts.alt && voices.length < 2) u.pitch = 0.8 // sem segunda voz: muda o tom para distinguir
-    u.onend = () => resolve()
-    u.onerror = () => resolve()
-    speechSynthesis.speak(u)
+    let settled = false
+    let retried = false
+    let active: SpeechSynthesisUtterance | null = null // tentativa em curso desta chamada
+    let watch: ReturnType<typeof setTimeout> | undefined
+    const finish = () => {
+      if (settled) return
+      settled = true
+      clearTimeout(watch)
+      if (current === active) current = null
+      active = null
+      resolve()
+    }
+    const attempt = (voice: SpeechSynthesisVoice | undefined, delay: number) => {
+      const u = new SpeechSynthesisUtterance(text)
+      if (voice) u.voice = voice
+      u.lang = voice?.lang ?? opts.accent ?? 'en-US'
+      u.rate = opts.rate ?? 0.95
+      if (opts.alt && voices.length < 2) u.pitch = 0.8 // sem segunda voz: muda o tom para distinguir
+      let started = false
+      u.onstart = () => (started = true)
+      u.onend = () => active === u && finish()
+      u.onerror = (e) => {
+        if (active !== u) return
+        if (e.error === 'interrupted' || e.error === 'canceled' || generation !== mine) finish()
+        else retry()
+      }
+      const go = () => {
+        if (settled || generation !== mine) return finish()
+        active = current = u
+        speechSynthesis.speak(u)
+        watch = setTimeout(() => {
+          if (active === u && !started && !speechSynthesis.speaking) retry()
+        }, 2500)
+      }
+      if (delay) setTimeout(go, delay)
+      else go()
+    }
+    const retry = () => {
+      clearTimeout(watch)
+      if (retried || generation !== mine) return finish()
+      retried = true
+      active = null // a tentativa abandonada não encerra mais nada
+      speechSynthesis.cancel()
+      attempt(backup, 120)
+    }
+    attempt(first, busy ? 60 : 0)
   })
 }
 

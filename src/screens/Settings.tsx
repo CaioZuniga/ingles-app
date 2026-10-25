@@ -164,7 +164,7 @@ export function SettingsScreen() {
           <option value="">Automática (melhor voz {profile.accent === 'en-GB' ? 'britânica' : 'americana'})</option>
           {voices.map((v) => (
             <option key={v.voiceURI} value={v.voiceURI}>
-              {v.name} ({v.lang})
+              {v.name} ({v.lang}){v.localService ? '' : ' · online, pode atrasar'}
             </option>
           ))}
         </select>
