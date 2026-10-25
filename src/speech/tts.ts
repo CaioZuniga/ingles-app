@@ -44,7 +44,12 @@ export interface SpeakOpts {
   alt?: boolean
 }
 
+// Cada stop() abre uma nova "geração": leituras em andamento (speakScript) veem que ficaram velhas e param,
+// em vez de seguir para a próxima linha depois de a frase atual ser cancelada.
+let generation = 0
+
 export function stop() {
+  generation++
   if (ttsSupported()) speechSynthesis.cancel()
 }
 
@@ -68,13 +73,12 @@ export function speak(text: string, opts: SpeakOpts = {}): Promise<void> {
 export async function speakScript(transcript: string, opts: SpeakOpts & { onLine?: (i: number) => void } = {}) {
   stop()
   const lines = transcript.split('\n').map((l) => l.trim()).filter(Boolean)
-  let cancelled = false
+  const mine = generation
   const cancel = () => {
-    cancelled = true
-    stop()
+    if (generation === mine) stop()
   }
   const run = async () => {
-    for (let i = 0; i < lines.length && !cancelled; i++) {
+    for (let i = 0; i < lines.length && generation === mine; i++) {
       const m = /^([AB]):\s*(.*)$/.exec(lines[i])
       opts.onLine?.(i)
       await speak(m ? m[2] : lines[i], { ...opts, alt: m?.[1] === 'B' })

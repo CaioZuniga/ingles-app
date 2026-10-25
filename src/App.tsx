@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { HashRouter, NavLink, Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import { useProfile } from './state/learner'
+import { stop } from './speech/tts'
 import { Onboarding } from './screens/Onboarding'
 import { Home } from './screens/Home'
 import { Practice } from './screens/Practice'
@@ -21,11 +22,12 @@ const TABS = [
   { to: '/ajustes', label: 'Ajustes', icon: '⚙︎' },
 ]
 
-/** Cada tela nova abre no topo (o navegador mantém a rolagem da anterior). */
+/** Cada tela nova abre no topo (o navegador mantém a rolagem da anterior) e sem áudio da tela anterior. */
 function ScrollTop() {
   const { pathname } = useLocation()
   useEffect(() => {
     window.scrollTo(0, 0)
+    stop()
   }, [pathname])
   return null
 }

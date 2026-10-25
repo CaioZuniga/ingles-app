@@ -9,9 +9,12 @@ import '@fontsource/inter/latin-600.css'
 import '@fontsource/inter/latin-700.css'
 import './index.css'
 import App from './App.tsx'
-import { loadVoices } from './speech/tts'
+import { loadVoices, stop } from './speech/tts'
 
 void loadVoices()
+// Sair do app (trocar de aba, minimizar, fechar) também encerra qualquer leitura em voz alta.
+document.addEventListener('visibilitychange', () => document.hidden && stop())
+window.addEventListener('pagehide', stop)
 // Pede ao navegador para não apagar o banco local quando faltar espaço.
 void navigator.storage?.persist?.()
 
