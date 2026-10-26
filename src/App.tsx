@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { HashRouter, NavLink, Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import { useProfile } from './state/learner'
 import { stop } from './speech/tts'
@@ -17,6 +17,8 @@ import { SessionBar, SessionEnd } from './screens/Session'
 import { MistakeReview } from './screens/Mistakes'
 import { Placement, PlacementResultScreen } from './screens/Placement'
 import { Icon, type IconName } from './components/icons'
+import { InstallFirst } from './components/Install'
+import { shouldOfferInstallFirst } from './state/platform'
 
 const TABS: { to: string; label: string; icon: IconName; end?: boolean }[] = [
   { to: '/', label: 'Hoje', icon: 'home', end: true },
@@ -53,8 +55,9 @@ function TabBar() {
 
 export default function App() {
   const profile = useProfile()
+  const [installFirst, setInstallFirst] = useState(shouldOfferInstallFirst)
   if (profile === undefined) return null
-  if (profile === null) return <Onboarding />
+  if (profile === null) return installFirst ? <InstallFirst onSkip={() => setInstallFirst(false)} /> : <Onboarding />
   return (
     <HashRouter>
       <ScrollTop />

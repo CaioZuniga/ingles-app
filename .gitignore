@@ -23,3 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
+# QR code gerado para enviar ao usuário (o do app fica em public/instalar-qr.svg)
+qr-instalar-fluent.png

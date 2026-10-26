@@ -9,6 +9,7 @@ import { useProfile } from '../state/learner'
 import { ProfileForm } from './Onboarding'
 import { Screen, Segmented } from '../components/ui'
 import { Icon } from '../components/icons'
+import { InstallCard } from '../components/Install'
 import { useTheme, type ThemePref } from '../state/theme'
 import { googleCalendarUrl, reminderIcs } from '../engine/reminder'
 import { Link } from 'react-router-dom'
@@ -88,6 +89,8 @@ export function SettingsScreen() {
 
   return (
     <Screen title="Ajustes">
+      <InstallCard />
+
       <section className="card mb-4 p-4">
         <div className="eyebrow mb-2">Aparência</div>
         <Segmented<ThemePref>

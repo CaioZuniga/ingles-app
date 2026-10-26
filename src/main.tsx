@@ -11,8 +11,10 @@ import './index.css'
 import App from './App.tsx'
 import { loadVoices, stop } from './speech/tts'
 import { initTheme } from './state/theme'
+import { initPlatform } from './state/platform'
 
 initTheme()
+initPlatform()
 
 void loadVoices()
 // Sair do app (trocar de aba, minimizar, fechar) também encerra qualquer leitura em voz alta.

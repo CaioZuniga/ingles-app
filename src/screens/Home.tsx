@@ -6,6 +6,7 @@ import { SKILLS } from '../types'
 import { startSession, useSession } from '../state/session'
 import { Bar, Screen } from '../components/ui'
 import { Icon, Ring, SkillTile } from '../components/icons'
+import { InstallCard } from '../components/Install'
 
 export function Home() {
   const s = useLearnerStats()
@@ -44,6 +45,8 @@ export function Home() {
           </div>
         </div>
       </section>
+
+      <InstallCard dismissible />
 
       {showPlacement && (
         <Link to="/nivelamento" className="card mb-4 flex items-center gap-3 p-4">
