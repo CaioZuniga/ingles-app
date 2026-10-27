@@ -3,10 +3,25 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
+import { execSync } from 'node:child_process'
+import { readFileSync } from 'node:fs'
 
 // O app é publicado em https://caiozuniga.github.io/ingles-app/
+const version = JSON.parse(readFileSync('./package.json', 'utf8')).version as string
+const build = (() => {
+  try {
+    return execSync('git rev-parse --short HEAD', { encoding: 'utf8' }).trim()
+  } catch {
+    return 'local'
+  }
+})()
+
 export default defineConfig({
   base: '/ingles-app/',
+  define: {
+    __APP_VERSION__: JSON.stringify(version),
+    __APP_BUILD__: JSON.stringify(build),
+  },
   plugins: [
     react(),
     tailwindcss(),

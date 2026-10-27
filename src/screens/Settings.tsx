@@ -199,6 +199,9 @@ export function SettingsScreen() {
         <input ref={fileRef} type="file" accept="application/json,.json" hidden onChange={(e) => e.target.files?.[0] && restore(e.target.files[0])} />
         {msg && <div className="mt-2 text-sm text-muted">{msg}</div>}
       </section>
+      <p className="mt-6 text-center text-xs text-dim">
+        Versão {__APP_VERSION__} · build {__APP_BUILD__}
+      </p>
     </Screen>
   )
 }
