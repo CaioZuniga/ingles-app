@@ -4,11 +4,12 @@ import { Link, useParams } from 'react-router-dom'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { rankFor, WRITING } from '../data'
 import { db, logAttempt, logMistakes } from '../db/db'
-import { correctWriting, type WritingFeedback } from '../ai/tasks'
+import { correctWriting, generateErrorDrills, type WritingFeedback } from '../ai/tasks'
 import { loadLearner, useProfile } from '../state/learner'
 import { IssueList, NewWords, Section } from '../components/Feedback'
+import { ExerciseRunner } from '../components/ExerciseRunner'
 import { ErrorBox, LevelPill, Loading, NeedsKey, Rich, ScoreBadge, Screen, Segmented, SpeakButton } from '../components/ui'
-import type { Level, WritingPrompt } from '../types'
+import type { Exercise, Level, Mistake, WritingPrompt } from '../types'
 
 const GENRE: Record<WritingPrompt['genre'], string> = {
   email: 'E-mail',
@@ -20,9 +21,22 @@ const GENRE: Record<WritingPrompt['genre'], string> = {
   review: 'Review',
 }
 
+/** Erros de writing ainda não dominados (sem repetição), do mais recente para o mais antigo, sem frases repetidas. */
+async function writingMistakes(): Promise<Mistake[]> {
+  const all = (await db.mistakes.where('skill').equals('writing').toArray()).filter((m) => !m.reviewed).sort((a, b) => b.date.localeCompare(a.date))
+  const seen = new Set<string>()
+  return all.filter((m) => {
+    const key = `${m.wrong}|${m.right}`
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+  })
+}
+
 export function WritingList() {
   const profile = useProfile()
   const history = useLiveQuery(() => db.lessons.where('skill').equals('writing').reverse().limit(10).toArray())
+  const mistakes = useLiveQuery(writingMistakes)
   if (!profile) return null
   return (
     <Screen title="Writing" back="/praticar">
@@ -35,6 +49,17 @@ export function WritingList() {
           <div className="text-xs text-muted">Cole um e-mail real que você vai mandar e receba a correção.</div>
         </div>
       </Link>
+      {!!mistakes?.length && (
+        <Link to="/praticar/writing/erros" className="card mb-5 flex items-center gap-3 border-wri/40 p-4">
+          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl" style={{ background: 'color-mix(in oklab, var(--color-wri) 15%, transparent)', color: 'var(--color-wri)' }}>
+            <Icon name="sparkle" />
+          </span>
+          <div>
+            <div className="font-semibold">Exercícios dos seus erros</div>
+            <div className="text-xs text-muted">{mistakes.length} erros de writing viraram exercícios novos para fixar.</div>
+          </div>
+        </Link>
+      )}
       {!!history?.length && (
         <>
           <div className="eyebrow mb-2">Correções anteriores</div>
@@ -63,6 +88,93 @@ export function WritingList() {
           </Link>
         ))}
       </div>
+    </Screen>
+  )
+}
+
+/** Exercícios novos feitos pela IA a partir dos erros de writing; as respostas erradas voltam ao caderno de erros. */
+export function WritingDrills() {
+  const profile = useProfile()
+  const mistakes = useLiveQuery(writingMistakes)
+  const [exercises, setExercises] = useState<Exercise[] | null>(null)
+  const [round, setRound] = useState(0)
+  const [score, setScore] = useState<number | null>(null)
+  const [busy, setBusy] = useState(false)
+  const [error, setError] = useState('')
+  if (!profile || mistakes === undefined) return null
+
+  // Tag mais frequente entre os erros, usada no registro das respostas erradas.
+  const tag = [...mistakes.reduce((m, x) => m.set(x.tag, (m.get(x.tag) ?? 0) + 1), new Map<string, number>())].sort((a, b) => b[1] - a[1])[0]?.[0] ?? 'writing'
+
+  const make = async () => {
+    setBusy(true)
+    setError('')
+    try {
+      const ex = await generateErrorDrills(await loadLearner(), mistakes.slice(0, 12).map((m) => ({ wrong: m.wrong, right: m.right, tag: m.tag, note: m.note })))
+      if (!ex.length) throw new Error('A IA não montou exercícios válidos. Tente de novo.')
+      await db.lessons.add({ date: new Date().toISOString(), skill: 'writing', title: 'Exercícios dos seus erros', payload: ex })
+      setExercises(ex)
+      setScore(null)
+      setRound(round + 1)
+    } catch (e) {
+      setError((e as Error).message)
+    } finally {
+      setBusy(false)
+    }
+  }
+
+  return (
+    <Screen title="Exercícios dos seus erros" eyebrow="Writing · fixar" back="/praticar/writing">
+      {score !== null ? (
+        <div className="card p-6 text-center">
+          <div className="font-display text-5xl font-semibold">{Math.round(score * 100)}%</div>
+          <div className="mt-2 text-muted">{score >= 0.8 ? 'Ótimo: esses erros estão fixando.' : 'Os erros que sobraram voltam no caderno de erros.'}</div>
+          <div className="mt-5 flex gap-2">
+            <Link to="/praticar/writing" className="btn-ghost flex-1">
+              Voltar
+            </Link>
+            <button className="btn-primary flex-1" onClick={make} disabled={busy}>
+              Novos exercícios
+            </button>
+          </div>
+        </div>
+      ) : exercises ? (
+        <ExerciseRunner key={round} exercises={exercises} skill="writing" level={profile.level} activity="writing:drills" tag={tag} onDone={setScore} />
+      ) : busy ? (
+        <Loading text="Montando exercícios com os seus erros…" />
+      ) : mistakes.length ? (
+        <div className="space-y-4">
+          <div className="card p-4">
+            <div className="eyebrow mb-2">Seus erros recentes</div>
+            <ul className="space-y-2.5 text-[15px]">
+              {mistakes.slice(0, 12).map((m) => (
+                <li key={m.id}>
+                  <span className="text-bad line-through">{m.wrong}</span>
+                  <span className="mx-1.5 text-dim">→</span>
+                  <span className="text-ok">{m.right}</span>
+                  <div className="text-xs text-muted">{m.tag}</div>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <NeedsKey>
+            {error && <ErrorBox error={error} onRetry={make} />}
+            <button className="btn-primary w-full" onClick={make}>
+              Criar exercícios com estes erros
+            </button>
+          </NeedsKey>
+          <p className="text-xs text-dim">A IA cria frases novas com os mesmos padrões de erro, para você praticar em vez de só reler.</p>
+        </div>
+      ) : (
+        <div className="card p-6 text-center">
+          <div className="text-4xl">✨</div>
+          <div className="mt-2 font-semibold">Nenhum erro de writing pendente.</div>
+          <p className="mt-1 text-sm text-muted">Corrija um texto e os erros aparecem aqui para virar exercícios.</p>
+          <Link to="/praticar/writing" className="btn-ghost mt-4 w-full">
+            Ir para Writing
+          </Link>
+        </div>
+      )}
     </Screen>
   )
 }
@@ -131,6 +243,9 @@ export function WritingTask() {
           <button className="btn-ghost mt-4 w-full" onClick={() => setFeedback(null)}>
             Reescrever e corrigir de novo
           </button>
+          <Link to="/praticar/writing/erros" className="btn-primary mt-2 block w-full text-center">
+            Praticar meus erros
+          </Link>
         </>
       ) : (
         <div className="space-y-4">

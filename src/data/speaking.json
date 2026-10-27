@@ -93,7 +93,11 @@
     { "id": "ph-hits-its-stride", "text": "The show really hits its stride in season two.", "pt": "A série realmente engrena na segunda temporada.", "level": "C1", "topics": ["culture"] },
     { "id": "ph-thin-margins", "text": "We're operating on very thin margins.", "pt": "Estamos operando com margens muito apertadas.", "level": "C1", "topics": ["business", "finance"] },
     { "id": "ph-market-bottomed-out", "text": "Broadly speaking, the market has bottomed out.", "pt": "De modo geral, o mercado já chegou ao fundo do poço.", "level": "C1", "topics": ["real-estate", "finance"], "tip": "No inglês americano o t de \"bottomed\" vira um r rápido (flap): \"BÁ-rəmd\". O -ed soa /d/, sem sílaba extra." },
-    { "id": "ph-feel-free-push-back", "text": "Feel free to push back if you disagree.", "pt": "Fique à vontade para discordar se não concordar.", "level": "C1", "topics": ["business"] }
+    { "id": "ph-feel-free-push-back", "text": "Feel free to push back if you disagree.", "pt": "Fique à vontade para discordar se não concordar.", "level": "C1", "topics": ["business"] },
+  {"id":"ph-qa-audit-scheduled","text":"The audit is scheduled for the second week of March.","pt":"A auditoria está marcada para a segunda semana de março.","level":"A2","topics":["quality","business"]},
+  {"id":"ph-qa-signed-report","text":"Every batch needs a signed inspection report.","pt":"Cada lote precisa de um relatório de inspeção assinado.","level":"B1","topics":["quality"]},
+  {"id":"ph-qa-root-cause","text":"We need to find the root cause before we close this issue.","pt":"Precisamos encontrar a causa raiz antes de fechar esta ocorrência.","level":"B2","topics":["quality"],"tip":"“root” rima com “boot”; o “t” de “cause” quase some antes de “issue”."},
+  {"id":"ph-qa-defect-rate","text":"The defect rate dropped by half after the new checklist.","pt":"A taxa de defeitos caiu pela metade depois da nova checklist.","level":"B2","topics":["quality"]}
   ],
   "prompts": [
     { "id": "sp-introduce-yourself", "prompt": "Introduce yourself: say your name, where you live and what you do.", "level": "A1", "topics": ["daily"], "seconds": 30 },
@@ -125,6 +129,9 @@
     { "id": "sp-brazil-risks", "prompt": "Explain to a foreign fund the main risks of investing in Brazilian real estate and how you would mitigate them.", "level": "C1", "topics": ["real-estate", "finance"], "seconds": 120 },
     { "id": "sp-explain-irr", "prompt": "Explain a complex concept from your field, such as cap rate or IRR, to someone with no background in finance.", "level": "C1", "topics": ["finance", "academic"], "seconds": 120 },
     { "id": "sp-streaming-vs-cinema", "prompt": "Some people say streaming has made television better than cinema. To what extent do you agree?", "level": "C1", "topics": ["culture"], "seconds": 90 },
-    { "id": "sp-remote-work-recommendation", "prompt": "Present the pros and cons of remote work for a consulting firm and give a clear recommendation.", "level": "C1", "topics": ["business", "tech"], "seconds": 120 }
+    { "id": "sp-remote-work-recommendation", "prompt": "Present the pros and cons of remote work for a consulting firm and give a clear recommendation.", "level": "C1", "topics": ["business", "tech"], "seconds": 120 },
+  {"id":"sp-qa-explain-quality-process","prompt":"Explain a quality control process you know well to someone who is new to your company.","level":"B1","topics":["quality"],"seconds":60},
+  {"id":"sp-qa-describe-audit","prompt":"Describe the last audit you took part in: what was checked, what went well and what needed improvement.","level":"B2","topics":["quality"],"seconds":60},
+  {"id":"sp-qa-standards-debate","prompt":"Some people think certifications such as ISO are only paperwork. Do you agree? Give your reasons and one example.","level":"C1","topics":["quality","business"],"seconds":90}
   ]
 }

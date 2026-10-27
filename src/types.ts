@@ -19,6 +19,7 @@ export type Topic =
   | 'tech' // tecnologia, software, IA
   | 'culture' // séries, filmes, música, livros
   | 'academic' // vocabulário acadêmico (TOEFL/IELTS)
+  | 'quality' // garantia da qualidade: auditorias, certificações, normas e regulamentações
 
 export type ExamType = 'none' | 'toefl' | 'ielts' | 'cambridge'
 
@@ -58,6 +59,28 @@ export interface PlacementItem {
   given: string
   correct: string
   score: number // 0..1 (listening pode ser parcial)
+}
+
+/** Item de vocabulário do teste de nivelamento: tema geral, uma resposta certa e três erradas. */
+export interface PlacementVocab {
+  id: string
+  term: string
+  pt: string
+  definition: string
+  example: string
+  level: Level
+  distractors: string[]
+}
+
+/** Item de gramática do teste de nivelamento: sempre 4 opções. */
+export interface PlacementGrammar {
+  level: Level
+  /** Id do tópico de gramática, usado como etiqueta de erro. */
+  topic: string
+  prompt: string
+  options: string[]
+  answer: number
+  explanation: string
 }
 
 // ---------- Conteúdo base ----------

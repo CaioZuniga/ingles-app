@@ -1,0 +1,176 @@
+{
+  "vocabulary": [
+    {
+      "id": "pl-window",
+      "term": "window",
+      "pt": "janela",
+      "definition": "An opening in a wall that lets light and air in.",
+      "example": "Could you open the window, please?",
+      "level": "A1",
+      "distractors": ["porta", "parede", "teto"]
+    },
+    {
+      "id": "pl-tired",
+      "term": "tired",
+      "pt": "cansado",
+      "definition": "Needing rest or sleep.",
+      "example": "I'm too tired to cook tonight.",
+      "level": "A1",
+      "distractors": ["feliz", "com fome", "animado"]
+    },
+    {
+      "id": "pl-borrow",
+      "term": "to borrow",
+      "pt": "pedir emprestado",
+      "definition": "To take something from someone and give it back later.",
+      "example": "Can I borrow your pen for a minute?",
+      "level": "A2",
+      "distractors": ["devolver", "comprar", "esquecer"]
+    },
+    {
+      "id": "pl-cancel",
+      "term": "to cancel",
+      "pt": "cancelar",
+      "definition": "To decide that something planned will not happen.",
+      "example": "They cancelled the class because of the rain.",
+      "level": "A2",
+      "distractors": ["confirmar", "adiar", "lembrar"]
+    },
+    {
+      "id": "pl-look-forward",
+      "term": "to look forward to",
+      "pt": "estar ansioso por",
+      "definition": "To feel happy about something that is going to happen.",
+      "example": "I'm looking forward to the holidays.",
+      "level": "B1",
+      "distractors": ["olhar para trás", "esquecer de", "pensar sobre"]
+    },
+    {
+      "id": "pl-delay",
+      "term": "delay",
+      "pt": "atraso",
+      "definition": "A period when something happens later than planned.",
+      "example": "The train had a delay of twenty minutes.",
+      "level": "B1",
+      "distractors": ["pressa", "pedido", "desconto"]
+    },
+    {
+      "id": "pl-notice",
+      "term": "to notice",
+      "pt": "perceber",
+      "definition": "To see or become aware of something.",
+      "example": "Did you notice the new sign at the door?",
+      "level": "B2",
+      "distractors": ["ignorar", "esconder", "lembrar"]
+    },
+    {
+      "id": "pl-avoid",
+      "term": "to avoid",
+      "pt": "evitar",
+      "definition": "To stay away from something or keep it from happening.",
+      "example": "She avoids eating late at night.",
+      "level": "B2",
+      "distractors": ["encontrar", "aproveitar", "permitir"]
+    },
+    {
+      "id": "pl-take-for-granted",
+      "term": "to take for granted",
+      "pt": "dar como certo",
+      "definition": "To not appreciate something because it seems normal.",
+      "example": "We often take good health for granted.",
+      "level": "C1",
+      "distractors": ["levar a sério", "pedir desculpas", "tomar cuidado com"]
+    },
+    {
+      "id": "pl-swamped",
+      "term": "to be swamped",
+      "pt": "estar sobrecarregado",
+      "definition": "To have far more to do than you can manage.",
+      "example": "I'm swamped with emails this week.",
+      "level": "C1",
+      "distractors": ["estar entediado", "estar sem dinheiro", "estar atrasado"]
+    }
+  ],
+  "grammar": [
+    {
+      "level": "A1",
+      "topic": "verb-to-be",
+      "prompt": "She ___ a teacher.",
+      "options": ["am", "is", "are", "be"],
+      "answer": 1,
+      "explanation": "Com *she*, *he* e *it* usa-se *is*."
+    },
+    {
+      "level": "A1",
+      "topic": "present-simple",
+      "prompt": "We ___ coffee every morning.",
+      "options": ["drinks", "drink", "drinking", "are drink"],
+      "answer": 1,
+      "explanation": "Com *we* no presente simples, usa-se a forma base do verbo: *drink*."
+    },
+    {
+      "level": "A2",
+      "topic": "past-simple",
+      "prompt": "I ___ to the cinema last night.",
+      "options": ["go", "went", "gone", "going"],
+      "answer": 1,
+      "explanation": "O passado simples de *go* é *went*, que não muda com o sujeito."
+    },
+    {
+      "level": "A2",
+      "topic": "countable-uncountable",
+      "prompt": "There are ___ eggs in the fridge.",
+      "options": ["much", "many", "little", "less"],
+      "answer": 1,
+      "explanation": "Com substantivos contáveis no plural, usa-se *many*."
+    },
+    {
+      "level": "B1",
+      "topic": "present-perfect-vs-past",
+      "prompt": "She ___ in Lisbon since 2019.",
+      "options": ["lives", "has lived", "lived", "has living"],
+      "answer": 1,
+      "explanation": "*Since* + um ponto no tempo que continua até hoje pede o present perfect: *has lived*."
+    },
+    {
+      "level": "B1",
+      "topic": "first-second-conditionals",
+      "prompt": "If it ___ tomorrow, we will cancel the trip.",
+      "options": ["rains", "rained", "will rain", "would rain"],
+      "answer": 0,
+      "explanation": "Condicional do tipo 1 (possível no futuro): *if* + presente simples."
+    },
+    {
+      "level": "B2",
+      "topic": "passive-voice",
+      "prompt": "The report ___ by the team last week.",
+      "options": ["wrote", "was written", "has written", "is writing"],
+      "answer": 1,
+      "explanation": "Com ação sofrida pelo sujeito e tempo passado, usa-se a voz passiva: *was written*."
+    },
+    {
+      "level": "B2",
+      "topic": "third-conditional",
+      "prompt": "If I had studied harder, I ___ the exam.",
+      "options": ["would pass", "would have passed", "will pass", "passed"],
+      "answer": 1,
+      "explanation": "Condicional do tipo 3 (passado que não aconteceu): *would have* + particípio."
+    },
+    {
+      "level": "C1",
+      "topic": "inversion",
+      "prompt": "Not only ___ the deadline, but they also went over budget.",
+      "options": ["they missed", "did they miss", "they did miss", "missed they"],
+      "answer": 1,
+      "explanation": "Depois de *Not only* no início da frase, a ordem vira inversão: *did they miss*."
+    },
+    {
+      "level": "C1",
+      "topic": "wish-if-only",
+      "prompt": "I wish I ___ the contract more carefully before I signed it.",
+      "options": ["read", "had read", "have read", "would read"],
+      "answer": 1,
+      "explanation": "Arrependimento sobre o passado: *wish* + past perfect (*had read*)."
+    }
+  ]
+}

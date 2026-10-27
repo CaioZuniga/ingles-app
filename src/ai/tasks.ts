@@ -35,6 +35,18 @@ const GOAL_TEXT: Record<string, string> = {
   content: 'understanding series, podcasts, articles and books',
 }
 
+const TOPIC_TEXT: Record<Topic, string> = {
+  business: 'business and negotiation',
+  'real-estate': 'real estate (leases, valuation, development)',
+  finance: 'finance and investment',
+  travel: 'travel',
+  daily: 'everyday life',
+  tech: 'technology',
+  culture: 'series, films and culture',
+  academic: 'academic English (TOEFL/IELTS)',
+  quality: 'quality assurance (audits, certifications, ISO 9001 and other standards, regulations, nonconformities, corrective actions)',
+}
+
 function learnerBlock({ profile: p, weaknesses, estimated }: LearnerContext): string {
   const exam = p.goals.includes('exam') && p.exam !== 'none' ? ` (target exam: ${p.exam.toUpperCase()})` : ''
   return [
@@ -42,7 +54,7 @@ function learnerBlock({ profile: p, weaknesses, estimated }: LearnerContext): st
     `- Native language: Brazilian Portuguese. Name: ${p.name || 'the learner'}.`,
     `- Declared CEFR level: ${p.level}. Estimated per skill: ${estimated || 'not enough data yet'}.`,
     `- Goals: ${p.goals.map((g) => GOAL_TEXT[g]).join('; ')}${exam}.`,
-    `- Favourite topics: ${p.topics.join(', ') || 'general'}.`,
+    `- Professional and personal interests: ${p.topics.map((t) => TOPIC_TEXT[t]).join('; ') || 'general'}.`,
     p.context ? `- Personal context (use it to make content relevant): ${p.context}` : '',
     `- Recurring weaknesses: ${weaknesses.length ? weaknesses.join(', ') : 'none identified yet'}.`,
     `- Preferred accent/spelling: ${p.accent === 'en-GB' ? 'British' : 'American'}.`,
@@ -232,6 +244,27 @@ export async function correctWriting(ctx: LearnerContext, task: string, text: st
     }),
     task: 'Correção de writing',
   })
+}
+
+/** Exercícios novos que repetem os padrões de erro de writing do aluno, em frases diferentes das originais. */
+export async function generateErrorDrills(ctx: LearnerContext, mistakes: { wrong: string; right: string; tag: string; note: string }[]): Promise<Exercise[]> {
+  const raw = await askJson<{ exercises: RawExercise[] }>({
+    system: `${TUTOR}\n\n${learnerBlock(ctx)}\n\n${ERROR_TAGS}`,
+    messages: [
+      {
+        role: 'user',
+        content:
+          `These are mistakes the learner made in their own English writing (wrong → right, error tag, note):\n` +
+          mistakes.map((m, i) => `${i + 1}. "${m.wrong}" → "${m.right}" [${m.tag}] ${m.note}`).join('\n') +
+          `\n\nCreate 8 practice exercises that make the learner fix the SAME error patterns in NEW sentences (never reuse the original sentences; use contexts from the learner’s goals). ` +
+          `Mix the kinds: 3 fix (one error per sentence; answers = accepted corrected versions), 3 gap (one "___"; answers = the missing words), 2 choice (4 options, answer_index). ` +
+          `Cover every error pattern at least once. Each explanation is one sentence naming the rule.`,
+      },
+    ],
+    schema: obj({ exercises: arr(exerciseSchema) }),
+    task: 'Exercícios dos seus erros',
+  })
+  return raw.exercises.map(toExercise).filter((e): e is Exercise => e !== null)
 }
 
 // ---------- Speaking (resposta livre) ----------

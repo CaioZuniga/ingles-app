@@ -282,5 +282,10 @@
     "exam": "cambridge",
     "minWords": 220,
     "genre": "essay"
-  }
+  },
+  {"id":"wr-qa-audit-finding-email","title":"Responding to an audit finding","prompt":"Your company received an audit report with three findings about incomplete training records. Write an e-mail to the lead auditor. Acknowledge the findings, explain the root cause you identified, describe the corrective actions with their deadlines, and propose a follow-up call.","level":"B2","topics":["quality","business"],"minWords":180,"genre":"email"},
+  {"id":"wr-qa-iso-readiness-report","title":"ISO recertification readiness","prompt":"Write a short report for the operations director explaining whether the plant is ready for the ISO 9001 recertification audit in six weeks. Summarise the gaps you found, rank the risks by impact, and recommend what to do first.","level":"B2","topics":["quality"],"minWords":200,"genre":"report"},
+  {"id":"wr-qa-defect-rate-memo","title":"Rising defect rate","prompt":"The defect rate on line 3 rose from 1% to 4% in one month. Write a memo to the production manager. Describe the trend, suggest two possible causes that should be checked, and ask for a meeting this week.","level":"B1","topics":["quality"],"minWords":150,"genre":"message"},
+  {"id":"wr-qa-labelling-regulation-summary","title":"A new labelling rule","prompt":"A new regulation on product labelling takes effect next month. Write a summary for your team that explains what changes, who is affected, and what each person must do before the deadline.","level":"B1","topics":["quality"],"minWords":140,"genre":"summary"},
+  {"id":"wr-qa-supplier-nonconformity","title":"Supplier non-conformity","prompt":"A supplier delivered a batch of components outside the agreed specification. Write a formal letter that describes the non-conformity with evidence, states its impact on your production, requests a corrective action plan within ten business days, and keeps the relationship professional.","level":"C1","topics":["quality","business"],"minWords":200,"genre":"email"}
 ]

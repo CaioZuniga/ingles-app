@@ -4,7 +4,8 @@ import listeningJson from './listening.json'
 import speakingJson from './speaking.json'
 import writingJson from './writing.json'
 import roleplaysJson from './roleplays.json'
-import { LEVELS, type GrammarTopic, type Level, type ListeningItem, type Profile, type Roleplay, type SpeakingPhrase, type SpeakingPrompt, type Topic, type VocabItem, type WritingPrompt } from '../types'
+import placementJson from './placement.json'
+import { LEVELS, type GrammarTopic, type Level, type ListeningItem, type PlacementGrammar, type PlacementVocab, type Profile, type Roleplay, type SpeakingPhrase, type SpeakingPrompt, type Topic, type VocabItem, type WritingPrompt } from '../types'
 
 // Banco de conteúdo offline (vem junto com o app).
 export const GRAMMAR = grammarJson as GrammarTopic[]
@@ -14,6 +15,8 @@ export const PHRASES = (speakingJson as { phrases: SpeakingPhrase[] }).phrases
 export const SPEAKING_PROMPTS = (speakingJson as { prompts: SpeakingPrompt[] }).prompts
 export const WRITING = writingJson as WritingPrompt[]
 export const ROLEPLAYS = roleplaysJson as Roleplay[]
+/** Itens do teste de nivelamento: temas gerais (sem perfil profissional), 4 opções. */
+export const PLACEMENT = placementJson as { vocabulary: PlacementVocab[]; grammar: PlacementGrammar[] }
 
 export const TOPIC_LABEL: Record<Topic, string> = {
   business: 'Negócios',
@@ -24,6 +27,7 @@ export const TOPIC_LABEL: Record<Topic, string> = {
   tech: 'Tecnologia',
   culture: 'Séries e cultura',
   academic: 'Acadêmico',
+  quality: 'Garantia da qualidade',
 }
 
 const li = (l: Level) => LEVELS.indexOf(l)

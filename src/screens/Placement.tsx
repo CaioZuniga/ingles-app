@@ -1,28 +1,29 @@
-import { useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { GRAMMAR, PHRASES, VOCAB } from '../data'
+import { PHRASES, PLACEMENT } from '../data'
 import { db, logAttempt, logMistakes } from '../db/db'
 import { fillGap } from '../engine/check'
 import { addWords } from '../engine/words'
 import { diffWords } from '../engine/diff'
 import { ratingToLevel } from '../engine/progress'
 import { useProfile } from '../state/learner'
-import { speak } from '../speech/tts'
+import { speak, stop } from '../speech/tts'
 import { Bar, Screen, SpeakButton, useSpeechPrefs } from '../components/ui'
 import { Icon, SkillTile } from '../components/icons'
 import { SKILL_LABEL } from '../data'
-import type { Level, Mistake, PlacementItem, Profile, Skill, SkillRatings } from '../types'
+import type { Level, Mistake, PlacementItem, PlacementVocab, Profile, Skill, SkillRatings } from '../types'
 
 // Teste de nivelamento (~8 min): vocabulário, gramática e listening, 2 itens por nível de A1 a C1.
 // Nota por habilidade = 100 × soma dos acertos por nível (ex.: A1 100%, A2 100%, B1 50% → 250 = B1+).
 // Writing e speaking partem da média de gramática e vocabulário (produção costuma vir um pouco abaixo).
 // Como o teste vai até C1, o teto é C1+ (490): acertar tudo não prova C2.
+// O conteúdo é geral (src/data/placement.json), sem perfil profissional, e toda pergunta tem 4 opções.
 
 const TEST_LEVELS: Level[] = ['A1', 'A2', 'B1', 'B2', 'C1']
 const PER_LEVEL = 2
 
 type Q =
-  | { skill: 'vocabulary'; level: Level; term: string; options: string[]; answer: string; vocabId: string }
+  | { skill: 'vocabulary'; level: Level; term: string; options: string[]; answer: string; vocab: PlacementVocab }
   | { skill: 'grammar'; level: Level; prompt: string; options: string[]; answer: string; topic: string; explanation: string }
   | { skill: 'listening'; level: Level; text: string }
 
@@ -30,22 +31,21 @@ const MAX_RATING = 490
 
 const sample = <T,>(list: T[], n: number) => [...list].sort(() => Math.random() - 0.5).slice(0, n)
 
+/** Frases de listening sem temas profissionais específicos (imóveis, finanças). */
+const isGenericPhrase = (x: { topics: string[] }) => !x.topics.some((t) => t === 'real-estate' || t === 'finance')
+
 function buildTest(): Q[] {
   const qs: Q[] = []
   for (const level of TEST_LEVELS) {
-    const words = VOCAB.filter((v) => v.level === level)
-    for (const w of sample(words, PER_LEVEL)) {
-      const wrong = sample(words.filter((x) => x.id !== w.id && x.pt !== w.pt), 3).map((x) => x.pt)
-      qs.push({ skill: 'vocabulary', level, term: w.term, options: sample([w.pt, ...wrong], 4), answer: w.pt, vocabId: w.id })
-    }
+    for (const w of sample(PLACEMENT.vocabulary.filter((v) => v.level === level), PER_LEVEL))
+      qs.push({ skill: 'vocabulary', level, term: w.term, options: sample([w.pt, ...w.distractors], 4), answer: w.pt, vocab: w })
   }
   for (const level of TEST_LEVELS) {
-    const choices = GRAMMAR.filter((g) => g.level === level).flatMap((g) => g.exercises.flatMap((e) => (e.kind === 'choice' ? [{ e, topic: g.id }] : [])))
-    for (const { e, topic } of sample(choices, PER_LEVEL))
-      qs.push({ skill: 'grammar', level, prompt: e.prompt, options: sample(e.options, e.options.length), answer: e.options[e.answer], topic, explanation: e.explanation })
+    for (const g of sample(PLACEMENT.grammar.filter((x) => x.level === level), PER_LEVEL))
+      qs.push({ skill: 'grammar', level, prompt: g.prompt, options: sample(g.options, g.options.length), answer: g.options[g.answer], topic: g.topic, explanation: g.explanation })
   }
   for (const level of TEST_LEVELS) {
-    for (const p of sample(PHRASES.filter((x) => x.level === level && x.text.split(' ').length >= 4), 1)) qs.push({ skill: 'listening', level, text: p.text })
+    for (const p of sample(PHRASES.filter((x) => x.level === level && x.text.split(' ').length >= 4 && isGenericPhrase(x)), 1)) qs.push({ skill: 'listening', level, text: p.text })
   }
   return qs
 }
@@ -77,6 +77,11 @@ export function Placement() {
   const items = useRef<PlacementItem[]>([])
   const started = useRef(Date.now())
   const [result, setResult] = useState<NonNullable<Profile['placement']> | null>(null)
+  // Próxima pergunta ou saída: o áudio da pergunta anterior para.
+  useEffect(() => {
+    stop()
+  }, [i, stage])
+  useEffect(() => () => stop(), [])
   if (!profile) return null
   const q = test[i]
 
@@ -199,8 +204,7 @@ export function Placement() {
 
 /** Palavras que você não sabia vão para o baralho; erros de gramática e de listening, para o caderno de erros. */
 async function learnFromMistakes(test: Q[], items: PlacementItem[]) {
-  const missedWords = test.flatMap((q, k) => (q.skill === 'vocabulary' && items[k].score < 1 ? [q.vocabId] : []))
-  const vocab = VOCAB.filter((v) => missedWords.includes(v.id))
+  const vocab = test.flatMap((q, k) => (q.skill === 'vocabulary' && items[k].score < 1 ? [q.vocab] : []))
   await addWords(vocab, 'bank', vocab.map((v) => v.id))
   await logMistakes(
     test.flatMap((q, k): Omit<Mistake, 'id' | 'date' | 'reviewed'>[] => {

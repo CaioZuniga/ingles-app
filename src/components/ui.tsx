@@ -24,7 +24,7 @@ export function Screen({ title, back, eyebrow, children, right }: { title?: stri
           )}
           <div className="min-w-0 flex-1">
             {eyebrow && <div className="eyebrow">{eyebrow}</div>}
-            {title && <h1 className="h1 truncate">{title}</h1>}
+            {title && <h1 className="h1 break-words">{title}</h1>}
           </div>
           {right}
         </header>

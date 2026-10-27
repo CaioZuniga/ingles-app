@@ -1,7 +1,8 @@
-import { useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import type { Exercise, Level, Skill } from '../types'
 import { correctText, fillGap, isCorrect, type UserAnswer } from '../engine/check'
 import { logAttempt, logMistakes } from '../db/db'
+import { stop } from '../speech/tts'
 import { Bar, Rich, SpeakButton } from './ui'
 
 // Roda uma série de exercícios objetivos, corrige na hora e registra acertos e erros.
@@ -31,6 +32,12 @@ export function ExerciseRunner({ exercises, skill, level, activity, tag, onDone 
   const results = useRef<boolean[]>([])
   const started = useRef(Date.now())
   const ex = exercises[i]
+
+  // Próximo exercício (mesma tela) ou saída: o áudio da etapa anterior para.
+  useEffect(() => {
+    stop()
+  }, [i])
+  useEffect(() => () => stop(), [])
 
   const check = (a: UserAnswer) => {
     setAnswer(a)

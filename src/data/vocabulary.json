@@ -5857,5 +5857,22 @@
     "topics": [
       "academic"
     ]
-  }
+  },
+  {"id":"qa-audit","term":"audit","pos":"noun","pt":"auditoria","definition":"A formal check of records, processes or systems against a standard.","example":"The external audit found three minor gaps in our records.","level":"B1","topics":["quality","business"]},
+  {"id":"qa-nonconformity","term":"nonconformity","pos":"noun","pt":"não conformidade","definition":"A failure to meet a specified requirement.","example":"We logged a nonconformity after the batch failed the test.","level":"B2","topics":["quality"]},
+  {"id":"qa-corrective-action","term":"corrective action","pos":"phrase","pt":"ação corretiva","definition":"An action taken to remove the cause of a problem so it does not happen again.","example":"The team agreed on a corrective action within thirty days.","level":"B2","topics":["quality"]},
+  {"id":"qa-root-cause","term":"root cause","pos":"noun","pt":"causa raiz","definition":"The underlying reason why a problem happened.","example":"Our analysis showed the root cause was an outdated template.","level":"B2","topics":["quality"]},
+  {"id":"qa-compliance","term":"compliance","pos":"noun","pt":"conformidade (com normas e leis)","definition":"Following the laws, rules and standards that apply to a business.","example":"Compliance with data protection rules is mandatory for us.","level":"B1","topics":["quality","business"]},
+  {"id":"qa-certification","term":"certification","pos":"noun","pt":"certificação","definition":"An official confirmation that a product, process or person meets a standard.","example":"The plant renewed its ISO 9001 certification this year.","level":"B1","topics":["quality"]},
+  {"id":"qa-quality-assurance","term":"quality assurance","pos":"noun","pt":"garantia da qualidade","definition":"Planned activities that make sure a product or service meets its requirements.","example":"Quality assurance reviews every release before it goes live.","level":"B1","topics":["quality"]},
+  {"id":"qa-quality-control","term":"quality control","pos":"noun","pt":"controle de qualidade","definition":"Checks that find defects in a finished product or service.","example":"Quality control rejected two pallets because of scratches.","level":"B1","topics":["quality"]},
+  {"id":"qa-to-sample","term":"to sample","pos":"verb","pt":"selecionar uma amostra para checar","definition":"To take a small part of a group in order to check its quality.","example":"The inspector sampled ten units from each batch.","level":"B2","topics":["quality"]},
+  {"id":"qa-deviation","term":"deviation","pos":"noun","pt":"desvio","definition":"A difference between what was required and what actually happened.","example":"Any deviation from the procedure must be documented.","level":"B2","topics":["quality"]},
+  {"id":"qa-sop","term":"standard operating procedure","pos":"noun","pt":"procedimento operacional padrão (POP)","definition":"A written set of step-by-step instructions for a routine task.","example":"Every technician must follow the standard operating procedure.","level":"B1","topics":["quality"]},
+  {"id":"qa-regulator","term":"regulator","pos":"noun","pt":"órgão regulador","definition":"An official body that sets and enforces the rules of an industry.","example":"The regulator asked for proof of the new safety tests.","level":"B2","topics":["quality","business"]},
+  {"id":"qa-traceability","term":"traceability","pos":"noun","pt":"rastreabilidade","definition":"The ability to follow the history of a product through each stage.","example":"Good traceability lets us recall only the affected batch.","level":"C1","topics":["quality"]},
+  {"id":"qa-sign-off","term":"sign-off","pos":"noun","pt":"aprovação formal","definition":"Formal approval that a stage or document is complete.","example":"We need the client’s sign-off before the audit starts.","level":"B1","topics":["quality","business"]},
+  {"id":"qa-meet-spec","term":"to meet the spec","pos":"phrase","pt":"atender à especificação","definition":"To produce something that matches the required specification.","example":"The new valves meet the spec, so we can ship them.","level":"B2","topics":["quality"]},
+  {"id":"qa-escalate","term":"to escalate","pos":"verb","pt":"levar a um nível superior","definition":"To pass a problem to someone with more authority to decide.","example":"If the defect repeats, we will escalate it to management.","level":"C1","topics":["quality","business"]},
+  {"id":"qa-gap-analysis","term":"gap analysis","pos":"noun","pt":"análise de lacunas","definition":"A comparison between current practice and a required standard.","example":"The gap analysis showed we lack documented training records.","level":"C1","topics":["quality"]}
 ]

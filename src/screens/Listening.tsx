@@ -165,6 +165,10 @@ function Player({ item }: { item: ListeningItem }) {
   const started = useRef(Date.now())
   const lines = item.transcript.split('\n').filter((l) => l.trim())
 
+  // Trocar de etapa (perguntas → ditado → fim) para o áudio que estiver tocando.
+  useEffect(() => {
+    stop()
+  }, [stage])
   useEffect(() => () => stop(), [])
 
   const play = async () => {

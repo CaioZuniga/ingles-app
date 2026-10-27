@@ -7,7 +7,7 @@ import { Home } from './screens/Home'
 import { Practice } from './screens/Practice'
 import { GrammarList, GrammarTopicScreen, GrammarAi } from './screens/Grammar'
 import { ListeningList, ListeningPlayer, ListeningAi } from './screens/Listening'
-import { WritingList, WritingTask } from './screens/Writing'
+import { WritingDrills, WritingList, WritingTask } from './screens/Writing'
 import { SpeakingHub, Shadowing, SpeakingPromptScreen, RoleplayScreen } from './screens/Speaking'
 import { Words, WordReview, WordBrowse } from './screens/Words'
 import { Tutor } from './screens/Tutor'
@@ -72,6 +72,7 @@ export default function App() {
         <Route path="/praticar/listening/nova" element={<ListeningAi />} />
         <Route path="/praticar/listening/:id" element={<ListeningPlayer />} />
         <Route path="/praticar/writing" element={<WritingList />} />
+        <Route path="/praticar/writing/erros" element={<WritingDrills />} />
         <Route path="/praticar/writing/:id" element={<WritingTask />} />
         <Route path="/praticar/speaking" element={<SpeakingHub />} />
         <Route path="/praticar/speaking/shadowing" element={<Shadowing />} />
