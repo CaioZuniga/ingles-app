@@ -20,6 +20,21 @@ void loadVoices()
 // Sair do app (trocar de aba, minimizar, fechar) também encerra qualquer leitura em voz alta.
 document.addEventListener('visibilitychange', () => document.hidden && stop())
 window.addEventListener('pagehide', stop)
+// Atualização: quando a versão nova assume o app, recarrega uma vez para já mostrar ela.
+// No iPhone (tela de início) e no Android o app só confere se há versão nova ao abrir ou voltar para ele.
+if ('serviceWorker' in navigator) {
+  const hadController = Boolean(navigator.serviceWorker.controller)
+  let reloading = false
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (hadController && !reloading) {
+      reloading = true
+      window.location.reload()
+    }
+  })
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) void navigator.serviceWorker.getRegistration().then((reg) => reg?.update())
+  })
+}
 // Pede ao navegador para não apagar o banco local quando faltar espaço.
 void navigator.storage?.persist?.()
 

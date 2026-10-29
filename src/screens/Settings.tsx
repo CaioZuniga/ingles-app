@@ -11,8 +11,60 @@ import { Screen, Segmented } from '../components/ui'
 import { Icon } from '../components/icons'
 import { InstallCard } from '../components/Install'
 import { useTheme, type ThemePref } from '../state/theme'
+import { applyUpdate, checkForUpdate, type UpdateCheck } from '../state/update'
 import { googleCalendarUrl, reminderIcs } from '../engine/reminder'
 import { Link } from 'react-router-dom'
+
+/** Mostra se o app está na versão mais nova e permite atualizar. */
+function UpdateCard() {
+  const [state, setState] = useState<UpdateCheck | 'checking' | 'applying'>('checking')
+  useEffect(() => {
+    let alive = true
+    void checkForUpdate().then((r) => alive && setState(r))
+    return () => {
+      alive = false
+    }
+  }, [])
+  const check = () => {
+    setState('checking')
+    void checkForUpdate().then(setState)
+  }
+  const apply = () => {
+    setState('applying')
+    void applyUpdate()
+  }
+  return (
+    <section className="card mb-4 p-4">
+      <div className="eyebrow mb-2">Atualização</div>
+      {state === 'checking' && <p className="text-sm text-muted">Verificando…</p>}
+      {state === 'applying' && <p className="text-sm text-muted">Atualizando o app…</p>}
+      {typeof state === 'object' && state.status === 'latest' && (
+        <div className="flex items-center justify-between gap-3">
+          <p className="text-sm text-ok">✓ Você está na versão mais recente.</p>
+          <button className="btn-ghost px-3 py-2 text-sm" onClick={check}>
+            Verificar de novo
+          </button>
+        </div>
+      )}
+      {typeof state === 'object' && state.status === 'newer' && (
+        <>
+          <p className="mb-3 text-sm text-accent">Nova versão disponível.</p>
+          <button className="btn-primary w-full" onClick={apply}>
+            Atualizar para a versão mais recente
+          </button>
+        </>
+      )}
+      {typeof state === 'object' && state.status === 'offline' && (
+        <div className="flex items-center justify-between gap-3">
+          <p className="text-sm text-muted">Não consegui verificar agora. Confira a internet.</p>
+          <button className="btn-ghost px-3 py-2 text-sm" onClick={check}>
+            Tentar de novo
+          </button>
+        </div>
+      )}
+    </section>
+  )
+}
 
 export function SettingsScreen() {
   const profile = useProfile()
@@ -199,6 +251,7 @@ export function SettingsScreen() {
         <input ref={fileRef} type="file" accept="application/json,.json" hidden onChange={(e) => e.target.files?.[0] && restore(e.target.files[0])} />
         {msg && <div className="mt-2 text-sm text-muted">{msg}</div>}
       </section>
+      <UpdateCard />
       <p className="mt-6 text-center text-xs text-dim">
         Versão {__APP_VERSION__} · build {__APP_BUILD__}
       </p>

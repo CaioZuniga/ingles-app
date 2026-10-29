@@ -101,7 +101,10 @@ export function MistakeReview() {
         </div>
         {typeMode ? (
           <>
-            <div className="mb-3 text-muted">Reescreva corretamente:</div>
+            <div className="mb-3 flex items-center justify-between gap-3 text-muted">
+              <span>Reescreva corretamente:</span>
+              {m!.skill === 'listening' && <SpeakButton size="sm" text={m!.right} label="Ouvir de novo" />}
+            </div>
             <div className="mb-3 rounded-xl bg-card2 p-3 text-lg">{m!.wrong}</div>
             <textarea className="field min-h-20" value={typed} disabled={checked} onChange={(e) => setTyped(e.target.value)} placeholder="Versão corrigida" autoCapitalize="off" spellCheck={false} lang="en" />
             {!checked && (

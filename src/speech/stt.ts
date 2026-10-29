@@ -60,22 +60,30 @@ export function listen(opts: ListenOpts): Listener {
   r.lang = opts.lang
   r.continuous = Boolean(opts.continuous)
   r.interimResults = true
-  let finalText = ''
+  // Texto das sessões anteriores (o Chrome reinicia o reconhecimento após silêncio) e da sessão atual.
+  // A sessão atual é remontada a partir de todos os resultados: juntar só os trechos novos duplicava palavras.
+  const join = (a: string, b: string) => [a, b].filter(Boolean).join(' ')
+  let before = ''
+  let session = ''
   let stopped = false
   let error: string | undefined
   r.onresult = (e) => {
-    let interim = ''
-    for (let i = e.resultIndex; i < e.results.length; i++) {
+    const parts: string[] = []
+    let allFinal = true
+    for (let i = 0; i < e.results.length; i++) {
       const res = e.results[i]
-      if (res.isFinal) finalText += (finalText ? ' ' : '') + res[0].transcript.trim()
-      else interim += res[0].transcript
+      parts.push(res[0].transcript.trim())
+      if (!res.isFinal) allFinal = false
     }
-    opts.onText((finalText + (interim ? ' ' + interim : '')).trim(), !interim)
+    session = parts.filter(Boolean).join(' ')
+    opts.onText(join(before, session), allFinal)
   }
   r.onerror = (e) => {
     if (e.error !== 'aborted') error = ERRORS[e.error] ?? `Erro no reconhecimento de voz (${e.error}).`
   }
   r.onend = () => {
+    before = join(before, session)
+    session = ''
     // Em modo contínuo o Chrome às vezes encerra sozinho após silêncio: reinicia até o usuário parar.
     if (opts.continuous && !stopped && !error) {
       try {

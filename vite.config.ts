@@ -25,6 +25,13 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
+    // version.json publicado junto do app: a tela de Ajustes compara com o build em uso.
+    {
+      name: 'version-file',
+      generateBundle() {
+        this.emitFile({ type: 'asset', fileName: 'version.json', source: JSON.stringify({ version, build }) })
+      },
+    },
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['icon.svg', 'favicon.ico', 'apple-touch-icon-180x180.png'],
