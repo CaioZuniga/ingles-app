@@ -127,7 +127,7 @@ export function speak(text: string, opts: SpeakOpts = {}): Promise<void> {
 }
 
 /** Lê um texto inteiro; em diálogos ("A: ..."/"B: ...") alterna as vozes. Devolve uma função para parar. */
-export async function speakScript(transcript: string, opts: SpeakOpts & { onLine?: (i: number) => void } = {}) {
+export async function speakScript(transcript: string, opts: SpeakOpts & { onLine?: (i: number) => void; from?: number } = {}) {
   stop()
   const lines = transcript.split('\n').map((l) => l.trim()).filter(Boolean)
   const mine = generation
@@ -135,7 +135,7 @@ export async function speakScript(transcript: string, opts: SpeakOpts & { onLine
     if (generation === mine) stop()
   }
   const run = async () => {
-    for (let i = 0; i < lines.length && generation === mine; i++) {
+    for (let i = opts.from ?? 0; i < lines.length && generation === mine; i++) {
       const m = /^([AB]):\s*(.*)$/.exec(lines[i])
       opts.onLine?.(i)
       await speak(m ? m[2] : lines[i], { ...opts, alt: m?.[1] === 'B' })

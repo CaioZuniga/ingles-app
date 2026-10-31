@@ -3,6 +3,7 @@ import type { Exercise, Level, Skill } from '../types'
 import { correctText, fillGap, isCorrect, type UserAnswer } from '../engine/check'
 import { logAttempt, logMistakes } from '../db/db'
 import { stop } from '../speech/tts'
+import { useActiveClock } from '../engine/clock'
 import { Bar, Rich, SpeakButton } from './ui'
 
 // Roda uma série de exercícios objetivos, corrige na hora e registra acertos e erros.
@@ -30,7 +31,7 @@ export function ExerciseRunner({ exercises, skill, level, activity, tag, onDone 
   const [answer, setAnswer] = useState<UserAnswer | null>(null)
   const [checked, setChecked] = useState(false)
   const results = useRef<boolean[]>([])
-  const started = useRef(Date.now())
+  const clock = useActiveClock()
   const ex = exercises[i]
 
   // Próximo exercício (mesma tela) ou saída: o áudio da etapa anterior para.
@@ -70,7 +71,7 @@ export function ExerciseRunner({ exercises, skill, level, activity, tag, onDone 
       activity,
       level,
       score,
-      seconds: Math.round((Date.now() - started.current) / 1000),
+      seconds: clock.seconds(),
       errorTags: hits < exercises.length ? [tag] : [],
     })
     onDone(score)

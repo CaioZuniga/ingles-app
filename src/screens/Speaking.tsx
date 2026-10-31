@@ -7,6 +7,7 @@ import { db, logAttempt, logMistakes } from '../db/db'
 import { customRoleplay, evaluateSpeaking, roleplayReport, roleplayTurn, type ChatLine, type RoleplayReport, type RoleplayTurn, type SpeakingFeedback } from '../ai/tasks'
 import { loadLearner, useProfile } from '../state/learner'
 import { diffWords } from '../engine/diff'
+import { useActiveClock } from '../engine/clock'
 import { speak, stop } from '../speech/tts'
 import { sttSupported } from '../speech/stt'
 import { IssueList, NewWords, Section } from '../components/Feedback'
@@ -100,7 +101,7 @@ export function Shadowing() {
   const [heard, setHeard] = useState('')
   const [typed, setTyped] = useState('')
   const scores = useRef<number[]>([])
-  const started = useRef(Date.now())
+  const clock = useActiveClock()
   const [finished, setFinished] = useState<number | null>(null)
   if (!profile || !phrases.length) return null
   const p = phrases[i]
@@ -113,7 +114,7 @@ export function Shadowing() {
     if (i + 1 < phrases.length) setI(i + 1)
     else {
       const avg = scores.current.reduce((a, b) => a + b, 0) / phrases.length
-      await logAttempt({ skill: 'speaking', activity: 'shadowing', level: profile.level, score: avg, seconds: Math.round((Date.now() - started.current) / 1000), errorTags: avg < 0.7 ? ['pronunciation'] : [] })
+      await logAttempt({ skill: 'speaking', activity: 'shadowing', level: profile.level, score: avg, seconds: clock.seconds(), errorTags: avg < 0.7 ? ['pronunciation'] : [] })
       setFinished(avg)
     }
   }
@@ -130,7 +131,7 @@ export function Shadowing() {
               setFinished(null)
               setI(0)
               scores.current = []
-              started.current = Date.now()
+              clock.restart()
               setRound(round + 1)
             }}
           >
@@ -405,7 +406,7 @@ function Conversation({ rp }: { rp: Roleplay }) {
   const [voice, setVoice] = useState(true)
   const [report, setReport] = useState<RoleplayReport | null>(null)
   const [ending, setEnding] = useState(false)
-  const [started] = useState(Date.now())
+  const clock = useActiveClock()
   const endRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -444,7 +445,7 @@ function Conversation({ rp }: { rp: Roleplay }) {
       const r = await roleplayReport(await loadLearner(), rp.title, lines)
       setReport(r)
       const tags = [...new Set(lines.filter((m) => m.correction?.has).map((m) => m.correction!.tag))]
-      await logAttempt({ skill: 'speaking', activity: `roleplay:${rp.id}`, level: rp.level, score: Math.max(0, Math.min(1, r.score / 100)), seconds: Math.round((Date.now() - started) / 1000), errorTags: tags })
+      await logAttempt({ skill: 'speaking', activity: `roleplay:${rp.id}`, level: rp.level, score: Math.max(0, Math.min(1, r.score / 100)), seconds: clock.seconds(), errorTags: tags })
     } catch (e) {
       setError((e as Error).message)
     } finally {

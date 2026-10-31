@@ -1,6 +1,7 @@
 import { useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useLiveQuery } from 'dexie-react-hooks'
+import { useActiveClock } from '../engine/clock'
 import { db, logAttempt } from '../db/db'
 import { addDays, today } from '../engine/srs'
 import { sameText } from '../engine/check'
@@ -32,7 +33,7 @@ export function MistakeReview() {
   const [answer, setAnswer] = useState<string | null>(null)
   const [typed, setTyped] = useState('')
   const hits = useRef(0)
-  const started = useRef(Date.now())
+  const clock = useActiveClock()
 
   // Congela a rodada ao abrir (a lista "due" muda enquanto você responde).
   const round = useMemo(() => queue ?? (due ? [...due].sort((a, b) => (a.box ?? 0) - (b.box ?? 0) || a.date.localeCompare(b.date)).slice(0, PER_ROUND) : null), [queue, due])
@@ -81,7 +82,7 @@ export function MistakeReview() {
     if (correct) hits.current++
     await db.mistakes.put(gradeMistake(m!, correct))
     if (i + 1 === round.length)
-      await logAttempt({ skill: 'grammar', activity: 'mistakes', level: profile.level, score: (hits.current + 0) / round.length, seconds: Math.round((Date.now() - started.current) / 1000), errorTags: [] })
+      await logAttempt({ skill: 'grammar', activity: 'mistakes', level: profile.level, score: (hits.current + 0) / round.length, seconds: clock.seconds(), errorTags: [] })
   }
 
   const next = () => {

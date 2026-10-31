@@ -8,6 +8,7 @@ import { generateListening } from '../ai/tasks'
 import { loadLearner, useProfile } from '../state/learner'
 import { speakScript, stop, speak } from '../speech/tts'
 import { diffWords } from '../engine/diff'
+import { useActiveClock } from '../engine/clock'
 import { ErrorBox, LevelPill, Loading, NeedsKey, Screen, Segmented, useSpeechPrefs } from '../components/ui'
 import { LEVELS, type Level, type ListeningItem, type Topic } from '../types'
 
@@ -153,7 +154,6 @@ export function ListeningPlayer() {
 function Player({ item }: { item: ListeningItem }) {
   const prefs = useSpeechPrefs()
   const [rate, setRate] = useState(prefs.rate)
-  const [playing, setPlaying] = useState(false)
   const [line, setLine] = useState(-1)
   const [showText, setShowText] = useState(false)
   const [answers, setAnswers] = useState<(number | null)[]>(item.questions.map(() => null))
@@ -161,29 +161,66 @@ function Player({ item }: { item: ListeningItem }) {
   const [dict, setDict] = useState<string[]>(item.dictation.map(() => ''))
   const [dictChecked, setDictChecked] = useState(false)
   const [plays, setPlays] = useState(0)
-  const cancel = useRef<() => void>(() => {})
-  const started = useRef(Date.now())
+  const [status, setStatus] = useState<'idle' | 'playing' | 'paused'>('idle')
+  const resumeAt = useRef(0) // frase em que a próxima reprodução continua
+  const run = useRef(0) // cada início ou pausa muda o número; a reprodução antiga deixa de mexer na tela
+  const clock = useActiveClock()
   const lines = item.transcript.split('\n').filter((l) => l.trim())
 
   // Trocar de etapa (perguntas → ditado → fim) para o áudio que estiver tocando.
   useEffect(() => {
     stop()
+    run.current++
+    resumeAt.current = 0
+    setStatus('idle')
   }, [stage])
   useEffect(() => () => stop(), [])
-
-  const play = async () => {
-    if (playing) {
-      cancel.current()
-      setPlaying(false)
-      return
+  // Ao sair do app (celular bloqueado, troca de aplicativo) o áudio para; a tela tem de mostrar isso.
+  useEffect(() => {
+    const hide = () => {
+      if (document.visibilityState !== 'hidden') return
+      stop()
+      run.current++
+      setStatus((s) => (s === 'playing' ? 'paused' : s))
     }
-    setPlaying(true)
-    setPlays(plays + 1)
-    const s = await speakScript(item.transcript, { ...prefs, rate, onLine: setLine })
-    cancel.current = s.cancel
-    await s.done
-    setPlaying(false)
+    document.addEventListener('visibilitychange', hide)
+    return () => document.removeEventListener('visibilitychange', hide)
+  }, [])
+
+  const pause = () => {
+    stop()
+    run.current++
+    setStatus((s) => (s === 'playing' ? 'paused' : s))
   }
+
+  /** Toca a partir da frase em que parou; `fresh` começa do zero e conta como mais uma audição. */
+  const start = async (fresh: boolean) => {
+    stop()
+    const token = ++run.current
+    if (fresh) {
+      resumeAt.current = 0
+      setPlays((p) => p + 1)
+    }
+    setStatus('playing')
+    const s = await speakScript(item.transcript, {
+      ...prefs,
+      rate,
+      from: resumeAt.current,
+      onLine: (i) => {
+        if (token !== run.current) return
+        setLine(i)
+        if (i >= 0) resumeAt.current = i
+      },
+    })
+    await s.done
+    if (token !== run.current) return
+    resumeAt.current = 0
+    setLine(-1)
+    setStatus('idle')
+  }
+
+  const toggle = () => (status === 'playing' ? pause() : void start(status === 'idle'))
+  const restart = () => void start(true)
 
   const allAnswered = answers.every((a) => a !== null)
   const qScore = answers.filter((a, i) => a === item.questions[i].answer).length / item.questions.length
@@ -192,6 +229,8 @@ function Player({ item }: { item: ListeningItem }) {
 
   const finish = async () => {
     stop()
+    run.current++
+    setStatus('idle')
     const score = item.dictation.length ? qScore * 0.6 + dScore * 0.4 : qScore
     // Ouvir com o texto aberto vale menos (é leitura).
     const adjusted = showText ? score * 0.7 : score
@@ -200,7 +239,7 @@ function Player({ item }: { item: ListeningItem }) {
       activity: `listening:${item.id}`,
       level: item.level,
       score: adjusted,
-      seconds: Math.round((Date.now() - started.current) / 1000),
+      seconds: clock.seconds(),
       errorTags: dScore < 0.7 ? ['listening-detail'] : [],
       detail: `perguntas ${Math.round(qScore * 100)}%, ditado ${Math.round(dScore * 100)}%, ouviu ${plays}x`,
     })
@@ -217,13 +256,18 @@ function Player({ item }: { item: ListeningItem }) {
     <div className="space-y-4">
       <div className="card p-4">
         <div className="flex items-center gap-3">
-          <button onClick={play} className="grid h-14 w-14 place-items-center rounded-full bg-lis text-xl text-on-skill" aria-label={playing ? 'Parar' : 'Ouvir'}>
-            {playing ? '■' : '▶'}
+          <button onClick={toggle} className="grid h-14 w-14 shrink-0 place-items-center rounded-full bg-lis text-xl text-on-skill" aria-label={status === 'playing' ? 'Pausar' : status === 'paused' ? 'Continuar' : 'Ouvir'}>
+            {status === 'playing' ? '❚❚' : '▶'}
           </button>
           <div className="flex-1">
             <div className="text-sm text-muted">{item.kind === 'dialogue' ? 'Diálogo — duas vozes' : 'Monólogo'}</div>
-            <div className="text-xs text-dim">Ouviu {plays}x</div>
+            <div className="text-xs text-dim">
+              {status === 'playing' ? 'Tocando… ' : status === 'paused' ? 'Pausado · ' : ''}Ouviu {plays}x
+            </div>
           </div>
+          <button onClick={restart} className="btn-ghost px-3 py-2 text-sm" aria-label="Recomeçar">
+            ↺ Recomeçar
+          </button>
           <select className="rounded-lg border border-line bg-card2 px-2 py-1.5 text-sm" value={rate} onChange={(e) => setRate(Number(e.target.value))}>
             {[...new Set([0.7, 0.8, 0.9, 1, 1.1, rate])].sort().map((r) => (
               <option key={r} value={r}>

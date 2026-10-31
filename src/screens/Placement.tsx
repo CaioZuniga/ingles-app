@@ -6,6 +6,7 @@ import { fillGap } from '../engine/check'
 import { addWords } from '../engine/words'
 import { diffWords } from '../engine/diff'
 import { ratingToLevel } from '../engine/progress'
+import { useActiveClock } from '../engine/clock'
 import { useProfile } from '../state/learner'
 import { speak, stop } from '../speech/tts'
 import { Bar, Screen, SpeakButton, useSpeechPrefs } from '../components/ui'
@@ -75,7 +76,7 @@ export function Placement() {
   const [plays, setPlays] = useState(0)
   const [playing, setPlaying] = useState(false)
   const items = useRef<PlacementItem[]>([])
-  const started = useRef(Date.now())
+  const clock = useActiveClock()
   const [result, setResult] = useState<NonNullable<Profile['placement']> | null>(null)
   // Próxima pergunta ou saída: o áudio da pergunta anterior para.
   useEffect(() => {
@@ -101,7 +102,7 @@ export function Placement() {
     const avg = (r.vocabulary + r.grammar + r.listening) / 3
     const placement = { date: new Date().toISOString(), ratings: r, items: items.current }
     await db.profile.put({ ...profile, level: ratingToLevel(avg).level, placement })
-    await logAttempt({ skill: 'grammar', activity: 'placement', level: ratingToLevel(avg).level, score: avg / 600, seconds: Math.round((Date.now() - started.current) / 1000), errorTags: [] })
+    await logAttempt({ skill: 'grammar', activity: 'placement', level: ratingToLevel(avg).level, score: avg / 600, seconds: clock.seconds(), errorTags: [] })
     await learnFromMistakes(test, items.current)
     setResult(placement)
     setStage('done')
@@ -122,7 +123,7 @@ export function Placement() {
           <button
             className="btn-primary mt-5 w-full"
             onClick={() => {
-              started.current = Date.now()
+              clock.restart()
               setStage('test')
             }}
           >

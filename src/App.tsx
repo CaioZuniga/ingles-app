@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
 import { HashRouter, NavLink, Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import { useProfile } from './state/learner'
 import { stop } from './speech/tts'
@@ -18,6 +18,7 @@ import { MistakeReview } from './screens/Mistakes'
 import { Placement, PlacementResultScreen } from './screens/Placement'
 import { Icon, type IconName } from './components/icons'
 import { InstallFirst } from './components/Install'
+import { ErrorBoundary } from './components/ErrorBoundary'
 import { shouldOfferInstallFirst } from './state/platform'
 
 const TABS: { to: string; label: string; icon: IconName; end?: boolean }[] = [
@@ -36,6 +37,12 @@ function ScrollTop() {
     stop()
   }, [pathname])
   return null
+}
+
+/** Erro numa tela não derruba o app inteiro: a fronteira começa de novo a cada tela. */
+function PageBoundary({ children }: { children: ReactNode }) {
+  const { pathname } = useLocation()
+  return <ErrorBoundary key={pathname}>{children}</ErrorBoundary>
 }
 
 function TabBar() {
@@ -62,34 +69,36 @@ export default function App() {
     <HashRouter>
       <ScrollTop />
       <SessionBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/praticar" element={<Practice />} />
-        <Route path="/praticar/gramatica" element={<GrammarList />} />
-        <Route path="/praticar/gramatica/sugerida" element={<GrammarAi />} />
-        <Route path="/praticar/gramatica/:id" element={<GrammarTopicScreen />} />
-        <Route path="/praticar/listening" element={<ListeningList />} />
-        <Route path="/praticar/listening/nova" element={<ListeningAi />} />
-        <Route path="/praticar/listening/:id" element={<ListeningPlayer />} />
-        <Route path="/praticar/writing" element={<WritingList />} />
-        <Route path="/praticar/writing/erros" element={<WritingDrills />} />
-        <Route path="/praticar/writing/:id" element={<WritingTask />} />
-        <Route path="/praticar/speaking" element={<SpeakingHub />} />
-        <Route path="/praticar/speaking/shadowing" element={<Shadowing />} />
-        <Route path="/praticar/speaking/resposta/:id" element={<SpeakingPromptScreen />} />
-        <Route path="/praticar/speaking/conversa/:id" element={<RoleplayScreen />} />
-        <Route path="/palavras" element={<Words />} />
-        <Route path="/palavras/revisar" element={<WordReview />} />
-        <Route path="/palavras/explorar" element={<WordBrowse />} />
-        <Route path="/tutor" element={<Tutor />} />
-        <Route path="/progresso" element={<ProgressScreen />} />
-        <Route path="/ajustes" element={<SettingsScreen />} />
-        <Route path="/erros/revisar" element={<MistakeReview />} />
-        <Route path="/nivelamento" element={<Placement />} />
-        <Route path="/nivelamento/resultado" element={<PlacementResultScreen />} />
-        <Route path="/sessao/fim" element={<SessionEnd />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
+      <PageBoundary>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/praticar" element={<Practice />} />
+          <Route path="/praticar/gramatica" element={<GrammarList />} />
+          <Route path="/praticar/gramatica/sugerida" element={<GrammarAi />} />
+          <Route path="/praticar/gramatica/:id" element={<GrammarTopicScreen />} />
+          <Route path="/praticar/listening" element={<ListeningList />} />
+          <Route path="/praticar/listening/nova" element={<ListeningAi />} />
+          <Route path="/praticar/listening/:id" element={<ListeningPlayer />} />
+          <Route path="/praticar/writing" element={<WritingList />} />
+          <Route path="/praticar/writing/erros" element={<WritingDrills />} />
+          <Route path="/praticar/writing/:id" element={<WritingTask />} />
+          <Route path="/praticar/speaking" element={<SpeakingHub />} />
+          <Route path="/praticar/speaking/shadowing" element={<Shadowing />} />
+          <Route path="/praticar/speaking/resposta/:id" element={<SpeakingPromptScreen />} />
+          <Route path="/praticar/speaking/conversa/:id" element={<RoleplayScreen />} />
+          <Route path="/palavras" element={<Words />} />
+          <Route path="/palavras/revisar" element={<WordReview />} />
+          <Route path="/palavras/explorar" element={<WordBrowse />} />
+          <Route path="/tutor" element={<Tutor />} />
+          <Route path="/progresso" element={<ProgressScreen />} />
+          <Route path="/ajustes" element={<SettingsScreen />} />
+          <Route path="/erros/revisar" element={<MistakeReview />} />
+          <Route path="/nivelamento" element={<Placement />} />
+          <Route path="/nivelamento/resultado" element={<PlacementResultScreen />} />
+          <Route path="/sessao/fim" element={<SessionEnd />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </PageBoundary>
       <TabBar />
     </HashRouter>
   )

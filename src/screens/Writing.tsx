@@ -6,6 +6,7 @@ import { rankFor, WRITING } from '../data'
 import { db, logAttempt, logMistakes } from '../db/db'
 import { correctWriting, generateErrorDrills, type WritingFeedback } from '../ai/tasks'
 import { loadLearner, useProfile } from '../state/learner'
+import { useActiveClock } from '../engine/clock'
 import { IssueList, NewWords, Section } from '../components/Feedback'
 import { ExerciseRunner } from '../components/ExerciseRunner'
 import { ErrorBox, LevelPill, Loading, NeedsKey, Rich, ScoreBadge, Screen, Segmented, SpeakButton } from '../components/ui'
@@ -21,6 +22,15 @@ const GENRE: Record<WritingPrompt['genre'], string> = {
   review: 'Review',
 }
 
+interface Saved {
+  task: string
+  text: string
+  feedback: WritingFeedback
+}
+
+/** Só as correções salvas têm feedback; os exercícios dos erros também usam a tabela de aulas, com outro formato. */
+const isSaved = (payload: unknown): payload is Saved => typeof payload === 'object' && payload !== null && 'feedback' in payload
+
 /** Erros de writing ainda não dominados (sem repetição), do mais recente para o mais antigo, sem frases repetidas. */
 async function writingMistakes(): Promise<Mistake[]> {
   const all = (await db.mistakes.where('skill').equals('writing').toArray()).filter((m) => !m.reviewed).sort((a, b) => b.date.localeCompare(a.date))
@@ -35,7 +45,7 @@ async function writingMistakes(): Promise<Mistake[]> {
 
 export function WritingList() {
   const profile = useProfile()
-  const history = useLiveQuery(() => db.lessons.where('skill').equals('writing').reverse().limit(10).toArray())
+  const history = useLiveQuery(() => db.lessons.where('skill').equals('writing').reverse().filter((l) => isSaved(l.payload)).limit(10).toArray())
   const mistakes = useLiveQuery(writingMistakes)
   if (!profile) return null
   return (
@@ -179,23 +189,21 @@ export function WritingDrills() {
   )
 }
 
-interface Saved {
-  task: string
-  text: string
-  feedback: WritingFeedback
-}
-
 export function WritingTask() {
   const { id = '' } = useParams()
   const profile = useProfile()
-  const saved = useLiveQuery(async () => (id.startsWith('h-') ? ((await db.lessons.get(Number(id.slice(2))))?.payload as Saved) ?? null : null), [id])
+  const saved = useLiveQuery(async () => {
+    if (!id.startsWith('h-')) return null
+    const payload = (await db.lessons.get(Number(id.slice(2))))?.payload
+    return isSaved(payload) ? payload : null
+  }, [id])
   const prompt = WRITING.find((w) => w.id === id)
   const [custom, setCustom] = useState('')
   const [text, setText] = useState('')
   const [feedback, setFeedback] = useState<WritingFeedback | null>(null)
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState('')
-  const [started] = useState(Date.now())
+  const clock = useActiveClock()
   if (!profile || saved === undefined) return null
 
   if (saved) return (
@@ -221,7 +229,7 @@ export function WritingTask() {
         activity: `writing:${id}`,
         level,
         score: Math.max(0, Math.min(1, fb.score / 100)),
-        seconds: Math.round((Date.now() - started) / 1000),
+        seconds: clock.seconds(),
         errorTags: [...new Set(fb.issues.map((i) => i.tag))],
       })
       await logMistakes(fb.issues.map((i) => ({ skill: 'writing' as const, tag: i.tag, wrong: i.wrong, right: i.right, note: i.note })))
