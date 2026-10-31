@@ -15,12 +15,21 @@ const build = (() => {
     return 'local'
   }
 })()
+// Data do commit (ISO): fixa para cada versão, mesmo se o app for gerado de novo.
+const buildDate = (() => {
+  try {
+    return execSync('git log -1 --format=%cI', { encoding: 'utf8' }).trim()
+  } catch {
+    return new Date().toISOString()
+  }
+})()
 
 export default defineConfig({
   base: '/ingles-app/',
   define: {
     __APP_VERSION__: JSON.stringify(version),
     __APP_BUILD__: JSON.stringify(build),
+    __APP_BUILD_DATE__: JSON.stringify(buildDate),
   },
   plugins: [
     react(),

@@ -253,7 +253,7 @@ export function SettingsScreen() {
       </section>
       <UpdateCard />
       <p className="mt-6 text-center text-xs text-dim">
-        Versão {__APP_VERSION__} · build {__APP_BUILD__}
+        Versão {__APP_VERSION__} · build {__APP_BUILD__} · {new Date(__APP_BUILD_DATE__).toLocaleString('pt-BR', { dateStyle: 'short', timeStyle: 'short' })}
       </p>
     </Screen>
   )
